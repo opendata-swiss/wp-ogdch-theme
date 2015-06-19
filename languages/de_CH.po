@@ -1,0 +1,478 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OGDch\n"
+"POT-Creation-Date: 2015-06-10 16:59+0100\n"
+"PO-Revision-Date: 2015-06-10 16:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: Team Jazz <jazz@liip.ch>\n"
+"Language: de_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ../../../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n;_nx;_ex\n"
+"X-Poedit-SearchPath-0: themes/ogdch\n"
+"X-Poedit-SearchPath-1: mu-plugins/app-directory\n"
+"X-Poedit-SearchPath-2: mu-plugins/ckan-dataset\n"
+"X-Poedit-SearchPath-3: mu-plugins/ckan-tax-sync\n"
+"X-Poedit-SearchPath-4: mu-plugins/ckan-local-dataset\n"
+"X-Poedit-SearchPathExcluded-0: themes/ogdch/node_modules\n"
+
+#: mu-plugins/app-directory/app-directory.php:13
+#: mu-plugins/app-directory/app-directory.php:15
+#: mu-plugins/app-directory/app-directory.php:16
+#: mu-plugins/app-directory/app-directory.php:36
+msgid "Apps"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:14
+msgid "App"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:17
+msgid "Parent App:"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:18
+msgid "All Apps"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:19
+msgid "Add New App"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:20
+#: mu-plugins/ckan-dataset/ckan-dataset.php:24
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:24
+msgid "Add New"
+msgstr "Hinzufügen"
+
+#: mu-plugins/app-directory/app-directory.php:21
+msgid "New Item"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:22
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:26
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:63
+msgid "Edit Item"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:23
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:27
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:64
+msgid "Update Item"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:24
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:28
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:65
+msgid "View Item"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:25
+msgid "Search Item"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:26
+#: mu-plugins/ckan-dataset/ckan-dataset.php:30
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:30
+msgid "Not found"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:27
+#: mu-plugins/ckan-dataset/ckan-dataset.php:31
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:31
+msgid "Not found in Trash"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:37
+msgid "The App directory"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:74
+msgid "App Information"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:83
+msgid "URL"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:84
+msgid "Landing page of app"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:97
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:229
+msgid "Author Name"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:107
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:238
+msgid "Author Email"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:108
+msgid "Email address of author"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:119
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:212
+msgid "Version"
+msgstr ""
+
+#: mu-plugins/app-directory/app-directory.php:130
+msgid "Icon"
+msgstr ""
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:17
+msgid "CKAN Datasets"
+msgstr "CKAN Datensätze"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:18
+msgid "CKAN Dataset"
+msgstr "CKAN Datensatz"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:19
+#: mu-plugins/ckan-dataset/ckan-dataset.php:20
+#: mu-plugins/ckan-dataset/ckan-dataset.php:75
+msgid "CKAN Data"
+msgstr "CKAN Daten"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:21
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:21
+msgid "Parent Dataset:"
+msgstr ""
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:22
+msgid "All Datasets"
+msgstr "Alle Datensätze"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:23
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:23
+msgid "Add New Dataset"
+msgstr "Datensatz hinzufügen"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:25
+msgid "New Dataset"
+msgstr "Neuer Datensatz"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:26
+msgid "Edit Dataset"
+msgstr "Datensatz bearbeiten"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:27
+msgid "Update Dataset"
+msgstr "Datensatz aktualisieren"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:28
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:28
+msgid "View Dataset"
+msgstr "Datensatz anzeigen"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:29
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:29
+msgid "Search Dataset"
+msgstr ""
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:40
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:35
+msgid "CKAN"
+msgstr ""
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:41
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:36
+msgid "Contains Data from the CKAN Instance"
+msgstr ""
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:83
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:80
+msgid "CKAN Ref. ID"
+msgstr ""
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:86
+msgid "Unique ID of dataset in CKAN"
+msgstr "Eindeutige ID des Datensatzes in CKAN"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:91
+msgid "CKAN Request Time"
+msgstr "CKAN Request-Zeit"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:94
+msgid "Time of last CKAN request"
+msgstr "Zeitpunkt des letzten CKAN-Requests"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:99
+msgid "CKAN JSON Response"
+msgstr "CKAN JSON Antwort\t"
+
+#: mu-plugins/ckan-dataset/ckan-dataset.php:102
+msgid "CKAN response as JSON string"
+msgstr "CKAN Antwort als JSON-String"
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:17
+msgid "CKAN local Datasets"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:18
+msgid "CKAN local Dataset"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:19
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:20
+msgid "CKAN local Data"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:22
+msgid "All local Datasets"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:25
+msgid "New local Dataset"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:26
+msgid "Edit local Dataset"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:27
+msgid "Update local Dataset"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:71
+msgid "Ressource Data"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:83
+msgid "Ref. ID from CKAN"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:92
+msgid "Dataset Title"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:99
+msgid "Title"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:103
+msgid "z.B. ein beschreibender Titel"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:111
+msgid "Dataset Permalink"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:117
+msgid "Name (Slug)"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:120
+msgid "Permalink Name"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:129
+msgid "Dataset Description"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:132
+msgid "Markdown Syntax can be used to format the description."
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:147
+msgid "Custom Fields"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:156
+msgid "Custom Field {#}"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:157
+msgid "Add another Field"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:158
+msgid "Remove Field"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:163
+msgid "Key"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:169
+msgid "Value"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:177
+msgid "Sichtbarkeit"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:183
+msgid "Visibility"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:184
+msgid "Select the visibility of the Dataset"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:189
+msgid "Active"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:190
+msgid "Deleted"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:197
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:203
+msgid "Source"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:223
+msgid "Dataset Author"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:233
+msgid "Hans Musterman"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:242
+msgid "hans@musterman.ch"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:249
+msgid "Dataset Maintainer"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:255
+msgid "Maintainer Name"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:259
+msgid "Peter Müller"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:264
+msgid "Maintainer Email"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:268
+msgid "peter@mueller.ch"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:274
+msgid "Add Data"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:280
+msgid "File"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:281
+msgid "Upload a Datafile or enter an URL."
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:291
+msgid "Data Description"
+msgstr ""
+
+#: mu-plugins/ckan-local-dataset/ckan-local-dataset.php:296
+msgid "Nützliche Hinweise zu den Daten"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:18
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:20
+msgid "Organisations"
+msgstr "Organisationen"
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:19
+msgid "Organisation"
+msgstr "Organisation"
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:21
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:58
+msgid "All Items"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:22
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:59
+msgid "Parent Item"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:23
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:60
+msgid "Parent Item:"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:24
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:61
+msgid "New Item Name"
+msgstr "Name des neuen Datensatzes"
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:25
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:62
+msgid "Add New Item"
+msgstr "Neuen Datensatz hinzufügen"
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:29
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:66
+msgid "Separate items with commas"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:30
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:67
+msgid "Add or remove items"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:31
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:68
+msgid "Choose from the most used"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:32
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:69
+msgid "Popular Items"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:33
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:70
+msgid "Search Items"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:34
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:71
+msgid "Not Found"
+msgstr ""
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:55
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:57
+msgid "Groups"
+msgstr "Gruppen\t"
+
+#: mu-plugins/ckan-tax-sync/ckan-tax-sync.php:56
+msgid "Group"
+msgstr "Gruppe"
+
+#: themes/ogdch/assets/php/init.php:27
+msgid "Service-Navigation"
+msgstr ""
+
+#: themes/ogdch/assets/php/init.php:28
+msgid "Haupt-Navigation"
+msgstr ""
+
+#: themes/ogdch/functions.php:23 themes/ogdch/functions.php:50
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: themes/ogdch/index.php:17 themes/ogdch/partials/frontpage-datasets.php:21
+#: themes/ogdch/partials/frontpage-groups.php:22
+msgid "Nothing found!"
+msgstr "Nichts gefunden!"
+
+#: themes/ogdch/partials/frontpage-datasets.php:1
+msgid "Newest shiny datasets!"
+msgstr "Neue Datensätze"

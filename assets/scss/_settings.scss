@@ -1,0 +1,32 @@
+/* =======================================================================//
+// Settings for Toast-Grid
+// Leran more: https://github.com/daneden/Toast
+// =======================================================================*/
+
+$DE-grid-namespace: "grid" !default;
+$DE-grid-column-namespace: "grid__col" !default;
+
+// $col-groups are the column groups you want
+// For example, $col-groups: (3, 4, 5) will output:
+// .grid__col--n-of-3, .grid__col--n-of-4, [...]
+$DE-col-groups: (1, 2, 3, 4, 5, 6, 8, 12) !default;
+
+// Gutter width
+$DE-gutter-width: 30px !default;
+
+// Breakpoints
+$DE-breakpoint-medium: 700px !default;
+$DE-breakpoint-small: 480px !default;
+
+/* =======================================================================//
+// Settings for Typo-Baseline
+// =======================================================================*/
+
+$base-font-size: 16 !default;
+$line-height: 24 !default;
+
+
+$font-size-ratio: ($base-font-size / $base-font-size);
+$line-height-ratio: ($line-height / $base-font-size);
+$type-scale: 3, 2.25, 1.5, 1.3125, 1.125, 1;
+$unit: em;

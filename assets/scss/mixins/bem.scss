@@ -1,0 +1,38 @@
+/*
+
+* B: Block
+* E: Element
+* M: Modifier
+
+Example:
+.post {
+    @include element('title') {
+        font-family: monospace;
+
+        @include modifier('page') {
+            color: red;
+        }
+    }
+}
+
+generates:
+.post__title{font-family:monospace}
+.post__title--page{color:red}
+
+*/
+
+
+// * Build Element(E)::
+@mixin element($e) {
+    &__#{$e}{
+	    @content;
+    }
+}
+
+
+// * Build Modifier(M)::
+@mixin modifier($m) {
+    &--#{$m}{
+	    @content;
+    }
+}

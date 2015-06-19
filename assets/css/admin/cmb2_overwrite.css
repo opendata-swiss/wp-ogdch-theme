@@ -1,0 +1,13 @@
+.cmb-type-title {
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 2em !important
+}
+
+.cmb2-metabox-title {
+    font-size: 20px !important
+}
+
+.postbox-container .cmb2-wrap > .cmb-field-list > .cmb-row, .cmb-repeat-group-wrap .cmb2-wrap > .cmb-field-list > .cmb-row {
+  padding: 1em 0;
+}
