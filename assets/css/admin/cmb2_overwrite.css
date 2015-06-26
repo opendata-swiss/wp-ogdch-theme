@@ -11,3 +11,10 @@
 .postbox-container .cmb2-wrap > .cmb-field-list > .cmb-row, .cmb-repeat-group-wrap .cmb2-wrap > .cmb-field-list > .cmb-row {
   padding: 1em 0;
 }
+
+/* Disable visibility settings for ckan custom post-types */
+.post-type-ckan-local-dataset #visibility,
+.post-type-ckan-local-group #visibility,
+.post-type-ckan-local-org #visibility {
+    display: none;
+}
