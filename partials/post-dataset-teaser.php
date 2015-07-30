@@ -1,2 +1,2 @@
 <?php
-echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+echo '<li><a href="' . esc_attr( get_permalink() ) . '">' . esc_html( get_the_title() ) . '</a></li>';

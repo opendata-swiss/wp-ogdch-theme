@@ -14,7 +14,7 @@
 		    <?php endwhile; ?>
 
 		<?php else : ?>
-		    <?php echo '<p>' . __('Nothing found!', 'ogdch') . '</p>'; ?>
+		    <?php echo '<p>' . esc_html( __( 'Nothing found!', 'ogdch' ) ) . '</p>'; ?>
 		<?php endif; ?>
     </div>
 </div>

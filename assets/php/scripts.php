@@ -1,9 +1,10 @@
 <?php
 
-// =======================================================================//
-// Add / Remove Scripts and CSS only in Fronend
-// =======================================================================//
-
+/**
+ * Add / Remove Scripts and CSS only in Frontend
+ *
+ * @return void
+ */
 function odg_scripts() {
 
 	if ( is_admin() ) {
