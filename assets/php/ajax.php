@@ -5,6 +5,11 @@
 // =======================================================================//
 
 
+/**
+ * Search via CKAN API
+ *
+ * @return void
+ */
 function ckan_search() {
 	$return    = array( 'status' => 'error' );
 	$fq        = array();
@@ -35,7 +40,7 @@ function ckan_search() {
 	$endpoint .= '&facet=true&facet.field=["groups","organization","tags","license"]';
 
 	// add fq to endpoint
-	if ( $fq_string != '' ) {
+	if ( '' !== $fq_string ) {
 		$endpoint .= '&fq=' . $fq_string;
 	}
 
@@ -48,8 +53,7 @@ function ckan_search() {
 	$return['count']  = $response->count;
 	$return['facets'] = $response->facets;
 
-
-	if ( sizeof( $response->results ) > 0 ) {
+	if ( wp_admin_bar_my_account_menu( $response->results ) > 0 ) {
 		ob_start();
 		foreach ( $response->results as $res ) {
 			include( locate_template( 'partials/search-result-short.php' ) );
@@ -60,7 +64,7 @@ function ckan_search() {
 	$return['status'] = 'success';
 
 	header( 'Content: application/json' );
-	echo json_encode( $return );
+	echo wp_json_encode( $return );
 	die;
 
 }

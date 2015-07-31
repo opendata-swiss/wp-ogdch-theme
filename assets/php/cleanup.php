@@ -1,9 +1,9 @@
 <?php
-
-// =======================================================================//
-// Cleanup Header
-// =======================================================================//
-
+/**
+ * Cleanup Header
+ *
+ * @return void
+ */
 function head_cleanup() {
 	global $sitepress;
 	global $wp_widget_factory;
@@ -25,7 +25,7 @@ function head_cleanup() {
 
 	remove_action( 'wp_head', array(
 		$wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
-		'recent_comments_style'
+		'recent_comments_style',
 	) );
 
 	add_filter( 'use_default_gallery_style', '__return_null' );
@@ -33,11 +33,11 @@ function head_cleanup() {
 
 add_action( 'init', 'head_cleanup' );
 
-
-// =======================================================================//
-// Remove Widgets
-// =======================================================================//
-
+/**
+ * Remove Widgets
+ *
+ * @return void
+ */
 function unregister_default_wp_widgets() {
 	unregister_widget( 'WP_Widget_Pages' );
 	unregister_widget( 'WP_Widget_Calendar' );
@@ -54,11 +54,11 @@ function unregister_default_wp_widgets() {
 
 add_action( 'widgets_init', 'unregister_default_wp_widgets' );
 
-
-// =======================================================================//
-// Remove Dashboard Widgets
-// =======================================================================//
-
+/**
+ * Eemove Dashboard Widgets
+ *
+ * @return void
+ */
 function remove_dashboard_widgets() {
 	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
 	remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );

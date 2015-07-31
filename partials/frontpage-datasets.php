@@ -1,4 +1,4 @@
-<h2><?php _e('Newest shiny datasets!', 'ogdch'); ?></h2>
+<h2><?php esc_html_e( __( 'Newest shiny datasets!', 'ogdch' ) ); ?></h2>
 
 <?php
 $args = array(
@@ -18,7 +18,7 @@ if ( $the_datasets_query->have_posts() ) {
 	}
 	echo '</ul>';
 } else {
-	echo '<p>' . __('Nothing found!', 'ogdch') . '</p>';
+	echo '<p>' . esc_html( __( 'Nothing found!', 'ogdch' ) ). '</p>';
 }
 /* Restore original Post Data */
 wp_reset_postdata();

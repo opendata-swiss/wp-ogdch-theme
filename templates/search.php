@@ -1,4 +1,5 @@
 <?php
+// @codingStandardsIgnoreStart
 /**
  * Template Name: Search
  *
@@ -62,4 +63,6 @@ if ( count( $_GET ) == 0 ) {
 	</div>
 
 <?php
-get_footer(); ?>
+get_footer();
+// @codingStandardsIgnoreEnd
+?>

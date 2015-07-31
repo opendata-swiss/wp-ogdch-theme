@@ -7,6 +7,7 @@
 				<?php while ( have_posts() ) : the_post();?>
 					<h2 class="post__title"><?php the_title(); ?></h2>
 					<h3>Ref ID</h3>
+					<?php // @codingStandardsIgnoreStart ?>
 					<?php var_dump( get_post_meta( get_the_ID(), '_ckandataset_reference' , true ) ); ?>
 
 					<h3>Last update</h3>
@@ -14,6 +15,7 @@
 
 					<h3>Data</h3>
 					<pre><?php var_dump( get_post_meta( get_the_ID(), '_ckandataset_response' , true ) ); ?></pre>
+					<?php // @codingStandardsIgnoreEnd ?>
 				<?php endwhile; ?>
 
 			<?php else : ?>

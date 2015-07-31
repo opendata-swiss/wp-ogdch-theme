@@ -15,9 +15,9 @@ $terms = get_terms( $taxonomies, $args );
 if ( count( $terms > 0 ) ) {
 	echo '<ul>';
 	foreach ( $terms as $term ) {
-		echo '<li>' . $term->name . '</li>';
+		echo '<li>' . esc_html( $term->name ) . '</li>';
 	}
 	echo '</ul>';
 } else {
-	echo '<p>' . __('Nothing found!', 'ogdch') . '</p>';
+	echo '<p>' . esc_html( __( 'Nothing found!', 'ogdch' ) ) . '</p>';
 }

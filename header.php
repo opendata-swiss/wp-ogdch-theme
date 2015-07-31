@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
-	<title><?php wp_title( '|', true, 'right' ); ?> <?php bloginfo('name'); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?> <?php bloginfo( 'name' ); ?></title>
 
 	<?php wp_head(); ?>
 </head>
@@ -38,16 +38,16 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langauge <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<?php
-						$translations = pll_the_languages(array('raw'=>1));
+						$translations = pll_the_languages( array( 'raw' => 1 ) );
 
-						foreach($translations as $translation) {
-							echo '<li><a href="' . $translation['url'] . '"><img src="' . $translation['flag'] . '"/> ' . $translation['name'] . '</a></li>';
+						foreach ( $translations as $translation ) {
+							echo '<li><a href="' . esc_attr( $translation['url'] ) . '"><img src="' . esc_attr( $translation['flag'] ) . '"/> ' . esc_html( $translation['name'] ) . '</a></li>';
 						}
 						?>
 					</ul>
 				</li>
 				<li>
-					<a href="<?php echo get_post_type_archive_link( 'ckan-dataset' ); ?>">CKAN-Dataset Archiv</a>
+					<a href="<?php esc_attr_e( get_post_type_archive_link( 'ckan-dataset' ) ); ?>">CKAN-Dataset Archiv</a>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
