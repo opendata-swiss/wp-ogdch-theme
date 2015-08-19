@@ -43,7 +43,7 @@ if ( is_admin() ) {
 		//'assets/php/backend/admin_cols.php',          // Admin Columns
 		//'assets/php/backend/dashboard_widgets.php',   // Dashboard
 		//'assets/php/backend/user_fields.php',         // Custom Fields in User Edit
-		//'assets/php/backend/caps.php',                // Caps for Post Types
+		'assets/php/backend/caps.php',                // Caps & Roles
 		//'assets/php/backend/wysiwyg.php'
 	);
 
