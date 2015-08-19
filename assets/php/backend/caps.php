@@ -86,4 +86,33 @@ function init_role( $role_name, $display_name, $caps ) {
 	}
 }
 
+/**
+ * Disables default WordPress roles
+ *
+ * @param array $roles Available roles
+ *
+ * @return array
+ */
+function disable_default_roles($roles) {
+	if (isset($roles['author'])) {
+		unset($roles['author']);
+	}
+
+	if (isset($roles['editor'])) {
+		unset($roles['editor']);
+	}
+
+	if (isset($roles['subscriber'])) {
+		unset($roles['subscriber']);
+	}
+
+	if (isset($roles['contributor'])) {
+		unset($roles['contributor']);
+	}
+
+	return $roles;
+}
+
 add_action( 'after_switch_theme', 'add_theme_caps' );
+// Disables default WordPress roles
+add_filter( 'editable_roles', 'disable_default_roles' );
