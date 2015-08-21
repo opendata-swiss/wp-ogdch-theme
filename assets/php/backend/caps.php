@@ -1,4 +1,7 @@
 <?php
+/**
+ * Add capabilities and roles used in this theme
+ */
 function add_theme_caps() {
 	$post_types = array(
 		'datasets',
@@ -52,6 +55,8 @@ function add_theme_caps() {
 		'edit_private_organisations'   => true,
 		'edit_published_organisations' => true,
 		'read_private_organisations'   => true,
+		'edit_posts'                   => true,
+		// TODO why do we need to add this cap? (Without it we can't access the list view)
 	);
 	init_role( 'data-owner', 'Data Owner', $data_owner_caps );
 
@@ -71,6 +76,13 @@ function add_theme_caps() {
 	init_role( 'content-manager', 'Content Manager', $content_manager_caps );
 }
 
+/**
+ * Initializes new role or resets it
+ *
+ * @param string $role_name Name of role.
+ * @param string $display_name Displayed name of role.
+ * @param array  $caps Capabilities of role.
+ */
 function init_role( $role_name, $display_name, $caps ) {
 	$role = get_role( $role_name );
 	if ( is_object( $role ) ) {
@@ -89,25 +101,25 @@ function init_role( $role_name, $display_name, $caps ) {
 /**
  * Disables default WordPress roles
  *
- * @param array $roles Available roles
+ * @param array $roles Available roles.
  *
  * @return array
  */
-function disable_default_roles($roles) {
-	if (isset($roles['author'])) {
-		unset($roles['author']);
+function disable_default_roles( $roles ) {
+	if ( isset( $roles['author'] ) ) {
+		unset( $roles['author'] );
 	}
 
-	if (isset($roles['editor'])) {
-		unset($roles['editor']);
+	if ( isset( $roles['editor'] ) ) {
+		unset( $roles['editor'] );
 	}
 
-	if (isset($roles['subscriber'])) {
-		unset($roles['subscriber']);
+	if ( isset( $roles['subscriber'] ) ) {
+		unset( $roles['subscriber'] );
 	}
 
-	if (isset($roles['contributor'])) {
-		unset($roles['contributor']);
+	if ( isset( $roles['contributor'] ) ) {
+		unset( $roles['contributor'] );
 	}
 
 	return $roles;
