@@ -16,43 +16,6 @@
 @import 'typo/text';
 
 
-.navbar {
-  margin-bottom: 0;
-}
-
-header {
-  background-color: #c10a22;
-  padding: 10px;
-  color: #fff;
-}
-
-
-
-
-.facet {
-    list-style: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    @include element('term') {
-        display: block;
-        padding: 3px;
-
-        @include modifier('disabled') {
-            color: #ccc;
-        }
-
-        @include modifier('active') {
-            background-color: green;
-            color: #fff;
-            border-radius: 3px;
-
-            &:after {
-                display: inline-block;
-                margin-left: 20px;
-                content: "(X)"
-            }
-        }
-    }
+.navbar-brand span {
+  color: #c10a22;
 }
