@@ -34,6 +34,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
+				<li>
+					<a href="<?php esc_attr_e( get_post_type_archive_link( 'app' ) ); ?>">Apps</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langauge <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -46,14 +51,11 @@
 						?>
 					</ul>
 				</li>
-				<li>
-					<a href="<?php esc_attr_e( get_post_type_archive_link( 'ckan-dataset' ) ); ?>">CKAN-Dataset Archiv</a>
-				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
 
 <header>
-	<h1>ODG.CH PORTAL</h1>
+	<h1>opendata.swiss</h1>
 </header>
