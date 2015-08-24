@@ -1,15 +1,14 @@
 <?php get_header(); ?>
 
+<a href="<?php esc_attr_e( get_post_type_archive_link( 'app' ) ); ?>">Back to App-List</a>
 
 <div class="container">
-	<div class="grid">
+	<div class="row">
 		<?php if ( have_posts() ) : ?>
-			Hi, my app is! Hi, my app is...chkchka Slim Shady
 			<?php while ( have_posts() ) : the_post();?>
-				<div class="grid__col grid__col--4-of-4">
-					<h1 class="post__title"><?php the_title(); ?></h1>
+				<div class="col-xs-12">
+					<h1><?php the_title(); ?></h1>
 					<?php the_content(); ?>
-					<hr>
 				</div>
 			<?php endwhile; ?>
 
