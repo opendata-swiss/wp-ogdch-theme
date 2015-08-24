@@ -39,6 +39,7 @@
 				<li><a href="<?php echo home_url(); ?>/organization"><?php _e( 'Organizations', 'ogdch' ); ?></a></li>
 				<li><a href="<?php esc_attr_e( get_post_type_archive_link( 'app' ) ); ?>"><?php _e( 'Apps', 'ogdch' ); ?></a></li>
 			</ul>
+
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langauge <span class="caret"></span></a>
@@ -47,6 +48,12 @@
 					</ul>
 				</li>
 			</ul>
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="<?php _e( 'Search', 'ogdch' ); ?>">
+				</div>
+				<button type="submit" class="btn btn-default" aria-label="<?php _e( 'Search', 'ogdch' ); ?>"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			</form>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>

@@ -15,7 +15,19 @@
 @import 'typo/headings';
 @import 'typo/text';
 
+a {
+  color: $link-color;
+
+  &:hover, &:active, &:focus {
+    color: darken($link-color, 10%);
+    text-decoration: none;
+  }
+}
 
 .navbar-brand span {
-  color: #c10a22;
+  color: $link-color;
+}
+
+.attachment-app-image {
+  margin-top: 15px;
 }
