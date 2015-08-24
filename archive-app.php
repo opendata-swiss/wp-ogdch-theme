@@ -16,7 +16,7 @@
 	if ( $app_query->have_posts() ) {
 		while ( $app_query->have_posts() ) {
 			$app_query->the_post();
-			echo '<div class="row"><div class="col-12">' . get_the_title() . '</div></div>';
+			get_template_part( 'partials/app', 'archive-entry' );
 		}
 	} else {
 		// no posts found
