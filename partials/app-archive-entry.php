@@ -15,8 +15,8 @@ $version = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
 		<?php
 		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
 		echo '<p>';
-		echo 'Author: <a href="mailto:' . $author_email .'">' . $author_name . '</a>';
-		echo ' | Version: ' . $version;
+		echo 'Author: <a href="mailto:' . esc_attr( $author_email ) .'">' . esc_attr( $author_name ) . '</a>';
+		echo ' | Version: ' . esc_attr( $version );
 		echo '</p>';
 		echo '<p>' . the_content() . '</p>';
 		echo '<p><a href="' . esc_attr( get_permalink() ) . '">Details</a></p>';

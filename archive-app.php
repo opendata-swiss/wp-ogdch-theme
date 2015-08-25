@@ -24,8 +24,6 @@
 			$app_query->the_post();
 			get_template_part( 'partials/app', 'archive-entry' );
 		}
-	} else {
-		// no posts found
 	}
 	/* Restore original Post Data */
 	wp_reset_postdata();
