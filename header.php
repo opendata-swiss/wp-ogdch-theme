@@ -28,34 +28,31 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">OGD.CH</a>
+			<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">opendata.<span>swiss</span></a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="<?php esc_attr_e( get_post_type_archive_link( 'app' ) ); ?>">Apps</a>
-				</li>
-			</ul>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
+			<?php
+			wp_nav_menu( array(
+				'menu' => 'main_navigation',
+				'menu_class' => 'nav navbar-nav',
+			) );
+			?>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langauge <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<?php
-						$translations = pll_the_languages( array( 'raw' => 1 ) );
-
-						foreach ( $translations as $translation ) {
-							echo '<li><a href="' . esc_attr( $translation['url'] ) . '"><img src="' . esc_attr( $translation['flag'] ) . '"/> ' . esc_html( $translation['name'] ) . '</a></li>';
-						}
-						?>
+						<?php pll_the_languages( array( 'show_flags' => 1 ) ); ?>
 					</ul>
 				</li>
 			</ul>
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="<?php esc_attr_e( 'Search', 'ogdch' ); ?>">
+				</div>
+				<button type="submit" class="btn btn-default" aria-label="<?php esc_attr_e( 'Search', 'ogdch' ); ?>"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			</form>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
-
-<header>
-	<h1>opendata.swiss</h1>
-</header>

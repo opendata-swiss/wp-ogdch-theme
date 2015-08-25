@@ -39,11 +39,7 @@ function theme_setup() {
 	// Custom Image Sizes
 	// =======================================================================//
 
-	/*
-	add_image_size( 'frontpage-slide', 900, 700, array( 'left', 'top' ) );
-	add_image_size( 'post-teaser', 600, 400, array( 'left', 'top' ) );
-	add_image_size( 'post-slide', 1170, 770, array( 'center', 'center' ) );
-	*/
+	add_image_size( 'app-image', 150 );
 
 	add_filter( 'jpeg_quality', 'image_full_quality' );
 	add_filter( 'wp_editor_set_quality', 'image_full_quality' );
