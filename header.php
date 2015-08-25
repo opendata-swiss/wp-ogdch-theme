@@ -32,14 +32,13 @@
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li><a href="<?php echo home_url(); ?>/dataset"><?php _e( 'Datasets', 'ogdch' ); ?></a></li>
-				<li><a href="<?php echo home_url(); ?>/group"><?php _e( 'Groups', 'ogdch' ); ?></a></li>
-				<li><a href="<?php echo home_url(); ?>/organization"><?php _e( 'Organizations', 'ogdch' ); ?></a></li>
-				<li><a href="<?php esc_attr_e( get_post_type_archive_link( 'app' ) ); ?>"><?php _e( 'Apps', 'ogdch' ); ?></a></li>
-			</ul>
-
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
+			<?php
+			wp_nav_menu( array(
+				'menu' => 'main_navigation',
+				'menu_class' => 'nav navbar-nav',
+			) );
+			?>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langauge <span class="caret"></span></a>
