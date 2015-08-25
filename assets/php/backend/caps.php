@@ -31,6 +31,7 @@ function add_theme_caps() {
 
 	$datenlieferant_caps = array(
 		'read'                    => true,
+		'upload_files'            => true,
 		'create_datasets'         => true,
 		'edit_datasets'           => true,
 		'edit_others_datasets'    => true,
@@ -43,6 +44,7 @@ function add_theme_caps() {
 
 	$data_owner_caps = array(
 		'read'                         => true,
+		'upload_files'                 => true,
 		'create_datasets'              => true,
 		'edit_datasets'                => true,
 		'edit_others_datasets'         => true,
@@ -61,17 +63,29 @@ function add_theme_caps() {
 	init_role( 'data-owner', 'Data Owner', $data_owner_caps );
 
 	$content_manager_caps = array(
-		'create_apps'           => true,
-		'delete_apps'           => true,
-		'delete_others_apps'    => true,
-		'delete_private_apps'   => true,
-		'delete_published_apps' => true,
-		'edit_apps'             => true,
-		'edit_others_apps'      => true,
-		'edit_private_apps'     => true,
-		'edit_published_apps'   => true,
-		'publish_apps'          => true,
-		'read_private_apps'     => true,
+		'read'                   => true,
+		'upload_files'           => true,
+		'create_apps'            => true,
+		'delete_apps'            => true,
+		'delete_others_apps'     => true,
+		'delete_private_apps'    => true,
+		'delete_published_apps'  => true,
+		'edit_apps'              => true,
+		'edit_others_apps'       => true,
+		'edit_private_apps'      => true,
+		'edit_published_apps'    => true,
+		'publish_apps'           => true,
+		'read_private_apps'      => true,
+		'delete_others_pages'    => true,
+		'delete_pages'           => true,
+		'delete_private_pages'   => true,
+		'delete_published_pages' => true,
+		'edit_others_pages'      => true,
+		'edit_pages'             => true,
+		'edit_private_pages'     => true,
+		'edit_published_pages'   => true,
+		'publish_pages'          => true,
+		'read_private_pages'     => true,
 	);
 	init_role( 'content-manager', 'Content Manager', $content_manager_caps );
 }
