@@ -65,6 +65,7 @@ function add_theme_caps() {
 	$content_manager_caps = array(
 		'read'                   => true,
 		'upload_files'           => true,
+		'edit_theme_options'     => true,
 		'create_apps'            => true,
 		'delete_apps'            => true,
 		'delete_others_apps'     => true,
