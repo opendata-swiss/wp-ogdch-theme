@@ -13,7 +13,9 @@
 	$args = array(
 		'post_type' => 'app',
 		'post_status' => 'publish',
+		// @codingStandardsIgnoreStart
 		'posts_per_page' => -1,
+		// @codingStandardsIgnoreEnd
 	);
 	// The Query
 	$app_query = new WP_Query( $args );
