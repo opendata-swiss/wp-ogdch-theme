@@ -24,7 +24,7 @@
 	if ( $app_query->have_posts() ) {
 		while ( $app_query->have_posts() ) {
 			$app_query->the_post();
-			get_template_part( 'partials/app', 'archive-entry' );
+			get_template_part( 'partials/app', 'entry' );
 		}
 	}
 	/* Restore original Post Data */

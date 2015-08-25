@@ -8,7 +8,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<?php get_template_part( 'partials/app', 'archive-entry' ); ?>
+		<?php get_template_part( 'partials/app', 'entry' ); ?>
 	</div>
 </div>
 

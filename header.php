@@ -35,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
 			<?php
 			wp_nav_menu( array(
-				'menu' => 'main_navigation',
+				'theme_location' => 'main_navigation',
 				'menu_class' => 'nav navbar-nav',
 			) );
 			?>
