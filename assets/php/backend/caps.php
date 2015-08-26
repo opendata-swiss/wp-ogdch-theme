@@ -99,7 +99,7 @@ function init_role( $role_name, $display_name, $caps ) {
 	$role = get_role( $role_name );
 	if ( is_object( $role ) ) {
 		// if role already exists -> reset
-		foreach ( $role->capabilities as $cap ) {
+		foreach ( array_keys( $role->capabilities ) as $cap ) {
 			$role->remove_cap( $cap );
 		}
 		foreach ( $caps as $cap => $allowed ) {
