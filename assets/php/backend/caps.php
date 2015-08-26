@@ -34,7 +34,6 @@ function add_theme_caps() {
 		'upload_files'            => true,
 		'create_datasets'         => true,
 		'edit_datasets'           => true,
-		'edit_others_datasets'    => true,
 		'edit_private_datasets'   => true,
 		'edit_published_datasets' => true,
 		'publish_datasets'        => true,
@@ -47,13 +46,11 @@ function add_theme_caps() {
 		'upload_files'                 => true,
 		'create_datasets'              => true,
 		'edit_datasets'                => true,
-		'edit_others_datasets'         => true,
 		'edit_private_datasets'        => true,
 		'edit_published_datasets'      => true,
 		'publish_datasets'             => true,
 		'read_private_datasets'        => true,
 		'edit_organisations'           => true,
-		'edit_others_organisations'    => true,
 		'edit_private_organisations'   => true,
 		'edit_published_organisations' => true,
 		'read_private_organisations'   => true,
@@ -105,8 +102,10 @@ function init_role( $role_name, $display_name, $caps ) {
 		foreach ( $role->capabilities as $cap ) {
 			$role->remove_cap( $cap );
 		}
-		foreach ( array_keys( $caps ) as $cap ) {
-			$role->add_cap( $cap );
+		foreach ( $caps as $cap => $allowed ) {
+			if( $allowed ) {
+				$role->add_cap( $cap );
+			}
 		}
 	} else {
 		add_role( $role_name, $display_name, $caps );
