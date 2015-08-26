@@ -6,7 +6,8 @@
 @import '_settings';
 @import 'mixins/bem';
 
-//@import 'external/grid';
+@import '../external/bootstrap-3.3.5/stylesheets/bootstrap';
+@import '../external/font-awesome-4.4.0/scss/font-awesome';
 
 @import 'elements/layout';
 
