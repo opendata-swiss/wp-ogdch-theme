@@ -103,7 +103,7 @@ function init_role( $role_name, $display_name, $caps ) {
 			$role->remove_cap( $cap );
 		}
 		foreach ( $caps as $cap => $allowed ) {
-			if( $allowed ) {
+			if ( $allowed ) {
 				$role->add_cap( $cap );
 			}
 		}
