@@ -51,7 +51,7 @@
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="<?php esc_attr_e( 'Search', 'ogdch' ); ?>">
 				</div>
-				<button type="submit" class="btn btn-default" aria-label="<?php esc_attr_e( 'Search', 'ogdch' ); ?>"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+				<button type="submit" class="btn btn-default" aria-label="<?php esc_attr_e( 'Search', 'ogdch' ); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
 			</form>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->

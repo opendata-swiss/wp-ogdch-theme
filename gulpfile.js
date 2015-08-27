@@ -34,6 +34,7 @@ gulp.task('scripts', function() {
         './assets/js/lib/URI.js',
         './assets/js/lib/jquery.URI.min.js',
         './assets/js/functions.js',
+        './assets/external/bootstrap-3.3.5/javascripts/bootstrap.js',
         './assets/js/app.js'
     ])
         .pipe(concat('app.min.js'))
