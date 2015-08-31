@@ -1,8 +1,8 @@
 <?php
-$icon_id = get_post_meta( get_the_ID(),  '_app-showcase-app_icon_id', true );
-$author_name = get_post_meta( get_the_ID(), '_app-showcase-app_author_name', true );
+$icon_id      = get_post_meta( get_the_ID(), '_app-showcase-app_icon_id', true );
+$author_name  = get_post_meta( get_the_ID(), '_app-showcase-app_author_name', true );
 $author_email = get_post_meta( get_the_ID(), '_app-showcase-app_author_email', true );
-$version = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
+$version      = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
 ?>
 
 <div class="row">
@@ -15,11 +15,11 @@ $version = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
 		<?php
 		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
 		echo '<p>';
-		echo 'Author: <a href="mailto:' . esc_attr( $author_email ) .'">' . esc_attr( $author_name ) . '</a>';
+		echo 'Author: <a href="mailto:' . esc_attr( $author_email ) . '">' . esc_attr( $author_name ) . '</a>';
 		echo ' | Version: ' . esc_attr( $version );
 		echo '</p>';
 		echo '<p>' . the_content() . '</p>';
-		if( is_archive() ) {
+		if ( is_archive() ) {
 			echo '<p><a href="' . esc_attr( get_permalink() ) . '">Details</a></p>';
 		}
 		?>
