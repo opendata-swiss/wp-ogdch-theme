@@ -9,6 +9,9 @@ function add_theme_caps() {
 		'organisations',
 		'apps',
 	);
+	$taxonomies = array(
+		'frequencies',
+	);
 	// Add all capabilities of plugin to administrator role (save in database) to make them visible in backend.
 	$admin_role = get_role( 'administrator' );
 	if ( is_object( $admin_role ) ) {
@@ -25,6 +28,12 @@ function add_theme_caps() {
 			$admin_role->add_cap( 'edit_published_' . $post_type );
 			$admin_role->add_cap( 'create_' . $post_type );
 		}
+		foreach ( $taxonomies as $taxonomy ) {
+			$admin_role->add_cap( 'manage_' . $taxonomy );
+			$admin_role->add_cap( 'edit_' . $taxonomy );
+			$admin_role->add_cap( 'delete_' . $taxonomy );
+			$admin_role->add_cap( 'assign_' . $taxonomy );
+		}
 
 		$admin_role->add_cap( 'edit_user_organisation' );
 	}
@@ -38,6 +47,7 @@ function add_theme_caps() {
 		'edit_published_datasets' => true,
 		'publish_datasets'        => true,
 		'read_private_datasets'   => true,
+		'edit_posts'             => true, // this cap is used to edit attachment details
 	);
 	init_role( 'datenlieferant', 'Datenlieferant', $datenlieferant_caps );
 
@@ -54,8 +64,7 @@ function add_theme_caps() {
 		'edit_private_organisations'   => true,
 		'edit_published_organisations' => true,
 		'read_private_organisations'   => true,
-		'edit_posts'                   => true,
-		// TODO why do we need to add this cap? (Without it we can't access the list view)
+		'edit_posts'                   => true, // TODO why do we need to add this cap? (Without it we can't access the list view)
 	);
 	init_role( 'data-owner', 'Data Owner', $data_owner_caps );
 
@@ -84,6 +93,7 @@ function add_theme_caps() {
 		'edit_published_pages'   => true,
 		'publish_pages'          => true,
 		'read_private_pages'     => true,
+		'edit_posts'             => true, // this cap is used to edit attachment details
 	);
 	init_role( 'content-manager', 'Content Manager', $content_manager_caps );
 }
@@ -139,6 +149,8 @@ function disable_default_roles( $roles ) {
 	return $roles;
 }
 
+// Create OGD-CH roles on theme change
 add_action( 'after_switch_theme', 'add_theme_caps' );
-// Disables default WordPress roles
+
+// Disable default WordPress roles
 add_filter( 'editable_roles', 'disable_default_roles' );
