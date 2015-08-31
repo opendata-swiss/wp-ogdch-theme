@@ -9,6 +9,9 @@ function add_theme_caps() {
 		'organisations',
 		'apps',
 	);
+	$taxonomies = array(
+		'frequencies',
+	);
 	// Add all capabilities of plugin to administrator role (save in database) to make them visible in backend.
 	$admin_role = get_role( 'administrator' );
 	if ( is_object( $admin_role ) ) {
@@ -24,6 +27,12 @@ function add_theme_caps() {
 			$admin_role->add_cap( 'edit_private_' . $post_type );
 			$admin_role->add_cap( 'edit_published_' . $post_type );
 			$admin_role->add_cap( 'create_' . $post_type );
+		}
+		foreach ( $taxonomies as $taxonomy ) {
+			$admin_role->add_cap( 'manage_' . $taxonomy );
+			$admin_role->add_cap( 'edit_' . $taxonomy );
+			$admin_role->add_cap( 'delete_' . $taxonomy );
+			$admin_role->add_cap( 'assign_' . $taxonomy );
 		}
 
 		$admin_role->add_cap( 'edit_user_organisation' );
