@@ -19,7 +19,9 @@ $version = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
 		echo ' | Version: ' . esc_attr( $version );
 		echo '</p>';
 		echo '<p>' . the_content() . '</p>';
-		echo '<p><a href="' . esc_attr( get_permalink() ) . '">Details</a></p>';
+		if( is_archive() ) {
+			echo '<p><a href="' . esc_attr( get_permalink() ) . '">Details</a></p>';
+		}
 		?>
 	</div>
 </div>
