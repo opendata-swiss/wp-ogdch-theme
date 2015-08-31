@@ -140,6 +140,20 @@ function disable_default_roles( $roles ) {
 	return $roles;
 }
 
+/**
+ * Changes the needed role to regenerate thumbnails to edit_posts (= edit_thumbnails)
+ *
+ * @return string
+ */
+function change_regenerate_thumbs_cap() {
+	return 'edit_posts';
+}
+
+// Create OGD-CH roles on theme change
 add_action( 'after_switch_theme', 'add_theme_caps' );
-// Disables default WordPress roles
+
+// Disable default WordPress roles
 add_filter( 'editable_roles', 'disable_default_roles' );
+
+// change needed role to regenerate thumbnails
+add_filter( 'regenerate_thumbs_cap', 'change_regenerate_thumbs_cap' );
