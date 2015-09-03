@@ -94,6 +94,7 @@ function add_theme_caps() {
 		'publish_pages'          => true,
 		'read_private_pages'     => true,
 		'edit_posts'             => true, // this cap is used to edit attachment details
+		'edit_others_posts'      => true, // this cap is used to edit attachment details
 	);
 	init_role( 'content-manager', 'Content Manager', $content_manager_caps );
 }
