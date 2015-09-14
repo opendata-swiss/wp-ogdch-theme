@@ -47,7 +47,7 @@ function add_theme_caps() {
 		'edit_published_datasets' => true,
 		'publish_datasets'        => true,
 		'read_private_datasets'   => true,
-		'edit_posts'             => true, // this cap is used to edit attachment details
+		'edit_posts'              => true, // this cap is used to edit attachment details
 	);
 	init_role( 'datenlieferant', 'Datenlieferant', $datenlieferant_caps );
 
@@ -64,7 +64,10 @@ function add_theme_caps() {
 		'edit_private_organisations'   => true,
 		'edit_published_organisations' => true,
 		'read_private_organisations'   => true,
-		'edit_posts'                   => true, // TODO why do we need to add this cap? (Without it we can't access the list view)
+		'edit_posts'                   => true, // this cap is used to edit attachment details, (Without it we also can't access the list view)
+		'edit_others_posts'            => true, // this cap is used to edit attachment details
+		'delete_posts'                 => true, // this cap is used to delete attachments
+		'delete_others_posts'          => true, // this cap is used to delete attachments
 	);
 	init_role( 'data-owner', 'Data Owner', $data_owner_caps );
 
