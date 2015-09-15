@@ -68,6 +68,8 @@ function add_theme_caps() {
 		'edit_others_posts'            => true, // this cap is used to edit attachment details
 		'delete_posts'                 => true, // this cap is used to delete attachments
 		'delete_others_posts'          => true, // this cap is used to delete attachments
+		'list_users'                   => true,
+		'edit_users'                   => true,
 	);
 	init_role( 'data-owner', 'Data Owner', $data_owner_caps );
 
