@@ -11,9 +11,13 @@
 @import 'responsive_alignment';
 
 /* some bootstrap overrides -> maybe remove later */
-.navbar-brand span {
-  color: $brand-primary;
+.navbar-brand {
+  font-weight: 600;
+  span {
+    color: $brand-primary;
+  }
 }
+
 .btn-default.active,
 .btn-default:active,
 .btn-default:hover,
