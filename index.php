@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<p><strong>Open Government Data Switzerland</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-				<button class="btn btn-primary" type="submit">Learn more about opendata.swiss</button>
+				<a class="btn btn-primary" href="/faq" role="button">Learn more about opendata.swiss</a>
 			</div>
 			<div class="col-lg-8 headline text-right">
 				<div id="opendata-count">1'412</div>
@@ -55,6 +55,8 @@
 				</div>
 			<?php endwhile; wp_reset_query(); ?>
 		</div>
+
+		<hr />
 	</section>
 
 	<!-- How -->
@@ -91,6 +93,8 @@
 				</div>
 			</div>
 		</div>
+
+		<hr />
 	</section>
 
 	<!-- Trending -->
@@ -150,7 +154,5 @@
 		</div>
 	</section>
 </div>
-
-
 
 <?php get_footer(); ?>

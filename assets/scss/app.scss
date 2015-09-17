@@ -3,19 +3,10 @@
  * =======================================================================
  */
 
-@import 'settings';
-@import 'mixins/bem';
-
 @import '../external/bootstrap-3.3.5/css/bootstrap.css';
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic);
 @import '../external/font-awesome-4.4.0/scss/font-awesome';
-
-@import 'elements/layout';
-
-
-@import 'typo/baseline';
-@import 'typo/headings';
-@import 'typo/text';
+@import 'settings';
 
 /* some bootstrap overrides -> maybe remove later */
 .navbar-brand span {
@@ -28,6 +19,10 @@
   background-color: #109c81;
   border-color: #109c81;
   color: #fff;
+}
+hr {
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .attachment-app-image {
@@ -58,10 +53,6 @@ header {
   margin-top: 35px;
 }
 
-section {
-  margin-bottom: 35px;
-}
-
 #explore {
   input {
     width: 300px;
@@ -86,8 +77,7 @@ section {
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 60px;
   color: $footer-color;
   background: $footer-bg-color;
-  padding: 10px;
 }
