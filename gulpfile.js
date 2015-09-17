@@ -31,8 +31,6 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        './assets/js/lib/URI.js',
-        './assets/js/lib/jquery.URI.min.js',
         './assets/external/FitText.js-1.2.0/jquery.fittext.js',
         './assets/js/functions.js',
         './assets/external/bootstrap-sass-3.3.5/assets/javascripts/bootstrap.js',

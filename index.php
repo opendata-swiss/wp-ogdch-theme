@@ -24,10 +24,10 @@
 			</div>
 			<div class="col-md-6 text-md-right">
 				<form class="form-inline h2-vertical-center" action="/dataset" role="search">
-					<div class="form-group">
+					<div class="form-group has-feedback">
 						<input type="search" class="form-control" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
+						<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
 					</div>
-					<button type="submit" class="btn btn-primary" aria-label="<?php esc_attr_e( 'Search', 'ogdch' ); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
 				</form>
 			</div>
 		</div>
@@ -44,14 +44,35 @@
 				'post_type' => 'ckan-local-group',
 				'posts_per_page' => -1,
 			);
-			$groups_query = new WP_Query( $args );
+			$groups = new WP_Query( $args );
+			$current_post = 1;
+			$shown_groups = 12;
 			?>
-			<?php while ( $groups_query->have_posts() ) : $groups_query->the_post(); ?>
+
+			<?php while ( $groups->have_posts() ) : $groups->the_post(); ?>
+				<?php if ( $current_post === $shown_groups + 1 ): ?>
+					<div class="collapse" id="collapsed-category">
+				<?php endif; ?>
 				<div class="col-md-3 col-sm-6">
 					<h4><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a> 12</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
+				<?php if ( $groups->found_posts > $shown_groups && ($current_post === $groups->found_posts) ): ?>
+					</div>
+				<?php endif; ?>
+
+				<?php $current_post++; ?>
 			<?php endwhile; wp_reset_query(); ?>
+
+			<?php if ( $groups->found_posts > $shown_groups ): ?>
+				<div class="col-sm-12">
+					<p>
+						<a class="btn btn-primary" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
+							Weitere Kateogrien
+						</a>
+					</p>
+				</div>
+			<?php endif; ?>
 		</div>
 
 		<hr />

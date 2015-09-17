@@ -17,13 +17,16 @@
     color: $brand-primary;
   }
 }
+.input-group-addon {
+  background-color: $brand-primary;
+}
 
 .btn-default.active,
 .btn-default:active,
 .btn-default:hover,
 .open>.dropdown-toggle.btn-default {
-  background-color: #109c81;
-  border-color: #109c81;
+  background-color: $brand-primary;
+  border-color: $brand-primary;
   color: #fff;
 }
 hr {
@@ -62,6 +65,9 @@ header {
 #explore {
   input {
     width: 300px;
+  }
+  .input-group-addon {
+    color: #fff;
   }
 }
 
