@@ -3,10 +3,11 @@
  * =======================================================================
  */
 
-@import '_settings';
+@import 'settings';
 @import 'mixins/bem';
 
-@import '../external/bootstrap-3.3.5/stylesheets/bootstrap';
+@import '../external/bootstrap-3.3.5/css/bootstrap.css';
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic);
 @import '../external/font-awesome-4.4.0/scss/font-awesome';
 
 @import 'elements/layout';
@@ -16,19 +17,42 @@
 @import 'typo/headings';
 @import 'typo/text';
 
-a {
-  color: $link-color;
-
-  &:hover, &:active, &:focus {
-    color: darken($link-color, 10%);
-    text-decoration: none;
-  }
-}
-
 .navbar-brand span {
   color: $link-color;
 }
 
 .attachment-app-image {
   margin-top: 15px;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .headline {
+    font-size: 60px;
+    font-weight: 600;
+    #opendata-count {
+      margin-top: -30px;
+      font-size: 200px;
+      line-height: 200px;
+    }
+    .title {
+      line-height: 40px;
+    }
+    img {
+      width: 50px;
+    }
+  }
+}
+
+#explore {
+  form {
+    padding-top: 40px;
+  }
+}
+
+footer {
+  color: $footer-color;
+  background: $footer-bg-color;
+  padding: 10px;
 }

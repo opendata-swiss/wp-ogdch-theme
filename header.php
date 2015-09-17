@@ -19,7 +19,7 @@
 <body <?php body_class(); ?>>
 
 <nav class="navbar navbar-default">
-	<div class="container-fluid">
+	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -36,23 +36,9 @@
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'main_navigation',
-				'menu_class' => 'nav navbar-nav',
+				'menu_class' => 'nav navbar-nav navbar-right',
 			) );
 			?>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langauge <span class="caret"></span></a>
-					<ul class="dropdown-menu" role="menu">
-						<?php pll_the_languages( array( 'show_flags' => 1 ) ); ?>
-					</ul>
-				</li>
-			</ul>
-			<form class="navbar-form navbar-right" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="<?php esc_attr_e( 'Search', 'ogdch' ); ?>">
-				</div>
-				<button type="submit" class="btn btn-default" aria-label="<?php esc_attr_e( 'Search', 'ogdch' ); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
-			</form>
 		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+	</div><!-- /.container -->
 </nav>
