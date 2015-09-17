@@ -35,7 +35,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-sm-3 col-xs-12">
 				<h3>Data Categories</h3>
 			</div>
 		</div>
@@ -57,7 +57,6 @@
 		</div>
 	</section>
 
-
 	<!-- How -->
 	<section id="how" class="container">
 		<div class="row">
@@ -70,7 +69,84 @@
 		</div>
 
 		<div class="row">
+			<div class="col-lg-4 step">
+				<div class="number">1</div>
+				<div class="description">
+					<h3><a href="#">Find Data</a></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 step">
+				<div class="number">2</div>
+				<div class="description">
+					<h3><a href="#">Use Data</a></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 step">
+				<div class="number">3</div>
+				<div class="description">
+					<h3><a href="#">Share App</a></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<!-- Trending -->
+	<section id="trending" class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>What's trending now</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4">
+				<h3>Popular Datasets</h3>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<h3>Active Publishers</h3>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<h3>Latest Applications</h3>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="dataset-teaser">
+					<h4><a href="#">List group item heading</a></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 </div>
