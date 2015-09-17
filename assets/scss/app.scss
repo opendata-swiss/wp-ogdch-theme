@@ -17,8 +17,17 @@
 @import 'typo/headings';
 @import 'typo/text';
 
+/* some bootstrap overrides -> maybe remove later */
 .navbar-brand span {
   color: $link-color;
+}
+.btn-default.active,
+.btn-default:active,
+.btn-default:hover,
+.open>.dropdown-toggle.btn-default {
+  background-color: #109c81;
+  border-color: #109c81;
+  color: #fff;
 }
 
 .attachment-app-image {
@@ -27,7 +36,7 @@
 
 header {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   .headline {
     font-size: 60px;
     font-weight: 600;
@@ -53,18 +62,26 @@ section {
   margin-bottom: 35px;
 }
 
-.number {
-  float: left;
-  font-size: 80px;
-  line-height: 80px;
-  font-weight: 600;
-  width: 65px;
+#explore {
+  input {
+    width: 300px;
+  }
 }
-.description {
-  overflow:hidden;
 
-  h3 {
-    margin-top: 10px;
+#how {
+  .number {
+    float: left;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    width: 65px;
+  }
+  .description {
+    overflow:hidden;
+
+    h3 {
+      margin-top: 10px;
+    }
   }
 }
 

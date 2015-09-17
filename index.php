@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<p><strong>Open Government Data Switzerland</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-				<button class="btn btn-default" type="submit">Learn more about opendata.swiss</button>
+				<button class="btn btn-primary" type="submit">Learn more about opendata.swiss</button>
 			</div>
 			<div class="col-lg-8 headline text-right">
 				<div id="opendata-count">1'412</div>
@@ -21,15 +21,15 @@
 	<!-- Explore -->
 	<section id="explore" class="container">
 		<div class="row">
-			<div class="col-lg-9">
+			<div class="col-lg-8">
 				<h2>What you can find</h2>
 			</div>
-			<div class="col-lg-3 text-right">
-				<form class="form-inline h2-vertical-center" role="search">
+			<div class="col-lg-4 text-right">
+				<form class="form-inline h2-vertical-center" action="/dataset" role="search">
 					<div class="form-group">
-						<input type="search" class="form-control" id="s" name="s" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
+						<input type="search" class="form-control" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
 					</div>
-					<button type="submit" class="btn btn-default" aria-label="<?php esc_attr_e( 'Search', 'ogdch' ); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
+					<button type="submit" class="btn btn-primary" aria-label="<?php esc_attr_e( 'Search', 'ogdch' ); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
 				</form>
 			</div>
 		</div>
@@ -64,7 +64,7 @@
 				<h2>How you can build</h2>
 			</div>
 			<div class="col-lg-3 text-right">
-				<a class="btn btn-primary h2-vertical-center" href="#" role="button">Read our FAQ</a>
+				<a class="btn btn-primary h2-vertical-center" href="/faq" role="button">Read our FAQ</a>
 			</div>
 		</div>
 
