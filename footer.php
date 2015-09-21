@@ -8,13 +8,13 @@
 		</div>
 		<div class="col-md-3">
 			<div class="statsnumber">
-				24 <i class="fa fa-users"></i>
+				<?php echo wp_count_posts( 'ckan-local-org' )->publish; ?> <i class="fa fa-users"></i>
 			</div>
 			<p>Data Publishers</p>
 		</div>
 		<div class="col-md-3">
 			<div class="statsnumber">
-				7 <i class="fa fa-puzzle-piece"></i>
+				<?php echo get_localized_post_count( 'app' ); ?> <i class="fa fa-puzzle-piece"></i>
 			</div>
 			<p>Built Applications</p>
 		</div>

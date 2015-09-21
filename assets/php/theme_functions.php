@@ -35,3 +35,12 @@ function add_class_to_current_item($classes, $item){
 function get_page_link_by_slug($slug) {
 	return '/' . pll_current_language() . '/' . $slug;
 }
+
+function get_localized_post_count( $post_type ) {
+	$args = array(
+		'post_type' => $post_type,
+		'posts_per_page' => -1,
+	);
+	$posts = new WP_Query( $args );
+	return $posts->found_posts;
+}
