@@ -148,7 +148,11 @@ footer {
     margin-bottom: 40px;
   }
   .btn {
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &.last {
+      margin-right: 0;
+    }
   }
   .btn-default {
     color: $inverted-text-color;
@@ -159,5 +163,9 @@ footer {
   .statsnumber {
     font-size: 40px;
     line-height: 46px;
+  }
+
+  li {
+    margin-bottom: 12px;
   }
 }

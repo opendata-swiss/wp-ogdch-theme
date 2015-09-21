@@ -1,24 +1,24 @@
 <footer class="container">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
 				1'412 <i class="fa fa-files-o"></i>
 			</div>
 			<p>Open Datasets</p>
 		</div>
-		<div class="col-md-3">
+		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
 				<?php echo wp_count_posts( 'ckan-local-org' )->publish; ?> <i class="fa fa-users"></i>
 			</div>
 			<p>Data Publishers</p>
 		</div>
-		<div class="col-md-3">
+		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
 				<?php echo get_localized_post_count( 'app' ); ?> <i class="fa fa-puzzle-piece"></i>
 			</div>
 			<p>Built Applications</p>
 		</div>
-		<div class="col-md-3">
+		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
 				157 <i class="fa fa-twitter"></i>
 			</div>
@@ -26,16 +26,16 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-xs-4">
 			<p class="lead">What about you?</p>
 		</div>
-		<div class="col-md-6 text-right">
+		<div class="col-xs-8 text-md-right">
 			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">How do I publish open data?</a>
-			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">How to share the App I built?</a>
+			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">How to share the App I built?</a>
 		</div>
 	</div>
 	<div id="info" class="row">
-		<div class="col-md-2">
+		<div class="col-md-2 col-xs-4">
 			<div class="btn-group">
 				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<?php echo pll_current_language( 'name' ); ?> <span class="caret"></span>
@@ -45,23 +45,32 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 col-xs-8">
 			<p>Lorem ipsum dolor sit amet ea ius soluta nusquam constituto. Lorem ipsum dolor sit amet ea ius soluta nusquam constituto</p>
 		</div>
-		<div class="sitemap col-md-2">
-			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>">About</a></p>
-			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>">FAQ</a></p>
-			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>">Contact</a></p>
+		<div class="col-md-2 col-xs-4">
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'about_navigation',
+				'menu_class'     => 'list-unstyled',
+			) );
+			?>
 		</div>
-		<div class="sitemap col-md-2">
-			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>">Data</a></p>
-			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>">Publishers</a></p>
-			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>">Apps</a></p>
+		<div class="col-md-2 col-xs-4">
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'data_navigation',
+				'menu_class'     => 'list-unstyled',
+			) );
+			?>
 		</div>
-		<div class="sitemap col-md-2">
-			<p><a href="#">API</a></p>
-			<p><a href="#">Source Code</a></p>
-			<p><a href="#">Legal Terms</a></p>
+		<div class="col-md-2 col-xs-4">
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'developer_navigation',
+				'menu_class'     => 'list-unstyled',
+			) );
+			?>
 		</div>
 	</div>
 </footer>
