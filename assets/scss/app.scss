@@ -12,14 +12,23 @@
 @import 'responsive_alignment';
 
 /* some bootstrap overrides -> maybe remove later */
-.navbar-brand {
-  font-weight: 600;
-  span {
-    color: $brand-primary;
+#main-navigation {
+  &.navbar-default .navbar-nav>li.search>a {
+    color: $link-color;
   }
-}
-.input-group-addon {
-  background-color: $brand-primary;
+  &.navbar-default .navbar-nav>li.search>a:focus,
+  &.navbar-default .navbar-nav>li.search>a:hover {
+    color: $link-hover-color;
+  }
+  h1 {
+    margin: 0;
+  }
+  .navbar-brand {
+    font-weight: 600;
+    span {
+      color: $brand-primary;
+    }
+  }
 }
 
 .btn-default {
@@ -58,14 +67,6 @@ hr {
 
 .attachment-app-image {
   margin-top: 15px;
-}
-
-.navbar-default .navbar-nav>li.search>a {
-  color: $link-color;
-}
-.navbar-default .navbar-nav>li.search>a:focus,
-.navbar-default .navbar-nav>li.search>a:hover {
-  color: $link-hover-color;
 }
 
 header {
