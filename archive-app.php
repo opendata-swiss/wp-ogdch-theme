@@ -4,10 +4,16 @@
 <div class="container">
 
 	<div class="row">
-		<div class="col-lg-12">
-			<h1 class="page-header">Apps... Yay!</h1>
+		<div class="col-xs-12">
+			<h1><?php post_type_archive_title(); ?></h1>
+		</div>
+		<div class="col-xs-12">
+			<p>Did you build an App with Data listed in our catalogue and would like to share it with us?</p>
+			<a class="btn btn-default" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button">Contact us</a>
 		</div>
 	</div>
+
+	<hr />
 
 	<?php
 	$args = array(
