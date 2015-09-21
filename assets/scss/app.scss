@@ -7,6 +7,7 @@
 @import '../external/font-awesome-4.4.0/scss/font-awesome';
 
 @import 'bootstrap_variables';
+@import 'variables';
 @import '../external/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap';
 @import 'responsive_alignment';
 
@@ -21,14 +22,35 @@
   background-color: $brand-primary;
 }
 
-.btn-default.active,
-.btn-default:active,
-.btn-default:hover,
-.open>.dropdown-toggle.btn-default {
-  background-color: $brand-primary;
-  border-color: $brand-primary;
-  color: #fff;
+.btn-default {
+  &:focus,
+  &.focus {
+    color: #fff;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: #fff;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: #fff;
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
 }
+
 hr {
   margin-top: 70px;
   margin-bottom: 40px;
@@ -36,6 +58,14 @@ hr {
 
 .attachment-app-image {
   margin-top: 15px;
+}
+
+.navbar-default .navbar-nav>li.search>a {
+  color: $link-color;
+}
+.navbar-default .navbar-nav>li.search>a:focus,
+.navbar-default .navbar-nav>li.search>a:hover {
+  color: $link-hover-color;
 }
 
 header {
@@ -69,6 +99,16 @@ header {
   .input-group-addon {
     color: #fff;
   }
+  .category {
+    height: 120px;
+    overflow: hidden;
+
+    h4 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
 }
 
 #how {
@@ -90,9 +130,32 @@ header {
 
 footer {
   margin-top: 60px;
-  color: #fff;
+  color: $inverted-text-color;
   background: $text-color;
   box-shadow: 0px 1000px 0px 1000px $text-color;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  a {
+    color: $inverted-link-color;
+
+    &:hover {
+      color: $inverted-link-color;
+    }
+  }
+  .row {
+    margin-bottom: 20px;
+  }
+  .btn {
+    margin-left: 10px;
+  }
+  .btn-default {
+    color: $inverted-text-color;
+    background-color: $text-color;
+    border-color: $inverted-btn-default-color;
+  }
+}
+.statsnumber {
+  font-size: 40px;
+  line-height: 46px;
 }
