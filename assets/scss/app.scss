@@ -120,7 +120,7 @@ header {
     width: 65px;
   }
   .description {
-    overflow:hidden;
+    overflow: hidden;
 
     h3 {
       margin-top: 10px;
@@ -144,7 +144,7 @@ footer {
     }
   }
   .row {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .btn {
     margin-left: 10px;
@@ -154,8 +154,9 @@ footer {
     background-color: $text-color;
     border-color: $inverted-btn-default-color;
   }
-}
-.statsnumber {
-  font-size: 40px;
-  line-height: 46px;
+
+  .statsnumber {
+    font-size: 40px;
+    line-height: 46px;
+  }
 }
