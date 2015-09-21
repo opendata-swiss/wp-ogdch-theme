@@ -30,8 +30,8 @@
 			<p class="lead">What about you?</p>
 		</div>
 		<div class="col-md-6 text-right">
-			<a class="btn btn-primary" href="<?php echo get_page_link( 'faq' ); ?>" role="button">How do I publish open data?</a>
-			<a class="btn btn-primary" href="app" role="button">How to share the App I built?</a>
+			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">How do I publish open data?</a>
+			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">How to share the App I built?</a>
 		</div>
 	</div>
 	<div id="info" class="row">
@@ -49,14 +49,14 @@
 			<p>Lorem ipsum dolor sit amet ea ius soluta nusquam constituto. Lorem ipsum dolor sit amet ea ius soluta nusquam constituto</p>
 		</div>
 		<div class="sitemap col-md-2">
-			<p><a href="#">About</a></p>
-			<p><a href="#">FAQ</a></p>
-			<p><a href="#">Contact</a></p>
+			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>">About</a></p>
+			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>">FAQ</a></p>
+			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>">Contact</a></p>
 		</div>
 		<div class="sitemap col-md-2">
-			<p><a href="#">Data</a></p>
-			<p><a href="#">Publishers</a></p>
-			<p><a href="#">Apps</a></p>
+			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>">Data</a></p>
+			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>">Publishers</a></p>
+			<p><a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>">Apps</a></p>
 		</div>
 		<div class="sitemap col-md-2">
 			<p><a href="#">API</a></p>

@@ -31,3 +31,7 @@ function add_class_to_current_item($classes, $item){
 	}
 	return $classes;
 }
+
+function get_page_link_by_slug($slug) {
+	return '/' . pll_current_language() . '/' . $slug;
+}
