@@ -1,8 +1,12 @@
+<?php
+global $dataset_total_count;
+?>
+
 <footer class="container">
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
-				1'412 <i class="fa fa-files-o"></i>
+				<?php echo $dataset_total_count; ?> <i class="fa fa-files-o"></i>
 			</div>
 			<p>Open Datasets</p>
 		</div>

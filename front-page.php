@@ -54,38 +54,42 @@
 
 			<div class="row">
 				<?php
-				$args         = array(
-					'post_type'      => 'ckan-local-group',
-					'posts_per_page' => - 1,
-				);
-				$groups       = new WP_Query( $args );
 				$current_post = 1;
 				$shown_groups = 12;
-				?>
+				$group_count  = count( $dataset_count['groups'] );
 
-				<?php while ( $groups->have_posts() ) : $groups->the_post(); ?>
+				foreach( $dataset_count['groups'] as $group_name => $count ) {
+					$args = array(
+						'meta_key' => '_ckan_local_group_ckan_name',
+						'meta_value' => $group_name,
+						'post_type' => 'ckan-local-group',
+						'post_status' => 'published',
+						'posts_per_page' => 1
+					);
+					$groups = get_posts($args);
+					print_r($group);
+					?>
 					<?php if ( $current_post === $shown_groups + 1 ): ?>
 						<div class="collapse" id="collapsed-category">
 					<?php endif; ?>
 					<div class="col-md-3 col-sm-6 category">
 						<?php
-						$ckan_name = get_post_meta( get_the_ID(), '_ckan_local_group_ckan_name', true );
-						$title     = get_localized_meta( get_the_ID(), '_ckan_local_group_title_' );
-						$count     = $dataset_count['groups'][$ckan_name];
+						$ckan_name = get_post_meta( $groups[0]->ID, '_ckan_local_group_ckan_name', true );
+						$title     = get_localized_meta( $groups[0]->ID, '_ckan_local_group_title_' );
 						?>
 						<h4>
 							<a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php echo $title; ?></a> <?php echo $count; ?>
 						</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
-					<?php if ( $groups->found_posts > $shown_groups && ( $current_post === $groups->found_posts ) ): ?>
+					<?php if ( $group_count > $shown_groups && ( $current_post === $group_count ) ): ?>
 						</div>
 					<?php endif; ?>
 
 					<?php $current_post ++; ?>
-				<?php endwhile; wp_reset_query(); ?>
+				<?php } ?>
 
-				<?php if ( $groups->found_posts > $shown_groups ): ?>
+				<?php if ( $group_count > $shown_groups ): ?>
 					<div class="col-sm-12">
 						<p>
 							<a class="btn btn-primary" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
