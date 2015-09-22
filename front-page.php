@@ -32,11 +32,11 @@
 		<!-- Explore -->
 		<section id="explore" class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-8">
 					<h2>What you can find</h2>
 				</div>
-				<div class="col-md-6 text-md-right">
-					<form class="form-inline h2-vertical-center" action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
+				<div class="col-md-4 text-md-right">
+					<form class="h2-vertical-center" action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
 						<div class="form-group has-feedback">
 							<input type="search" class="form-control" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
 							<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
