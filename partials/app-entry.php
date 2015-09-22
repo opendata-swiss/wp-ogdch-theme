@@ -4,13 +4,17 @@ $author_name  = get_post_meta( get_the_ID(), '_app-showcase-app_author_name', tr
 $author_email = get_post_meta( get_the_ID(), '_app-showcase-app_author_email', true );
 $version      = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
 $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', true );
+$icon_attributes = wp_get_attachment_image_src( $icon_id, 'full' );
+if( $icon_attributes ) {
+	$icon_src = $icon_attributes[0];
+} else {
+	$icon_src = '/content/themes/wp-ogdch-theme/assets/images/no_image_available.png';
+}
 ?>
 
 <div class="row">
 	<div class="col-md-3">
-		<?php
-		echo wp_get_attachment_image( $icon_id, 'app-image' );
-		?>
+		<img src="<?php echo $icon_src; ?>" class="img-responsive" />
 	</div>
 	<div class="col-md-9">
 		<?php
