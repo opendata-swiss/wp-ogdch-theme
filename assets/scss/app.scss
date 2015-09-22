@@ -147,6 +147,10 @@ footer {
     &.last {
       margin-right: 0;
     }
+    &.dropdown-toggle {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   }
   .btn-default {
     color: $inverted-text-color;
