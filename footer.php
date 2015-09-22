@@ -26,10 +26,10 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-xs-4">
+		<div class="col-sm-4">
 			<p class="lead">What about you?</p>
 		</div>
-		<div class="col-xs-8 text-md-right">
+		<div class="col-sm-8 text-md-right">
 			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">How do I publish open data?</a>
 			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">How to share the App I built?</a>
 		</div>
