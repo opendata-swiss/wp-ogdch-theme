@@ -41,7 +41,7 @@
 					<?php echo pll_current_language( 'name' ); ?> <span class="caret"></span>
 				</button>
 				<ul class="dropdown-menu" role="menu">
-					<?php pll_the_languages(); ?>
+					<?php pll_the_languages( array( 'hide_current' => true ) ); ?>
 				</ul>
 			</div>
 		</div>
