@@ -5,14 +5,15 @@
 		<div class="row">
 			<div class="col-md-4">
 				<?php
-				$endpoint = CKAN_API_ENDPOINT . 'action/dataset_count';
-				$response = Ckan_Backend_Helper::do_api_request($endpoint);
+				$endpoint = CKAN_API_ENDPOINT . 'action/ogdch_dataset_count';
+				$response = Ckan_Backend_Helper::do_api_request( $endpoint );
 				$errors   = Ckan_Backend_Helper::check_response_for_errors( $response );
 
-				if( count( $errors ) === 0 ) {
-					$dataset_count = $response['result'];
+				if ( 0 === count( $errors ) ) {
+					$dataset_count       = $response['result'];
 					$dataset_total_count = $dataset_count['total_count'];
 				} else {
+					$dataset_count       = array();
 					$dataset_total_count = 0;
 				}
 
@@ -23,7 +24,7 @@
 			<div class="col-md-8 headline text-md-right">
 				<div id="opendata-count"><?php echo number_format_i18n( $dataset_total_count ); ?></div>
 				<div class="title">opendata</div>
-				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIj4NCjxwYXRoIGZpbGw9IiNkNTJiMWUiIGQ9Im0wLDBoMzIwdjMyMGgtMzIweiIvPg0KPGcgZmlsbD0iI2ZmZiI+DQo8cGF0aCBkPSJtNjAsMTMwaDIwMHY2MGgtMjAweiIvPg0KPHBhdGggZD0ibTEzMCw2MGg2MHYyMDBoLTYweiIvPg0KPC9nPg0KPC9zdmc+DQo=" />
+				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIj4NCjxwYXRoIGZpbGw9IiNkNTJiMWUiIGQ9Im0wLDBoMzIwdjMyMGgtMzIweiIvPg0KPGcgZmlsbD0iI2ZmZiI+DQo8cGF0aCBkPSJtNjAsMTMwaDIwMHY2MGgtMjAweiIvPg0KPHBhdGggZD0ibTEzMCw2MGg2MHYyMDBoLTYweiIvPg0KPC9nPg0KPC9zdmc+DQo="/>
 			</div>
 		</div>
 	</header>
@@ -53,11 +54,11 @@
 
 			<div class="row">
 				<?php
-				$args = array(
-					'post_type' => 'ckan-local-group',
-					'posts_per_page' => -1,
+				$args         = array(
+					'post_type'      => 'ckan-local-group',
+					'posts_per_page' => - 1,
 				);
-				$groups = new WP_Query( $args );
+				$groups       = new WP_Query( $args );
 				$current_post = 1;
 				$shown_groups = 12;
 				?>
@@ -69,23 +70,19 @@
 					<div class="col-md-3 col-sm-6 category">
 						<?php
 						$ckan_name = get_post_meta( get_the_ID(), '_ckan_local_group_ckan_name', true );
-						$title = get_localized_meta( get_the_ID(), '_ckan_local_group_title_' );
-						// TODO @odi please provide a better result from CKAN!
-						foreach($dataset_count['groups'] as $group) {
-							if($group['name'] === $ckan_name) {
-								$count = $group['count'];
-								break;
-							}
-						}
+						$title     = get_localized_meta( get_the_ID(), '_ckan_local_group_title_' );
+						$count     = $dataset_count['groups'][$ckan_name];
 						?>
-						<h4><a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php echo $title; ?></a> <?php echo $count; ?></h4>
+						<h4>
+							<a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php echo $title; ?></a> <?php echo $count; ?>
+						</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
-					<?php if ( $groups->found_posts > $shown_groups && ($current_post === $groups->found_posts) ): ?>
+					<?php if ( $groups->found_posts > $shown_groups && ( $current_post === $groups->found_posts ) ): ?>
 						</div>
 					<?php endif; ?>
 
-					<?php $current_post++; ?>
+					<?php $current_post ++; ?>
 				<?php endwhile; wp_reset_query(); ?>
 
 				<?php if ( $groups->found_posts > $shown_groups ): ?>
@@ -99,7 +96,7 @@
 				<?php endif; ?>
 			</div>
 
-			<hr />
+			<hr/>
 		</section>
 
 		<!-- How -->
@@ -118,6 +115,7 @@
 					<div class="number">1</div>
 					<div class="description">
 						<h3><a href="#">Find Data</a></h3>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
@@ -125,6 +123,7 @@
 					<div class="number">2</div>
 					<div class="description">
 						<h3><a href="#">Use Data</a></h3>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
@@ -132,12 +131,13 @@
 					<div class="number">3</div>
 					<div class="description">
 						<h3><a href="#">Share App</a></h3>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 			</div>
 
-			<hr />
+			<hr/>
 		</section>
 
 		<!-- Trending -->
@@ -151,46 +151,58 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-6">
 					<h3>Popular Datasets</h3>
+
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<h3>Active Publishers</h3>
+
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<h3>Latest Applications</h3>
+
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
+
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
