@@ -13,10 +13,10 @@ if( $icon_attributes ) {
 ?>
 
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-sm-3 h2-vertical-center">
 		<img src="<?php echo $icon_src; ?>" class="img-responsive" />
 	</div>
-	<div class="col-md-9">
+	<div class="col-sm-9">
 		<?php
 		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
 		echo '<p class="small">';
