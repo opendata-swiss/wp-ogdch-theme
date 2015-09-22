@@ -7,12 +7,12 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 ?>
 
 <div class="row">
-	<div class="col-lg-2">
+	<div class="col-md-3">
 		<?php
 		echo wp_get_attachment_image( $icon_id, 'app-image' );
 		?>
 	</div>
-	<div class="col-lg-10">
+	<div class="col-md-9">
 		<?php
 		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
 		echo '<p class="small">';
