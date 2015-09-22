@@ -99,3 +99,20 @@ function get_dataset_count() {
 
 	return $dataset_count;
 }
+
+function get_tweet_count() {
+	$settings = array(
+		'oauth_access_token' => TWITTER_OAUTH_ACCESS_TOKEN,
+		'oauth_access_token_secret' => TWITTER_OAUTH_ACCESS_TOKEN_SECRET,
+		'consumer_key' => TWITTER_CONSUMER_KEY,
+		'consumer_secret' => TWITTER_CONSUMER_SECRET,
+	);
+	$url = "https://api.twitter.com/1.1/users/show.json";
+	$getfield = "screen_name=opendatach";
+	$twitter = new TwitterAPIExchange($settings);
+
+	$user = $twitter->setGetfield($getfield)
+				->buildOauth($url, "GET")
+				->performRequest();
+	return json_decode($user)->statuses_count;
+}
