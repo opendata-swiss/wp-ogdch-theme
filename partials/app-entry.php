@@ -30,7 +30,7 @@ if ( $icon_attributes ) {
 			echo '<div class="collapse" id="collapsed-related-' . esc_attr( get_the_ID() ) . '">';
 			echo '<ul>';
 			foreach ( $related_datasets as $dataset ) {
-				echo '<li>' . esc_html( $dataset['dataset_id'] ) . '</li>';
+				echo '<li><a href="' . get_page_link_by_slug( 'dataset/' . $dataset['dataset_id'] ) . '">' . esc_html( $dataset['dataset_id'] ) . '</a></li>';
 			}
 			echo '</ul>';
 			echo '</div>';
