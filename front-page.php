@@ -11,7 +11,7 @@
 				<?php
 				$dataset_count = get_dataset_count();
 				?>
-				<div id="opendata-count"><?php echo number_format_i18n( $dataset_count['total_count'] ); ?></div>
+				<div id="opendata-count"><?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?></div>
 				<div class="title">Open Datasets</div>
 			</div>
 		</div>
@@ -46,7 +46,8 @@
 				$shown_groups = 12;
 				$group_count  = count( $dataset_count['groups'] );
 
-				foreach( $dataset_count['groups'] as $group_name => $count ) {
+				foreach ( $dataset_count['groups'] as $group_name => $count ) {
+					// @codingStandardsIgnoreStart
 					$args = array(
 						'meta_key' => '_ckan_local_group_ckan_name',
 						'meta_value' => $group_name,
@@ -55,8 +56,9 @@
 						'posts_per_page' => 1
 					);
 					$groups = get_posts($args);
+					// @codingStandardsIgnoreEnd
 					?>
-					<?php if ( $current_post === $shown_groups + 1 ): ?>
+					<?php if ( $current_post === $shown_groups + 1 ) : ?>
 						<div class="collapse" id="collapsed-category">
 					<?php endif; ?>
 					<div class="col-md-3 col-sm-6 category">
@@ -65,18 +67,18 @@
 						$title     = get_localized_meta( $groups[0]->ID, '_ckan_local_group_title_' );
 						?>
 						<h4>
-							<a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php echo $title; ?></a> <?php echo $count; ?>
+							<a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php esc_html_e( $title ); ?></a> <?php esc_html_e( $count ); ?>
 						</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
-					<?php if ( $group_count > $shown_groups && ( $current_post === $group_count ) ): ?>
+					<?php if ( $group_count > $shown_groups && ( $current_post === $group_count ) ) : ?>
 						</div>
 					<?php endif; ?>
 
 					<?php $current_post ++; ?>
 				<?php } ?>
 
-				<?php if ( $group_count > $shown_groups ): ?>
+				<?php if ( $group_count > $shown_groups ) : ?>
 					<div class="col-sm-12">
 						<p>
 							<a class="btn btn-default" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
