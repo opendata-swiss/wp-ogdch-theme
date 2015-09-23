@@ -100,6 +100,13 @@ function get_dataset_count() {
 	return $dataset_count;
 }
 
+/**
+ * Get tweet count.
+ *
+ * @return mixed
+ *
+ * @throws Exception
+ */
 function get_tweet_count() {
 	$settings = array(
 		'oauth_access_token' => TWITTER_OAUTH_ACCESS_TOKEN,
