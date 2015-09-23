@@ -14,7 +14,7 @@ $dataset_count = get_dataset_count();
 			<div class="statsnumber">
 				<?php esc_html_e( number_format_i18n( wp_count_posts( 'ckan-local-org' )->publish ) ); ?> <i class="fa fa-users"></i>
 			</div>
-			<p>Data Publishers</p>
+			<p>Organizations</p>
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
