@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<p><strong>Open Government Data Switzerland</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-				<a class="btn btn-default" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">Learn more about opendata.swiss</a>
+				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">Learn more about opendata.swiss</a>
 			</div>
 			<div class="col-md-8 headline text-md-right">
 				<?php
@@ -79,7 +79,7 @@
 				<?php if ( $group_count > $shown_groups ): ?>
 					<div class="col-sm-12">
 						<p>
-							<a class="btn btn-primary" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
+							<a class="btn btn-default" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
 								Weitere Kateogrien
 							</a>
 						</p>
@@ -158,6 +158,8 @@
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
+
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="button">All Datasets</a>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<h3>Active Publishers</h3>
@@ -177,6 +179,8 @@
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
+
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>" role="button">All Publishers</a>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<h3>Latest Applications</h3>
@@ -196,6 +200,8 @@
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
+
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">All Applications</a>
 				</div>
 			</div>
 
@@ -203,7 +209,7 @@
 				<div class="col-xs-12">
 					<blockquote>
 						<p><i class="fa fa-twitter"></i> <a href="#">@grssnbchr</a> er hat an der <a href="#">#opendatach</a> Konferenz letzte Woche nochmals darüber gesprochen...</p>
-						<footer>Stefan Oderbolz <a href="#">@odi</a> / 05.07.2015</footer>
+						<small>Stefan Oderbolz <a href="#">@odi</a> / 05.07.2015</small>
 					</blockquote>
 				</div>
 			</div>

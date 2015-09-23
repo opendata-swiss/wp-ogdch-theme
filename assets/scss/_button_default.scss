@@ -1,0 +1,28 @@
+@mixin ogdch-button-default {
+  &:focus,
+  &.focus {
+    color: #fff;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: #fff;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: #fff;
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+}
