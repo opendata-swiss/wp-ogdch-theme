@@ -1,30 +1,30 @@
 <?php
-global $dataset_total_count;
+$dataset_count = get_dataset_count();
 ?>
 
 <footer class="container">
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
-				<?php echo $dataset_total_count; ?> <i class="fa fa-files-o"></i>
+				<?php echo number_format_i18n( $dataset_count['total_count'] ); ?> <i class="fa fa-files-o"></i>
 			</div>
 			<p>Open Datasets</p>
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
-				<?php echo wp_count_posts( 'ckan-local-org' )->publish; ?> <i class="fa fa-users"></i>
+				<?php echo number_format_i18n( wp_count_posts( 'ckan-local-org' )->publish ); ?> <i class="fa fa-users"></i>
 			</div>
 			<p>Data Publishers</p>
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
-				<?php echo get_localized_post_count( 'app' ); ?> <i class="fa fa-puzzle-piece"></i>
+				<?php echo number_format_i18n( get_localized_post_count( 'app' ) ); ?> <i class="fa fa-puzzle-piece"></i>
 			</div>
 			<p>Built Applications</p>
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
-				157 <i class="fa fa-twitter"></i>
+				<?php echo number_format_i18n( 157 ); ?> <i class="fa fa-twitter"></i>
 			</div>
 			<p>Tweets</p>
 		</div>

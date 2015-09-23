@@ -4,25 +4,14 @@
 	<header class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<?php
-				$endpoint = CKAN_API_ENDPOINT . 'action/ogdch_dataset_count';
-				$response = Ckan_Backend_Helper::do_api_request( $endpoint );
-				$errors   = Ckan_Backend_Helper::check_response_for_errors( $response );
-
-				if ( 0 === count( $errors ) ) {
-					$dataset_count       = $response['result'];
-					$dataset_total_count = $dataset_count['total_count'];
-				} else {
-					$dataset_count       = array();
-					$dataset_total_count = 0;
-				}
-
-				?>
 				<p><strong>Open Government Data Switzerland</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 				<a class="btn btn-default" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">Learn more about opendata.swiss</a>
 			</div>
 			<div class="col-md-8 headline text-md-right">
-				<div id="opendata-count"><?php echo number_format_i18n( $dataset_total_count ); ?></div>
+				<?php
+				$dataset_count = get_dataset_count();
+				?>
+				<div id="opendata-count"><?php echo number_format_i18n( $dataset_count['total_count'] ); ?></div>
 				<div class="title">opendata</div>
 				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIj4NCjxwYXRoIGZpbGw9IiNkNTJiMWUiIGQ9Im0wLDBoMzIwdjMyMGgtMzIweiIvPg0KPGcgZmlsbD0iI2ZmZiI+DQo8cGF0aCBkPSJtNjAsMTMwaDIwMHY2MGgtMjAweiIvPg0KPHBhdGggZD0ibTEzMCw2MGg2MHYyMDBoLTYweiIvPg0KPC9nPg0KPC9zdmc+DQo="/>
 			</div>
@@ -67,7 +56,6 @@
 						'posts_per_page' => 1
 					);
 					$groups = get_posts($args);
-					print_r($group);
 					?>
 					<?php if ( $current_post === $shown_groups + 1 ): ?>
 						<div class="collapse" id="collapsed-category">

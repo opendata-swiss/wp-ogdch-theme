@@ -44,3 +44,26 @@ function get_localized_post_count( $post_type ) {
 	$posts = new WP_Query( $args );
 	return $posts->found_posts;
 }
+
+function get_dataset_count() {
+	$transient_name = 'ogdch_dataset_count';
+	if ( false === ( $dataset_count = get_transient( $transient_name ) ) ) {
+		$endpoint = CKAN_API_ENDPOINT . 'action/ogdch_dataset_count';
+		$response = Ckan_Backend_Helper::do_api_request( $endpoint );
+		$errors   = Ckan_Backend_Helper::check_response_for_errors( $response );
+
+		if ( 0 === count( $errors ) ) {
+			$dataset_count     = $response['result'];
+
+			// save result in transient
+			set_transient( $transient_name, $dataset_count, 1 * HOUR_IN_SECONDS );
+		} else {
+			$dataset_count = array(
+				'total_count' => 'N/A',
+				'groups' => array(),
+			);
+		}
+	}
+
+	return $dataset_count;
+}
