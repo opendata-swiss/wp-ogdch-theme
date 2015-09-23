@@ -3,32 +3,179 @@
  * =======================================================================
  */
 
-@import '_settings';
-@import 'mixins/bem';
-
-@import '../external/bootstrap-3.3.5/stylesheets/bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic);
 @import '../external/font-awesome-4.4.0/scss/font-awesome';
 
-@import 'elements/layout';
+@import 'bootstrap_variables';
+@import 'variables';
+@import '../external/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap';
+@import 'button_default';
+@import 'responsive_alignment';
 
-
-@import 'typo/baseline';
-@import 'typo/headings';
-@import 'typo/text';
-
-a {
-  color: $link-color;
-
-  &:hover, &:active, &:focus {
-    color: darken($link-color, 10%);
-    text-decoration: none;
+/* some bootstrap overrides -> maybe remove later */
+#main-navigation {
+  font-weight: 600;
+  font-size: floor(($font-size-base * 1.2));
+  &.navbar-default .navbar-nav>li.search>a {
+    color: $link-color;
+  }
+  &.navbar-default .navbar-nav>li.search>a:focus,
+  &.navbar-default .navbar-nav>li.search>a:hover {
+    color: $link-hover-color;
+  }
+  h1 {
+    margin: 0;
+  }
+  .navbar-brand {
+    font-size: 36px;
+    span {
+      color: $brand-primary;
+    }
   }
 }
 
-.navbar-brand span {
-  color: $link-color;
+.btn-default {
+  @include ogdch-button-default;
+}
+
+hr {
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .attachment-app-image {
   margin-top: 15px;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  .headline {
+    font-size: 28px;
+    font-weight: 600;
+    #opendata-count {
+      margin-top: -30px;
+      font-size: 200px;
+      line-height: 200px;
+    }
+    .title {
+      line-height: 28px;
+    }
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.h2-vertical-center {
+  margin-top: 35px;
+}
+
+#explore {
+  .category {
+    height: 120px;
+    overflow: hidden;
+
+    h4 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+#how {
+  .number {
+    float: left;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    width: 65px;
+  }
+  .description {
+    overflow: hidden;
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+}
+
+#trending {
+  .row {
+    margin-bottom: 40px;
+  }
+  #last-tweet {
+    p {
+      font-size: 1.5em;
+
+      .fa {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 40px;
+  color: $inverted-text-color;
+  background: $text-color;
+  box-shadow: 0px 1000px 0px 1000px $text-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  a {
+    color: $inverted-link-color;
+
+    &:hover {
+      color: $inverted-link-color;
+    }
+  }
+  .row {
+    margin-bottom: 40px;
+
+    &.last {
+      margin-bottom: 0;
+    }
+  }
+  .lead {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &.last {
+      margin-right: 0;
+    }
+    &.dropdown-toggle {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+  .btn-default {
+    color: $inverted-text-color;
+    background-color: $text-color;
+    border-color: $inverted-btn-default-color;
+  }
+
+  .statsnumber {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  #logos img {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &.logo-confederation {
+      width: 245px;
+    }
+    &.logo-egovernment {
+      width: 184px;
+    }
+  }
 }

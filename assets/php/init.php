@@ -25,8 +25,10 @@ function theme_setup() {
 	// =======================================================================//
 
 	register_nav_menus( array(
-		'service_navigation' => __( 'Service-Navigation', 'ogdch' ),
-		'main_navigation'    => __( 'Haupt-Navigation', 'ogdch' ),
+		'main_navigation'      => __( 'Haupt-Navigation', 'ogdch' ),
+		'about_navigation'     => __( 'About-Navigation', 'ogdch' ),
+		'data_navigation'      => __( 'Data-Navigation', 'ogdch' ),
+		'developer_navigation' => __( 'Developer-Navigation', 'ogdch' ),
 	) );
 
 	// =======================================================================//
