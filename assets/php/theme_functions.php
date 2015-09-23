@@ -105,7 +105,7 @@ function get_dataset_count() {
  *
  * @return mixed
  *
- * @throws Exception
+ * @throws Exception If invalid JSON.
  */
 function get_tweet_count() {
 	$settings = array(
@@ -114,12 +114,12 @@ function get_tweet_count() {
 		'consumer_key' => TWITTER_CONSUMER_KEY,
 		'consumer_secret' => TWITTER_CONSUMER_SECRET,
 	);
-	$url = "https://api.twitter.com/1.1/users/show.json";
-	$getfield = "screen_name=opendatach";
-	$twitter = new TwitterAPIExchange($settings);
+	$url = 'https://api.twitter.com/1.1/users/show.json';
+	$getfield = 'screen_name=opendatach';
+	$twitter = new TwitterAPIExchange( $settings );
 
-	$user = $twitter->setGetfield($getfield)
-				->buildOauth($url, "GET")
+	$user = $twitter->setGetfield( $getfield )
+				->buildOauth( $url, 'GET' )
 				->performRequest();
-	return json_decode($user)->statuses_count;
+	return json_decode( $user )->statuses_count;
 }

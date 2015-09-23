@@ -5,7 +5,7 @@
  *
  * @return void
  */
-function ogdch_admin_scripts(  ) {
+function ogdch_admin_scripts() {
 	wp_enqueue_style( 'cmb2-overwrite', get_template_directory_uri() . '/assets/css/admin/cmb2_overwrite.css', array(
 		'cmb2-styles',
 	) );
