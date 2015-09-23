@@ -24,7 +24,7 @@ $dataset_count = get_dataset_count();
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
-				<?php esc_html_e( number_format_i18n( 157 ) ); ?> <i class="fa fa-twitter"></i>
+				<?php esc_html_e( number_format_i18n( get_tweet_count() ) ); ?> <i class="fa fa-twitter"></i>
 			</div>
 			<p>Tweets</p>
 		</div>

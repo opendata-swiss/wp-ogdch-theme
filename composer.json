@@ -6,6 +6,9 @@
         "wp-coding-standards/wpcs": "dev-master",
         "phpunit/phpunit": "3.7.*"
     },
+    "require": {
+        "j7mbo/twitter-api-php": "dev-master"
+    },
     "minimum-stability": "dev",
     "config": {
         "bin-dir": "bin"

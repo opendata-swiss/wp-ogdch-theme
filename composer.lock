@@ -4,8 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "77df058bb5779aae5e14fec08518a8ba",
-    "packages": [],
+    "hash": "ee813bca90593cc5a4f57f7fe88e4704",
+    "packages": [
+        {
+            "name": "j7mbo/twitter-api-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/J7mbo/twitter-api-php.git",
+                "reference": "a89ce3e294484aad7ae13dbabe45fb3928024ef8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/J7mbo/twitter-api-php/zipball/a89ce3e294484aad7ae13dbabe45fb3928024ef8",
+                "reference": "a89ce3e294484aad7ae13dbabe45fb3928024ef8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5,>=4.5.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "TwitterAPIExchange.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU Public License"
+            ],
+            "authors": [
+                {
+                    "name": "James Mallison",
+                    "homepage": "https://github.com/j7mbo/twitter-api-php"
+                }
+            ],
+            "description": "Simple PHP Wrapper for Twitter API v1.1 calls",
+            "homepage": "https://github.com/j7mbo/twitter-api-php",
+            "keywords": [
+                "api",
+                "php",
+                "twitter"
+            ],
+            "time": "2015-08-03 21:35:18"
+        }
+    ],
     "packages-dev": [
         {
             "name": "phpunit/php-code-coverage",
@@ -379,16 +430,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666"
+                "reference": "11a2545c44a5915f883e2e5ec12e14ed345e3ab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/c1a26c729508f73560c1a4f767f60b8ab6b4a666",
-                "reference": "c1a26c729508f73560c1a4f767f60b8ab6b4a666",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/11a2545c44a5915f883e2e5ec12e14ed345e3ab2",
+                "reference": "11a2545c44a5915f883e2e5ec12e14ed345e3ab2",
                 "shasum": ""
             },
             "require": {
@@ -449,7 +500,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2015-06-24 03:16:23"
+            "time": "2015-09-09 00:18:50"
         },
         {
             "name": "symfony/yaml",
@@ -457,12 +508,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "6eef1477f3c4451b6024fadb1254009be4602908"
+                "reference": "d196cb1ac36901bde7d7fbed74ee31fdb85fd119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6eef1477f3c4451b6024fadb1254009be4602908",
-                "reference": "6eef1477f3c4451b6024fadb1254009be4602908",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/d196cb1ac36901bde7d7fbed74ee31fdb85fd119",
+                "reference": "d196cb1ac36901bde7d7fbed74ee31fdb85fd119",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +549,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-29 07:12:56"
+            "time": "2015-09-14 14:15:17"
         },
         {
             "name": "wp-coding-standards/wpcs",
@@ -506,12 +557,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git",
-                "reference": "2e27757829cde21bca916b11cfcfa867c42b255e"
+                "reference": "7369397beb792d1d9d5c4bee76c5cfa6221f6da5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/2e27757829cde21bca916b11cfcfa867c42b255e",
-                "reference": "2e27757829cde21bca916b11cfcfa867c42b255e",
+                "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/7369397beb792d1d9d5c4bee76c5cfa6221f6da5",
+                "reference": "7369397beb792d1d9d5c4bee76c5cfa6221f6da5",
                 "shasum": ""
             },
             "require": {
@@ -534,12 +585,13 @@
                 "standards",
                 "wordpress"
             ],
-            "time": "2015-06-30 21:54:21"
+            "time": "2015-08-31 19:36:48"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "j7mbo/twitter-api-php": 20,
         "wp-coding-standards/wpcs": 20
     },
     "prefer-stable": false,
