@@ -38,7 +38,7 @@ $dataset_count = get_dataset_count();
 			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">How to share the App I built?</a>
 		</div>
 	</div>
-	<div id="info" class="row">
+	<div class="row">
 		<div class="col-md-2 col-xs-4">
 			<div class="btn-group">
 				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,6 +75,12 @@ $dataset_count = get_dataset_count();
 				'menu_class'     => 'list-unstyled',
 			) );
 			?>
+		</div>
+	</div>
+	<div id="logos" class="row">
+		<div class="col-xs-12">
+			<img src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />
+			<img src="/content/themes/wp-ogdch-theme/assets/images/logo-egovernment.png" />
 		</div>
 	</div>
 </footer>

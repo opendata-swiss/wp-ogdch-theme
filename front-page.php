@@ -12,8 +12,7 @@
 				$dataset_count = get_dataset_count();
 				?>
 				<div id="opendata-count"><?php echo number_format_i18n( $dataset_count['total_count'] ); ?></div>
-				<div class="title">opendata</div>
-				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIj4NCjxwYXRoIGZpbGw9IiNkNTJiMWUiIGQ9Im0wLDBoMzIwdjMyMGgtMzIweiIvPg0KPGcgZmlsbD0iI2ZmZiI+DQo8cGF0aCBkPSJtNjAsMTMwaDIwMHY2MGgtMjAweiIvPg0KPHBhdGggZD0ibTEzMCw2MGg2MHYyMDBoLTYweiIvPg0KPC9nPg0KPC9zdmc+DQo="/>
+				<div class="title">Open Datasets</div>
 			</div>
 		</div>
 	</header>
