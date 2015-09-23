@@ -2,7 +2,7 @@
 $dataset_count = get_dataset_count();
 ?>
 
-<footer class="container">
+<footer id="footer" class="container">
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
@@ -79,8 +79,8 @@ $dataset_count = get_dataset_count();
 	</div>
 	<div id="logos" class="row">
 		<div class="col-xs-12">
-			<img src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />
-			<img src="/content/themes/wp-ogdch-theme/assets/images/logo-egovernment.png" />
+			<img class="logo-confederation" src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />
+			<img class="logo-egovernment" src="/content/themes/wp-ogdch-theme/assets/images/logo-egovernment.png" />
 		</div>
 	</div>
 </footer>
