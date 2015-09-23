@@ -40,31 +40,38 @@
 
 		<div class="row">
 			<?php
+			// @codingStandardsIgnoreStart
 			$args = array(
 				'post_type' => 'ckan-local-group',
 				'posts_per_page' => -1,
 			);
 			$groups = new WP_Query( $args );
+			// @codingStandardsIgnoreEnd
 			$current_post = 1;
 			$shown_groups = 12;
 			?>
 
-			<?php while ( $groups->have_posts() ) : $groups->the_post(); ?>
-				<?php if ( $current_post === $shown_groups + 1 ): ?>
+			<?php
+			while ( $groups->have_posts() ) : $groups->the_post();
+			?>
+				<?php if ( $current_post === $shown_groups + 1 ) : ?>
 					<div class="collapse" id="collapsed-category">
 				<?php endif; ?>
 				<div class="col-md-3 col-sm-6 category">
-					<h4><a href="<?php the_permalink(); ?>"><?php echo get_localized_meta( get_the_ID(), '_ckan_local_group_title_' ); ?></a> 12</h4>
+					<h4><a href="<?php the_permalink(); ?>"><?php esc_attr_e( get_localized_meta( get_the_ID(), '_ckan_local_group_title_' ) ); ?></a> 12</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
-				<?php if ( $groups->found_posts > $shown_groups && ($current_post === $groups->found_posts) ): ?>
+				<?php if ( $groups->found_posts > $shown_groups && ($current_post === $groups->found_posts) ) : ?>
 					</div>
 				<?php endif; ?>
 
 				<?php $current_post++; ?>
-			<?php endwhile; wp_reset_query(); ?>
+			<?php
+			endwhile;
+			wp_reset_postdata();
+			?>
 
-			<?php if ( $groups->found_posts > $shown_groups ): ?>
+			<?php if ( $groups->found_posts > $shown_groups ) : ?>
 				<div class="col-sm-12">
 					<p>
 						<a class="btn btn-primary" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
