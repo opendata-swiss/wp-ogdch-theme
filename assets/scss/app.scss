@@ -125,7 +125,22 @@ header {
   }
 }
 
-footer {
+#trending {
+  .row {
+    margin-bottom: 30px;
+  }
+  #last-tweet {
+    p {
+      font-size: 1.5em;
+
+      .fa {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+#footer {
   margin-top: 60px;
   color: $inverted-text-color;
   background: $text-color;
@@ -172,6 +187,11 @@ footer {
   #logos img {
     margin-right: 30px;
     margin-bottom: 30px;
-    width: 245px;
+    &.logo-confederation {
+      width: 245px;
+    }
+    &.logo-egovernment {
+      width: 184px;
+    }
   }
 }

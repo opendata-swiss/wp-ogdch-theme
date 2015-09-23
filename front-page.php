@@ -198,6 +198,15 @@
 					</div>
 				</div>
 			</div>
+
+			<div id="last-tweet" class="row">
+				<div class="col-xs-12">
+					<blockquote>
+						<p><i class="fa fa-twitter"></i> <a href="#">@grssnbchr</a> er hat an der <a href="#">#opendatach</a> Konferenz letzte Woche nochmals darüber gesprochen...</p>
+						<footer>Stefan Oderbolz <a href="#">@odi</a> / 05.07.2015</footer>
+					</blockquote>
+				</div>
+			</div>
 		</section>
 	</div>
 
