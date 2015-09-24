@@ -96,7 +96,7 @@
 		<section id="how" class="container">
 			<div class="row">
 				<div class="col-md-9">
-					<h2><?php esc_attr_e( 'How you can build', 'ogdch'); ?></h2>
+					<h2><?php esc_attr_e( 'How you can build', 'ogdch' ); ?></h2>
 				</div>
 				<div class="col-md-3 text-md-right">
 					<a class="btn btn-primary h2-vertical-center" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Read our FAQ', 'ogdch' ); ?></a>
@@ -143,7 +143,7 @@
 
 			<div class="row">
 				<div class="col-md-4 col-sm-6">
-					<h3><?php esc_attr_e( 'Popular Datasets', 'ogdch'); ?></h3>
+					<h3><?php esc_attr_e( 'Popular Datasets', 'ogdch' ); ?></h3>
 
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
@@ -161,7 +161,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="button"><?php esc_attr_e( 'All Datasets', 'ogdch'); ?></a>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="button"><?php esc_attr_e( 'All Datasets', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<h3><?php esc_attr_e( 'Active Publishers', 'ogdch' ); ?></h3>

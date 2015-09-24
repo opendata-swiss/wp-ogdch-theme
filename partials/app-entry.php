@@ -20,19 +20,21 @@ if ( $icon_attributes ) {
 		<?php
 		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
 		echo '<p class="small">';
+		// @codingStandardsIgnoreStart
 		printf( __( 'Author: <a href="mailto:%1$s">%1$s</a>', 'ogdch' ), esc_attr( $author_email ) );
 		printf( __( ' | Website: <a href="%1$s">%1$s</a>', 'ogdch' ), $url );
+		// @codingStandardsIgnoreEnd
 		echo '</p>';
 		echo '<p>' . the_content() . '</p>';
 		if ( ! empty( $related_datasets ) ) {
 			echo '<div class="collapse" id="collapsed-related-' . esc_attr( get_the_ID() ) . '">';
 			echo '<ul>';
 			foreach ( $related_datasets as $dataset ) {
-				echo '<li><a href="' . get_page_link_by_slug( 'dataset/' . $dataset['dataset_id'] ) . '">' . esc_html( $dataset['dataset_id'] ) . '</a></li>';
+				echo '<li><a href="' . esc_attr( get_page_link_by_slug( 'dataset/' . $dataset['dataset_id'] ) ) . '">' . esc_attr( $dataset['dataset_id'] ) . '</a></li>';
 			}
 			echo '</ul>';
 			echo '</div>';
-			echo '<p class="small"><a id="collapsed-related-' . esc_attr( get_the_ID() ) . '-link" data-toggle="collapse" href="#collapsed-related-' . esc_attr( get_the_ID() ) . '" aria-expanded="false" aria-controls="collapsed-related-' . esc_attr( get_the_ID() ) . '">' . __( 'Show related datasets', 'ogdch' ) . '</a></p>';
+			echo '<p class="small"><a id="collapsed-related-' . esc_attr( get_the_ID() ) . '-link" data-toggle="collapse" href="#collapsed-related-' . esc_attr( get_the_ID() ) . '" aria-expanded="false" aria-controls="collapsed-related-' . esc_attr( get_the_ID() ) . '">' . esc_attr__( 'Show related datasets', 'ogdch' ) . '</a></p>';
 		}
 
 		?>
