@@ -5,14 +5,14 @@
 		<div class="row">
 			<div class="col-md-4">
 				<p><strong>Open Government Data Switzerland</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">Learn more about opendata.swiss</a>
+				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 			</div>
 			<div class="col-md-8 headline text-md-right">
 				<?php
 				$dataset_count = get_dataset_count();
 				?>
 				<div id="opendata-count"><?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?></div>
-				<div class="title">Open Datasets</div>
+				<div class="title"><?php esc_attr_e( 'Open Datasets', 'ogdch' ); ?></div>
 			</div>
 		</div>
 	</header>
@@ -22,7 +22,7 @@
 		<section id="explore" class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h2>What you can find</h2>
+					<h2><?php esc_attr_e( 'What you can find', 'ogdch' ); ?></h2>
 				</div>
 				<div class="col-md-4 text-md-right">
 					<form class="h2-vertical-center" action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
@@ -36,7 +36,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<h3>Data Categories</h3>
+					<h3><?php esc_attr_e( 'Data Categories', 'ogdch' ); ?></h3>
 				</div>
 			</div>
 
@@ -82,7 +82,7 @@
 					<div class="col-sm-12">
 						<p>
 							<a class="btn btn-default" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
-								Weitere Kateogrien
+								<?php esc_attr_e( 'Show more categories', 'ogdch' ); ?>
 							</a>
 						</p>
 					</div>
@@ -96,10 +96,10 @@
 		<section id="how" class="container">
 			<div class="row">
 				<div class="col-md-9">
-					<h2>How you can build</h2>
+					<h2><?php esc_attr_e( 'How you can build', 'ogdch'); ?></h2>
 				</div>
 				<div class="col-md-3 text-md-right">
-					<a class="btn btn-primary h2-vertical-center" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">Read our FAQ</a>
+					<a class="btn btn-primary h2-vertical-center" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Read our FAQ', 'ogdch' ); ?></a>
 				</div>
 			</div>
 
@@ -107,7 +107,7 @@
 				<div class="col-md-4 col-sm-6 step">
 					<div class="number">1</div>
 					<div class="description">
-						<h3><a href="#">Find Data</a></h3>
+						<h3><a href="#"><?php esc_attr_e( 'Find Data', 'ogdch' ); ?></a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
@@ -115,7 +115,7 @@
 				<div class="col-md-4 col-sm-6 step">
 					<div class="number">2</div>
 					<div class="description">
-						<h3><a href="#">Use Data</a></h3>
+						<h3><a href="#"><?php esc_attr_e( 'Use Data', 'ogdch' ); ?></a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
@@ -123,7 +123,7 @@
 				<div class="col-md-4 col-sm-6 step">
 					<div class="number">3</div>
 					<div class="description">
-						<h3><a href="#">Share App</a></h3>
+						<h3><a href="#"><?php esc_attr_e( 'Share App', 'ogdch' ); ?></a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
@@ -137,13 +137,13 @@
 		<section id="trending" class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>What's trending now</h2>
+					<h2><?php esc_attr_e( "What's trending now", 'ogdch' ); ?></h2>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-md-4 col-sm-6">
-					<h3>Popular Datasets</h3>
+					<h3><?php esc_attr_e( 'Popular Datasets', 'ogdch'); ?></h3>
 
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
@@ -161,10 +161,10 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="button">All Datasets</a>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="button"><?php esc_attr_e( 'All Datasets', 'ogdch'); ?></a>
 				</div>
 				<div class="col-md-4 col-sm-6">
-					<h3>Active Publishers</h3>
+					<h3><?php esc_attr_e( 'Active Publishers', 'ogdch' ); ?></h3>
 
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
@@ -182,10 +182,10 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>" role="button">All Publishers</a>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>" role="button"><?php esc_attr_e( 'All Publishers', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-md-4 col-sm-6">
-					<h3>Latest Applications</h3>
+					<h3><?php esc_attr_e( 'Latest Applications', 'ogdch' ); ?></h3>
 
 					<div class="dataset-teaser">
 						<h4><a href="#">List group item heading</a></h4>
@@ -203,7 +203,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">All Applications</a>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button"><?php esc_attr_e( 'All Applications', 'ogdch' ); ?></a>
 				</div>
 			</div>
 

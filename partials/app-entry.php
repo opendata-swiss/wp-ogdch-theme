@@ -20,10 +20,8 @@ if ( $icon_attributes ) {
 		<?php
 		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
 		echo '<p class="small">';
-		echo 'Author: <a href="mailto:' . esc_attr( $author_email ) . '">' . esc_attr( $author_name ) . '</a>';
-		if ( ! empty( $version ) ) {
-			echo ' | Version: ' . esc_attr( $version );
-		}
+		printf( __( 'Author: <a href="mailto:%1$s">%1$s</a>', 'ogdch' ), esc_attr( $author_email ) );
+		printf( __( ' | Website: <a href="%1$s">%1$s</a>', 'ogdch' ), $url );
 		echo '</p>';
 		echo '<p>' . the_content() . '</p>';
 		if ( ! empty( $related_datasets ) ) {
@@ -34,7 +32,7 @@ if ( $icon_attributes ) {
 			}
 			echo '</ul>';
 			echo '</div>';
-			echo '<p class="small"><a id="collapsed-related-' . esc_attr( get_the_ID() ) . '-link" data-toggle="collapse" href="#collapsed-related-' . esc_attr( get_the_ID() ) . '" aria-expanded="false" aria-controls="collapsed-related-' . esc_attr( get_the_ID() ) . '">Show related datasets</a></p>';
+			echo '<p class="small"><a id="collapsed-related-' . esc_attr( get_the_ID() ) . '-link" data-toggle="collapse" href="#collapsed-related-' . esc_attr( get_the_ID() ) . '" aria-expanded="false" aria-controls="collapsed-related-' . esc_attr( get_the_ID() ) . '">' . __( 'Show related datasets', 'ogdch' ) . '</a></p>';
 		}
 
 		?>

@@ -8,34 +8,34 @@ $dataset_count = get_dataset_count();
 			<div class="statsnumber">
 				<?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?> <i class="fa fa-files-o"></i>
 			</div>
-			<p>Open Datasets</p>
+			<p><?php esc_attr_e( 'Open Datasets' ,'ogdch' ); ?></p>
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
 				<?php esc_html_e( number_format_i18n( wp_count_posts( 'ckan-local-org' )->publish ) ); ?> <i class="fa fa-users"></i>
 			</div>
-			<p>Organizations</p>
+			<p><?php esc_attr_e( 'Organizations', 'ogdch' ); ?></p>
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
 				<?php esc_html_e( number_format_i18n( get_localized_post_count( 'app' ) ) ); ?> <i class="fa fa-puzzle-piece"></i>
 			</div>
-			<p>Built Applications</p>
+			<p><?php esc_attr_e( 'Built Applications', 'ogdch' ); ?></p>
 		</div>
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
 				<?php esc_html_e( number_format_i18n( get_tweet_count() ) ); ?> <i class="fa fa-twitter"></i>
 			</div>
-			<p>Tweets</p>
+			<p><?php esc_attr_e( 'Tweets', 'ogdch' ); ?></p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-4">
-			<p class="lead">What about you?</p>
+			<p class="lead"><?php esc_attr_e( 'What about you?', 'ogdch' ); ?></p>
 		</div>
 		<div class="col-sm-8 text-md-right">
-			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button">How do I publish open data?</a>
-			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button">How to share the App I built?</a>
+			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How do I publish open data?', 'ogdch' ); ?></a>
+			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button"><?php esc_attr_e( 'How to share the App I built?', 'ogdch' ); ?></a>
 		</div>
 	</div>
 	<div class="row">
