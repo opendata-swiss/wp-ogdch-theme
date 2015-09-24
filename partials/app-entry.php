@@ -2,7 +2,7 @@
 $icon_id      = get_post_meta( get_the_ID(), '_app-showcase-app_icon_id', true );
 $author_name  = get_post_meta( get_the_ID(), '_app-showcase-app_author_name', true );
 $author_email = get_post_meta( get_the_ID(), '_app-showcase-app_author_email', true );
-$version      = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
+$url          = get_post_meta( get_the_ID(), '_app-showcase-app_url', true );
 $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', true );
 $icon_attributes = wp_get_attachment_image_src( $icon_id, 'full' );
 if ( $icon_attributes ) {
