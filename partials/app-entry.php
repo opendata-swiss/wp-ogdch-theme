@@ -2,7 +2,7 @@
 $icon_id      = get_post_meta( get_the_ID(), '_app-showcase-app_icon_id', true );
 $author_name  = get_post_meta( get_the_ID(), '_app-showcase-app_author_name', true );
 $author_email = get_post_meta( get_the_ID(), '_app-showcase-app_author_email', true );
-$version      = get_post_meta( get_the_ID(), '_app-showcase-app_version', true );
+$url          = get_post_meta( get_the_ID(), '_app-showcase-app_url', true );
 $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', true );
 $icon_attributes = wp_get_attachment_image_src( $icon_id, 'full' );
 if ( $icon_attributes ) {
@@ -20,23 +20,29 @@ if ( $icon_attributes ) {
 		<?php
 		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
 		echo '<p class="small">';
-		echo 'Author: <a href="mailto:' . esc_attr( $author_email ) . '">' . esc_attr( $author_name ) . '</a>';
-		if ( ! empty( $version ) ) {
-			echo ' | Version: ' . esc_attr( $version );
-		}
+		echo the_date();
+		// @codingStandardsIgnoreStart
+		printf( __( ' | Author: <a href="mailto:%1$s">%1$s</a>', 'ogdch' ), esc_attr( $author_email ) );
+		printf( __( ' | Website: <a href="%1$s">%1$s</a>', 'ogdch' ), $url );
+		// @codingStandardsIgnoreEnd
 		echo '</p>';
 		echo '<p>' . the_content() . '</p>';
 		if ( ! empty( $related_datasets ) ) {
-			echo '<div class="collapse" id="collapsed-related-' . esc_attr( get_the_ID() ) . '">';
-			echo '<ul>';
-			foreach ( $related_datasets as $dataset ) {
-				echo '<li><a href="' . get_page_link_by_slug( 'dataset/' . $dataset['dataset_id'] ) . '">' . esc_html( $dataset['dataset_id'] ) . '</a></li>';
+			// Check if wp-ckan-backend plugin is active
+			if ( ! method_exists( 'Ckan_Backend_Helper', 'get_dataset_title' ) ) {
+				esc_attr_e( 'Please activate wp-ckan-backend plugin', 'ogdch' );
+			} else {
+				echo '<div class="collapse" id="collapsed-related-' . esc_attr( get_the_ID() ) . '">';
+				echo '<ul>';
+				foreach ( $related_datasets as $dataset ) {
+					$title = Ckan_Backend_Helper::get_dataset_title( $dataset['dataset_id'] );
+					echo '<li><a href="' . esc_attr( get_page_link_by_slug( 'dataset/' . $dataset['dataset_id'] ) ) . '">' . esc_attr( $title ) . '</a></li>';
+				}
+				echo '</ul>';
+				echo '</div>';
+				echo '<p class="small"><a id="collapsed-related-' . esc_attr( get_the_ID() ) . '-link" data-toggle="collapse" href="#collapsed-related-' . esc_attr( get_the_ID() ) . '" aria-expanded="false" aria-controls="collapsed-related-' . esc_attr( get_the_ID() ) . '">' . esc_attr__( 'Show related datasets', 'ogdch' ) . '</a></p>';
 			}
-			echo '</ul>';
-			echo '</div>';
-			echo '<p class="small"><a id="collapsed-related-' . esc_attr( get_the_ID() ) . '-link" data-toggle="collapse" href="#collapsed-related-' . esc_attr( get_the_ID() ) . '" aria-expanded="false" aria-controls="collapsed-related-' . esc_attr( get_the_ID() ) . '">Show related datasets</a></p>';
 		}
-
 		?>
 	</div>
 </div>

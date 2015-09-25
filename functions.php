@@ -62,15 +62,3 @@ if ( is_admin() ) {
 	}
 	unset( $file, $filepath );
 }
-
-/**
- * Polylang - Remove comments filter
- *
- * @return void
- */
-function polylang_remove_comments_filter() {
-	global $wp_filter;
-	global $polylang;
-	remove_filter( 'comments_clauses', array( &$polylang, 'comments_clauses' ) );
-}
-add_action( 'wp', 'polylang_remove_comments_filter' );

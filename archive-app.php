@@ -8,8 +8,8 @@
 			<h1><?php post_type_archive_title(); ?></h1>
 		</div>
 		<div class="col-xs-12">
-			<p>Did you build an App with Data listed in our catalogue and would like to share it with us?</p>
-			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button">Contact us</a>
+			<p><?php esc_attr_e( 'Did you build an App with Data listed in our catalogue and would like to share it with us?' ,'ogdch' ); ?></p>
+			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'Contact us', 'ogdch' ); ?></a>
 		</div>
 	</div>
 
