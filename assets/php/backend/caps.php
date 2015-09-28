@@ -146,9 +146,9 @@ function disable_default_roles( $roles ) {
 		'contributor'
 	);
 
-	foreach( $disabled_roles as $role ) {
-		if ( isset( $roles[$role] ) ) {
-			unset( $roles[$role] );
+	foreach ( $disabled_roles as $role ) {
+		if ( isset( $roles[ $role ] ) ) {
+			unset( $roles[ $role ] );
 		}
 	}
 
@@ -170,9 +170,9 @@ function disable_default_roles_members_plugin( $roles ) {
 		'contributor'
 	);
 
-	foreach( $disabled_roles as $role ) {
-		if( ( $key = array_search( $role, $roles ) ) !== false ) {
-			unset( $roles[$key] );
+	foreach ( $disabled_roles as $role ) {
+		if ( ( $key = array_search( $role, $roles ) ) !== false ) {
+			unset( $roles[ $key ] );
 		}
 	}
 
