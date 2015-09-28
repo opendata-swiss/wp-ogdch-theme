@@ -32,6 +32,11 @@
       color: $brand-primary;
     }
   }
+  @media (max-width: $screen-sm-max) {
+    .navbar-brand {
+      font-size: 26px;
+    }
+  }
 }
 
 .btn-default {
@@ -47,7 +52,7 @@ hr {
   margin-top: 15px;
 }
 
-header {
+.front-header {
   margin-top: 50px;
   margin-bottom: 40px;
   .headline {
@@ -116,7 +121,7 @@ header {
   }
 }
 
-footer {
+.main-footer {
   margin-top: 40px;
   color: $inverted-text-color;
   background: $text-color;

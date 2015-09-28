@@ -2,7 +2,7 @@
 $dataset_count = get_dataset_count();
 ?>
 
-<footer class="container">
+<footer class="container main-footer">
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
