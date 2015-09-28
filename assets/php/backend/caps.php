@@ -143,7 +143,7 @@ function disable_default_roles( $roles ) {
 		'author',
 		'editor',
 		'subscriber',
-		'contributor'
+		'contributor',
 	);
 
 	foreach ( $disabled_roles as $role ) {
@@ -167,7 +167,7 @@ function disable_default_roles_members_plugin( $roles ) {
 		'author',
 		'editor',
 		'subscriber',
-		'contributor'
+		'contributor',
 	);
 
 	foreach ( $disabled_roles as $role ) {
