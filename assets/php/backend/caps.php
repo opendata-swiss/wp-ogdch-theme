@@ -139,20 +139,41 @@ function init_role( $role_name, $display_name, $caps ) {
  * @return array
  */
 function disable_default_roles( $roles ) {
-	if ( isset( $roles['author'] ) ) {
-		unset( $roles['author'] );
+	$disabled_roles = array(
+		'author',
+		'editor',
+		'subscriber',
+		'contributor'
+	);
+
+	foreach( $disabled_roles as $role ) {
+		if ( isset( $roles[$role] ) ) {
+			unset( $roles[$role] );
+		}
 	}
 
-	if ( isset( $roles['editor'] ) ) {
-		unset( $roles['editor'] );
-	}
+	return $roles;
+}
 
-	if ( isset( $roles['subscriber'] ) ) {
-		unset( $roles['subscriber'] );
-	}
+/**
+ * Disables default WordPress roles in user list (members plugin somehow overwrites WP filter)
+ *
+ * @param array $roles Available roles.
+ *
+ * @return array
+ */
+function disable_default_roles_members_plugin( $roles ) {
+	$disabled_roles = array(
+		'author',
+		'editor',
+		'subscriber',
+		'contributor'
+	);
 
-	if ( isset( $roles['contributor'] ) ) {
-		unset( $roles['contributor'] );
+	foreach( $disabled_roles as $role ) {
+		if( ( $key = array_search( $role, $roles ) ) !== false ) {
+			unset( $roles[$key] );
+		}
 	}
 
 	return $roles;
@@ -163,3 +184,4 @@ add_action( 'after_switch_theme', 'add_theme_caps' );
 
 // Disable default WordPress roles
 add_filter( 'editable_roles', 'disable_default_roles' );
+add_filter( 'members_manage_roles_items', 'disable_default_roles_members_plugin' );
