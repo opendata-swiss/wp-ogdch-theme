@@ -70,8 +70,9 @@ function add_theme_caps() {
 		'delete_others_posts'          => true, // this cap is used to delete attachments
 		'list_users'                   => true,
 		'edit_users'                   => true,
+		'promote_users'                => true,
 	);
-	init_role( 'data-owner', 'Data Owner', $data_owner_caps );
+	init_role( 'data_owner', 'Data Owner', $data_owner_caps );
 
 	$content_manager_caps = array(
 		'read'                   => true,
@@ -103,7 +104,7 @@ function add_theme_caps() {
 		'delete_posts'           => true, // this cap is used to delete attachments
 		'delete_others_posts'    => true, // this cap is used to delete attachments
 	);
-	init_role( 'content-manager', 'Content Manager', $content_manager_caps );
+	init_role( 'content_manager', 'Content Manager', $content_manager_caps );
 }
 
 /**
