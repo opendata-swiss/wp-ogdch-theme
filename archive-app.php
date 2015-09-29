@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<?php get_template_part( 'content', 'breadcrumb' ); ?>
 
 <div class="container">
 

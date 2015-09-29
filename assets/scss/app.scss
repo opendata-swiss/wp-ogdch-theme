@@ -72,6 +72,12 @@ hr {
   }
 }
 
+.breadcrumb>li+li:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  padding: 0 8px;
+  content: "\f105";
+}
+
 .h2-vertical-center {
   margin-top: 35px;
 }
