@@ -1,8 +1,0 @@
-
-.post {
-    @include element('title') {
-        @include modifier('page') {
-            color: red;
-        }
-    }
-}
