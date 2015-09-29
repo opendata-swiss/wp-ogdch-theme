@@ -150,7 +150,7 @@ function bootstrap_breadcrumb() {
 		echo '<li class="item-home"><a class="bread-link bread-home" href="' . get_home_url() . '" title="' . $home_title . '">' . $home_title . '</a></li>';
 
 		if ( is_archive() && ! is_tax() && ! is_category() ) {
-			echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . post_type_archive_title( $prefix, false ) . '</strong></li>';
+			echo '<li class="item-archive active">' . post_type_archive_title( $prefix, false ) . '</li>';
 		} else if ( is_archive() && is_tax() && ! is_category() ) {
 			// If post is a custom post type
 			$post_type = get_post_type();
@@ -162,7 +162,7 @@ function bootstrap_breadcrumb() {
 			}
 
 			$custom_tax_name = get_queried_object()->name;
-			echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . $custom_tax_name . '</strong></li>';
+			echo '<li class="item-archive active">' . $custom_tax_name . '</li>';
 		} else if ( is_single() ) {
 			// If post is a custom post type
 			$post_type = get_post_type();
@@ -200,17 +200,17 @@ function bootstrap_breadcrumb() {
 			// Check if the post is in a category
 			if ( ! empty( $last_category ) ) {
 				echo $cat_display;
-				echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
+				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
 				// Else if post is in a custom taxonomy
 			} else if ( ! empty( $cat_id ) ) {
 				echo '<li class="item-cat item-cat-' . $cat_id . ' item-cat-' . $cat_nicename . '"><a class="bread-cat bread-cat-' . $cat_id . ' bread-cat-' . $cat_nicename . '" href="' . $cat_link . '" title="' . $cat_name . '">' . $cat_name . '</a></li>';
-				echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
+				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
 			} else {
-				echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
+				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
 			}
 		} else if ( is_category() ) {
 			// Category page
-			echo '<li class="item-current item-cat"><strong class="bread-current bread-cat">' . single_cat_title( '', false ) . '</strong></li>';
+			echo '<li class="item-cat active">' . single_cat_title( '', false ) . '</li>';
 		} else if ( is_page() ) {
 			// Standard page
 			if ( $post->post_parent ) {
@@ -226,10 +226,10 @@ function bootstrap_breadcrumb() {
 				// Display parent pages
 				echo $parents;
 				// Current page
-				echo '<li class="item-current item-' . $post->ID . '"><strong title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
+				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
 			} else {
 				// Just display current page if not parents
-				echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '">' . get_the_title() . '</strong></li>';
+				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
 			}
 		} else if ( is_tag() ) {
 			// Tag page
@@ -239,7 +239,7 @@ function bootstrap_breadcrumb() {
 			$args     = 'include=' . $term_id;
 			$terms    = get_terms( $taxonomy, $args );
 			// Display the tag name
-			echo '<li class="item-current item-tag-' . $terms[0]->term_id . ' item-tag-' . $terms[0]->slug . '"><strong class="bread-current bread-tag-' . $terms[0]->term_id . ' bread-tag-' . $terms[0]->slug . '">' . $terms[0]->name . '</strong></li>';
+			echo '<li class="item-tag-' . $terms[0]->term_id . ' item-tag-' . $terms[0]->slug . ' active">' . $terms[0]->name . '</li>';
 		} elseif ( is_day() ) {
 			// Day archive
 			// Year link
@@ -247,29 +247,29 @@ function bootstrap_breadcrumb() {
 			// Month link
 			echo '<li class="item-month item-month-' . get_the_time( 'm' ) . '"><a class="bread-month bread-month-' . get_the_time( 'm' ) . '" href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '" title="' . get_the_time( 'M' ) . '">' . get_the_time( 'M' ) . ' Archives</a></li>';
 			// Day display
-			echo '<li class="item-current item-' . get_the_time( 'j' ) . '"><strong class="bread-current bread-' . get_the_time( 'j' ) . '">' . get_the_time( 'jS' ) . ' ' . get_the_time( 'M' ) . ' Archives</strong></li>';
+			echo '<li class="item-' . get_the_time( 'j' ) . ' active">' . get_the_time( 'jS' ) . ' ' . get_the_time( 'M' ) . ' Archives</li>';
 		} else if ( is_month() ) {
 			// Month Archive
 			// Year link
 			echo '<li class="item-year item-year-' . get_the_time( 'Y' ) . '"><a class="bread-year bread-year-' . get_the_time( 'Y' ) . '" href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( 'Y' ) . '">' . get_the_time( 'Y' ) . ' Archives</a></li>';
 			// Month display
-			echo '<li class="item-month item-month-' . get_the_time( 'm' ) . '"><strong class="bread-month bread-month-' . get_the_time( 'm' ) . '" title="' . get_the_time( 'M' ) . '">' . get_the_time( 'M' ) . ' Archives</strong></li>';
+			echo '<li class="item-month item-month-' . get_the_time( 'm' ) . '">' . get_the_time( 'M' ) . ' Archives</li>';
 		} else if ( is_year() ) {
 			// Display year archive
-			echo '<li class="item-current item-current-' . get_the_time( 'Y' ) . '"><strong class="bread-current bread-current-' . get_the_time( 'Y' ) . '" title="' . get_the_time( 'Y' ) . '">' . get_the_time( 'Y' ) . ' Archives</strong></li>';
+			echo '<li class="item-year item-year-' . get_the_time( 'Y' ) . ' active">' . get_the_time( 'Y' ) . ' Archives</li>';
 		} else if ( is_author() ) {
 			// Auhor archive
 			// Get the author information
 			global $author;
 			$userdata = get_userdata( $author );
 			// Display author name
-			echo '<li class="item-current item-current-' . $userdata->user_nicename . '"><strong class="bread-current bread-current-' . $userdata->user_nicename . '" title="' . $userdata->display_name . '">' . 'Author: ' . $userdata->display_name . '</strong></li>';
+			echo '<li class="item-author item-author-' . $userdata->user_nicename . ' active">' . 'Author: ' . $userdata->display_name . '</li>';
 		} else if ( get_query_var( 'paged' ) ) {
 			// Paginated archives
-			echo '<li class="item-current item-current-' . get_query_var( 'paged' ) . '"><strong class="bread-current bread-current-' . get_query_var( 'paged' ) . '" title="Page ' . get_query_var( 'paged' ) . '">' . __( 'Page' ) . ' ' . get_query_var( 'paged' ) . '</strong></li>';
+			echo '<li class="item-paged item-paged-' . get_query_var( 'paged' ) . ' active">' . __( 'Page' ) . ' ' . get_query_var( 'paged' ) . '</li>';
 		} else if ( is_search() ) {
 			// Search results page
-			echo '<li class="item-current item-current-' . get_search_query() . '"><strong class="bread-current bread-current-' . get_search_query() . '" title="Search results for: ' . get_search_query() . '">Search results for: ' . get_search_query() . '</strong></li>';
+			echo '<li class="item-search item-search-' . get_search_query() . ' active">Search results for: ' . get_search_query() . '</li>';
 		} elseif ( is_404() ) {
 			// 404 page
 			echo '<li>' . 'Error 404' . '</li>';
