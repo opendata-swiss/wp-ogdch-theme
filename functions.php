@@ -41,7 +41,7 @@ if ( is_admin() ) {
 
 	$backend_includes = array(
 		//'assets/php/backend/filters.php',             // Admin Filters
-		'assets/php/backend/scripts.php',     // Admin Scripts / CSS
+		'assets/php/backend/scripts.php',               // Admin Scripts / CSS
 		//'assets/php/backend/custom_field_types.php',  // Custom Field Types
 		//'assets/php/backend/custom_fields.php',       // Custom Fields / Metaboxes
 		//'assets/php/backend/admin_cols.php',          // Admin Columns
@@ -49,7 +49,7 @@ if ( is_admin() ) {
 		//'assets/php/backend/user_fields.php',         // Custom Fields in User Edit
 		'assets/php/backend/caps.php',                  // Caps & Roles
 		'assets/php/backend/statistics.php',            // Statistics API
-		//'assets/php/backend/wysiwyg.php'
+		'assets/php/backend/wysiwyg.php',               // TinyMCE Configuration
 	);
 
 	foreach ( $backend_includes as $file ) {
