@@ -75,6 +75,12 @@ pre {
   content: "\f105";
 }
 
+.nav>li {
+  >a:focus, >a:hover {
+    color: $nav-pills-active-link-hover-color;
+  }
+}
+
 .h2-vertical-center {
   margin-top: 25px;
 }
@@ -185,5 +191,21 @@ pre {
     &.logo-egovernment {
       width: 184px;
     }
+  }
+}
+
+/* Dataset Search */
+.facet-filter {
+  .badge {
+    margin-left: 3px;
+    font-size: floor(($font-size-base * 0.8));
+    background-color: $brand-primary;
+    color: #fff;
+
+
+  }
+  li:hover .badge, li:active .badge {
+    background-color: #fff;
+    color: $brand-primary;
   }
 }
