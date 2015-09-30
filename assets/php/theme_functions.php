@@ -129,8 +129,10 @@ function get_tweet_count() {
 	return json_decode( $user )->statuses_count;
 }
 
-// Breadcrumbs
-// Source: https://www.thewebtaylor.com/articles/wordpress-creating-breadcrumbs-without-a-plugin
+/**
+ * Displays current breadcrumb
+ * Source: https://www.thewebtaylor.com/articles/wordpress-creating-breadcrumbs-without-a-plugin
+ */
 function bootstrap_breadcrumb() {
 	// Settings
 	$home_title = __( 'Home', 'ogdch' );
@@ -147,7 +149,7 @@ function bootstrap_breadcrumb() {
 		// Build the breadcrum
 		echo '<ol class="breadcrumb">';
 		// Home page
-		echo '<li class="item-home"><a class="bread-link bread-home" href="' . get_home_url() . '" title="' . $home_title . '">' . $home_title . '</a></li>';
+		echo '<li class="item-home"><a class="bread-link bread-home" href="' . esc_url( get_home_url() ) . '" title="' . esc_attr( $home_title ) . '">' . esc_attr( $home_title ) . '</a></li>';
 
 		if ( is_archive() && ! is_tax() && ! is_category() ) {
 			echo '<li class="item-archive active">' . post_type_archive_title( $prefix, false ) . '</li>';
@@ -155,22 +157,22 @@ function bootstrap_breadcrumb() {
 			// If post is a custom post type
 			$post_type = get_post_type();
 			// If it is a custom post type display name and link
-			if ( $post_type != 'post' ) {
+			if ( 'post' !== $post_type ) {
 				$post_type_object  = get_post_type_object( $post_type );
 				$post_type_archive = get_post_type_archive_link( $post_type );
-				echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
+				echo '<li class="item-cat item-custom-post-type-' . esc_attr( $post_type ) . '"><a class="bread-cat bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '" title="' . esc_attr( $post_type_object->labels->name ) . '">' . esc_attr( $post_type_object->labels->name ) . '</a></li>';
 			}
 
 			$custom_tax_name = get_queried_object()->name;
-			echo '<li class="item-archive active">' . $custom_tax_name . '</li>';
+			echo '<li class="item-archive active">' . esc_attr( $custom_tax_name ) . '</li>';
 		} else if ( is_single() ) {
 			// If post is a custom post type
 			$post_type = get_post_type();
 			// If it is a custom post type display name and link
-			if ( $post_type != 'post' ) {
+			if ( 'post' !== $post_type ) {
 				$post_type_object  = get_post_type_object( $post_type );
 				$post_type_archive = get_post_type_archive_link( $post_type );
-				echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
+				echo '<li class="item-cat item-custom-post-type-' . esc_attr( $post_type ) . '"><a class="bread-cat bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '" title="' . esc_attr( $post_type_object->labels->name ) . '">' . esc_attr( $post_type_object->labels->name ) . '</a></li>';
 			}
 
 			// Get post category info
@@ -199,18 +201,18 @@ function bootstrap_breadcrumb() {
 
 			// Check if the post is in a category
 			if ( ! empty( $last_category ) ) {
-				echo $cat_display;
-				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
+				echo esc_attr( $cat_display );
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
 				// Else if post is in a custom taxonomy
 			} else if ( ! empty( $cat_id ) ) {
-				echo '<li class="item-cat item-cat-' . $cat_id . ' item-cat-' . $cat_nicename . '"><a class="bread-cat bread-cat-' . $cat_id . ' bread-cat-' . $cat_nicename . '" href="' . $cat_link . '" title="' . $cat_name . '">' . $cat_name . '</a></li>';
-				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
+				echo '<li class="item-cat item-cat-' . esc_attr( $cat_id ) . ' item-cat-' . esc_attr( $cat_nicename ) . '"><a class="bread-cat bread-cat-' . esc_attr( $cat_id ) . ' bread-cat-' . esc_attr( $cat_nicename ) . '" href="' . esc_url( $cat_link ) . '" title="' . esc_attr( $cat_name ) . '">' . esc_attr( $cat_name ) . '</a></li>';
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
 			} else {
-				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
 			}
 		} else if ( is_category() ) {
 			// Category page
-			echo '<li class="item-cat active">' . single_cat_title( '', false ) . '</li>';
+			echo '<li class="item-cat active">' . esc_attr( single_cat_title( '', false ) ) . '</li>';
 		} else if ( is_page() ) {
 			// Standard page
 			if ( $post->post_parent ) {
@@ -221,15 +223,15 @@ function bootstrap_breadcrumb() {
 				$parents = '';
 				// Parent page loop
 				foreach ( $anc as $ancestor ) {
-					$parents .= '<li class="item-parent item-parent-' . $ancestor . '"><a class="bread-parent bread-parent-' . $ancestor . '" href="' . get_permalink( $ancestor ) . '" title="' . get_the_title( $ancestor ) . '">' . get_the_title( $ancestor ) . '</a></li>';
+					$parents .= '<li class="item-parent item-parent-' . esc_attr( $ancestor ) . '"><a class="bread-parent bread-parent-' . esc_attr( $ancestor ) . '" href="' . esc_url( get_permalink( $ancestor ) ) . '" title="' . esc_attr( get_the_title( $ancestor ) ) . '">' . esc_attr( get_the_title( $ancestor ) ) . '</a></li>';
 				}
 				// Display parent pages
-				echo $parents;
+				echo esc_attr( $parents );
 				// Current page
-				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
 			} else {
 				// Just display current page if not parents
-				echo '<li class="item-' . $post->ID . ' active">' . get_the_title() . '</li>';
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
 			}
 		} else if ( is_tag() ) {
 			// Tag page
@@ -239,43 +241,41 @@ function bootstrap_breadcrumb() {
 			$args     = 'include=' . $term_id;
 			$terms    = get_terms( $taxonomy, $args );
 			// Display the tag name
-			echo '<li class="item-tag-' . $terms[0]->term_id . ' item-tag-' . $terms[0]->slug . ' active">' . $terms[0]->name . '</li>';
+			echo '<li class="item-tag-' . esc_attr( $terms[0]->term_id ) . ' item-tag-' . esc_attr( $terms[0]->slug ) . ' active">' . esc_attr( $terms[0]->name ) . '</li>';
 		} elseif ( is_day() ) {
 			// Day archive
 			// Year link
-			echo '<li class="item-year item-year-' . get_the_time( 'Y' ) . '"><a class="bread-year bread-year-' . get_the_time( 'Y' ) . '" href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( 'Y' ) . '">' . get_the_time( 'Y' ) . ' Archives</a></li>';
+			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . '"><a class="bread-year bread-year-' . esc_attr( get_the_time( 'Y' ) ) . '" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
 			// Month link
-			echo '<li class="item-month item-month-' . get_the_time( 'm' ) . '"><a class="bread-month bread-month-' . get_the_time( 'm' ) . '" href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '" title="' . get_the_time( 'M' ) . '">' . get_the_time( 'M' ) . ' Archives</a></li>';
+			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '"><a class="bread-month bread-month-' . esc_attr( get_the_time( 'm' ) ) . '" href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '" title="' . esc_attr( get_the_time( 'M' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
 			// Day display
-			echo '<li class="item-' . get_the_time( 'j' ) . ' active">' . get_the_time( 'jS' ) . ' ' . get_the_time( 'M' ) . ' Archives</li>';
+			echo '<li class="item-' . esc_attr( get_the_time( 'j' ) ) . ' active">' . esc_attr( get_the_time( 'jS' ) ) . ' ' . esc_attr( get_the_time( 'M' ) ) . ' Archives</li>';
 		} else if ( is_month() ) {
 			// Month Archive
 			// Year link
-			echo '<li class="item-year item-year-' . get_the_time( 'Y' ) . '"><a class="bread-year bread-year-' . get_the_time( 'Y' ) . '" href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( 'Y' ) . '">' . get_the_time( 'Y' ) . ' Archives</a></li>';
+			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . '"><a class="bread-year bread-year-' . esc_attr( get_the_time( 'Y' ) ) . '" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
 			// Month display
-			echo '<li class="item-month item-month-' . get_the_time( 'm' ) . '">' . get_the_time( 'M' ) . ' Archives</li>';
+			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</li>';
 		} else if ( is_year() ) {
 			// Display year archive
-			echo '<li class="item-year item-year-' . get_the_time( 'Y' ) . ' active">' . get_the_time( 'Y' ) . ' Archives</li>';
+			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . ' active">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</li>';
 		} else if ( is_author() ) {
 			// Auhor archive
 			// Get the author information
 			global $author;
 			$userdata = get_userdata( $author );
 			// Display author name
-			echo '<li class="item-author item-author-' . $userdata->user_nicename . ' active">' . 'Author: ' . $userdata->display_name . '</li>';
+			echo '<li class="item-author item-author-' . esc_attr( $userdata->user_nicename ) . ' active">' . esc_attr_e( 'Author', 'ogdch' ) . ' ' . esc_attr( $userdata->display_name ) . '</li>';
 		} else if ( get_query_var( 'paged' ) ) {
 			// Paginated archives
-			echo '<li class="item-paged item-paged-' . get_query_var( 'paged' ) . ' active">' . __( 'Page' ) . ' ' . get_query_var( 'paged' ) . '</li>';
+			echo '<li class="item-paged item-paged-' . esc_attr( get_query_var( 'paged' ) ) . ' active">' . esc_attr_e( 'Page', 'ogdch' ) . ' ' . esc_attr( get_query_var( 'paged' ) ) . '</li>';
 		} else if ( is_search() ) {
 			// Search results page
-			echo '<li class="item-search item-search-' . get_search_query() . ' active">Search results for: ' . get_search_query() . '</li>';
+			echo '<li class="item-search item-search-' . esc_attr( get_search_query() ) . ' active">' . esc_attr_e( 'Search results for:', 'ogdch' ) . ' ' . esc_attr( get_search_query() ) . '</li>';
 		} elseif ( is_404() ) {
 			// 404 page
-			echo '<li>' . 'Error 404' . '</li>';
+			echo '<li>' . esc_attr_e( 'Page not found', 'ogdch' ) . '</li>';
 		}
 		echo '</ol>';
-
 	}
-
 }
