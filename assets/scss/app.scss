@@ -196,16 +196,12 @@ pre {
 
 /* Dataset Search */
 .facet-filter {
-  .badge {
+  span {
     margin-left: 3px;
     font-size: floor(($font-size-base * 0.8));
-    background-color: $brand-primary;
-    color: #fff;
-
-
+    color: $gray-light;
   }
-  li:hover .badge, li:active .badge {
-    background-color: #fff;
-    color: $brand-primary;
+  li:hover span, li:active span {
+    color: $gray-lighter;
   }
 }
