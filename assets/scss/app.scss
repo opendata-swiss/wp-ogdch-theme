@@ -216,3 +216,26 @@ a.label-default.label:hover {
     padding: 5px 10px;
   }
 }
+
+.facet-collapse {
+  @media (min-width: $grid-float-breakpoint) {
+    &.collapse {
+      display: block !important;
+      height: auto !important;
+    }
+  }
+}
+.facet-toggle {
+  float: right;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 600;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    display: none;
+  }
+}
