@@ -9,13 +9,13 @@
 @import 'bootstrap_variables';
 @import 'variables';
 @import '../external/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap';
+@import 'wp_tinymce_styles';
 @import 'button_default';
 @import 'responsive_alignment';
 
 /* some bootstrap overrides -> maybe remove later */
 #main-navigation {
   font-weight: 600;
-  font-size: floor(($font-size-base * 1.2));
   &.navbar-default .navbar-nav>li.search>a {
     color: $link-color;
   }
@@ -43,9 +43,8 @@
   @include ogdch-button-default;
 }
 
-hr {
-  margin-top: 70px;
-  margin-bottom: 40px;
+pre {
+  font-size: ceil(($font-size-base * 0.75));
 }
 
 .attachment-app-image {
@@ -53,8 +52,6 @@ hr {
 }
 
 .front-header {
-  margin-top: 50px;
-  margin-bottom: 40px;
   .headline {
     font-size: 28px;
     font-weight: 600;
@@ -72,8 +69,27 @@ hr {
   }
 }
 
+.breadcrumb>li+li:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  padding: 0 8px;
+  content: "\f105";
+}
+
+.nav>li {
+  >a:focus, >a:hover {
+    color: $nav-pills-active-link-hover-color;
+  }
+}
+
 .h2-vertical-center {
-  margin-top: 35px;
+  margin-top: 25px;
+}
+
+.top-buffer {
+  margin-top: $buffer-height;
+}
+.bottom-buffer {
+  margin-bottom: $buffer-height;
 }
 
 #explore {
@@ -107,9 +123,6 @@ hr {
 }
 
 #trending {
-  .row {
-    margin-bottom: 40px;
-  }
   #last-tweet {
     p {
       font-size: 1.5em;
@@ -122,7 +135,6 @@ hr {
 }
 
 .main-footer {
-  margin-top: 40px;
   color: $inverted-text-color;
   background: $text-color;
   box-shadow: 0px 1000px 0px 1000px $text-color;
@@ -134,13 +146,6 @@ hr {
 
     &:hover {
       color: $inverted-link-color;
-    }
-  }
-  .row {
-    margin-bottom: 40px;
-
-    &.last {
-      margin-bottom: 0;
     }
   }
   .lead {
@@ -186,5 +191,17 @@ hr {
     &.logo-egovernment {
       width: 184px;
     }
+  }
+}
+
+/* Dataset Search */
+.facet-filter {
+  span {
+    margin-left: 3px;
+    font-size: floor(($font-size-base * 0.8));
+    color: $gray-light;
+  }
+  li:hover span, li:active span {
+    color: $gray-lighter;
   }
 }

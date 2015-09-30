@@ -2,7 +2,7 @@
 $dataset_count = get_dataset_count();
 ?>
 
-<footer class="container main-footer">
+<footer class="container main-footer top-buffer">
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
 			<div class="statsnumber">
@@ -29,7 +29,7 @@ $dataset_count = get_dataset_count();
 			<p><?php esc_attr_e( 'Tweets', 'ogdch' ); ?></p>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row top-buffer">
 		<div class="col-sm-4">
 			<p class="lead"><?php esc_attr_e( 'What about you?', 'ogdch' ); ?></p>
 		</div>
@@ -38,7 +38,7 @@ $dataset_count = get_dataset_count();
 			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button"><?php esc_attr_e( 'How to share the App I built?', 'ogdch' ); ?></a>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row top-buffer">
 		<div class="col-md-2 col-xs-4">
 			<div class="btn-group">
 				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,7 +77,7 @@ $dataset_count = get_dataset_count();
 			?>
 		</div>
 	</div>
-	<div id="logos" class="row last">
+	<div id="logos" class="row top-buffer">
 		<div class="col-xs-12">
 			<img class="logo-confederation" src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />
 			<img class="logo-egovernment" src="/content/themes/wp-ogdch-theme/assets/images/logo-egovernment.png" />

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-	<header class="container front-header">
+	<header class="container front-header top-buffer bottom-buffer">
 		<div class="row">
 			<div class="col-md-4">
 				<p><strong>Open Government Data Switzerland</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
@@ -88,9 +88,15 @@
 					</div>
 				<?php endif; ?>
 			</div>
-
-			<hr/>
 		</section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<hr/>
+				</div>
+			</div>
+		</div>
 
 		<!-- How -->
 		<section id="how" class="container">
@@ -129,9 +135,15 @@
 					</div>
 				</div>
 			</div>
-
-			<hr/>
 		</section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<hr/>
+				</div>
+			</div>
+		</div>
 
 		<!-- Trending -->
 		<section id="trending" class="container">
@@ -207,7 +219,7 @@
 				</div>
 			</div>
 
-			<div id="last-tweet" class="row">
+			<div id="last-tweet" class="row top-buffer">
 				<div class="col-xs-12">
 					<blockquote>
 						<p><i class="fa fa-twitter"></i> <a href="#">@grssnbchr</a> er hat an der <a href="#">#opendatach</a> Konferenz letzte Woche nochmals darüber gesprochen...</p>
