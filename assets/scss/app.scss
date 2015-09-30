@@ -81,6 +81,14 @@ pre {
   }
 }
 
+.label-default.label {
+  color: $gray-light;
+}
+a.label-default.label:focus,
+a.label-default.label:hover {
+  color: $gray-light;
+}
+
 .h2-vertical-center {
   margin-top: 25px;
 }
@@ -203,5 +211,8 @@ pre {
   }
   li:hover span, li:active span {
     color: $gray-lighter;
+  }
+  .nav>li>a {
+    padding: 5px 10px;
   }
 }
