@@ -99,6 +99,37 @@ hr {
   border-top-style: dashed;
 }
 
+.dl-horizontal {
+  $gutter-size: 5px;
+  border-bottom: 1px dashed $gray-lighterish;
+  padding-bottom: $gutter-size;
+
+  dt:first-of-type, dd:first-of-type{
+    border-top-width:0;
+  }
+  dt {
+    border-top: 1px dashed $gray-lighterish;
+    padding-top: $gutter-size;
+    margin-top: $gutter-size;
+  }
+  @media (min-width: $grid-float-breakpoint) {
+    dt {
+      width: ($dl-horizontal-offset - 5);
+      text-align: left;
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+      border-top: 1px dashed $gray-lighterish;
+      padding-top: $gutter-size;
+      margin-top: $gutter-size;
+    }
+    // FIX somehow the first dd element isn't aligned to the title
+    dd:first-of-type {
+      padding-top: (2 * $gutter-size);
+    }
+  }
+}
+
 .h2-vertical-center {
   margin-top: 25px;
 }
