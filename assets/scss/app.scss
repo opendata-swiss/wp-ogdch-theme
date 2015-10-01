@@ -74,6 +74,11 @@ pre {
   padding: 0 8px;
   content: "\f105";
 }
+.breadcrumb {
+  li.active a {
+    color: $gray-light;
+  }
+}
 
 .nav>li {
   >a:focus, >a:hover {
