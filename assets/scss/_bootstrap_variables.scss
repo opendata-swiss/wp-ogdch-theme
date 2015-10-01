@@ -13,6 +13,7 @@ $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighterish:        lighten($gray-base, 80%) !default;   // #ccc
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary:         #109C81 !default; // #337ab7
@@ -570,7 +571,7 @@ $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%
 //##
 
 //** Default label background color
-$label-default-bg:            $gray-light !default;
+$label-default-bg:            $gray-lighter !default;
 //** Primary label background color
 $label-primary-bg:            $brand-primary !default;
 //** Success label background color
@@ -851,7 +852,7 @@ $pre-scrollable-max-height:   340px !default;
 //##
 
 //** Horizontal offset for forms and lists.
-$component-offset-horizontal: 180px !default;
+$component-offset-horizontal: 200px !default;
 //** Text muted color
 $text-muted:                  $gray-light !default;
 //** Abbreviations and acronyms border color
@@ -869,4 +870,4 @@ $page-header-border-color:    $gray-lighter !default;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
-$hr-border:                   $gray-lighter !default;
+$hr-border:                   $gray-lighterish !default;

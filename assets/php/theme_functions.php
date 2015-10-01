@@ -152,7 +152,7 @@ function bootstrap_breadcrumb() {
 		echo '<li class="item-home"><a class="bread-link bread-home" href="' . esc_url( get_home_url() ) . '" title="' . esc_attr( $home_title ) . '">' . esc_attr( $home_title ) . '</a></li>';
 
 		if ( is_archive() && ! is_tax() && ! is_category() ) {
-			echo '<li class="item-archive active">' . post_type_archive_title( $prefix, false ) . '</li>';
+			echo '<li class="item-archive active"><a href="" title="' . esc_attr( post_type_archive_title( '', false ) ) . '">' . esc_attr( post_type_archive_title( '', false ) ) . '</a></li>';
 		} else if ( is_archive() && is_tax() && ! is_category() ) {
 			// If post is a custom post type
 			$post_type = get_post_type();
@@ -164,7 +164,7 @@ function bootstrap_breadcrumb() {
 			}
 
 			$custom_tax_name = get_queried_object()->name;
-			echo '<li class="item-archive active">' . esc_attr( $custom_tax_name ) . '</li>';
+			echo '<li class="item-archive active"><a href="" title="' . esc_attr( $custom_tax_name ) . '">' . esc_attr( $custom_tax_name ) . '</a></li>';
 		} else if ( is_single() ) {
 			// If post is a custom post type
 			$post_type = get_post_type();
@@ -227,12 +227,8 @@ function bootstrap_breadcrumb() {
 				}
 				// Display parent pages
 				echo esc_attr( $parents );
-				// Current page
-				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
-			} else {
-				// Just display current page if not parents
-				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
 			}
+			echo '<li class="item-' . esc_attr( $post->ID ) . ' active"><a href="" title="' . esc_attr( get_the_title() ) . '">' . esc_attr( get_the_title() ) . '</a></li>';
 		} else if ( is_tag() ) {
 			// Tag page
 			// Get tag information
