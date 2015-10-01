@@ -89,6 +89,16 @@ a.label-default.label:hover {
   color: $gray-light;
 }
 
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th,
+hr {
+  border-top-style: dashed;
+}
+
 .h2-vertical-center {
   margin-top: 25px;
 }
@@ -203,7 +213,15 @@ a.label-default.label:hover {
 }
 
 /* Dataset Search */
+.search-form {
+  h3 {
+    font-size: 26px;
+  }
+}
 .facet-filter {
+  h3 {
+    font-size: 20px;
+  }
   span {
     margin-left: 3px;
     font-size: floor(($font-size-base * 0.8));
@@ -227,8 +245,8 @@ a.label-default.label:hover {
 }
 .facet-toggle {
   float: right;
-  font-size: 40px;
-  line-height: 30px;
+  font-size: 30px;
+  line-height: 20px;
   font-weight: 600;
 
   &:hover, &:focus {
@@ -237,5 +255,54 @@ a.label-default.label:hover {
 
   @media (min-width: $grid-float-breakpoint) {
     display: none;
+  }
+}
+
+/* Dataset Detail */
+header.dataset-header {
+  $header-padding: 20px;
+  $header-h1-margin: 15px;
+  color: $inverted-text-color;
+  background-color: $brand-primary;
+  margin-bottom: 40px;
+  padding-top: $header-padding;
+
+  h1 {
+    margin-top: $header-h1-margin;
+    margin-bottom: $header-padding + $header-h1-margin;
+  }
+
+  .dataset-toolbox {
+    background-color: $gray-dark;
+
+    .fa-li {
+      top: 0.3em;
+    }
+    a {
+      color: $inverted-text-color;
+    }
+  }
+}
+
+.resource-list {
+  li {
+    overflow: hidden;
+    border-bottom: dashed $gray-lighterish 1px;
+    padding: 10px 0;
+  }
+  .actions a {
+    margin-left: 10px;
+  }
+
+  .label-format {
+    border: solid 1px $gray-lighterish;
+    color: $gray-light;
+    background-color: #fff;
+    margin-right: 10px;
+  }
+}
+.additional-info {
+  th.header-col {
+    width: 200px;
   }
 }
