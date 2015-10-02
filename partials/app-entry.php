@@ -18,7 +18,7 @@ if ( $icon_attributes ) {
 	</div>
 	<div class="col-sm-9">
 		<?php
-		echo '<h2>' . esc_html( get_the_title() ) . '</h2>';
+		the_title( '<h2>', '</h2>' );
 		echo '<p class="small">';
 		echo the_date();
 		// @codingStandardsIgnoreStart

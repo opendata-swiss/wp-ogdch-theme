@@ -69,14 +69,31 @@ pre {
   }
 }
 
-.breadcrumb>li+li:before {
-  font: normal normal normal 14px/1 FontAwesome;
-  padding: 0 8px;
-  content: "\f105";
-}
 .breadcrumb {
+  >li+li:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    padding: 0 8px;
+    content: "\f105";
+  }
+
   li.active a {
     color: $gray-light;
+  }
+}
+
+.page-header {
+  .breadcrumb {
+    margin-bottom: 0;
+    a {
+      color: $inverted-text-color;
+    }
+    li.active {
+      color: $gray-dark;
+
+      a {
+        color: $gray-dark;
+      }
+    }
   }
 }
 
@@ -132,6 +149,19 @@ hr {
     dd:first-of-type {
       padding-top: (2 * $gutter-size);
     }
+  }
+}
+
+.page-header {
+  $header-padding: 30px;
+  color: $inverted-text-color;
+  background-color: $brand-primary;
+  margin-bottom: 50px;
+  padding: $header-padding 0;
+  border: 0;
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 }
 

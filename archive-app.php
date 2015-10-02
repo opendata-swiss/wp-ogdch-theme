@@ -1,12 +1,20 @@
 <?php get_header(); ?>
-<?php get_template_part( 'content', 'breadcrumb' ); ?>
+
+
+<header class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<?php bootstrap_breadcrumb(); ?>
+				<h1><?php post_type_archive_title(); ?></h1>
+			</div>
+		</div>
+	</div>
+</header>
 
 <div class="container">
 
 	<div class="row">
-		<div class="col-xs-12">
-			<h1><?php post_type_archive_title(); ?></h1>
-		</div>
 		<div class="col-xs-12">
 			<p><?php esc_attr_e( 'Did you build an App with Data listed in our catalogue and would like to share it with us?' ,'ogdch' ); ?></p>
 			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'Contact us', 'ogdch' ); ?></a>
