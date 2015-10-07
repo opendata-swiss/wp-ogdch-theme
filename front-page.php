@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 
-	<header class="container front-header top-buffer bottom-buffer">
+	<header class="container front-header">
 		<div class="row">
-			<div class="col-md-4">
-				<p><strong>Open Government Data Switzerland</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			<div class="col-md-7">
+				<p>Das Portal <strong>opendata.swiss</strong> ist ein Gemeinschaftsprojekt von Bund, Kantonen und Gemeinden. Es stellt der Allgemeinheit offene Behördendaten aller föderalen Ebenen in einem zentralen Katalog zur Verfügung. Das Schweizerische Bundesarchiv betreibt <strong>opendata.swiss</strong>.</p>
 				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 			</div>
-			<div class="col-md-8 headline text-md-right">
+			<div class="col-md-5 headline text-md-right hidden-sm hidden-xs">
 				<?php
 				$dataset_count = get_dataset_count();
 				?>

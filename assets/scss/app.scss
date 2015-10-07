@@ -26,15 +26,26 @@
   h1 {
     margin: 0;
   }
-  .navbar-brand {
-    font-size: 36px;
-    span {
-      color: $brand-primary;
-    }
+  .navbar-brand img {
+    height: 100px;
   }
-  @media (max-width: $screen-sm-max) {
+  .navbar-toggle {
+    margin-top: 30px;
+  }
+
+  @media (max-width: $grid-float-breakpoint) {
+    &.navbar {
+      min-height: 90px;
+    }
     .navbar-brand {
-      font-size: 26px;
+      height: auto;
+    }
+    .navbar-brand img {
+      height: 30px;
+    }
+    .navbar-toggle {
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -52,13 +63,16 @@ pre {
 }
 
 .front-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   .headline {
     font-size: 28px;
     font-weight: 600;
     #opendata-count {
       margin-top: -30px;
-      font-size: 200px;
-      line-height: 200px;
+      font-size: 130px;
+      line-height: 130px;
     }
     .title {
       line-height: 28px;
@@ -69,14 +83,44 @@ pre {
   }
 }
 
-.breadcrumb>li+li:before {
-  font: normal normal normal 14px/1 FontAwesome;
-  padding: 0 8px;
-  content: "\f105";
-}
 .breadcrumb {
+  >li+li:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    padding: 0 8px;
+    content: "\f105";
+  }
+
   li.active a {
     color: $gray-light;
+  }
+}
+
+.page-header {
+  $header-padding: 30px;
+  color: $inverted-text-color;
+  background-color: $brand-primary;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: $header-padding 0;
+  border: 0;
+
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 0;
+    a {
+      color: $inverted-text-color;
+    }
+    li.active {
+      color: $gray-dark;
+
+      a {
+        color: $gray-dark;
+      }
+    }
   }
 }
 

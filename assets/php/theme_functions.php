@@ -202,17 +202,17 @@ function bootstrap_breadcrumb() {
 			// Check if the post is in a category
 			if ( ! empty( $last_category ) ) {
 				echo esc_attr( $cat_display );
-				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active"><a href="">' . esc_attr( get_the_title() ) . '</a></li>';
 				// Else if post is in a custom taxonomy
 			} else if ( ! empty( $cat_id ) ) {
 				echo '<li class="item-cat item-cat-' . esc_attr( $cat_id ) . ' item-cat-' . esc_attr( $cat_nicename ) . '"><a class="bread-cat bread-cat-' . esc_attr( $cat_id ) . ' bread-cat-' . esc_attr( $cat_nicename ) . '" href="' . esc_url( $cat_link ) . '" title="' . esc_attr( $cat_name ) . '">' . esc_attr( $cat_name ) . '</a></li>';
-				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active"><a href="">' . esc_attr( get_the_title() ) . '</a></li>';
 			} else {
-				echo '<li class="item-' . esc_attr( $post->ID ) . ' active">' . esc_attr( get_the_title() ) . '</li>';
+				echo '<li class="item-' . esc_attr( $post->ID ) . ' active"><a href="">' . esc_attr( get_the_title() ) . '</a></li>';
 			}
 		} else if ( is_category() ) {
 			// Category page
-			echo '<li class="item-cat active">' . esc_attr( single_cat_title( '', false ) ) . '</li>';
+			echo '<li class="item-cat active"><a href="">' . esc_attr( single_cat_title( '', false ) ) . '</a></li>';
 		} else if ( is_page() ) {
 			// Standard page
 			if ( $post->post_parent ) {
@@ -237,7 +237,7 @@ function bootstrap_breadcrumb() {
 			$args     = 'include=' . $term_id;
 			$terms    = get_terms( $taxonomy, $args );
 			// Display the tag name
-			echo '<li class="item-tag-' . esc_attr( $terms[0]->term_id ) . ' item-tag-' . esc_attr( $terms[0]->slug ) . ' active">' . esc_attr( $terms[0]->name ) . '</li>';
+			echo '<li class="item-tag-' . esc_attr( $terms[0]->term_id ) . ' item-tag-' . esc_attr( $terms[0]->slug ) . ' active"><a href="">' . esc_attr( $terms[0]->name ) . '</a></li>';
 		} elseif ( is_day() ) {
 			// Day archive
 			// Year link
@@ -245,7 +245,7 @@ function bootstrap_breadcrumb() {
 			// Month link
 			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '"><a class="bread-month bread-month-' . esc_attr( get_the_time( 'm' ) ) . '" href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '" title="' . esc_attr( get_the_time( 'M' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
 			// Day display
-			echo '<li class="item-' . esc_attr( get_the_time( 'j' ) ) . ' active">' . esc_attr( get_the_time( 'jS' ) ) . ' ' . esc_attr( get_the_time( 'M' ) ) . ' Archives</li>';
+			echo '<li class="item-' . esc_attr( get_the_time( 'j' ) ) . ' active"><a href="">' . esc_attr( get_the_time( 'jS' ) ) . ' ' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
 		} else if ( is_month() ) {
 			// Month Archive
 			// Year link
@@ -254,20 +254,20 @@ function bootstrap_breadcrumb() {
 			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</li>';
 		} else if ( is_year() ) {
 			// Display year archive
-			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . ' active">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</li>';
+			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . ' active"><a href="">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
 		} else if ( is_author() ) {
 			// Auhor archive
 			// Get the author information
 			global $author;
 			$userdata = get_userdata( $author );
 			// Display author name
-			echo '<li class="item-author item-author-' . esc_attr( $userdata->user_nicename ) . ' active">' . esc_attr_e( 'Author', 'ogdch' ) . ' ' . esc_attr( $userdata->display_name ) . '</li>';
+			echo '<li class="item-author item-author-' . esc_attr( $userdata->user_nicename ) . ' active"><a href="">' . esc_attr_e( 'Author', 'ogdch' ) . ' ' . esc_attr( $userdata->display_name ) . '</a></li>';
 		} else if ( get_query_var( 'paged' ) ) {
 			// Paginated archives
-			echo '<li class="item-paged item-paged-' . esc_attr( get_query_var( 'paged' ) ) . ' active">' . esc_attr_e( 'Page', 'ogdch' ) . ' ' . esc_attr( get_query_var( 'paged' ) ) . '</li>';
+			echo '<li class="item-paged item-paged-' . esc_attr( get_query_var( 'paged' ) ) . ' active"><a href="">' . esc_attr_e( 'Page', 'ogdch' ) . ' ' . esc_attr( get_query_var( 'paged' ) ) . '</a></li>';
 		} else if ( is_search() ) {
 			// Search results page
-			echo '<li class="item-search item-search-' . esc_attr( get_search_query() ) . ' active">' . esc_attr_e( 'Search results for:', 'ogdch' ) . ' ' . esc_attr( get_search_query() ) . '</li>';
+			echo '<li class="item-search item-search-' . esc_attr( get_search_query() ) . ' active"><a href="">' . esc_attr_e( 'Search results for:', 'ogdch' ) . ' ' . esc_attr( get_search_query() ) . '</a></li>';
 		} elseif ( is_404() ) {
 			// 404 page
 			echo '<li>' . esc_attr_e( 'Page not found', 'ogdch' ) . '</li>';

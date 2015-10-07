@@ -1,20 +1,35 @@
 <?php get_header(); ?>
-<?php get_template_part( 'content', 'breadcrumb' ); ?>
 
-<div class="container">
-	<main class="row">
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+<?php
+// Start the loop.
+while ( have_posts() ) : the_post();
+?>
+	<header class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<?php bootstrap_breadcrumb(); ?>
+					<?php the_title( '<h1>', '</h1>' ); ?>
+				</div>
+			</div>
+		</div>
+	</header>
 
-			// Include the page content template.
-			get_template_part( 'content', 'page' );
+	<div class="container">
+		<main class="row">
+			<article <?php post_class( 'col-xs-12' ); ?>>
 
-			// End the loop.
-		endwhile;
-		?>
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div><!-- .entry-content -->
 
-	</main><!-- .site-main -->
-</div><!-- .content-area -->
+			</article><!-- #post-## -->
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+<?php
+// End the loop.
+endwhile;
+?>
 
 <?php get_footer(); ?>
