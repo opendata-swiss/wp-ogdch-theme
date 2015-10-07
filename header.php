@@ -13,9 +13,9 @@
 	<meta name="viewport" content="width=device-width">
 	<title><?php wp_title( '|', true, 'right' ); ?> <?php bloginfo( 'name' ); ?></title>
 
-	<link rel="icon" sizes="128x128" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon-128.png">
-	<link rel="icon" sizes="192x192" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon-192.png">
-	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon-128.png">
+	<link rel="icon" sizes="128x128" href="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/favicon-128.png">
+	<link rel="icon" sizes="192x192" href="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/favicon-192.png">
+	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/favicon-128.png">
 
 	<?php wp_head(); ?>
 </head>
@@ -33,8 +33,8 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.svg" class="navbar-brand-image hidden-xs hidden-sm " alt="opendata.swiss" />
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_line.svg" class="navbar-brand-image hidden-md hidden-lg " alt="opendata.swiss" />
+				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo.svg" class="navbar-brand-image hidden-xs hidden-sm " alt="opendata.swiss" />
+				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_line.svg" class="navbar-brand-image hidden-md hidden-lg " alt="opendata.swiss" />
 			</a>
 		</div>
 

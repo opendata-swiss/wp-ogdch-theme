@@ -31,10 +31,12 @@ function odg_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'odg_scripts' );
 
-// First, create a function that includes the path to your favicon
+/**
+ * Adds favicon to header
+ */
 function add_favicon() {
-	echo '<link rel="icon" sizes="128x128" href="' . get_stylesheet_directory_uri() . '/assets/images/favicon-128.png">';
-	echo '<link rel="icon" sizes="192x192" href="' . get_stylesheet_directory_uri() . '/assets/images/favicon-192.png">';
+	echo '<link rel="icon" sizes="128x128" href="' . esc_attr( get_stylesheet_directory_uri() ) . '/assets/images/favicon-128.png">';
+	echo '<link rel="icon" sizes="192x192" href="' . esc_attr( get_stylesheet_directory_uri() ) . '/assets/images/favicon-192.png">';
 }
 
 // Now, just make sure that function runs when you're on the login page and admin pages
