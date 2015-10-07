@@ -56,6 +56,8 @@
 
 pre {
   font-size: ceil(($font-size-base * 0.75));
+  border: none;
+  border-radius: 0;
 }
 
 .attachment-app-image {
