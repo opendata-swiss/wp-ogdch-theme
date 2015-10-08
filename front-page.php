@@ -7,12 +7,20 @@
 				<p>Das Portal <strong>opendata.swiss</strong> ist ein Gemeinschaftsprojekt von Bund, Kantonen und Gemeinden. Es stellt der Allgemeinheit offene Behördendaten aller föderalen Ebenen in einem zentralen Katalog zur Verfügung. Das Schweizerische Bundesarchiv betreibt <strong>opendata.swiss</strong>.</p>
 				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 			</div>
-			<div class="col-md-5 headline text-md-right hidden-sm hidden-xs">
-				<?php
-				$dataset_count = get_dataset_count();
-				?>
-				<div id="opendata-count"><?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?></div>
-				<div class="title"><?php esc_attr_e( 'Open Datasets', 'ogdch' ); ?></div>
+			<div class="col-md-5 text-md-right text-xs-center">
+				<div class="headline">
+					<?php
+					$dataset_count = get_dataset_count();
+					?>
+					<div id="opendata-count"><?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?></div>
+					<div class="title"><?php esc_attr_e( 'Open Datasets', 'ogdch' ); ?></div>
+				</div>
+				<form action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
+					<div class="form-group has-feedback main-search">
+						<input type="search" class="form-control input-lg" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
+						<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
+					</div>
+				</form>
 			</div>
 		</div>
 	</header>
@@ -21,32 +29,23 @@
 		<!-- Explore -->
 		<section id="explore" class="container">
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-xs-12">
 					<h2><?php esc_attr_e( 'What you can find', 'ogdch' ); ?></h2>
-				</div>
-				<div class="col-md-5 text-md-right">
-					<form class="h2-vertical-center" action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
-						<div class="form-group has-feedback">
-							<input type="search" class="form-control input-lg main-search" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
-							<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<h3><?php esc_attr_e( 'Data Categories', 'ogdch' ); ?></h3>
 				</div>
 			</div>
 
 			<div class="row">
 				<?php
-				$current_post = 1;
+				$current_group = 0;
 				$shown_groups = 12;
 				$group_count  = count( $dataset_count['groups'] );
+				$gourps_per_col = ceil( $group_count / 3 );
 
 				foreach ( $dataset_count['groups'] as $group_name => $count ) {
+					if( $current_group % $gourps_per_col === 0 ) {
+						echo '<ul class="col-md-4 list-unstyled">';
+					}
+
 					// @codingStandardsIgnoreStart
 					$args = array(
 						'meta_key' => '_ckan_local_group_ckan_name',
@@ -57,37 +56,23 @@
 					);
 					$groups = get_posts($args);
 					// @codingStandardsIgnoreEnd
+
+					$ckan_name = get_post_meta( $groups[0]->ID, '_ckan_local_group_ckan_name', true );
+					$title     = get_localized_meta( $groups[0]->ID, '_ckan_local_group_title_' );
 					?>
-					<?php if ( $current_post === $shown_groups + 1 ) : ?>
-						<div class="collapse" id="collapsed-category">
-					<?php endif; ?>
-					<div class="col-md-3 col-sm-6 category">
-						<?php
-						$ckan_name = get_post_meta( $groups[0]->ID, '_ckan_local_group_ckan_name', true );
-						$title     = get_localized_meta( $groups[0]->ID, '_ckan_local_group_title_' );
-						?>
-						<h4>
-							<a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php esc_html_e( $title ); ?></a> <?php esc_html_e( $count ); ?>
-						</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<?php if ( $group_count > $shown_groups && ( $current_post === $group_count ) ) : ?>
-						</div>
-					<?php endif; ?>
+					<li class="category">
+						<strong><a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php esc_html_e( $title ); ?></a> <span><?php esc_html_e( $count ); ?></span></strong>
+					</li>
 
-					<?php $current_post ++; ?>
-				<?php } ?>
-
-				<?php if ( $group_count > $shown_groups ) : ?>
-					<div class="col-sm-12">
-						<p>
-							<a class="btn btn-default" id="collapse-category-btn" role="button" data-toggle="collapse" href="#collapsed-category" aria-expanded="false" aria-controls="collapsed-category">
-								<?php esc_attr_e( 'Show more categories', 'ogdch' ); ?>
-							</a>
-						</p>
-					</div>
-				<?php endif; ?>
+					<?php
+					$current_group++;
+					if( $current_group % $gourps_per_col === 0 ) {
+						echo '</ul>';
+					}
+				}
+				?>
 			</div>
+
 		</section>
 
 		<div class="container">

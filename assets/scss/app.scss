@@ -17,11 +17,11 @@
 #main-navigation {
   font-weight: 600;
   &.navbar-default .navbar-nav>li.search>a {
-    color: $link-color;
+    color: $gray-light;
   }
   &.navbar-default .navbar-nav>li.search>a:focus,
   &.navbar-default .navbar-nav>li.search>a:hover {
-    color: $link-hover-color;
+    color: $link-color;
   }
   h1 {
     margin: 0;
@@ -65,7 +65,6 @@ pre {
 }
 
 .front-header {
-  padding-top: 30px;
   padding-bottom: 30px;
 
   .headline {
@@ -75,13 +74,17 @@ pre {
       margin-top: -30px;
       font-size: 130px;
       line-height: 130px;
+
+      @media (max-width: $grid-float-breakpoint) {
+        margin-top: 20px;
+      }
     }
     .title {
       line-height: 28px;
     }
-    img {
-      width: 50px;
-    }
+  }
+  .main-search {
+    margin-top: 20px;
   }
 }
 
@@ -165,7 +168,7 @@ hr {
   }
   @media (min-width: $grid-float-breakpoint) {
     dt {
-      width: ($dl-horizontal-offset - 5);
+      width: $dl-horizontal-offset;
       text-align: left;
     }
     dd {
@@ -182,16 +185,22 @@ hr {
 }
 
 // Main search input field
-.form-control.main-search {
-  padding-left: 0;
-  border: none;
-  border-bottom: 2px solid $link-color;
-  border-radius: 0;
-  box-shadow: none;
-
-  &:focus {
-    border-bottom: 2px solid $link-hover-color;
+.main-search {
+  .form-control {
+    padding-left: 0;
+    border: none;
+    border-bottom: 2px solid $gray;
+    border-radius: 0;
     box-shadow: none;
+
+    &:focus {
+      border-bottom: 2px solid $link-color;
+      box-shadow: none;
+    }
+  }
+
+  .form-control-feedback {
+    color: $gray-light;
   }
 }
 
@@ -208,13 +217,11 @@ hr {
 
 #explore {
   .category {
-    height: 120px;
-    overflow: hidden;
-
-    h4 {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
+    margin-bottom: 15px;
+    font-size: 20px;
+    
+    span {
+      margin-left: 5px;
     }
   }
 }

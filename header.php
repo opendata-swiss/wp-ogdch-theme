@@ -34,7 +34,7 @@
 			</button>
 			<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
 				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo.svg" class="navbar-brand-image hidden-xs hidden-sm " alt="opendata.swiss" />
-				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_line.svg" class="navbar-brand-image hidden-md hidden-lg " alt="opendata.swiss" />
+				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.svg" class="navbar-brand-image hidden-md hidden-lg " alt="opendata.swiss" />
 			</a>
 		</div>
 
