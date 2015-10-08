@@ -17,32 +17,27 @@ if ( $icon_attributes ) {
 		<img src="<?php esc_attr_e( $icon_src ); ?>" class="img-responsive" />
 	</div>
 	<div class="col-sm-9">
+		<?php the_title( '<h3>', '</h3>' ); ?>
+		<p class="small"><?php echo the_date(); ?> | <a href="mailto:<?php echo esc_attr( $author_email ); ?>"><?php echo esc_attr( $author_name ); ?></a> | <a href="<?php echo esc_url( $url ); ?>"><?php echo esc_url( $url ); ?></a></p>
+		<p><?php the_content() ?></p>
 		<?php
-		the_title( '<h2>', '</h2>' );
-		echo '<p class="small">';
-		echo the_date();
-		// @codingStandardsIgnoreStart
-		printf( __( ' | Author: <a href="mailto:%1$s">%1$s</a>', 'ogdch' ), esc_attr( $author_email ) );
-		printf( __( ' | Website: <a href="%1$s">%1$s</a>', 'ogdch' ), $url );
-		// @codingStandardsIgnoreEnd
-		echo '</p>';
-		echo '<p>' . the_content() . '</p>';
 		if ( ! empty( $related_datasets ) ) {
+			echo '<h4>' . esc_attr( 'Datasets Used', 'ogdch' ) . '</h4>';
 			// Check if wp-ckan-backend plugin is active
 			if ( ! method_exists( 'Ckan_Backend_Helper', 'get_dataset_title' ) ) {
 				esc_attr_e( 'Please activate wp-ckan-backend plugin', 'ogdch' );
 			} else {
-				echo '<div class="collapse" id="collapsed-related-' . esc_attr( get_the_ID() ) . '">';
 				echo '<ul>';
 				foreach ( $related_datasets as $dataset ) {
 					$title = Ckan_Backend_Helper::get_dataset_title( $dataset['dataset_id'] );
 					echo '<li><a href="' . esc_attr( get_page_link_by_slug( 'dataset/' . $dataset['dataset_id'] ) ) . '">' . esc_attr( $title ) . '</a></li>';
 				}
 				echo '</ul>';
-				echo '</div>';
-				echo '<p class="small"><a id="collapsed-related-' . esc_attr( get_the_ID() ) . '-link" data-toggle="collapse" href="#collapsed-related-' . esc_attr( get_the_ID() ) . '" aria-expanded="false" aria-controls="collapsed-related-' . esc_attr( get_the_ID() ) . '">' . esc_attr__( 'Show related datasets', 'ogdch' ) . '</a></p>';
 			}
 		}
 		?>
+	</div>
+	<div class="col-xs-12">
+		<hr/>
 	</div>
 </div>
