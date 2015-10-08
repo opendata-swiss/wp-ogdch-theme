@@ -147,19 +147,19 @@ a.label-default.label:hover {
 .table>thead>tr>td,
 .table>thead>tr>th,
 hr {
-  border-top-style: dashed;
+  border-top-style: solid;
 }
 
 .dl-horizontal {
   $gutter-size: 5px;
-  border-bottom: 1px dashed $gray-lighterish;
+  border-bottom: 1px solid $gray-lighter;
   padding-bottom: $gutter-size;
 
   dt:first-of-type, dd:first-of-type{
     border-top-width:0;
   }
   dt {
-    border-top: 1px dashed $gray-lighterish;
+    border-top: 1px solid $gray-lighter;
     padding-top: $gutter-size;
     margin-top: $gutter-size;
   }
@@ -170,7 +170,7 @@ hr {
     }
     dd {
       margin-left: $dl-horizontal-offset;
-      border-top: 1px dashed $gray-lighterish;
+      border-top: 1px solid $gray-lighter;
       padding-top: $gutter-size;
       margin-top: $gutter-size;
     }
@@ -178,6 +178,20 @@ hr {
     dd:first-of-type {
       padding-top: (2 * $gutter-size);
     }
+  }
+}
+
+// Main search input field
+.form-control.main-search {
+  padding-left: 0;
+  border: none;
+  border-bottom: 2px solid $link-color;
+  border-radius: 0;
+  box-shadow: none;
+
+  &:focus {
+    border-bottom: 2px solid $link-hover-color;
+    box-shadow: none;
   }
 }
 
@@ -369,7 +383,7 @@ header.dataset-header {
 .resource-list {
   li {
     overflow: hidden;
-    border-bottom: dashed $gray-lighterish 1px;
+    border-bottom: solid $gray-lighter 1px;
     padding: 10px 0;
   }
   .actions a {
@@ -386,5 +400,20 @@ header.dataset-header {
 .additional-info {
   th.header-col {
     width: 200px;
+  }
+}
+
+// Organization list
+#organisations-list {
+  li {
+    a  {
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid $gray-lighter;
+
+      &:hover {
+        background-color: $gray-lighter;
+      }
+    }
   }
 }

@@ -21,13 +21,13 @@
 		<!-- Explore -->
 		<section id="explore" class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-7">
 					<h2><?php esc_attr_e( 'What you can find', 'ogdch' ); ?></h2>
 				</div>
-				<div class="col-md-4 text-md-right">
+				<div class="col-md-5 text-md-right">
 					<form class="h2-vertical-center" action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
 						<div class="form-group has-feedback">
-							<input type="search" class="form-control" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
+							<input type="search" class="form-control input-lg main-search" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
 							<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
 						</div>
 					</form>
