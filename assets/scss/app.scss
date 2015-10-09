@@ -61,6 +61,10 @@ pre {
 }
 small, .small {
   color: $gray-light;
+
+  a {
+    color: $link-color;
+  }
 }
 p.small {
   margin-bottom: 8px;
@@ -160,12 +164,11 @@ a.label-default {
 .label-primary-gray {
   background-color: $gray-lighter;
   color: $gray-light;
-
-  &:focus,
-  &:hover {
-    background-color: $gray-light;
-    color: $gray;
-  }
+}
+a.label-primary-gray:focus,
+a.label-primary-gray:hover {
+  background-color: $gray-lighterish;
+  color: $gray;
 }
 
 .table>tbody>tr>td,
@@ -454,12 +457,9 @@ header.dataset-header {
   .actions a {
     margin-left: 10px;
   }
-
-  .label-format {
-    border: solid 1px $gray-lighterish;
-    color: $gray-light;
-    background-color: #fff;
-    margin-right: 10px;
+  .heading {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .additional-info {
