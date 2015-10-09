@@ -135,12 +135,31 @@ pre {
   }
 }
 
-.label-default.label {
+// Label styles
+a.label-default {
+  background-color: #fff;
+  border: solid 1px $gray-light;
   color: $gray-light;
+
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    color: $gray;
+    border-color: $gray;
+  }
+  &[href]:focus, &[href]:hover {
+    background-color: #fff;
+  }
 }
-a.label-default.label:focus,
-a.label-default.label:hover {
+.label-primary-gray {
+  background-color: $gray-lighter;
   color: $gray-light;
+
+  &:focus,
+  &:hover {
+    background-color: $gray-light;
+    color: $gray;
+  }
 }
 
 .table>tbody>tr>td,
@@ -336,6 +355,9 @@ hr {
   .nav>li>a {
     padding: 5px 10px;
   }
+  .list-inline.tags li {
+    padding: 0;
+  }
 }
 
 .facet-collapse {
@@ -359,6 +381,9 @@ hr {
   @media (min-width: $grid-float-breakpoint) {
     display: none;
   }
+}
+.list-inline.dataset-resources li {
+  padding: 0;
 }
 
 /* Dataset Detail */
