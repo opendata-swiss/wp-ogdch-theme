@@ -42,7 +42,7 @@
 				$gourps_per_col = ceil( $group_count / 3 );
 
 				foreach ( $dataset_count['groups'] as $group_name => $count ) {
-					if( $current_group % $gourps_per_col === 0 ) {
+					if ( 0 === $current_group % $gourps_per_col ) {
 						echo '<ul class="col-md-4 list-unstyled">';
 					}
 
@@ -66,7 +66,7 @@
 
 					<?php
 					$current_group++;
-					if( $current_group % $gourps_per_col === 0 ) {
+					if ( 0 === $current_group % $gourps_per_col ) {
 						echo '</ul>';
 					}
 				}

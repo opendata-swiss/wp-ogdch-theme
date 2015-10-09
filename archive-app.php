@@ -30,8 +30,10 @@
 				<?php
 				$dataset_count = get_localized_post_count( 'app' );
 				printf(
+					// @codingStandardsIgnoreStart
 					_n( '%s Built Application', '%s Built Applications', $dataset_count, 'ogdch' ),
 					number_format_i18n( $dataset_count )
+					// @codingStandardsIgnoreEnd
 				);
 				?>
 			</h2>
