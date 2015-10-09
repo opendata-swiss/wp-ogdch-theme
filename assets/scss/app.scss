@@ -59,6 +59,12 @@ pre {
   border: none;
   border-radius: 0;
 }
+small, .small {
+  color: $gray-light;
+}
+p.small {
+  margin-bottom: 8px;
+}
 
 .attachment-app-image {
   margin-top: 15px;
@@ -138,14 +144,14 @@ pre {
 // Label styles
 a.label-default {
   background-color: #fff;
-  border: solid 1px $gray-light;
+  border: solid 1px $gray-lighterish;
   color: $gray-light;
 
   &:focus,
   &:hover {
     background-color: #fff;
+    border-color: $gray-light;
     color: $gray;
-    border-color: $gray;
   }
   &[href]:focus, &[href]:hover {
     background-color: #fff;
@@ -382,8 +388,35 @@ hr {
     display: none;
   }
 }
+.search-result-title {
+  h2 {
+    float: left;
+  }
+  .sortby {
+    text-align: right;
+  }
+  @media (max-width: $grid-float-breakpoint) {
+    h2 {
+      float: none;
+    }
+    .sortby {
+      text-align: left;
+    }
+  }
+}
+
 .list-inline.dataset-resources li {
   padding: 0;
+}
+li.dataset-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid $gray-lighter 1px;
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 }
 
 /* Dataset Detail */

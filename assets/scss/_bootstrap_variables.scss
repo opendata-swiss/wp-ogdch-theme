@@ -52,7 +52,7 @@ $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          18px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~22px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~16px
+$font-size-small:         ceil(($font-size-base * 0.75)) !default; // ~16px
 
 $font-size-h1:            floor(($font-size-base * 2.8)) !default; // ~50px
 $font-size-h2:            floor(($font-size-base * 2.25)) !default; // ~40px
