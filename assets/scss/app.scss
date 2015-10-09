@@ -15,6 +15,7 @@
 
 /* some bootstrap overrides -> maybe remove later */
 #main-navigation {
+  font-size: 20px;
   font-weight: 600;
   &.navbar-default .navbar-nav>li.search>a {
     color: $gray-light;
@@ -68,6 +69,10 @@ small, .small {
 }
 p.small {
   margin-bottom: 8px;
+}
+
+.lead {
+  font-size: 20px;
 }
 
 .attachment-app-image {
@@ -146,11 +151,12 @@ p.small {
 }
 
 // Label styles
-a.label-default {
+.label-default {
   background-color: #fff;
   border: solid 1px $gray-lighterish;
   color: $gray-light;
-
+}
+a.label-default {
   &:focus,
   &:hover {
     background-color: #fff;
@@ -423,29 +429,30 @@ li.dataset-item {
 }
 
 /* Dataset Detail */
-header.dataset-header {
-  $header-padding: 20px;
-  $header-h1-margin: 15px;
-  color: $inverted-text-color;
-  background-color: $brand-primary;
-  margin-bottom: 40px;
-  padding-top: $header-padding;
+.dataset-detail {
+  .page-header {
+    margin-bottom: 0;
 
-  h1 {
-    margin-top: $header-h1-margin;
-    margin-bottom: $header-padding + $header-h1-margin;
+    @media (max-width: $grid-float-breakpoint) {
+      margin-bottom: 50px;
+    }
   }
-
-  .dataset-toolbox {
+  .toolbox {
     background-color: $gray-dark;
+    margin-bottom: 50px;
 
-    .fa-li {
-      top: 0.3em;
-    }
-    a {
-      color: $inverted-text-color;
+    ul {
+      margin-bottom: 0;
+      padding: 10px 0;
+
+      li, a {
+        color: #fff;
+      }
     }
   }
+}
+.terms img {
+  height: 60px;
 }
 
 .resource-list {
