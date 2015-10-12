@@ -8,7 +8,7 @@ $icon_attributes = wp_get_attachment_image_src( $icon_id, 'full' );
 if ( $icon_attributes ) {
 	$icon_src = $icon_attributes[0];
 } else {
-	$icon_src = '/content/themes/wp-ogdch-theme/assets/images/no_image_available.png';
+	$icon_src = '/content/themes/wp-ogdch-theme/assets/images/app.png';
 }
 ?>
 
