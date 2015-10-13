@@ -241,36 +241,36 @@ function bootstrap_breadcrumb() {
 		} elseif ( is_day() ) {
 			// Day archive
 			// Year link
-			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . '"><a class="bread-year bread-year-' . esc_attr( get_the_time( 'Y' ) ) . '" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
+			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . '"><a class="bread-year bread-year-' . esc_attr( get_the_time( 'Y' ) ) . '" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'ogdch' ) . '</a></li>';
 			// Month link
-			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '"><a class="bread-month bread-month-' . esc_attr( get_the_time( 'm' ) ) . '" href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '" title="' . esc_attr( get_the_time( 'M' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
+			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '"><a class="bread-month bread-month-' . esc_attr( get_the_time( 'm' ) ) . '" href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '" title="' . esc_attr( get_the_time( 'M' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'ogdch' ) . '</a></li>';
 			// Day display
-			echo '<li class="item-' . esc_attr( get_the_time( 'j' ) ) . ' active"><a href="">' . esc_attr( get_the_time( 'jS' ) ) . ' ' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
+			echo '<li class="item-' . esc_attr( get_the_time( 'j' ) ) . ' active"><a href="">' . esc_attr( get_the_time( 'jS' ) ) . ' ' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'ogdch' ) . '</a></li>';
 		} else if ( is_month() ) {
 			// Month Archive
 			// Year link
-			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . '"><a class="bread-year bread-year-' . esc_attr( get_the_time( 'Y' ) ) . '" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
+			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . '"><a class="bread-year bread-year-' . esc_attr( get_the_time( 'Y' ) ) . '" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'ogdch' ) . '</a></li>';
 			// Month display
-			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</li>';
+			echo '<li class="item-month item-month-' . esc_attr( get_the_time( 'm' ) ) . '">' . esc_attr( get_the_time( 'M' ) ) . ' ' . esc_attr__( 'Archives', 'ogdch' ) . '</li>';
 		} else if ( is_year() ) {
 			// Display year archive
-			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . ' active"><a href="">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr_e( 'Archives', 'ogdch' ) . '</a></li>';
+			echo '<li class="item-year item-year-' . esc_attr( get_the_time( 'Y' ) ) . ' active"><a href="">' . esc_attr( get_the_time( 'Y' ) ) . ' ' . esc_attr__( 'Archives', 'ogdch' ) . '</a></li>';
 		} else if ( is_author() ) {
 			// Auhor archive
 			// Get the author information
 			global $author;
 			$userdata = get_userdata( $author );
 			// Display author name
-			echo '<li class="item-author item-author-' . esc_attr( $userdata->user_nicename ) . ' active"><a href="">' . esc_attr_e( 'Author', 'ogdch' ) . ' ' . esc_attr( $userdata->display_name ) . '</a></li>';
+			echo '<li class="item-author item-author-' . esc_attr( $userdata->user_nicename ) . ' active"><a href="">' . esc_attr__( 'Author', 'ogdch' ) . ' ' . esc_attr( $userdata->display_name ) . '</a></li>';
 		} else if ( get_query_var( 'paged' ) ) {
 			// Paginated archives
-			echo '<li class="item-paged item-paged-' . esc_attr( get_query_var( 'paged' ) ) . ' active"><a href="">' . esc_attr_e( 'Page', 'ogdch' ) . ' ' . esc_attr( get_query_var( 'paged' ) ) . '</a></li>';
+			echo '<li class="item-paged item-paged-' . esc_attr( get_query_var( 'paged' ) ) . ' active"><a href="">' . esc_attr__( 'Page', 'ogdch' ) . ' ' . esc_attr( get_query_var( 'paged' ) ) . '</a></li>';
 		} else if ( is_search() ) {
 			// Search results page
-			echo '<li class="item-search item-search-' . esc_attr( get_search_query() ) . ' active"><a href="">' . esc_attr_e( 'Search results for:', 'ogdch' ) . ' ' . esc_attr( get_search_query() ) . '</a></li>';
+			echo '<li class="item-search item-search-' . esc_attr( get_search_query() ) . ' active"><a href="">' . esc_attr__( 'Search results for:', 'ogdch' ) . ' ' . esc_attr( get_search_query() ) . '</a></li>';
 		} elseif ( is_404() ) {
 			// 404 page
-			echo '<li>' . esc_attr_e( 'Page not found', 'ogdch' ) . '</li>';
+			echo '<li>' . esc_attr__( 'Page not found', 'ogdch' ) . '</li>';
 		}
 		echo '</ol>';
 	}
