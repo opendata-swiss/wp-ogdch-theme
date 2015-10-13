@@ -16,12 +16,29 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<p><?php esc_attr_e( 'Did you build an App with Data listed in our catalogue and would like to share it with us?' ,'ogdch' ); ?></p>
-			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'Contact us', 'ogdch' ); ?></a>
+			<h2><?php esc_attr_e( 'Are you an interested open data user?' ,'ogdch' ); ?></h2>
+			<p><?php esc_attr_e( 'We present a selection of applications and visual representations created using datasets from the opendata.swiss portal. If you have developed an application, please contact us.' ,'ogdch' ); ?></p>
+			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'Know more about building apps', 'ogdch' ); ?></a>
 		</div>
 	</div>
 
 	<hr />
+
+	<div class="row">
+		<div class="col-xs-12">
+			<h2>
+				<?php
+				$dataset_count = get_localized_post_count( 'app' );
+				printf(
+					// @codingStandardsIgnoreStart
+					_n( '%s Built Application', '%s Built Applications', $dataset_count, 'ogdch' ),
+					number_format_i18n( $dataset_count )
+					// @codingStandardsIgnoreEnd
+				);
+				?>
+			</h2>
+		</div>
+	</div>
 
 	<?php
 	$args = array(

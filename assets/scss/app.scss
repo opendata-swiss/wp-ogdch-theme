@@ -15,13 +15,14 @@
 
 /* some bootstrap overrides -> maybe remove later */
 #main-navigation {
+  font-size: 20px;
   font-weight: 600;
   &.navbar-default .navbar-nav>li.search>a {
-    color: $link-color;
+    color: $gray-light;
   }
   &.navbar-default .navbar-nav>li.search>a:focus,
   &.navbar-default .navbar-nav>li.search>a:hover {
-    color: $link-hover-color;
+    color: $link-color;
   }
   h1 {
     margin: 0;
@@ -59,13 +60,26 @@ pre {
   border: none;
   border-radius: 0;
 }
+small, .small {
+  color: $gray-light;
+
+  a {
+    color: $link-color;
+  }
+}
+p.small {
+  margin-bottom: 8px;
+}
+
+.lead {
+  font-size: 20px;
+}
 
 .attachment-app-image {
   margin-top: 15px;
 }
 
 .front-header {
-  padding-top: 30px;
   padding-bottom: 30px;
 
   .headline {
@@ -75,13 +89,17 @@ pre {
       margin-top: -30px;
       font-size: 130px;
       line-height: 130px;
+
+      @media (max-width: $grid-float-breakpoint) {
+        margin-top: 20px;
+      }
     }
     .title {
       line-height: 28px;
     }
-    img {
-      width: 50px;
-    }
+  }
+  .main-search {
+    margin-top: 20px;
   }
 }
 
@@ -132,12 +150,31 @@ pre {
   }
 }
 
-.label-default.label {
+// Label styles
+.label-default {
+  background-color: #fff;
+  border: solid 1px $gray-lighterish;
   color: $gray-light;
 }
-a.label-default.label:focus,
-a.label-default.label:hover {
+a.label-default {
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    border-color: $gray-light;
+    color: $gray;
+  }
+  &[href]:focus, &[href]:hover {
+    background-color: #fff;
+  }
+}
+.label-primary-gray {
+  background-color: $gray-lighter;
   color: $gray-light;
+}
+a.label-primary-gray:focus,
+a.label-primary-gray:hover {
+  background-color: $gray-lighterish;
+  color: $gray;
 }
 
 .table>tbody>tr>td,
@@ -147,30 +184,30 @@ a.label-default.label:hover {
 .table>thead>tr>td,
 .table>thead>tr>th,
 hr {
-  border-top-style: dashed;
+  border-top-style: solid;
 }
 
 .dl-horizontal {
   $gutter-size: 5px;
-  border-bottom: 1px dashed $gray-lighterish;
+  border-bottom: 1px solid $gray-lighter;
   padding-bottom: $gutter-size;
 
   dt:first-of-type, dd:first-of-type{
     border-top-width:0;
   }
   dt {
-    border-top: 1px dashed $gray-lighterish;
+    border-top: 1px solid $gray-lighter;
     padding-top: $gutter-size;
     margin-top: $gutter-size;
   }
   @media (min-width: $grid-float-breakpoint) {
     dt {
-      width: ($dl-horizontal-offset - 5);
+      width: $dl-horizontal-offset;
       text-align: left;
     }
     dd {
       margin-left: $dl-horizontal-offset;
-      border-top: 1px dashed $gray-lighterish;
+      border-top: 1px solid $gray-lighter;
       padding-top: $gutter-size;
       margin-top: $gutter-size;
     }
@@ -178,6 +215,24 @@ hr {
     dd:first-of-type {
       padding-top: (2 * $gutter-size);
     }
+  }
+}
+
+// Main search input field
+.main-search {
+  .form-control {
+    border: 2px solid $gray-lighter;
+    border-radius: 0;
+    box-shadow: none;
+
+    &:focus {
+      border: 2px solid $link-color;
+      box-shadow: none;
+    }
+  }
+
+  .form-control-feedback {
+    color: $gray-light;
   }
 }
 
@@ -194,13 +249,11 @@ hr {
 
 #explore {
   .category {
-    height: 120px;
-    overflow: hidden;
-
-    h4 {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
+    margin-bottom: 15px;
+    font-size: 20px;
+    
+    span {
+      margin-left: 5px;
     }
   }
 }
@@ -315,6 +368,9 @@ hr {
   .nav>li>a {
     padding: 5px 10px;
   }
+  .list-inline.tags li {
+    padding: 0;
+  }
 }
 
 .facet-collapse {
@@ -339,52 +395,95 @@ hr {
     display: none;
   }
 }
+.search-result-title {
+  h2 {
+    float: left;
+  }
+  .sortby {
+    text-align: right;
+  }
+  @media (max-width: $grid-float-breakpoint) {
+    h2 {
+      float: none;
+    }
+    .sortby {
+      text-align: left;
+    }
+  }
+}
+
+.list-inline.dataset-resources li {
+  padding: 0;
+}
+li.dataset-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid $gray-lighter 1px;
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
 
 /* Dataset Detail */
-header.dataset-header {
-  $header-padding: 20px;
-  $header-h1-margin: 15px;
-  color: $inverted-text-color;
-  background-color: $brand-primary;
-  margin-bottom: 40px;
-  padding-top: $header-padding;
+.dataset-detail {
+  .page-header {
+    margin-bottom: 0;
 
-  h1 {
-    margin-top: $header-h1-margin;
-    margin-bottom: $header-padding + $header-h1-margin;
+    @media (max-width: $grid-float-breakpoint) {
+      margin-bottom: 50px;
+    }
   }
-
-  .dataset-toolbox {
+  .toolbox {
     background-color: $gray-dark;
+    margin-bottom: 50px;
 
-    .fa-li {
-      top: 0.3em;
-    }
-    a {
-      color: $inverted-text-color;
+    ul {
+      margin-bottom: 0;
+      padding: 10px 0;
+
+      li, a {
+        color: #fff;
+      }
     }
   }
+}
+.terms img {
+  height: 60px;
 }
 
 .resource-list {
   li {
     overflow: hidden;
-    border-bottom: dashed $gray-lighterish 1px;
+    border-bottom: solid $gray-lighter 1px;
     padding: 10px 0;
   }
   .actions a {
     margin-left: 10px;
   }
-
-  .label-format {
-    border: solid 1px $gray-lighterish;
-    color: $gray-light;
-    background-color: #fff;
-    margin-right: 10px;
+  .heading {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .additional-info {
   th.header-col {
     width: 200px;
+  }
+}
+
+// Organization list
+#organisations-list {
+  li {
+    a  {
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid $gray-lighter;
+
+      &:hover {
+        background-color: $gray-lighter;
+      }
+    }
   }
 }
