@@ -45,7 +45,13 @@ $dataset_count = get_dataset_count();
 					<?php esc_html_e( pll_current_language( 'name' ) ); ?> <span class="caret"></span>
 				</button>
 				<ul class="dropdown-menu" role="menu">
-					<?php pll_the_languages(); ?>
+					<?php
+					$languages = pll_the_languages( array( 'raw' => true ) );
+					foreach ( $languages as $language ) {
+						$active_class = ($language['current_lang']) ? 'active' : '';
+						echo '<li class="' . esc_attr( $active_class ) . '"><a href="' . esc_url( $language['url'] ) . '">' . esc_attr( $language['name'] ) . '</a></li>';
+					}
+					?>
 				</ul>
 			</div>
 		</div>
