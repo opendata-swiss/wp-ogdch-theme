@@ -200,6 +200,9 @@ hr {
     padding-top: $gutter-size;
     margin-top: $gutter-size;
   }
+  dd ul {
+    margin-bottom: 0;
+  }
   @media (min-width: $grid-float-breakpoint) {
     dt {
       width: $dl-horizontal-offset;
@@ -347,7 +350,7 @@ hr {
   }
 }
 
-/* Dataset Search */
+// Dataset Search
 .search-form {
   h3 {
     font-size: 26px;
@@ -426,7 +429,7 @@ li.dataset-item {
   }
 }
 
-/* Dataset Detail */
+// Dataset Detail
 .dataset-detail {
   .page-header {
     margin-bottom: 0;
@@ -485,5 +488,23 @@ li.dataset-item {
         background-color: $gray-lighter;
       }
     }
+  }
+}
+
+// Organization Detail
+.description img {
+  margin-bottom: 20px;
+}
+
+// Group list
+#group-list {
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    margin-bottom: 5px;
+    font-size: $font-size-h3;
   }
 }
