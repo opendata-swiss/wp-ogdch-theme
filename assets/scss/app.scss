@@ -372,6 +372,11 @@ hr {
   }
   .list-inline.tags li {
     padding: 0;
+
+    &.active a {
+      background-color: $gray-lighterish;
+      color: $gray;
+    }
   }
   .res_rights {
     img {
