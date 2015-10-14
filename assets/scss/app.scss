@@ -362,17 +362,21 @@ hr {
   }
   span {
     margin-left: 3px;
-    font-size: floor(($font-size-base * 0.8));
-    color: $gray-light;
   }
-  li:hover span, li:active span {
-    color: $gray-lighter;
+  .nav>li>a:focus, .nav>li>a:hover, .nav>li.active>a {
+    color: $link-color;
+    background-color: $gray-lighter;
   }
   .nav>li>a {
     padding: 5px 10px;
   }
   .list-inline.tags li {
     padding: 0;
+  }
+  .res_rights {
+    img {
+      height: 50px;
+    }
   }
 }
 
