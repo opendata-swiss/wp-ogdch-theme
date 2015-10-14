@@ -44,7 +44,7 @@
 			wp_nav_menu( array(
 				'theme_location' => 'main_navigation',
 				'menu_class'     => 'nav navbar-nav navbar-right',
-				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s<li class="search"><a href="' . esc_url( home_url() ) . '" title="' . __( 'Search', 'ogdch' ) . '"><i class="fa fa-search" aria-hidden="true"></i></a></li></ul>',
+				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s<li class="search"><a href="' . esc_url( get_page_link_by_slug( 'dataset' ) ) . '" title="' . __( 'Search', 'ogdch' ) . '"><i class="fa fa-search" aria-hidden="true"></i></a></li></ul>',
 			) );
 			?>
 		</div><!-- /.navbar-collapse -->
