@@ -370,18 +370,6 @@ hr {
   .nav>li>a {
     padding: 5px 10px;
   }
-  .list-inline.tags {
-    margin-left: 0;
-
-    li {
-      padding: 0;
-
-      &.active a {
-        background-color: $gray-lighterish;
-        color: $gray;
-      }
-    }
-  }
   .res_rights {
     img {
       height: 50px;
@@ -428,10 +416,16 @@ hr {
   }
 }
 
-.list-inline.dataset-resources {
+.list-inline.dataset-resources,
+.list-inline.tags {
   margin-left: 0;
   li {
     padding: 0;
+
+    &.active a {
+      background-color: $gray-lighterish;
+      color: $gray;
+    }
   }
 }
 li.dataset-item {
