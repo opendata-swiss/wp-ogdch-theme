@@ -370,12 +370,16 @@ hr {
   .nav>li>a {
     padding: 5px 10px;
   }
-  .list-inline.tags li {
-    padding: 0;
+  .list-inline.tags {
+    margin-left: 0;
 
-    &.active a {
-      background-color: $gray-lighterish;
-      color: $gray;
+    li {
+      padding: 0;
+
+      &.active a {
+        background-color: $gray-lighterish;
+        color: $gray;
+      }
     }
   }
   .res_rights {
@@ -424,8 +428,11 @@ hr {
   }
 }
 
-.list-inline.dataset-resources li {
-  padding: 0;
+.list-inline.dataset-resources {
+  margin-left: 0;
+  li {
+    padding: 0;
+  }
 }
 li.dataset-item {
   padding-bottom: 20px;
