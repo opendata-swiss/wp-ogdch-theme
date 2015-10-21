@@ -13,7 +13,128 @@
 @import 'button_default';
 @import 'responsive_alignment';
 
-/* some bootstrap overrides -> maybe remove later */
+// Bootstrap overrides
+.btn-default {
+  @include ogdch-button-default;
+}
+
+pre {
+  font-size: ceil(($font-size-base * 0.75));
+  border: none;
+  border-radius: 0;
+}
+small, .small {
+  color: $gray-light;
+
+  a {
+    color: $link-color;
+  }
+}
+p.small {
+  margin-bottom: 8px;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.breadcrumb {
+  >li+li:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    padding: 0 8px;
+    content: "\f105";
+  }
+
+  li.active a {
+    color: $gray-light;
+  }
+}
+
+.nav>li {
+  >a:focus, >a:hover {
+    color: $nav-pills-active-link-hover-color;
+  }
+}
+
+// Label styles
+.label-default {
+  background-color: #fff;
+  border: solid 1px $gray-lighterish;
+  color: $gray-light;
+}
+a.label-default {
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    border-color: $gray-light;
+    color: $gray;
+  }
+  &[href]:focus, &[href]:hover {
+    background-color: #fff;
+  }
+}
+.label-primary-gray {
+  background-color: $gray-lighter;
+  color: $gray-light;
+}
+a.label-primary-gray:focus,
+a.label-primary-gray:hover {
+  background-color: $gray-lighterish;
+  color: $gray;
+}
+
+.dl-horizontal {
+  $gutter-size: 5px;
+  border-bottom: 1px solid $gray-lighter;
+  padding-bottom: $gutter-size;
+
+  dt:first-of-type, dd:first-of-type{
+    border-top-width:0;
+  }
+  dt {
+    border-top: 1px solid $gray-lighter;
+    padding-top: $gutter-size;
+    margin-top: $gutter-size;
+  }
+  dd ul {
+    margin-bottom: 0;
+  }
+  @media (min-width: $grid-float-breakpoint) {
+    dt {
+      width: $dl-horizontal-offset;
+      text-align: left;
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+      border-top: 1px solid $gray-lighter;
+      padding-top: $gutter-size;
+      margin-top: $gutter-size;
+    }
+    // FIX somehow the first dd element isn't aligned to the title
+    dd:first-of-type {
+      padding-top: (2 * $gutter-size);
+    }
+  }
+}
+
+// Global Helper classes
+.break-word {
+  word-wrap: break-word;
+}
+
+.h2-vertical-center {
+  margin-top: 25px;
+}
+
+.top-buffer {
+  margin-top: $buffer-height;
+}
+
+.bottom-buffer {
+  margin-bottom: $buffer-height;
+}
+
+// Main navigation
 #main-navigation {
   font-size: 20px;
   font-weight: 600;
@@ -51,70 +172,25 @@
   }
 }
 
-.btn-default {
-  @include ogdch-button-default;
-}
+// Main search input field
+.main-search {
+  .form-control {
+    border: 2px solid $gray-lighter;
+    border-radius: 0;
+    box-shadow: none;
 
-pre {
-  font-size: ceil(($font-size-base * 0.75));
-  border: none;
-  border-radius: 0;
-}
-small, .small {
-  color: $gray-light;
-
-  a {
-    color: $link-color;
-  }
-}
-p.small {
-  margin-bottom: 8px;
-}
-
-.lead {
-  font-size: 20px;
-}
-
-.attachment-app-image {
-  margin-top: 15px;
-}
-
-.front-header {
-  padding-bottom: 30px;
-
-  .headline {
-    font-size: 28px;
-    font-weight: 600;
-    #opendata-count {
-      margin-top: -30px;
-      font-size: 130px;
-      line-height: 130px;
-
-      @media (max-width: $grid-float-breakpoint) {
-        margin-top: 20px;
-      }
-    }
-    .title {
-      line-height: 28px;
+    &:focus {
+      border: 2px solid $link-color;
+      box-shadow: none;
     }
   }
-  .main-search {
-    margin-top: 20px;
-  }
-}
 
-.breadcrumb {
-  >li+li:before {
-    font: normal normal normal 14px/1 FontAwesome;
-    padding: 0 8px;
-    content: "\f105";
-  }
-
-  li.active a {
+  .form-control-feedback {
     color: $gray-light;
   }
 }
 
+// Page header
 .page-header {
   $header-padding: 30px;
   color: $inverted-text-color;
@@ -144,157 +220,8 @@ p.small {
   }
 }
 
-.nav>li {
-  >a:focus, >a:hover {
-    color: $nav-pills-active-link-hover-color;
-  }
-}
-
-// Label styles
-.label-default {
-  background-color: #fff;
-  border: solid 1px $gray-lighterish;
-  color: $gray-light;
-}
-a.label-default {
-  &:focus,
-  &:hover {
-    background-color: #fff;
-    border-color: $gray-light;
-    color: $gray;
-  }
-  &[href]:focus, &[href]:hover {
-    background-color: #fff;
-  }
-}
-.label-primary-gray {
-  background-color: $gray-lighter;
-  color: $gray-light;
-}
-a.label-primary-gray:focus,
-a.label-primary-gray:hover {
-  background-color: $gray-lighterish;
-  color: $gray;
-}
-
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th,
-hr {
-  border-top-style: solid;
-}
-
-.dl-horizontal {
-  $gutter-size: 5px;
-  border-bottom: 1px solid $gray-lighter;
-  padding-bottom: $gutter-size;
-
-  dt:first-of-type, dd:first-of-type{
-    border-top-width:0;
-  }
-  dt {
-    border-top: 1px solid $gray-lighter;
-    padding-top: $gutter-size;
-    margin-top: $gutter-size;
-  }
-  dd ul {
-    margin-bottom: 0;
-  }
-  @media (min-width: $grid-float-breakpoint) {
-    dt {
-      width: $dl-horizontal-offset;
-      text-align: left;
-    }
-    dd {
-      margin-left: $dl-horizontal-offset;
-      border-top: 1px solid $gray-lighter;
-      padding-top: $gutter-size;
-      margin-top: $gutter-size;
-    }
-    // FIX somehow the first dd element isn't aligned to the title
-    dd:first-of-type {
-      padding-top: (2 * $gutter-size);
-    }
-  }
-}
-
-.break-word {
-  word-wrap: break-word;
-}
-
-// Main search input field
-.main-search {
-  .form-control {
-    border: 2px solid $gray-lighter;
-    border-radius: 0;
-    box-shadow: none;
-
-    &:focus {
-      border: 2px solid $link-color;
-      box-shadow: none;
-    }
-  }
-
-  .form-control-feedback {
-    color: $gray-light;
-  }
-}
-
-.h2-vertical-center {
-  margin-top: 25px;
-}
-
-.top-buffer {
-  margin-top: $buffer-height;
-}
-.bottom-buffer {
-  margin-bottom: $buffer-height;
-}
-
-#explore {
-  .category {
-    margin-bottom: 15px;
-    font-size: 20px;
-    
-    span {
-      margin-left: 5px;
-    }
-  }
-}
-
-#how {
-  .number {
-    float: left;
-    font-size: 80px;
-    line-height: 80px;
-    font-weight: 600;
-    width: 65px;
-  }
-  .description {
-    overflow: hidden;
-
-    h3 {
-      margin-top: 10px;
-    }
-  }
-}
-
-#trending {
-  #last-tweet {
-    p {
-      font-size: 1.5em;
-
-      .fa {
-        font-size: 1.5em;
-      }
-    }
-  }
-}
-
-.main-footer {
+// Page footer
+.page-footer {
   color: $inverted-text-color;
   background: $text-color;
   box-shadow: 0px 1000px 0px 1000px $text-color;
@@ -350,6 +277,71 @@ hr {
     }
     &.logo-egovernment {
       width: 184px;
+    }
+  }
+}
+
+// Front-Page
+.front-header {
+  padding-bottom: 30px;
+
+  .headline {
+    font-size: 28px;
+    font-weight: 600;
+    #opendata-count {
+      margin-top: -30px;
+      font-size: 130px;
+      line-height: 130px;
+
+      @media (max-width: $grid-float-breakpoint) {
+        margin-top: 20px;
+      }
+    }
+    .title {
+      line-height: 28px;
+    }
+  }
+  .main-search {
+    margin-top: 20px;
+  }
+}
+
+#explore {
+  .category {
+    margin-bottom: 15px;
+    font-size: 20px;
+    
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+#how {
+  .number {
+    float: left;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    width: 65px;
+  }
+  .description {
+    overflow: hidden;
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+}
+
+#trending {
+  #last-tweet {
+    p {
+      font-size: 1.5em;
+
+      .fa {
+        font-size: 1.5em;
+      }
     }
   }
 }
