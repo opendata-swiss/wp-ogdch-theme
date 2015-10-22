@@ -10,12 +10,19 @@
 @import 'variables';
 @import '../external/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap';
 @import 'wp_tinymce_styles';
-@import 'button_default';
+@import 'button_hover';
+@import 'advanced_buttons';
 @import 'responsive_alignment';
 
 // Bootstrap overrides
 .btn-default {
-  @include ogdch-button-default;
+  @include ogdch-button-hover($brand-primary, #fff, $brand-primary);
+}
+.btn-default-gray {
+  @include ogdch-button-variant($gray, #fff, $gray, $brand-primary, #fff, $brand-primary);
+  &.btn.active, &.btn:active {
+    @include box-shadow(none);
+  }
 }
 
 pre {
