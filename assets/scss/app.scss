@@ -76,6 +76,9 @@ p.small {
 .form-control-feedback {
   color: $input-color-placeholder;
 }
+.has-error .form-control:focus {
+  box-shadow: none;
+}
 
 // Label styles
 .label-default {
