@@ -28,7 +28,6 @@
 pre {
   font-size: ceil(($font-size-base * 0.75));
   border: none;
-  border-radius: 0;
 }
 small, .small {
   color: $gray-light;
@@ -57,10 +56,25 @@ p.small {
   }
 }
 
+.dropdown-menu {
+  border-radius: $btn-border-radius-base;
+}
+
 .nav>li {
   >a:focus, >a:hover {
     color: $nav-pills-active-link-hover-color;
   }
+}
+
+.form-control {
+  border-width: 2px;
+  box-shadow: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.form-control-feedback {
+  color: $input-color-placeholder;
 }
 
 // Label styles
@@ -179,24 +193,6 @@ a.label-primary-gray:hover {
   }
 }
 
-// Main search input field
-.main-search {
-  .form-control {
-    border: 2px solid $gray-lighter;
-    border-radius: 0;
-    box-shadow: none;
-
-    &:focus {
-      border: 2px solid $link-color;
-      box-shadow: none;
-    }
-  }
-
-  .form-control-feedback {
-    color: $gray-light;
-  }
-}
-
 // Page header
 .page-header {
   $header-padding: 30px;
@@ -295,6 +291,7 @@ a.label-primary-gray:hover {
   .headline {
     font-size: 28px;
     font-weight: 600;
+    margin-bottom: 20px;
     #opendata-count {
       margin-top: -30px;
       font-size: 130px;
@@ -307,9 +304,6 @@ a.label-primary-gray:hover {
     .title {
       line-height: 28px;
     }
-  }
-  .main-search {
-    margin-top: 20px;
   }
 }
 
