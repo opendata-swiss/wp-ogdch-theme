@@ -1,6 +1,7 @@
 <?php
 /**
  * Make Ninja Forms message translatable in Polylang settings
+ * Source: https://github.com/wpninjas/ninja-forms/issues/155
  *
  * @param array $settings Ninja forms settings.
  *
@@ -48,6 +49,7 @@ add_filter( 'ninja_forms_settings', 'multilingual_ninja_forms_polylang' );
 
 /**
  * Make Ninja Forms labels and values translatable
+ * Source: https://github.com/wpninjas/ninja-forms/issues/155
  *
  * @param array $data Array of field settings.
  * @param int   $field_id ID of the field being filtered.
