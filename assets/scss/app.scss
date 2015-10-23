@@ -80,6 +80,10 @@ p.small {
   box-shadow: none;
 }
 
+.alert p {
+  margin-bottom: 0;
+}
+
 // Label styles
 .label-default {
   background-color: #fff;
