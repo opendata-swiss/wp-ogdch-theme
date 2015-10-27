@@ -1,0 +1,60 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin ogdch-button-variant($color, $background, $border, $color-hover: $color, $background-hover: darken($background, 10%), $border-hover: darken($border, 12%)) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color-hover;
+    background-color: $background-hover;
+    border-color: $border-hover;
+  }
+  &:hover {
+    color: $color-hover;
+    background-color: $background-hover;
+    border-color: $border-hover;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color-hover;
+    background-color: $background-hover;
+    border-color: $border-hover;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color-hover;
+      background-color: $background-hover;
+      border-color: $border-hover;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}

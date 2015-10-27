@@ -2,7 +2,7 @@
 $dataset_count = get_dataset_count();
 ?>
 
-<footer class="container main-footer top-buffer">
+<footer class="container page-footer top-buffer">
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
 			<a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>">
