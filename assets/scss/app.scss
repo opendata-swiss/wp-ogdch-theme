@@ -305,7 +305,7 @@ hr {
     color: $inverted-link-color;
 
     &:hover {
-      color: $inverted-link-color;
+      color: $inverted-link-hover-color;
     }
   }
   .lead {
@@ -392,9 +392,6 @@ hr {
 .facet-toggle {
   .fa {
     float: right;
-  }
-  &:hover, &:focus {
-    text-decoration: none;
   }
   @media (min-width: $grid-float-breakpoint) {
     display: none;

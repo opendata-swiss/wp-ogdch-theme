@@ -92,7 +92,9 @@ function get_dataset_count() {
 			$dataset_count = $response['result'];
 
 			// save result in transient
-			set_transient( $transient_name, $dataset_count, 1 * HOUR_IN_SECONDS );
+			if ( $dataset_count['total_count'] > 0 ) {
+				set_transient( $transient_name, $dataset_count, 1 * HOUR_IN_SECONDS );
+			}
 		} else {
 			$dataset_count = array(
 				'total_count' => 'N/A',

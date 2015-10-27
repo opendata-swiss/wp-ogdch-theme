@@ -5,28 +5,36 @@ $dataset_count = get_dataset_count();
 <footer class="container main-footer top-buffer">
 	<div class="row">
 		<div class="col-sm-3 col-xs-6">
-			<div class="statsnumber">
-				<?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?> <i class="fa fa-files-o"></i>
-			</div>
-			<p><?php esc_attr_e( 'Open Datasets' ,'ogdch' ); ?></p>
+			<a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>">
+				<div class="statsnumber">
+					<?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?> <i class="fa fa-files-o"></i>
+				</div>
+				<p><?php esc_attr_e( 'Open Datasets' ,'ogdch' ); ?></p>
+			</a>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div class="statsnumber">
-				<?php esc_html_e( number_format_i18n( wp_count_posts( 'ckan-local-org' )->publish ) ); ?> <i class="fa fa-users"></i>
-			</div>
-			<p><?php esc_attr_e( 'Organizations', 'ogdch' ); ?></p>
+			<a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>">
+				<div class="statsnumber">
+					<?php esc_html_e( number_format_i18n( wp_count_posts( 'ckan-local-org' )->publish ) ); ?> <i class="fa fa-users"></i>
+				</div>
+				<p><?php esc_attr_e( 'Organizations', 'ogdch' ); ?></p>
+			</a>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div class="statsnumber">
-				<?php esc_html_e( number_format_i18n( get_localized_post_count( 'app' ) ) ); ?> <i class="fa fa-puzzle-piece"></i>
-			</div>
-			<p><?php esc_attr_e( 'Built Applications', 'ogdch' ); ?></p>
+			<a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>">
+				<div class="statsnumber">
+					<?php esc_html_e( number_format_i18n( get_localized_post_count( 'app' ) ) ); ?> <i class="fa fa-puzzle-piece"></i>
+				</div>
+				<p><?php esc_attr_e( 'Built Applications', 'ogdch' ); ?></p>
+			</a>
 		</div>
 		<div class="col-sm-3 col-xs-6">
-			<div class="statsnumber">
-				<?php esc_html_e( number_format_i18n( get_tweet_count() ) ); ?> <i class="fa fa-twitter"></i>
-			</div>
-			<p><?php esc_attr_e( 'Tweets', 'ogdch' ); ?></p>
+			<a href="https://twitter.com/OpendataCH" target="_blank">
+				<div class="statsnumber">
+					<?php esc_html_e( number_format_i18n( get_tweet_count() ) ); ?> <i class="fa fa-twitter"></i>
+				</div>
+				<p><?php esc_attr_e( 'Tweets', 'ogdch' ); ?></p>
+			</a>
 		</div>
 	</div>
 	<div class="row top-buffer">
