@@ -16,7 +16,7 @@
 					<div class="title"><?php esc_attr_e( 'Open Datasets', 'ogdch' ); ?></div>
 				</div>
 				<form action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
-					<div class="form-group has-feedback main-search">
+					<div class="form-group has-feedback">
 						<input type="search" class="form-control input-lg" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
 						<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
 					</div>
