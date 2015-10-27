@@ -36,6 +36,8 @@ function theme_setup() {
 	// =======================================================================//
 
 	add_theme_support( 'post-thumbnails' );
+	// generate title tag in <head>
+	add_theme_support( 'title-tag' );
 
 	// =======================================================================//
 	// Custom Image Sizes
