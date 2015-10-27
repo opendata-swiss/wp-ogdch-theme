@@ -21,7 +21,7 @@ function multilingual_ninja_forms_polylang( $settings ) {
 		'javascript_error',
 		'invalid_email',
 		'process_label',
-		'password_mismatch'
+		'password_mismatch',
 	);
 	foreach ( $label_settings as $label_setting ) {
 		if ( function_exists( 'pll_register_string' ) ) {
