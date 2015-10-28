@@ -82,7 +82,7 @@ function get_localized_post_count( $post_type ) {
  * @return int
  */
 function get_dataset_count() {
-	if( class_exists( 'Ckan_Backend_Helper' ) ) {
+	if ( class_exists( 'Ckan_Backend_Helper' ) ) {
 		$transient_name = 'ogdch_dataset_count';
 		if ( false === ( $dataset_count = get_transient( $transient_name ) ) ) {
 			$endpoint = CKAN_API_ENDPOINT . 'ogdch_dataset_count';
