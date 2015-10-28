@@ -82,25 +82,29 @@ function get_localized_post_count( $post_type ) {
  * @return int
  */
 function get_dataset_count() {
-	$transient_name = 'ogdch_dataset_count';
-	if ( false === ( $dataset_count = get_transient( $transient_name ) ) ) {
-		$endpoint = CKAN_API_ENDPOINT . 'ogdch_dataset_count';
-		$response = Ckan_Backend_Helper::do_api_request( $endpoint );
-		$errors   = Ckan_Backend_Helper::check_response_for_errors( $response );
+	if( class_exists( 'Ckan_Backend_Helper' ) ) {
+		$transient_name = 'ogdch_dataset_count';
+		if ( false === ( $dataset_count = get_transient( $transient_name ) ) ) {
+			$endpoint = CKAN_API_ENDPOINT . 'ogdch_dataset_count';
+			$response = Ckan_Backend_Helper::do_api_request( $endpoint );
+			$errors   = Ckan_Backend_Helper::check_response_for_errors( $response );
 
-		if ( 0 === count( $errors ) ) {
-			$dataset_count = $response['result'];
+			if ( 0 === count( $errors ) ) {
+				$dataset_count = $response['result'];
 
-			// save result in transient
-			if ( $dataset_count['total_count'] > 0 ) {
-				set_transient( $transient_name, $dataset_count, 1 * HOUR_IN_SECONDS );
+				// save result in transient
+				if ( $dataset_count['total_count'] > 0 ) {
+					set_transient( $transient_name, $dataset_count, 1 * HOUR_IN_SECONDS );
+				}
+			} else {
+				$dataset_count = array(
+					'total_count' => 'N/A',
+					'groups'      => array(),
+				);
 			}
-		} else {
-			$dataset_count = array(
-				'total_count' => 'N/A',
-				'groups'      => array(),
-			);
 		}
+	} else {
+		esc_attr_e( 'Please activate wp-ckan-backend plugin', 'ogdch' );
 	}
 
 	return $dataset_count;
