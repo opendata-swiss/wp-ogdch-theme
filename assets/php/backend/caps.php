@@ -10,7 +10,7 @@ function add_theme_caps() {
 		'apps',
 	);
 	$taxonomies = array(
-		'frequencies',
+		'tags',
 	);
 	// Add all capabilities of plugin to administrator role (save in database) to make them visible in backend.
 	$admin_role = get_role( 'administrator' );
@@ -47,6 +47,10 @@ function add_theme_caps() {
 		'edit_published_datasets' => true,
 		'publish_datasets'        => true,
 		'read_private_datasets'   => true,
+		'manage_tags'             => true,
+		'edit_tags'               => true,
+		'delete_tags'             => true,
+		'assign_tags'             => true,
 		'edit_posts'              => true, // this cap is used to edit attachment details
 	);
 	init_role( 'datenlieferant', 'Datenlieferant', $datenlieferant_caps );
@@ -64,6 +68,10 @@ function add_theme_caps() {
 		'edit_private_organisations'   => true,
 		'edit_published_organisations' => true,
 		'read_private_organisations'   => true,
+		'manage_tags'                  => true,
+		'edit_tags'                    => true,
+		'delete_tags'                  => true,
+		'assign_tags'                  => true,
 		'edit_posts'                   => true, // this cap is used to edit attachment details, (Without it we also can't access the list view)
 		'edit_others_posts'            => true, // this cap is used to edit attachment details
 		'delete_posts'                 => true, // this cap is used to delete attachments
