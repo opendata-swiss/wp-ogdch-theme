@@ -35,6 +35,7 @@ function add_theme_caps() {
 			$admin_role->add_cap( 'assign_' . $taxonomy );
 		}
 
+		$admin_role->add_cap( 'edit_data_of_all_organisations' );
 		$admin_role->add_cap( 'edit_user_organisation' );
 	}
 
