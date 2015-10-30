@@ -48,20 +48,26 @@ $dataset_count = get_dataset_count();
 	</div>
 	<div class="row top-buffer">
 		<div class="col-md-2 col-xs-4">
-			<div class="btn-group">
-				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<?php esc_html_e( pll_current_language( 'name' ) ); ?> <span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu" role="menu">
-					<?php
-					$languages = pll_the_languages( array( 'raw' => true ) );
-					foreach ( $languages as $language ) {
-						$active_class = ($language['current_lang']) ? 'active' : '';
-						echo '<li class="' . esc_attr( $active_class ) . '"><a href="' . esc_url( $language['url'] ) . '">' . esc_attr( $language['name'] ) . '</a></li>';
-					}
-					?>
-				</ul>
-			</div>
+			<?php
+			if ( class_exists( 'Polylang' ) ) {
+			?>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<?php esc_html_e( pll_current_language( 'name' ) ); ?> <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<?php
+						$languages = pll_the_languages( array( 'raw' => true ) );
+						foreach ( $languages as $language ) {
+							$active_class = ($language['current_lang']) ? 'active' : '';
+							echo '<li class="' . esc_attr( $active_class ) . '"><a href="' . esc_url( $language['url'] ) . '">' . esc_attr( $language['name'] ) . '</a></li>';
+						}
+						?>
+					</ul>
+				</div>
+			<?php
+			}
+			?>
 		</div>
 		<div class="col-md-4 col-xs-8">
 			<p>Lorem ipsum dolor sit amet ea ius soluta nusquam constituto. Lorem ipsum dolor sit amet ea ius soluta nusquam constituto</p>
