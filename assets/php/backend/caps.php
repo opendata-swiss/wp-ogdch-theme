@@ -48,9 +48,6 @@ function add_theme_caps() {
 		'edit_published_datasets' => true,
 		'publish_datasets'        => true,
 		'read_private_datasets'   => true,
-		'manage_tags'             => true,
-		'edit_tags'               => true,
-		'delete_tags'             => true,
 		'assign_tags'             => true,
 		'edit_posts'              => true, // this cap is used to edit attachment details
 	);
@@ -69,9 +66,6 @@ function add_theme_caps() {
 		'edit_private_organisations'   => true,
 		'edit_published_organisations' => true,
 		'read_private_organisations'   => true,
-		'manage_tags'                  => true,
-		'edit_tags'                    => true,
-		'delete_tags'                  => true,
 		'assign_tags'                  => true,
 		'edit_posts'                   => true, // this cap is used to edit attachment details, (Without it we also can't access the list view)
 		'edit_others_posts'            => true, // this cap is used to edit attachment details
