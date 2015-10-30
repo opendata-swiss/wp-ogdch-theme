@@ -37,39 +37,41 @@
 			<div class="row">
 				<?php
 				$current_group = 0;
-				$shown_groups = 12;
-				$group_count  = count( $dataset_count['groups'] );
-				$gourps_per_col = ceil( $group_count / 3 );
-
-				foreach ( $dataset_count['groups'] as $group_name => $count ) {
-					if ( 0 === $current_group % $gourps_per_col ) {
-						echo '<ul class="col-md-4 list-unstyled">';
-					}
-
+				$groups_args = array(
 					// @codingStandardsIgnoreStart
-					$args = array(
-						'meta_key' => '_ckan_local_group_ckan_name',
-						'meta_value' => $group_name,
-						'post_type' => 'ckan-local-group',
-						'post_status' => 'published',
-						'posts_per_page' => 1
-					);
-					$groups = get_posts($args);
+					'posts_per_page' => -1,
+					'meta_key'       => '_ckan_local_group_title_' . get_current_language(),
+					'orderby'        => 'meta_value',
+					'order'          => 'ASC',
 					// @codingStandardsIgnoreEnd
+					'post_type'      => 'ckan-local-group',
+					'post_status'    => 'publish',
+				);
+				$groups_query = new WP_Query( $groups_args );
+				$gourps_per_col = ceil( $groups_query->post_count / 3 );
 
-					$ckan_name = get_post_meta( $groups[0]->ID, '_ckan_local_group_ckan_name', true );
-					$title     = get_localized_meta( $groups[0]->ID, '_ckan_local_group_title_' );
-					?>
-					<li class="category">
-						<strong><a href="<?php echo esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ); ?>"><?php esc_html_e( $title ); ?></a> <span><?php esc_html_e( $count ); ?></span></strong>
-					</li>
+				// The Loop
+				if ( $groups_query->have_posts() ) {
+					while ( $groups_query->have_posts() ) {
+						$groups_query->the_post();
 
-					<?php
-					$current_group++;
-					if ( 0 === $current_group % $gourps_per_col ) {
-						echo '</ul>';
+						if ( 0 === $current_group % $gourps_per_col ) {
+							echo '<ul class="col-md-4 list-unstyled">';
+						}
+
+						$ckan_name = get_post_meta( get_the_ID(), '_ckan_local_group_ckan_name', true );
+						$title     = get_localized_meta( get_the_ID(), '_ckan_local_group_title_' );
+						$count     = $dataset_count['groups'][ $ckan_name ];
+						echo '<li class="category"><strong><a href="' . esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ) . '">' . esc_attr( $title ) . '</a><span>' . esc_attr( $count ) . '</span></strong></li>';
+
+						$current_group++;
+						if ( 0 === $current_group % $gourps_per_col ) {
+							echo '</ul>';
+						}
 					}
 				}
+				/* Restore original Post Data */
+				wp_reset_postdata();
 				?>
 			</div>
 
