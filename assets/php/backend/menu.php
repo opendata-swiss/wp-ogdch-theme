@@ -1,5 +1,7 @@
 <?php
-//Remove top level admin menus
+/**
+ * Hide unused menu entries
+ */
 function remove_admin_menus() {
 	remove_menu_page( 'edit.php' ); // Posts
 	remove_menu_page( 'edit-comments.php' ); // Comments
