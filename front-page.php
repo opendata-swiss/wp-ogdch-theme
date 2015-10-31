@@ -4,7 +4,7 @@
 	<header class="container front-header">
 		<div class="row">
 			<div class="col-md-6">
-				<p class="lead"><?php pll_e( get_theme_mod( 'introduction_text' ) ); ?></p>
+				<p class="lead"><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the federal government, cantons and municipalities. It provides the public authorities open data of all federal levels in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
 				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 			</div>
 			<div class="col-md-offset-1 col-md-5 text-md-right text-xs-center">

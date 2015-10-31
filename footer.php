@@ -70,7 +70,7 @@ $dataset_count = get_dataset_count();
 			?>
 		</div>
 		<div class="col-md-4 col-xs-8">
-			<p><?php pll_e( get_theme_mod( 'footer_text' ) ); ?></p>
+			<p><?php esc_attr_e( 'Footer text', 'ogdch' ); ?></p>
 		</div>
 		<div class="col-md-2 col-xs-4">
 			<?php
