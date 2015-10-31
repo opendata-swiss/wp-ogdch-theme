@@ -4,7 +4,7 @@
 	<header class="container front-header">
 		<div class="row">
 			<div class="col-md-6">
-				<p class="lead">Das Portal <strong>opendata.swiss</strong> ist ein Gemeinschaftsprojekt von Bund, Kantonen und Gemeinden. Es stellt der Allgemeinheit offene Behördendaten aller föderalen Ebenen in einem zentralen Katalog zur Verfügung. Das Schweizerische Bundesarchiv betreibt <strong>opendata.swiss</strong>.</p>
+				<p class="lead"><?php pll_e( get_theme_mod( 'introduction_text' ) ); ?></p>
 				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 			</div>
 			<div class="col-md-offset-1 col-md-5 text-md-right text-xs-center">
