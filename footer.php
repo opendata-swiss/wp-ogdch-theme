@@ -70,7 +70,7 @@ $dataset_count = get_dataset_count();
 			?>
 		</div>
 		<div class="col-md-4 col-xs-8">
-			<p>Lorem ipsum dolor sit amet ea ius soluta nusquam constituto. Lorem ipsum dolor sit amet ea ius soluta nusquam constituto</p>
+			<p><?php pll_e( get_theme_mod( 'footer_text' ) ); ?></p>
 		</div>
 		<div class="col-md-2 col-xs-4">
 			<?php

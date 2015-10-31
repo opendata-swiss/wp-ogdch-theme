@@ -15,7 +15,6 @@ $frontend_includes = array(
 	'assets/php/scripts.php',
 	'assets/php/theme_functions.php',
 	'assets/php/customizer.php',
-	'assets/php/multilingual_settings.php',
 	'assets/php/multilingual_ninjaforms.php',
 );
 
