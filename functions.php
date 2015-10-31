@@ -43,6 +43,7 @@ if ( is_admin() ) {
 	$backend_includes = array(
 		'assets/php/backend/scripts.php',               // Admin Scripts / CSS
 		'assets/php/backend/caps.php',                  // Caps & Roles
+		'assets/php/backend/menu.php',                  // Menu
 		'assets/php/backend/statistics.php',            // Statistics API
 		'assets/php/backend/wysiwyg.php',               // TinyMCE Configuration
 	);
