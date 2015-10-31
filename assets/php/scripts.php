@@ -15,7 +15,7 @@ function odg_scripts() {
 
 	// Remove WP jQuery version
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'http://code.jquery.com/jquery-1.11.1.min.js', false, null, false );
+	wp_register_script( 'jquery', '//code.jquery.com/jquery-1.11.1.min.js', false, null, false );
 	wp_enqueue_script( 'jquery' );
 
 	wp_register_script( 'app', get_template_directory_uri() . '/assets/js/app.min.js', false, null, true );
