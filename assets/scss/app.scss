@@ -442,28 +442,6 @@ li.dataset-item {
 }
 
 // Dataset Detail
-.dataset-detail {
-  .page-header {
-    margin-bottom: 0;
-
-    @media (max-width: $grid-float-breakpoint) {
-      margin-bottom: 50px;
-    }
-  }
-  .toolbox {
-    background-color: $gray-dark;
-    margin-bottom: 50px;
-
-    ul {
-      margin-bottom: 0;
-      padding: 10px 0;
-
-      li, a {
-        color: #fff;
-      }
-    }
-  }
-}
 .terms img {
   height: 60px;
 }
