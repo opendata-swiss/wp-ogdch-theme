@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ogdch\n"
 "POT-Creation-Date: 2015-11-02 16:15+0100\n"
-"PO-Revision-Date: 2015-11-02 16:15+0100\n"
+"PO-Revision-Date: 2015-11-02 16:17+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
 "Language: de_CH\n"
@@ -1166,9 +1166,3 @@ msgstr ""
 #: themes/wp-ogdch-theme/header.php:46
 msgid "Search"
 msgstr ""
-
-#~ msgid "My own translation"
-#~ msgstr "Meine eigene übersetzung"
-
-#~ msgid "Know more about building apps"
-#~ msgstr "erfahre mehr über apps"
