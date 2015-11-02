@@ -335,10 +335,12 @@ a.label-primary-gray:hover {
 
 #explore {
   .category {
+    margin-top: 15px;
     margin-bottom: 15px;
     font-size: 20px;
-    
-    span {
+
+    small {
+      font-size: 18px;
       margin-left: 5px;
     }
   }

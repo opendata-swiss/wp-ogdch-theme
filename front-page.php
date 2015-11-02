@@ -66,7 +66,7 @@
 						$ckan_name = get_post_meta( get_the_ID(), '_ckan_local_group_ckan_name', true );
 						$title     = get_localized_meta( get_the_ID(), '_ckan_local_group_title_' );
 						$count     = $dataset_count['groups'][ $ckan_name ];
-						echo '<li class="category"><strong><a href="' . esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ) . '">' . esc_attr( $title ) . '</a><span>' . esc_attr( $count ) . '</span></strong></li>';
+						echo '<li class="category"><strong><a href="' . esc_url( get_page_link_by_slug( 'group/' . $ckan_name ) ) . '">' . esc_attr( $title ) . '</a> <small>' . esc_attr( $count ) . '</small></strong></li>';
 
 						$current_group++;
 						if ( 0 === $current_group % $gourps_per_col ) {
