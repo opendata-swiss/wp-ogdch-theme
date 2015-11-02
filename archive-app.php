@@ -32,7 +32,7 @@
 				printf(
 					// @codingStandardsIgnoreStart
 					_n( '%s Built Application', '%s Built Applications', $dataset_count, 'ogdch' ),
-					number_format_de( $dataset_count )
+					$dataset_count
 					// @codingStandardsIgnoreEnd
 				);
 				?>
