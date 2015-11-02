@@ -43,7 +43,7 @@ $dataset_count = get_dataset_count();
 		</div>
 		<div class="col-sm-8 text-md-right">
 			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How do I publish open data?', 'ogdch' ); ?></a>
-			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>" role="button"><?php esc_attr_e( 'How to share the App I built?', 'ogdch' ); ?></a>
+			<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How do I use open data?', 'ogdch' ); ?></a>
 		</div>
 	</div>
 	<div class="row top-buffer">
@@ -70,7 +70,7 @@ $dataset_count = get_dataset_count();
 			?>
 		</div>
 		<div class="col-md-4 col-xs-8">
-			<p>Lorem ipsum dolor sit amet ea ius soluta nusquam constituto. Lorem ipsum dolor sit amet ea ius soluta nusquam constituto</p>
+			<p><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the federal government, cantons and municipalities. It provides the public authorities open data of all federal levels in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
 		</div>
 		<div class="col-md-2 col-xs-4">
 			<?php
