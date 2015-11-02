@@ -58,7 +58,7 @@
 						$groups_query->the_post();
 
 						if ( 0 === $current_group % $gourps_per_col ) {
-							echo '<ul class="col-md-' . $col_size . ' list-unstyled">';
+							echo '<ul class="col-md-' . esc_attr( $col_size ) . ' list-unstyled">';
 						}
 
 						$ckan_name = get_post_meta( get_the_ID(), '_ckan_local_group_ckan_name', true );
