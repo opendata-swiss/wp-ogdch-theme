@@ -13,13 +13,7 @@ $frontend_includes = array(
 	'assets/php/init.php',
 	'assets/php/cleanup.php',
 	'assets/php/scripts.php',
-	'assets/php/actions.php',
-	'assets/php/filters.php',
-	'assets/php/shortcodes.php',
-	'assets/php/walker.php',
 	'assets/php/theme_functions.php',
-	'assets/php/widgets.php',
-	'assets/php/ajax.php',
 	'assets/php/multilingual_ninjaforms.php',
 );
 
@@ -43,6 +37,7 @@ if ( is_admin() ) {
 	$backend_includes = array(
 		'assets/php/backend/scripts.php',               // Admin Scripts / CSS
 		'assets/php/backend/caps.php',                  // Caps & Roles
+		'assets/php/backend/menu.php',                  // Menu
 		'assets/php/backend/statistics.php',            // Statistics API
 		'assets/php/backend/wysiwyg.php',               // TinyMCE Configuration
 	);
