@@ -30,14 +30,14 @@
 		<section id="explore" class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2><?php esc_attr_e( 'What you can find', 'ogdch' ); ?></h2>
+					<h2><?php esc_attr_e( 'Categories', 'ogdch' ); ?></h2>
 				</div>
 			</div>
 
 			<div class="row">
 				<?php
 				$current_group = 0;
-				$groups_args = array(
+				$groups_args   = array(
 					// @codingStandardsIgnoreStart
 					'posts_per_page' => -1,
 					'meta_key'       => '_ckan_local_group_title_' . get_current_language(),
@@ -47,8 +47,10 @@
 					'post_type'      => 'ckan-local-group',
 					'post_status'    => 'publish',
 				);
-				$groups_query = new WP_Query( $groups_args );
-				$gourps_per_col = ceil( $groups_query->post_count / 3 );
+				$groups_query   = new WP_Query( $groups_args );
+				$col_count      = 3;
+				$gourps_per_col = ceil( $groups_query->post_count / $col_count );
+				$col_size       = 12 / $col_count;
 
 				// The Loop
 				if ( $groups_query->have_posts() ) {
@@ -56,7 +58,7 @@
 						$groups_query->the_post();
 
 						if ( 0 === $current_group % $gourps_per_col ) {
-							echo '<ul class="col-md-4 list-unstyled">';
+							echo '<ul class="col-md-' . $col_size . ' list-unstyled">';
 						}
 
 						$ckan_name = get_post_meta( get_the_ID(), '_ckan_local_group_ckan_name', true );
