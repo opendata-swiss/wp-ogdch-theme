@@ -13,7 +13,7 @@
 						<?php
 						$dataset_count = get_dataset_count();
 						?>
-						<div id="opendata-count"><?php esc_html_e( number_format_i18n( $dataset_count['total_count'] ) ); ?></div>
+						<div id="opendata-count"><?php esc_html_e( number_format_de( $dataset_count['total_count'] ) ); ?></div>
 						<div class="title"><?php esc_attr_e( 'Open Datasets', 'ogdch' ); ?></div>
 					</div>
 					<form action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
