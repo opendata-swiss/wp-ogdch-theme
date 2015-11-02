@@ -1,6 +1,19 @@
 <?php
 
 /**
+ * Returns the current language slug (2-letters)
+ *
+ * @return bool|string
+ */
+function get_current_language() {
+	if ( function_exists( 'pll_current_language' ) ) {
+		return pll_current_language();
+	} else {
+		return substr( get_locale(), 0, 2 );
+	}
+}
+
+/**
  * Get localized metafield value.
  *
  * @param int    $post_id The ID of the post.
@@ -12,7 +25,7 @@ function get_localized_meta( $post_id, $meta_name ) {
 	global $language_priority;
 
 	// try to get meta in current language
-	$localized_meta = get_post_meta( $post_id, $meta_name . pll_current_language(), true );
+	$localized_meta = get_post_meta( $post_id, $meta_name . get_current_language(), true );
 	if ( ! empty( $localized_meta ) ) {
 		return $localized_meta;
 	}
@@ -54,7 +67,7 @@ add_filter( 'nav_menu_css_class', 'add_class_to_current_item', 10, 2 );
  * @return string
  */
 function get_page_link_by_slug( $slug ) {
-	return '/' . pll_current_language() . '/' . $slug;
+	return '/' . get_current_language() . '/' . $slug;
 }
 
 /**
