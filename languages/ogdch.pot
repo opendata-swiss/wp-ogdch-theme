@@ -1,18 +1,20 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ogdch\n"
-"POT-Creation-Date: 2015-11-02 16:15+0100\n"
-"PO-Revision-Date: 2015-11-02 16:17+0100\n"
+"POT-Creation-Date: 2015-11-02 16:14+0100\n"
+"PO-Revision-Date: 2015-11-02 16:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
-"Language: de_CH\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.6\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
-"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: plugins/wp-ckan-backend\n"
@@ -31,67 +33,67 @@ msgstr ""
 #: plugins/wp-app-showcase/post-types/app.php:37
 #: plugins/wp-app-showcase/post-types/app.php:51
 msgid "Applications"
-msgstr "Anwendungen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:35
 msgid "Application"
-msgstr "Anwendung"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:38
 msgid "Parent Application:"
-msgstr "Übergeordnete Anwendung"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:39
 #: themes/wp-ogdch-theme/front-page.php:207
 msgid "All Applications"
-msgstr "Alle Anwendungen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:40
 msgid "Add New Application"
-msgstr "Neue Anwendung erstellen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:41
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:282
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:53
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:53
 msgid "Add New"
-msgstr "Erstellen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:42
 msgid "New Application"
-msgstr "Anwendung erstellen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:43
 msgid "Edit Application"
-msgstr "Anwendung bearbeiten"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:44
 msgid "Update Application"
-msgstr "Anwendung aktualisieren"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:45
 msgid "View Application"
-msgstr "Anwendung anzeigen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:46
 msgid "Search Applications"
-msgstr "Anwendungen durchsuchen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:47
 msgid "No Applications found"
-msgstr "Keine Anwendungen gefunden"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:48
 msgid "No Applications found in Trash"
-msgstr "Keine Anwendungen im Papierkorb gefunden"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:52
 msgid "The Application directory"
-msgstr "Anwendungsverzeichnis"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:100
 msgid "Application Information"
-msgstr "Informationen zur Anwendung"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:109
 msgid "Landing page"
@@ -99,11 +101,11 @@ msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:122
 msgid "Author Name"
-msgstr "Name des Autor"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:132
 msgid "Author Email"
-msgstr "Email des Autor"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:143
 msgid "Icon"
@@ -112,17 +114,17 @@ msgstr ""
 #: plugins/wp-app-showcase/post-types/app.php:153
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:566
 msgid "Dataset Relation {#}"
-msgstr "Beziehung zu Datensatz {#}"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:154
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:567
 msgid "Add another Dataset Relation"
-msgstr "Füge eine weitere Datensatz Beziehung hinzu"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:155
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:568
 msgid "Remove Dataset Relation"
-msgstr "Datensatz Beziehung entfernen"
+msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:161
 #: plugins/wp-app-showcase/post-types/app.php:167
@@ -130,7 +132,7 @@ msgstr "Datensatz Beziehung entfernen"
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:350
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:573
 msgid "Dataset"
-msgstr "Datensatz"
+msgstr ""
 
 #: plugins/wp-ckan-backend/ckan-backend.php:200
 msgid "Filter"
@@ -138,7 +140,7 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/ckan-backend.php:276
 msgid "Search dataset..."
-msgstr "Datensatz suchen…"
+msgstr ""
 
 #: plugins/wp-ckan-backend/ckan-backend.php:299
 #: plugins/wp-ckan-backend/ckan-backend.php:304
@@ -147,77 +149,74 @@ msgstr "Datensatz suchen…"
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:47
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:114
 msgid "Organization"
-msgstr "Organisation"
+msgstr ""
 
 #: plugins/wp-ckan-backend/ckan-backend.php:342
 msgid "Please choose an organization for this user."
-msgstr "Bitte eine Organisation für diesen Benutzer auswählen."
+msgstr ""
 
 #: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:399
 msgid "All organizations"
-msgstr "Alle Organisationen"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-export.php:39
 msgid "Export"
-msgstr "Exportieren"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-export.php:40
 msgid "Datasets exported"
-msgstr "Datensätze exportiert"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:34
 msgid "Import Catalog"
-msgstr "Katalog importieren"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:35
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:155
 msgid "Import"
-msgstr "Importieren"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:50
 msgid "You do not have sufficient permissions to access this page."
-msgstr "Du hast nicht genügend Rechte um diese Seite anzuzeigen."
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:78
 #, php-format
 msgid "Successfully inserted new dataset %s"
-msgstr "Neuer Datensatz %s erfolgreich importiert"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:85
 #, php-format
 msgid "Successfully updated dataset %s"
-msgstr "Datensatz %s erfolgreich aktualisiert"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:95
 #, php-format
 msgid ""
-"The dataset is already published. You can edit it here: <a href=\"%s\">%s</"
-"a>."
+"The dataset is already published. You can edit it here: <a href=\"%s\">"
+"%s</a>."
 msgstr ""
-"Der Datensatz ist bereits veröffentlicht. Du kannst ihn hier bearbeiten: <a "
-"href=\"%s\">%s</a>."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:103
 #, php-format
 msgid ""
-"The dataset is not yet published. You can edit and publish it here: <a href="
-"\"%s\">%s</a>."
+"The dataset is not yet published. You can edit and publish it here: <a "
+"href=\"%s\">%s</a>."
 msgstr ""
-"Der Datensatz ist noch nicht veröffentlicht. Du kannst ihn hier bearbeiten "
-"und veröffentlichen: <a href=\"%s\">%s</a>."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:140
 msgid "DCAT-AP Catalog File:"
-msgstr "DCAT-AP Katalog Datei"
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:146
 msgid "File has to be a DCAT-AP Switzerland catalog."
-msgstr "Die Datei muss dem DCAT-AP Switzerland Katalog Standard entsprechen."
+msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:399
 msgid ""
-"Please provide an identifier for the dataset (eg. &lt;dct:title xml:lang=\"en"
-"\"&gt;My Dataset&lt;/dct:title&gt;).  Dataset [no identifier] not imported"
+"Please provide an identifier for the dataset (eg. &lt;dct:title xml:"
+"lang=\"en\"&gt;My Dataset&lt;/dct:title&gt;).  Dataset [no identifier] "
+"not imported"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:404
@@ -225,34 +224,34 @@ msgstr ""
 msgid ""
 "The original identifier of your dataset is missing. Please provide the "
 "dataset identifier in the following form &lt;dct:identifier&gt;"
-"[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Dataset %s "
-"not imported."
+"[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. "
+"Dataset %s not imported."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:417
 #, php-format
 msgid ""
-"Please provide a title in at least one language for the dataset (eg. &lt;dct:"
-"title xml:lang=\"en\"&gt;My Dataset&lt;/dct:title&gt;). Dataset %s not "
-"imported."
+"Please provide a title in at least one language for the dataset (eg. "
+"&lt;dct:title xml:lang=\"en\"&gt;My Dataset&lt;/dct:title&gt;). "
+"Dataset %s not imported."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:489
 #, php-format
 msgid ""
-"The organization id is missing in the identifier. Please provide the dataset "
-"identifier in the following form &lt;dct:identifier&gt;"
-"[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Dataset %s "
-"not imported."
+"The organization id is missing in the identifier. Please provide the "
+"dataset identifier in the following form &lt;dct:identifier&gt;"
+"[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. "
+"Dataset %s not imported."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:498
 #, php-format
 msgid ""
 "You are not allowed to add a dataset for another organistaion. Please "
-"provide the dataset identifier in the following form &lt;dct:identifier&gt;"
-"[original_dataset_id]@[your_organization_id]&lt;/dct:identifier&gt;. Dataset "
-"%s not imported."
+"provide the dataset identifier in the following form &lt;dct:"
+"identifier&gt;[original_dataset_id]@[your_organization_id]&lt;/dct:"
+"identifier&gt;. Dataset %s not imported."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:506
@@ -276,7 +275,8 @@ msgid "- Please choose -"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:263
-msgid "This dataset is disabled and will not be published on the website."
+msgid ""
+"This dataset is disabled and will not be published on the website."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:275
@@ -337,8 +337,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:361
 msgid ""
-"Unique identifier of the dataset linked with the publisher. A good way to "
-"make sure this identifier is unique is to use the source system ID."
+"Unique identifier of the dataset linked with the publisher. A good way "
+"to make sure this identifier is unique is to use the source system ID."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:370
@@ -371,8 +371,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:402
 msgid ""
-"Date of the first publication of this dataset. If this date is unknown, the "
-"date of the first publication on this portal can be used."
+"Date of the first publication of this dataset. If this date is "
+"unknown, the date of the first publication on this portal can be used."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:410
@@ -382,8 +382,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:412
 msgid ""
-"Date when dataset was last modified (since the first publication on the "
-"portal)."
+"Date when dataset was last modified (since the first publication on "
+"the portal)."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:417
@@ -460,8 +460,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:481
 msgid ""
-"The contact point if there are questions about this dataset. At least one "
-"contact point is required."
+"The contact point if there are questions about this dataset. At least "
+"one contact point is required."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:483
@@ -563,7 +563,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:607
 msgid ""
-"If this element is left empty, the title of the dataset is used instead."
+"If this element is left empty, the title of the dataset is used "
+"instead."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:614
@@ -578,8 +579,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:622
 msgid ""
-"Languages in which this distribution is available. If the distribution is "
-"language-independent do not check anything."
+"Languages in which this distribution is available. If the distribution "
+"is language-independent do not check anything."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:626
@@ -612,7 +613,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:655
 msgid ""
-"All terms of use marked with an asterisk (*) are declared as close data."
+"All terms of use marked with an asterisk (*) are declared as close "
+"data."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:662
@@ -621,11 +623,11 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:664
 msgid ""
-"URL where the distribution can be found. This could be either a download "
-"url, an API url or a landing page url. If the distribution is only available "
-"through a landing page, this field must contain the url of the landing page. "
-"If a download url was given for this distribution, this field has to contain "
-"the same value."
+"URL where the distribution can be found. This could be either a "
+"download url, an API url or a landing page url. If the distribution is "
+"only available through a landing page, this field must contain the url "
+"of the landing page. If a download url was given for this "
+"distribution, this field has to contain the same value."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:672
@@ -919,63 +921,71 @@ msgid "Keywords for CKAN datasets"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:25
-msgid "* Non-commercial Allowed / Commercial Allowed / Reference Not Required"
+msgid ""
+"* Non-commercial Allowed / Commercial Allowed / Reference Not Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:26
-msgid "* Non-commercial Allowed / Commercial Allowed / Reference Required"
+msgid ""
+"* Non-commercial Allowed / Commercial Allowed / Reference Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:27
 msgid ""
-"* Non-commercial Allowed / Commercial With Permission Allowed / Reference "
-"Not Required"
+"* Non-commercial Allowed / Commercial With Permission Allowed / "
+"Reference Not Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:28
 msgid ""
-"* Non-commercial Allowed / Commercial With Permission Allowed / Reference "
-"Required"
+"* Non-commercial Allowed / Commercial With Permission Allowed / "
+"Reference Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:29
 msgid ""
-"Non-commercial Allowed / Commercial Not Allowed / Reference Not Required"
+"Non-commercial Allowed / Commercial Not Allowed / Reference Not "
+"Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:30
-msgid "Non-commercial Allowed / Commercial Not Allowed / Reference Required"
+msgid ""
+"Non-commercial Allowed / Commercial Not Allowed / Reference Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:31
 msgid ""
-"Non-commercial Not Allowed / Commercial Not Allowed / Reference Not Required"
+"Non-commercial Not Allowed / Commercial Not Allowed / Reference Not "
+"Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:32
 msgid ""
-"Non-commercial Not Allowed / Commercial Not Allowed / Reference Required"
+"Non-commercial Not Allowed / Commercial Not Allowed / Reference "
+"Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:33
 msgid ""
-"Non-commercial Not Allowed / Commercial Allowed / Reference Not Required"
+"Non-commercial Not Allowed / Commercial Allowed / Reference Not "
+"Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:34
-msgid "Non-commercial Not Allowed / Commercial Allowed / Reference Required"
+msgid ""
+"Non-commercial Not Allowed / Commercial Allowed / Reference Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:35
 msgid ""
-"Non-commercial Not Allowed / Commercial With Permission Allowed / Reference "
-"Not Required"
+"Non-commercial Not Allowed / Commercial With Permission Allowed / "
+"Reference Not Required"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:36
 msgid ""
-"Non-commercial Not Allowed / Commercial With Permission Allowed / Reference "
-"Required"
+"Non-commercial Not Allowed / Commercial With Permission Allowed / "
+"Reference Required"
 msgstr ""
 
 #: themes/wp-ogdch-theme/404.php:8
@@ -985,8 +995,8 @@ msgstr ""
 
 #: themes/wp-ogdch-theme/404.php:17
 msgid ""
-"Ooops... The page you're looking for isn't available. Here is a cool space "
-"shuttle to make you feel better!"
+"Ooops... The page you're looking for isn't available. Here is a cool "
+"space shuttle to make you feel better!"
 msgstr ""
 
 #: themes/wp-ogdch-theme/_missing_translations.php:11
@@ -1011,9 +1021,9 @@ msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:20
 msgid ""
-"We present a selection of applications and visual representations created "
-"using datasets from the opendata.swiss portal. If you have developed an "
-"application, please contact us."
+"We present a selection of applications and visual representations "
+"created using datasets from the opendata.swiss portal. If you have "
+"developed an application, please contact us."
 msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:21
@@ -1073,7 +1083,8 @@ msgstr ""
 msgid "Search results for:"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:12 themes/wp-ogdch-theme/front-page.php:16
+#: themes/wp-ogdch-theme/footer.php:12
+#: themes/wp-ogdch-theme/front-page.php:16
 msgid "Open Datasets"
 msgstr ""
 
@@ -1097,12 +1108,13 @@ msgstr ""
 msgid "How do I use open data?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:73 themes/wp-ogdch-theme/front-page.php:7
+#: themes/wp-ogdch-theme/footer.php:73
+#: themes/wp-ogdch-theme/front-page.php:7
 msgid ""
-"The portal opendata.swiss is a joint project of the federal government, "
-"cantons and municipalities. It provides the public authorities open data of "
-"all federal levels in a central catalog. The Swiss Federal Archives operates "
-"opendata.swiss."
+"The portal opendata.swiss is a joint project of the federal "
+"government, cantons and municipalities. It provides the public "
+"authorities open data of all federal levels in a central catalog. The "
+"Swiss Federal Archives operates opendata.swiss."
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:8
