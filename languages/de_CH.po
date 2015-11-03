@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ogdch\n"
-"POT-Creation-Date: 2015-11-02 16:15+0100\n"
-"PO-Revision-Date: 2015-11-02 16:17+0100\n"
+"POT-Creation-Date: 2015-11-03 13:58+0100\n"
+"PO-Revision-Date: 2015-11-03 13:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
 "Language: de_CH\n"
@@ -42,7 +42,6 @@ msgid "Parent Application:"
 msgstr "Übergeordnete Anwendung"
 
 #: plugins/wp-app-showcase/post-types/app.php:39
-#: themes/wp-ogdch-theme/front-page.php:207
 msgid "All Applications"
 msgstr "Alle Anwendungen"
 
@@ -291,7 +290,6 @@ msgid "Parent Dataset:"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:280
-#: themes/wp-ogdch-theme/front-page.php:165
 msgid "All Datasets"
 msgstr ""
 
@@ -489,7 +487,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:48
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:49
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:64
-#: themes/wp-ogdch-theme/front-page.php:33
+#: themes/wp-ogdch-theme/front-page.php:35
 msgid "Categories"
 msgstr ""
 
@@ -979,7 +977,7 @@ msgid ""
 msgstr ""
 
 #: themes/wp-ogdch-theme/404.php:8
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:292
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:304
 msgid "Page not found"
 msgstr ""
 
@@ -1048,32 +1046,32 @@ msgstr ""
 msgid "Please activate wp-ckan-backend plugin"
 msgstr ""
 
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:157
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:169
 msgid "Home"
 msgstr ""
 
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:263
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:265
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:267
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:271
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:273
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:276
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:275
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:277
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:279
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:283
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:285
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:288
 msgid "Archives"
 msgstr ""
 
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:283
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:295
 msgid "Author"
 msgstr ""
 
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:286
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:298
 msgid "Page"
 msgstr ""
 
-#: themes/wp-ogdch-theme/assets/php/theme_functions.php:289
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:301
 msgid "Search results for:"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:12 themes/wp-ogdch-theme/front-page.php:16
+#: themes/wp-ogdch-theme/footer.php:12 themes/wp-ogdch-theme/front-page.php:17
 msgid "Open Datasets"
 msgstr ""
 
@@ -1097,7 +1095,7 @@ msgstr ""
 msgid "How do I use open data?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:73 themes/wp-ogdch-theme/front-page.php:7
+#: themes/wp-ogdch-theme/footer.php:73 themes/wp-ogdch-theme/front-page.php:8
 msgid ""
 "The portal opendata.swiss is a joint project of the federal government, "
 "cantons and municipalities. It provides the public authorities open data of "
@@ -1105,52 +1103,43 @@ msgid ""
 "opendata.swiss."
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:8
+#: themes/wp-ogdch-theme/front-page.php:9
 msgid "Learn more about opendata.swiss"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:20
+#: themes/wp-ogdch-theme/front-page.php:21
 msgid "Search opendata.swiss"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:94
-msgid "How you can build"
+#: themes/wp-ogdch-theme/front-page.php:96
+msgid "How it works"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:97
+#: themes/wp-ogdch-theme/front-page.php:101
+msgid "Data Publisher?"
+msgstr ""
+
+#: themes/wp-ogdch-theme/front-page.php:102
+msgid ""
+"Are you an Organisation interested in sharing your open data in this portal?"
+msgstr ""
+
+#: themes/wp-ogdch-theme/front-page.php:103
+msgid "Learn how to participate"
+msgstr ""
+
+#: themes/wp-ogdch-theme/front-page.php:106
+msgid "Data User or Application Builder?"
+msgstr ""
+
+#: themes/wp-ogdch-theme/front-page.php:107
+msgid ""
+"Are you interested in using this portals open data and build your own "
+"applications?"
+msgstr ""
+
+#: themes/wp-ogdch-theme/front-page.php:108
 msgid "Read our FAQ"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:105
-msgid "Find Data"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:113
-msgid "Use Data"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:121
-msgid "Share App"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:141
-msgid "What's trending now"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:147
-msgid "Popular Datasets"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:168
-msgid "Active Publishers"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:186
-msgid "All Publishers"
-msgstr ""
-
-#: themes/wp-ogdch-theme/front-page.php:189
-msgid "Latest Applications"
 msgstr ""
 
 #: themes/wp-ogdch-theme/functions.php:23
