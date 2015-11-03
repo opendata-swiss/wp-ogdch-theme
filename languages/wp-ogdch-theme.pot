@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
-"POT-Creation-Date: 2015-11-03 21:14+0100\n"
+"POT-Creation-Date: 2015-11-03 22:29+0100\n"
 "PO-Revision-Date: 2015-11-02 16:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
@@ -552,14 +552,13 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:606
 msgid ""
-"If this element is left empty, the title of the dataset is used "
-"instead."
+"If the title is left empty, the title of the dataset is used instead."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:613
 msgid ""
-"If this element is left empty, the description of the dataset is used "
-"instead."
+"If the description is left empty, the description of the dataset is "
+"used instead."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:619
@@ -602,8 +601,8 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:654
 msgid ""
-"All terms of use marked with an asterisk (*) are declared as close "
-"data."
+"All terms of use which are not marked with an asterisk (*) are "
+"declared as close data."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:661
@@ -793,7 +792,7 @@ msgid "Organization Image"
 msgstr ""
 
 #: plugins/wp-ckan-backend/sync/ckan-backend-sync-abstract.php:85
-msgid "CKAN Sync aborted! Please provide a title for this post."
+msgid "CKAN Sync aborted! Please provide a title."
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:25
@@ -866,39 +865,48 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:24
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:42
-msgid "Keywords"
+#, php-format
+msgid "Keywords (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:25
-msgid "Keyword"
+#, php-format
+msgid "Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:26
-msgid "All Keywords"
+#, php-format
+msgid "All Keywords (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:27
-msgid "Edit Keywords"
+#, php-format
+msgid "Edit Keywords (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:28
-msgid "View Keyword"
+#, php-format
+msgid "View Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:29
-msgid "Update Keyword"
+#, php-format
+msgid "Update Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:30
-msgid "Add New Keyword"
+#, php-format
+msgid "Add New Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:31
-msgid "New Keyword Name"
+#, php-format
+msgid "New Keyword Name (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:44
-msgid "Keywords for CKAN datasets"
+#, php-format
+msgid "Keywords (%s) for CKAN datasets"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:25
@@ -1011,7 +1019,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: themes/wp-ogdch-theme/assets/php/init.php:28
-msgid "Haupt-Navigation"
+msgid "Main-Navigation"
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/init.php:29
