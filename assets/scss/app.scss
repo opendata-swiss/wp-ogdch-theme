@@ -91,6 +91,9 @@ p.small {
 }
 
 // Label styles
+.label {
+  font-weight: normal;
+}
 .label-default {
   background-color: #fff;
   border: solid 1px $gray-lighterish;
