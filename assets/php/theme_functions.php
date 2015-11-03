@@ -149,6 +149,18 @@ function get_tweet_count() {
 }
 
 /**
+ * This function is just a workaround as long as the wrong translated thousand separator in WordPress is wrong.
+ *
+ * @param int $number   The number to convert based on locale.
+ * @param int $decimals Optional. Precision of the number of decimal places. Default 0.
+ *
+ * @return string Converted number in string format.
+ */
+function number_format_de( $number, $decimals = 0 ) {
+	return number_format( $number, absint( $decimals ), ',', "'" );
+}
+
+/**
  * Displays current breadcrumb
  * Source: https://www.thewebtaylor.com/articles/wordpress-creating-breadcrumbs-without-a-plugin
  */
