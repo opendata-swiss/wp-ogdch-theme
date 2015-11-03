@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
-"POT-Creation-Date: 2015-11-03 20:19+0100\n"
-"PO-Revision-Date: 2015-11-03 20:21+0100\n"
+"POT-Creation-Date: 2015-11-03 21:14+0100\n"
+"PO-Revision-Date: 2015-11-03 21:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
 "Language: de_CH\n"
@@ -15,7 +15,7 @@ msgstr ""
 #: plugins/wp-app-showcase/post-types/app.php:34
 #: plugins/wp-app-showcase/post-types/app.php:36
 #: plugins/wp-app-showcase/post-types/app.php:37
-#: plugins/wp-app-showcase/post-types/app.php:51
+#: plugins/wp-app-showcase/post-types/app.php:50
 msgid "Applications"
 msgstr "Anwendungen"
 
@@ -24,102 +24,98 @@ msgid "Application"
 msgstr "Anwendung"
 
 #: plugins/wp-app-showcase/post-types/app.php:38
-msgid "Parent Application:"
-msgstr "Übergeordnete Anwendung"
-
-#: plugins/wp-app-showcase/post-types/app.php:39
 msgid "All Applications"
 msgstr "Alle Anwendungen"
 
-#: plugins/wp-app-showcase/post-types/app.php:40
+#: plugins/wp-app-showcase/post-types/app.php:39
 msgid "Add New Application"
 msgstr "Neue Anwendung erstellen"
 
-#: plugins/wp-app-showcase/post-types/app.php:41
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:282
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:53
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:53
+#: plugins/wp-app-showcase/post-types/app.php:40
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:281
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:52
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:52
 msgid "Add New"
 msgstr "Erstellen"
 
-#: plugins/wp-app-showcase/post-types/app.php:42
+#: plugins/wp-app-showcase/post-types/app.php:41
 msgid "New Application"
 msgstr "Anwendung erstellen"
 
-#: plugins/wp-app-showcase/post-types/app.php:43
+#: plugins/wp-app-showcase/post-types/app.php:42
 msgid "Edit Application"
 msgstr "Anwendung bearbeiten"
 
-#: plugins/wp-app-showcase/post-types/app.php:44
+#: plugins/wp-app-showcase/post-types/app.php:43
 msgid "Update Application"
 msgstr "Anwendung aktualisieren"
 
-#: plugins/wp-app-showcase/post-types/app.php:45
+#: plugins/wp-app-showcase/post-types/app.php:44
 msgid "View Application"
 msgstr "Anwendung anzeigen"
 
-#: plugins/wp-app-showcase/post-types/app.php:46
+#: plugins/wp-app-showcase/post-types/app.php:45
 msgid "Search Applications"
 msgstr "Anwendungen durchsuchen"
 
-#: plugins/wp-app-showcase/post-types/app.php:47
+#: plugins/wp-app-showcase/post-types/app.php:46
 msgid "No Applications found"
-msgstr "Keine Anwendungen gefunden"
+msgstr "Keine Anwendung gefunden"
 
-#: plugins/wp-app-showcase/post-types/app.php:48
+#: plugins/wp-app-showcase/post-types/app.php:47
 msgid "No Applications found in Trash"
-msgstr "Keine Anwendungen im Papierkorb gefunden"
+msgstr "Keine Anwendung im Papierkorb gefunden"
 
-#: plugins/wp-app-showcase/post-types/app.php:52
+#: plugins/wp-app-showcase/post-types/app.php:51
 msgid "The Application directory"
 msgstr "Anwendungsverzeichnis"
 
-#: plugins/wp-app-showcase/post-types/app.php:100
+#: plugins/wp-app-showcase/post-types/app.php:99
 msgid "Application Information"
 msgstr "Informationen zur Anwendung"
 
-#: plugins/wp-app-showcase/post-types/app.php:109
+#: plugins/wp-app-showcase/post-types/app.php:108
 msgid "Landing page"
 msgstr ""
 
-#: plugins/wp-app-showcase/post-types/app.php:122
+#: plugins/wp-app-showcase/post-types/app.php:121
 msgid "Author Name"
 msgstr "Name des Autor"
 
-#: plugins/wp-app-showcase/post-types/app.php:132
+#: plugins/wp-app-showcase/post-types/app.php:131
 msgid "Author Email"
 msgstr "Email des Autor"
 
-#: plugins/wp-app-showcase/post-types/app.php:143
-msgid "Icon"
-msgstr ""
+#: plugins/wp-app-showcase/post-types/app.php:142
+msgid "Logo"
+msgstr "Logo"
 
-#: plugins/wp-app-showcase/post-types/app.php:153
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:566
+#: plugins/wp-app-showcase/post-types/app.php:152
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:565
 msgid "Dataset Relation {#}"
 msgstr "Beziehung zu Datensatz {#}"
 
-#: plugins/wp-app-showcase/post-types/app.php:154
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:567
+#: plugins/wp-app-showcase/post-types/app.php:153
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:566
 msgid "Add another Dataset Relation"
 msgstr "Füge eine weitere Datensatz Beziehung hinzu"
 
-#: plugins/wp-app-showcase/post-types/app.php:155
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:568
+#: plugins/wp-app-showcase/post-types/app.php:154
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:567
 msgid "Remove Dataset Relation"
 msgstr "Datensatz Beziehung entfernen"
 
-#: plugins/wp-app-showcase/post-types/app.php:161
-#: plugins/wp-app-showcase/post-types/app.php:167
+#: plugins/wp-app-showcase/post-types/app.php:160
+#: plugins/wp-app-showcase/post-types/app.php:166
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:276
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:350
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:573
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:349
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:572
 msgid "Dataset"
 msgstr "Datensatz"
 
 #: plugins/wp-ckan-backend/ckan-backend.php:200
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: plugins/wp-ckan-backend/ckan-backend.php:276
 msgid "Search dataset..."
@@ -130,7 +126,7 @@ msgstr "Datensatz suchen…"
 #: plugins/wp-ckan-backend/ckan-backend.php:368
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:163
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:47
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:114
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:113
 msgid "Organization"
 msgstr "Organisation"
 
@@ -202,8 +198,11 @@ msgstr "Die Datei muss dem DCAT-AP Switzerland Katalog Standard entsprechen."
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:399
 msgid ""
 "Please provide an identifier for the dataset (eg. &lt;dct:title xml:lang=\"en"
-"\"&gt;My Dataset&lt;/dct:title&gt;).  Dataset [no identifier] not imported"
+"\"&gt;My Dataset&lt;/dct:title&gt;).  Dataset [no identifier] not imported."
 msgstr ""
+"Bitte den Identifier des Datensatzes liefern (eg. &lt;dct:title xml:lang=\"en"
+"\"&gt;My Dataset&lt;/dct:title&gt;).  Datensatz [kein Identifier] nicht "
+"importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:404
 #, php-format
@@ -213,6 +212,10 @@ msgid ""
 "[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Dataset %s "
 "not imported."
 msgstr ""
+"Der Original-Identifier des Datensatzes fehlt. Bitte liefere diesen in der "
+"folgenden Form: &lt;dct:identifier&gt;"
+"[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Datensatz %s "
+"nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:417
 #, php-format
@@ -221,6 +224,9 @@ msgid ""
 "title xml:lang=\"en\"&gt;My Dataset&lt;/dct:title&gt;). Dataset %s not "
 "imported."
 msgstr ""
+"Bitte liefere einen Titel für den Datensatz in mindestens einer Sprache "
+"(Bsp. &lt;dct:title xml:lang=\"en\"&gt;My Dataset&lt;/dct:title&gt;). "
+"Datensatz %s nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:489
 #, php-format
@@ -230,6 +236,10 @@ msgid ""
 "[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Dataset %s "
 "not imported."
 msgstr ""
+"Die Organisations ID im Identifier fehlt. Bitte liefere den Identifier in "
+"folgender Form: &lt;dct:identifier&gt;"
+"[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Datensatz %s "
+"nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:498
 #, php-format
@@ -239,371 +249,385 @@ msgid ""
 "[original_dataset_id]@[your_organization_id]&lt;/dct:identifier&gt;. Dataset "
 "%s not imported."
 msgstr ""
+"Du bist nicht berechtigt einen Datensatz für eine andere Organisation "
+"hinzuzufügen. Bitte liefere den Identifier in folgender Form: &lt;dct:"
+"identifier&gt;[original_dataset_id]@[your_organization_id]&lt;/dct:"
+"identifier&gt;. Datensatz %s nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:506
 #, php-format
 msgid "Organization %1$s does not exist. Dataset %2$s not imported."
-msgstr ""
+msgstr "Organisation %1$s existiert nicht. Datensatz %2$s nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:620
 #, php-format
-msgid "Right %1$s does not exist. Dataset %2$s not imported."
+msgid "Term of use %1$s does not exist. Dataset %2$s not imported."
 msgstr ""
+"Nutzungsbedingung %1$s existiert nicht. Datensatz %2$s nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:677
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:687
 #, php-format
-msgid "Group %1$s does not exist. Dataset %2$s not imported."
-msgstr ""
+msgid "Category %1$s does not exist. Dataset %2$s not imported."
+msgstr "Kategorie %1$s existiert nicht. Datensatz %2$s nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:146
 msgid "- Please choose -"
-msgstr ""
+msgstr "- Bitte wählen -"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:263
 msgid "This dataset is disabled and will not be published on the website."
 msgstr ""
+"Der Datensatz ist deaktiviert und wird nicht auf der Webseite publiziert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:275
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:277
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:278
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:298
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:297
 msgid "Datasets"
-msgstr ""
+msgstr "Datensätze"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:279
-msgid "Parent Dataset:"
-msgstr ""
+msgid "All Datasets"
+msgstr "Alle Datensätze"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:280
-msgid "All Datasets"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:281
 msgid "Add New Dataset"
-msgstr ""
+msgstr "Neuen Datensatz erstellen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:282
+msgid "New Dataset"
+msgstr "Datensatz erstellen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:283
-msgid "New Dataset"
-msgstr ""
+msgid "Edit Dataset"
+msgstr "Datensatz bearbeiten"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:284
-msgid "Edit Dataset"
-msgstr ""
+msgid "Update Dataset"
+msgstr "Datensatz aktualisieren"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:285
-msgid "Update Dataset"
-msgstr ""
+msgid "View Dataset"
+msgstr "Datensatz anzeigen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:286
-msgid "View Dataset"
-msgstr ""
+msgid "Search Datasets"
+msgstr "Datensätze durchsuchen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:287
-msgid "Search Datasets"
-msgstr ""
+msgid "No Datasets found"
+msgstr "Keinen Datensatz gefunden"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:288
-msgid "No Datasets found"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:289
 msgid "No Datasets found in Trash"
-msgstr ""
+msgstr "Keinen Datensatz im Papierkorb gefunden"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:299
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:298
 msgid "Datasets which get synced with CKAN"
-msgstr ""
+msgstr "Datensätze welche mit CKAN synchronisiert werden"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:359
-msgid "Dataset Identifier*"
-msgstr ""
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:358
+msgid "Dataset Identifier"
+msgstr "Datensatz Identifier"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:361
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:360
 msgid ""
 "Unique identifier of the dataset linked with the publisher. A good way to "
 "make sure this identifier is unique is to use the source system ID."
 msgstr ""
+"Eindeutiger Identifier des Datensatzes verknüpft mit dem Publisher. Eine "
+"Möglichkeit einen eindeutigen Identifier zu erhalten, ist die ID aus dem "
+"Quellsystem zu verwenden."
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:370
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:369
 msgid "Dataset Information"
-msgstr ""
+msgstr "Datensatz Informationen"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:378
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:549
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:604
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:130
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:130
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:377
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:548
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:603
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:129
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:129
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:385
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:611
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:136
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:136
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:384
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:610
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:135
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:135
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:394
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:393
 msgid "Dates"
-msgstr ""
+msgstr "Daten"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:400
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:634
-msgid "Issued*"
-msgstr ""
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:399
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:633
+msgid "Issued"
+msgstr "Erstellt"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:402
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:401
 msgid ""
 "Date of the first publication of this dataset. If this date is unknown, the "
 "date of the first publication on this portal can be used."
 msgstr ""
+"Datum der ersten Publikation dieses Datensatzes. Falls dieses Datum nicht "
+"bekannt ist, muss das Datum der ersten Publikation auf diesem Portal "
+"verwendet werden."
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:410
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:645
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:409
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:644
 msgid "Modified"
-msgstr ""
+msgstr "Geändert"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:412
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:411
 msgid ""
 "Date when dataset was last modified (since the first publication on the "
 "portal)."
 msgstr ""
+"Datum an dem der Datensatz (seit der ersten Publikation auf dem Portal) "
+"zuletzt geändert wurde."
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:417
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:416
 msgid "Accrual Periodicity"
-msgstr ""
+msgstr "Periodizität"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:419
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:418
 msgid "The frequency in which this dataset is updated."
-msgstr ""
+msgstr "Die Frequenz in der dieser Datensatz aktualisiert wird."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:427
+msgid "Temporals"
+msgstr "Zeitliche Abdeckung"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:428
-msgid "Temporals"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:429
 msgid "One or more time period that this dataset covers."
-msgstr ""
+msgstr "Eine oder mehrere Zeitperioden welche dieser Datensatz abdeckt."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:430
+msgid "Temporal {#}"
+msgstr "Zeitliche Abdeckung {#}"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:431
-msgid "Temporal {#}"
-msgstr ""
+msgid "Add another Temporal"
+msgstr "Zeitliche Abdeckung hinzufügen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:432
-msgid "Add another Temporal"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:433
 msgid "Remove Temporal"
-msgstr ""
+msgstr "Zeitliche Abdeckung entfernen"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:438
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:437
 msgid "Start Date"
-msgstr ""
+msgstr "Startdatum"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:444
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:443
 msgid "End Date"
-msgstr ""
+msgstr "Enddatum"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:451
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:450
 msgid "Publisher Information"
-msgstr ""
+msgstr "Publisher Informationen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:458
+msgid "Publishers"
+msgstr "Publisher"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:459
-msgid "Publishers"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:460
 msgid ""
 "The actual publisher(s) of this dataset. This can be the same as the "
 "organisation which publishes this dataset. At least one publisher is "
 "required."
 msgstr ""
+"Ein oder mehrere Publisher dieses Datensatzes. Dieser kann der Organisation "
+"entsprechen, welche den Datensatz veröffentlicht. Mindestens ein Publisher "
+"ist erforderlich."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:461
+msgid "Publisher {#}"
+msgstr "Publisher {#}"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:462
-msgid "Publisher {#}"
-msgstr ""
+msgid "Add another Publisher"
+msgstr "Publisher hinzufügen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:463
-msgid "Add another Publisher"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:464
 msgid "Remove Publisher"
-msgstr ""
+msgstr "Publisher entfernen"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:469
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:490
-msgid "Name*"
-msgstr ""
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:468
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:489
+#: themes/wp-ogdch-theme/_missing_translations.php:11
+msgid "Name"
+msgstr "Name"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:479
+msgid "Contact points"
+msgstr "Kontaktstelle"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:480
-msgid "Contact points"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:481
 msgid ""
 "The contact point if there are questions about this dataset. At least one "
 "contact point is required."
 msgstr ""
+"Die Stelle, welche kontaktiert wird, falls eine Frage zum Datensatz besteht. "
+"Mindestens eine Kontaktstelle ist erforderlich."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:482
+msgid "Contact Point {#}"
+msgstr "Kontaktstelle {#}"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:483
-msgid "Contact Point {#}"
-msgstr ""
+msgid "Add another Contact Point"
+msgstr "Kontaktstelle hinzufügen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:484
-msgid "Add another Contact Point"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:485
 msgid "Remove Contact Point"
-msgstr ""
+msgstr "Kontaktstelle entfernen"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:499
-msgid "Email*"
-msgstr ""
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:498
+#: themes/wp-ogdch-theme/_missing_translations.php:12
+msgid "Email"
+msgstr "Email"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:508
-msgid "Other"
-msgstr ""
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:507
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:523
+msgid "Further Information"
+msgstr "Weitere Informationen"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:515
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:514
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:46
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:48
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:49
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:64
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:63
 #: themes/wp-ogdch-theme/front-page.php:35
 msgid "Categories"
-msgstr ""
+msgstr "Kategorien"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:524
-msgid "Further Information"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:530
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:529
 msgid "Landing Page"
-msgstr ""
+msgstr "Landing Page"
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:532
-msgid "Website of the dataset with related information."
-msgstr ""
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:531
+msgid "Website with further information about the dataset."
+msgstr "Webseite mit weiteren Informationen über den Datensatz."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:538
+msgid "Relations"
+msgstr "Beziehungen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:539
-msgid "Relations"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:540
 msgid "Further information related to this dataset."
-msgstr ""
+msgstr "Weitere Informationen über den Datensatz."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:541
+msgid "Relation {#}"
+msgstr "Beziehung {#}"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:542
-msgid "Relation {#}"
-msgstr ""
+msgid "Add another Relation"
+msgstr "Beziehung hinzufügen"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:543
-msgid "Add another Relation"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:544
 msgid "Remove Relation"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:555
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:554
 msgid "URL"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:563
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:562
 msgid "Dataset Relations"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:564
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:563
 msgid "Relations to other datasets."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:580
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:579
 msgid "Distributions"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:589
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:588
 msgid "Distribution {#}"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:590
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:589
 msgid "Add another Distribution"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:591
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:590
 msgid "Remove Distribution"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:596
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:595
 msgid "Identifier"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:597
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:596
 msgid "Identifier of the distribution in the source system."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:607
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:606
 msgid ""
 "If this element is left empty, the title of the dataset is used instead."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:614
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:613
 msgid ""
 "If this element is left empty, the description of the dataset is used "
 "instead."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:620
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:619
 msgid "Language"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:622
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:621
 msgid ""
 "Languages in which this distribution is available. If the distribution is "
 "language-independent do not check anything."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:626
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:625
 msgid "English"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:627
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:626
 msgid "German"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:628
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:627
 msgid "French"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:629
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:628
 msgid "Italian"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:636
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:635
 msgid "Date of the publication of this distribution."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:647
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:646
 msgid "Date of the last change of the distribution."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:653
-msgid "Terms of use*"
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:652
+msgid "Terms of use"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:655
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:654
 msgid ""
 "All terms of use marked with an asterisk (*) are declared as close data."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:662
-msgid "Access URL*"
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:661
+msgid "Access URL"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:664
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:663
 msgid ""
 "URL where the distribution can be found. This could be either a download "
 "url, an API url or a landing page url. If the distribution is only available "
@@ -612,184 +636,176 @@ msgid ""
 "the same value."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:672
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:671
 msgid "Download URL"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:674
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:673
 msgid "URL of a file, if the distribution can be downloaded."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:679
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:678
 msgid "Size (in Bytes)"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:685
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:684
 msgid "Mediatype"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:693
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:701
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:692
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:700
 msgid "Disable Dataset"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:710
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:158
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:175
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:709
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:157
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:174
 msgid "CKAN Data"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:719
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:167
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:184
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:718
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:166
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:183
 msgid "CKAN ID"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:729
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:177
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:194
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:728
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:176
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:193
 msgid "CKAN Name (Slug)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:47
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:114
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:113
 msgid "Category"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:50
-msgid "Parent Category:"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:51
 msgid "All Categories"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:52
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:51
 msgid "Add New Category"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:54
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:53
 msgid "New Category"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:55
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:54
 msgid "Edit Category"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:56
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:55
 msgid "Update Category"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:57
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:56
 msgid "View Category"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:58
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:57
 msgid "Search Categories"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:59
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:58
 msgid "No Categories found"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:60
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:59
 msgid "No Categories found in Trash"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:65
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:64
 msgid "Categories which get synced with CKAN"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:123
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:122
 msgid "Category Information"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:145
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:144
 msgid "Category Image"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:151
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:168
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:150
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:167
 msgid "Image"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:188
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:187
 msgid "RDF Reference"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:197
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:196
 msgid "RDF URI"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:46
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:48
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:49
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:64
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:63
 #: themes/wp-ogdch-theme/footer.php:20
 msgid "Organizations"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:50
-msgid "Parent Organization:"
-msgstr ""
-
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:51
 msgid "All Organizations"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:52
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:51
 msgid "Add New Organization"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:54
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:53
 msgid "New Organization"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:55
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:54
 msgid "Edit Organization"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:56
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:55
 msgid "Update Organization"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:57
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:56
 msgid "View Organization"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:58
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:57
 msgid "Search Organizations"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:59
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:58
 msgid "No Organizations found"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:60
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:59
 msgid "No Organizations found in Trash"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:65
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:64
 msgid "Organizations which get synced with CKAN"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:123
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:122
 msgid "Organization Information"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:146
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:145
 msgid "Parent Organization"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:152
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:151
 msgid "Parent"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:155
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:154
 msgid "None - top level"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:162
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:161
 msgid "Organization Image"
 msgstr ""
 
@@ -971,14 +987,6 @@ msgstr ""
 msgid ""
 "Ooops... The page you're looking for isn't available. Here is a cool space "
 "shuttle to make you feel better!"
-msgstr ""
-
-#: themes/wp-ogdch-theme/_missing_translations.php:11
-msgid "Name"
-msgstr ""
-
-#: themes/wp-ogdch-theme/_missing_translations.php:12
-msgid "Email"
 msgstr ""
 
 #: themes/wp-ogdch-theme/_missing_translations.php:13
