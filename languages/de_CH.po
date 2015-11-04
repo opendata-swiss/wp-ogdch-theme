@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
-"POT-Creation-Date: 2015-11-03 22:29+0100\n"
-"PO-Revision-Date: 2015-11-03 22:40+0100\n"
+"POT-Creation-Date: 2015-11-04 09:11+0100\n"
+"PO-Revision-Date: 2015-11-04 09:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
 "Language: de_CH\n"
@@ -70,43 +70,39 @@ msgstr "Keine Anwendung im Papierkorb gefunden"
 msgid "The Application directory"
 msgstr "Anwendungsverzeichnis"
 
-#: plugins/wp-app-showcase/post-types/app.php:99
+#: plugins/wp-app-showcase/post-types/app.php:98
 msgid "Application Information"
 msgstr "Informationen zur Anwendung"
 
-#: plugins/wp-app-showcase/post-types/app.php:108
+#: plugins/wp-app-showcase/post-types/app.php:107
 msgid "Landing page"
 msgstr "Landing page"
 
-#: plugins/wp-app-showcase/post-types/app.php:121
+#: plugins/wp-app-showcase/post-types/app.php:120
 msgid "Author Name"
 msgstr "Name des Autor"
 
-#: plugins/wp-app-showcase/post-types/app.php:131
+#: plugins/wp-app-showcase/post-types/app.php:130
 msgid "Author Email"
 msgstr "Email des Autor"
 
-#: plugins/wp-app-showcase/post-types/app.php:142
-msgid "Logo"
-msgstr "Logo"
-
-#: plugins/wp-app-showcase/post-types/app.php:152
+#: plugins/wp-app-showcase/post-types/app.php:144
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:565
 msgid "Dataset Relation {#}"
 msgstr "Beziehung zu Datensatz {#}"
 
-#: plugins/wp-app-showcase/post-types/app.php:153
+#: plugins/wp-app-showcase/post-types/app.php:145
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:566
 msgid "Add another Dataset Relation"
 msgstr "Füge eine weitere Datensatz Beziehung hinzu"
 
-#: plugins/wp-app-showcase/post-types/app.php:154
+#: plugins/wp-app-showcase/post-types/app.php:146
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:567
 msgid "Remove Dataset Relation"
 msgstr "Datensatz Beziehung entfernen"
 
-#: plugins/wp-app-showcase/post-types/app.php:160
-#: plugins/wp-app-showcase/post-types/app.php:166
+#: plugins/wp-app-showcase/post-types/app.php:152
+#: plugins/wp-app-showcase/post-types/app.php:158
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:276
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:349
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:572
@@ -1069,6 +1065,64 @@ msgid_plural "%s Built Applications"
 msgstr[0] "%s Erstelle Anwendung"
 msgstr[1] "%s Erstelle Anwendungen"
 
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:19
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:22
+#, php-format
+msgid "%s updated."
+msgstr "%s aktualisiert."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:20
+msgid "Custom field updated."
+msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:21
+msgid "Custom field deleted."
+msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:24
+#, php-format
+msgid "%1$s restored to revision from %2$s"
+msgstr "%1$s wiederhergestellt auf Revision %2$s"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:25
+#, php-format
+msgid "%s published."
+msgstr "%s publiziert."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:26
+#, php-format
+msgid "%s saved."
+msgstr "%s gespeichert."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:27
+#, php-format
+msgid "%s submitted."
+msgstr "%s gesendet."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:28
+#, php-format
+msgid "%1$s scheduled for: <strong>%2$s</strong>."
+msgstr "%1$s terminiert auf: <strong>%2$s</strong>."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:28
+msgid "M j, Y @ G:i"
+msgstr "d.m.Y @ H:s"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:29
+#, php-format
+msgid "%s draft updated."
+msgstr "%s Entwurf aktualisiert."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:35
+#, php-format
+msgid " <a href=\"%s\">View %s</a>"
+msgstr " <a href=\"%s\">%s anzeigen</a>"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:41
+#, php-format
+msgid " <a target=\"_blank\" href=\"%s\">Preview %s</a>"
+msgstr " <a target=\"_blank\" href=\"%s\">%s Vorschau anzeigen</a>"
+
 #: themes/wp-ogdch-theme/assets/php/init.php:28
 msgid "Main-Navigation"
 msgstr "Hauptnavigation"
@@ -1086,7 +1140,7 @@ msgid "Developer-Navigation"
 msgstr "Entwickler-Navigation"
 
 #: themes/wp-ogdch-theme/assets/php/theme_functions.php:120
-#: themes/wp-ogdch-theme/partials/app-entry.php:28
+#: themes/wp-ogdch-theme/partials/app-entry.php:27
 msgid "Please activate wp-ckan-backend plugin"
 msgstr "Bitte aktiviere das wp-ckan-backend Plugin"
 
@@ -1195,7 +1249,7 @@ msgid "Read our FAQ"
 msgstr "Lies unser FAQ"
 
 #: themes/wp-ogdch-theme/functions.php:23
-#: themes/wp-ogdch-theme/functions.php:48
+#: themes/wp-ogdch-theme/functions.php:49
 #, php-format
 msgid "Error locating %s for inclusion"
 msgstr "Fehler beim Einbinden von  %s"
@@ -1207,3 +1261,6 @@ msgstr "Navigation ein-/ausklappen"
 #: themes/wp-ogdch-theme/header.php:46
 msgid "Search"
 msgstr "Suchen"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
