@@ -12,3 +12,4 @@ __( 'Name', 'ogdch' );
 __( 'Email', 'ogdch' );
 __( 'Message', 'ogdch' );
 __( 'Send', 'ogdch' );
+__( 'Your form has been successfully submitted.', 'ogdch' );

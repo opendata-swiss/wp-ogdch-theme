@@ -62,3 +62,17 @@ function translate_ninja_forms( $data, $field_id ) {
 	return $data;
 }
 add_filter( 'ninja_forms_field', 'translate_ninja_forms', 10, 2 );
+
+
+/**
+ * Make Ninja Forms success message translatable
+ *
+ * @param string $message Success message to translate.
+ * @param int    $form_id ID of the current form.
+ *
+ * @return string
+ */
+function translate_ninja_success_message( $message, $form_id ) {
+	return __( $message, 'ogdch' );
+}
+add_filter( 'nf_success_msg', 'translate_ninja_success_message', 10, 2 );

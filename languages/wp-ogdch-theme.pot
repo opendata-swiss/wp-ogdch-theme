@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
-"POT-Creation-Date: 2015-11-04 09:11+0100\n"
+"POT-Creation-Date: 2015-11-04 15:53+0100\n"
 "PO-Revision-Date: 2015-11-02 16:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
@@ -125,24 +125,24 @@ msgstr ""
 msgid "Dataset"
 msgstr ""
 
-#: plugins/wp-ckan-backend/ckan-backend.php:200
+#: plugins/wp-ckan-backend/ckan-backend.php:203
 msgid "Filter"
 msgstr ""
 
-#: plugins/wp-ckan-backend/ckan-backend.php:276
+#: plugins/wp-ckan-backend/ckan-backend.php:279
 msgid "Search dataset..."
 msgstr ""
 
-#: plugins/wp-ckan-backend/ckan-backend.php:299
-#: plugins/wp-ckan-backend/ckan-backend.php:304
-#: plugins/wp-ckan-backend/ckan-backend.php:368
+#: plugins/wp-ckan-backend/ckan-backend.php:302
+#: plugins/wp-ckan-backend/ckan-backend.php:307
+#: plugins/wp-ckan-backend/ckan-backend.php:371
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:163
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:47
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:113
 msgid "Organization"
 msgstr ""
 
-#: plugins/wp-ckan-backend/ckan-backend.php:342
+#: plugins/wp-ckan-backend/ckan-backend.php:345
 msgid "Please choose an organization for this user."
 msgstr ""
 
@@ -990,6 +990,10 @@ msgstr ""
 
 #: themes/wp-ogdch-theme/_missing_translations.php:14
 msgid "Send"
+msgstr ""
+
+#: themes/wp-ogdch-theme/_missing_translations.php:15
+msgid "Your form has been successfully submitted."
 msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:19
