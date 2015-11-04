@@ -25,7 +25,7 @@ function ogd_cpt_updated_messages( $messages ) {
 	    6  => sprintf( __( '%s published.', 'ogdch' ), $singular ),
 	    7  => sprintf( __( '%s saved.', 'ogdch' ), esc_attr( $singular ) ),
 	    8  => sprintf( __( '%s submitted.', 'ogdch' ), $singular ),
-	    9  => sprintf( __( '%1$s scheduled for: <strong>%2$s</strong>.', 'ogdch' ), $singular, date_i18n( __( 'M j, Y @ G:i' ), strtotime( $post->post_date ) ) ),
+	    9  => sprintf( __( '%1$s scheduled for: <strong>%2$s</strong>.', 'ogdch' ), $singular, date_i18n( __( 'M j, Y @ G:i', 'ogdch' ), strtotime( $post->post_date ) ) ),
 	    10 => sprintf( __( '%s draft updated.', 'ogdch' ), $singular )
 	);
 
