@@ -1,20 +1,19 @@
 <?php
-$icon_id          = get_post_meta( get_the_ID(), '_app-showcase-app_icon_id', true );
 $author_name      = get_post_meta( get_the_ID(), '_app-showcase-app_author_name', true );
 $author_email     = get_post_meta( get_the_ID(), '_app-showcase-app_author_email', true );
 $url              = get_post_meta( get_the_ID(), '_app-showcase-app_url', true );
 $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', true );
-$icon_attributes  = wp_get_attachment_image_src( $icon_id, 'full' );
-if ( $icon_attributes ) {
-	$icon_src = $icon_attributes[0];
-} else {
-	$icon_src = '/content/themes/wp-ogdch-theme/assets/images/app.png';
-}
 ?>
 
 <div class="row">
 	<div class="col-sm-3 h2-vertical-center">
-		<img src="<?php esc_attr_e( $icon_src ); ?>" class="img-responsive" />
+		<?php
+		if ( has_post_thumbnail() ) {
+			the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) );
+		} else {
+			echo '<img src="/content/themes/wp-ogdch-theme/assets/images/app.png" class="img-responsive" />';
+		}
+		?>
 	</div>
 	<div class="col-sm-9">
 		<?php the_title( '<h3>', '</h3>' ); ?>
