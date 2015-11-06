@@ -21,19 +21,19 @@ $dataset_count = get_dataset_count();
 			</a>
 		</div>
 		<div class="col-sm-3 col-xs-6">
+			<a href="<?php echo esc_url( get_page_link_by_slug( 'group' ) ); ?>">
+				<div class="statsnumber">
+					<?php esc_html_e( wp_count_posts( 'ckan-local-group' )->publish ); ?> <i class="fa fa-tags"></i>
+				</div>
+				<p><?php esc_attr_e( 'Categories', 'ogdch' ); ?></p>
+			</a>
+		</div>
+		<div class="col-sm-3 col-xs-6">
 			<a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>">
 				<div class="statsnumber">
 					<?php esc_html_e( get_localized_post_count( 'app' ) ); ?> <i class="fa fa-puzzle-piece"></i>
 				</div>
 				<p><?php esc_attr_e( 'Built Applications', 'ogdch' ); ?></p>
-			</a>
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<a href="https://twitter.com/OpendataCH" target="_blank">
-				<div class="statsnumber">
-					<?php esc_html_e( get_tweet_count() ); ?> <i class="fa fa-twitter"></i>
-				</div>
-				<p><?php esc_attr_e( 'Tweets', 'ogdch' ); ?></p>
 			</a>
 		</div>
 	</div>
