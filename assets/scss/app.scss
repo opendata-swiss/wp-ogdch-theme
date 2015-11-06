@@ -255,6 +255,9 @@ a.label-primary-gray:hover {
     &:hover {
       color: $inverted-link-hover-color;
     }
+    &.btn:hover {
+      color: #fff;
+    }
   }
   .lead {
     font-size: 32px;
