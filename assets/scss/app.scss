@@ -322,7 +322,7 @@ a.label-primary-gray:hover {
     @media (max-width: $grid-float-breakpoint) {
       padding-top: 40px;
       padding-bottom: 40px;
-      background-position: center center;
+      background-position: center bottom;
       background-size: 80% 100%;
     }
   }
@@ -417,6 +417,7 @@ a.label-primary-gray:hover {
 .search-result-title {
   h2 {
     float: left;
+    margin-right: 15px;
   }
   .sortby {
     text-align: right;
