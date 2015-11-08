@@ -313,16 +313,15 @@ a.label-primary-gray:hover {
     padding-top: 70px;
     padding-bottom: 70px;
 
-    background-image: url('../images/swiss_map.svg');
+    background-image: url('../images/swiss_map.png'); // Fallback for SVG image
+    background-image: linear-gradient(transparent, transparent), url('../images/swiss_map.svg');
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 45% 100%;
 
     @media (max-width: $grid-float-breakpoint) {
       padding-top: 40px;
       padding-bottom: 40px;
       background-position: center bottom;
-      background-size: 80% 100%;
     }
   }
 
