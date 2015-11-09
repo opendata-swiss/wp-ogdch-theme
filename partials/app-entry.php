@@ -6,7 +6,7 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 ?>
 
 <div class="row">
-	<div class="col-sm-3 h2-vertical-center">
+	<div class="col-sm-3 header-sm-vertical-center">
 		<?php
 		if ( has_post_thumbnail() ) {
 			the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) );
