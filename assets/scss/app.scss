@@ -126,6 +126,7 @@ a.label-primary-gray:hover {
   $gutter-size: 5px;
   border-bottom: 1px solid $gray-lighter;
   padding-bottom: $gutter-size;
+  overflow: hidden;
 
   dt:first-of-type, dd:first-of-type{
     border-top-width:0;
@@ -148,10 +149,6 @@ a.label-primary-gray:hover {
       border-top: 1px solid $gray-lighter;
       padding-top: $gutter-size;
       margin-top: $gutter-size;
-    }
-    // FIX somehow the first dd element isn't aligned to the title
-    dd:first-of-type {
-      padding-top: (2 * $gutter-size);
     }
   }
 }
