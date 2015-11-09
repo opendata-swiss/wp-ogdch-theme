@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
-"POT-Creation-Date: 2015-11-04 15:53+0100\n"
+"POT-Creation-Date: 2015-11-09 20:07+0100\n"
 "PO-Revision-Date: 2015-11-02 16:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
@@ -103,17 +103,17 @@ msgid "Author Email"
 msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:144
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:565
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:566
 msgid "Dataset Relation {#}"
 msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:145
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:566
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:567
 msgid "Add another Dataset Relation"
 msgstr ""
 
 #: plugins/wp-app-showcase/post-types/app.php:146
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:567
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:568
 msgid "Remove Dataset Relation"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr ""
 #: plugins/wp-app-showcase/post-types/app.php:158
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:276
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:349
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:572
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:573
 msgid "Dataset"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgstr ""
 msgid "Please choose an organization for this user."
 msgstr ""
 
-#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:399
+#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:400
 msgid "All organizations"
 msgstr ""
 
@@ -333,14 +333,14 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:377
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:548
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:603
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:604
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:129
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:129
 msgid "Title"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:384
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:610
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:611
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:135
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:135
 msgid "Description"
@@ -351,7 +351,7 @@ msgid "Dates"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:399
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:633
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:634
 msgid "Issued"
 msgstr ""
 
@@ -362,7 +362,7 @@ msgid ""
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:409
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:644
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:645
 msgid "Modified"
 msgstr ""
 
@@ -478,6 +478,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:48
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:49
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:63
+#: themes/wp-ogdch-theme/footer.php:29
 #: themes/wp-ogdch-theme/front-page.php:35
 msgid "Categories"
 msgstr ""
@@ -510,102 +511,108 @@ msgstr ""
 msgid "Remove Relation"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:554
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:549
+msgid ""
+"Use the title 'legal_basis' to provide a link to the legal basis of "
+"this dataset."
+msgstr ""
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:555
 msgid "URL"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:562
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:563
 msgid "Dataset Relations"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:563
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:564
 msgid "Relations to other datasets."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:579
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:580
 msgid "Distributions"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:588
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:589
 msgid "Distribution {#}"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:589
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:590
 msgid "Add another Distribution"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:590
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:591
 msgid "Remove Distribution"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:595
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:596
 msgid "Identifier"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:596
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:597
 msgid "Identifier of the distribution in the source system."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:606
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:607
 msgid ""
 "If the title is left empty, the title of the dataset is used instead."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:613
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:614
 msgid ""
 "If the description is left empty, the description of the dataset is "
 "used instead."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:619
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:620
 msgid "Language"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:621
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:622
 msgid ""
 "Languages in which this distribution is available. If the distribution "
 "is language-independent do not check anything."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:625
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:626
 msgid "English"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:626
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:627
 msgid "German"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:627
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:628
 msgid "French"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:628
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:629
 msgid "Italian"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:635
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:636
 msgid "Date of the publication of this distribution."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:646
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:647
 msgid "Date of the last change of the distribution."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:652
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:653
 msgid "Terms of use"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:654
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:655
 msgid ""
 "All terms of use which are not marked with an asterisk (*) are "
 "declared as close data."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:661
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:662
 msgid "Access URL"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:663
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:664
 msgid ""
 "URL where the distribution can be found. This could be either a "
 "download url, an API url or a landing page url. If the distribution is "
@@ -614,40 +621,40 @@ msgid ""
 "distribution, this field has to contain the same value."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:671
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:672
 msgid "Download URL"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:673
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:674
 msgid "URL of a file, if the distribution can be downloaded."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:678
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:679
 msgid "Size (in Bytes)"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:684
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:685
 msgid "Mediatype"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:692
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:700
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:693
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:701
 msgid "Disable Dataset"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:709
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:710
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:157
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:174
 msgid "CKAN Data"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:718
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:719
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:166
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:183
 msgid "CKAN ID"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:728
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:729
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:176
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:193
 msgid "CKAN Name (Slug)"
@@ -723,7 +730,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:48
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:49
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:63
-#: themes/wp-ogdch-theme/footer.php:20
+#: themes/wp-ogdch-theme/footer.php:21
 msgid "Organizations"
 msgstr ""
 
@@ -1122,32 +1129,28 @@ msgstr ""
 msgid "Search results for:"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:12
+#: themes/wp-ogdch-theme/footer.php:13
 #: themes/wp-ogdch-theme/front-page.php:17
 msgid "Open Datasets"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:28
+#: themes/wp-ogdch-theme/footer.php:37
 msgid "Built Applications"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:36
-msgid "Tweets"
-msgstr ""
-
-#: themes/wp-ogdch-theme/footer.php:42
+#: themes/wp-ogdch-theme/footer.php:43
 msgid "What about you?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:45
+#: themes/wp-ogdch-theme/footer.php:46
 msgid "How do I publish open data?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:46
+#: themes/wp-ogdch-theme/footer.php:47
 msgid "How do I use open data?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/footer.php:73
+#: themes/wp-ogdch-theme/footer.php:74
 #: themes/wp-ogdch-theme/front-page.php:8
 msgid ""
 "The portal opendata.swiss is a joint project of the federal "
@@ -1164,35 +1167,39 @@ msgstr ""
 msgid "Search opendata.swiss"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:96
+#: themes/wp-ogdch-theme/front-page.php:38
+msgid "Explore our Categories"
+msgstr ""
+
+#: themes/wp-ogdch-theme/front-page.php:99
 msgid "How it works"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:101
+#: themes/wp-ogdch-theme/front-page.php:104
 msgid "Data Publisher?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:102
+#: themes/wp-ogdch-theme/front-page.php:105
 msgid ""
 "Are you an Organisation interested in sharing your open data in this "
 "portal?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:103
+#: themes/wp-ogdch-theme/front-page.php:106
 msgid "Learn how to participate"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:106
+#: themes/wp-ogdch-theme/front-page.php:109
 msgid "Data User or Application Builder?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:107
+#: themes/wp-ogdch-theme/front-page.php:110
 msgid ""
 "Are you interested in using this portals open data and build your own "
 "applications?"
 msgstr ""
 
-#: themes/wp-ogdch-theme/front-page.php:108
+#: themes/wp-ogdch-theme/front-page.php:111
 msgid "Read our FAQ"
 msgstr ""
 
@@ -1208,4 +1215,8 @@ msgstr ""
 
 #: themes/wp-ogdch-theme/header.php:46
 msgid "Search"
+msgstr ""
+
+#: themes/wp-ogdch-theme/partials/app-entry.php:24
+msgid "Used datasets"
 msgstr ""
