@@ -35,7 +35,7 @@
 					<h2><?php esc_attr_e( 'Categories', 'ogdch' ); ?></h2>
 				</div>
 				<div class="col-sm-4 text-sm-right">
-					<a class="btn btn-primary header-sm-vertical-center" href="<?php echo esc_url( get_page_link_by_slug( 'group' ) ); ?>" role="button"><?php esc_attr_e( 'Explore Categories', 'ogdch' ); ?></a>
+					<a class="btn btn-primary header-sm-vertical-center" href="<?php echo esc_url( get_page_link_by_slug( 'group' ) ); ?>" role="button"><?php esc_attr_e( 'Explore our Categories', 'ogdch' ); ?></a>
 				</div>
 			</div>
 
