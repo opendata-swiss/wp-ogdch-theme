@@ -29,6 +29,9 @@
     @include box-shadow(none);
   }
 }
+.btn {
+  white-space: normal; // allow multi-line button texts
+}
 
 pre {
   font-size: ceil(($font-size-base * 0.75));
