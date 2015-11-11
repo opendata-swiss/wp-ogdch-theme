@@ -39,16 +39,16 @@ $dataset_count = get_dataset_count();
 			</div>
 		</div>
 		<div class="row top-buffer">
-			<div class="col-sm-4">
+			<div class="col-md-4 col-xs-12">
 				<p class="lead"><?php esc_attr_e( 'What about you?', 'ogdch' ); ?></p>
 			</div>
-			<div class="col-sm-8 text-md-right">
+			<div class="col-md-8 col-xs-12">
 				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How do I publish open data?', 'ogdch' ); ?></a>
 				<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How do I use open data?', 'ogdch' ); ?></a>
 			</div>
 		</div>
 		<div class="row top-buffer">
-			<div class="col-md-2 col-xs-4">
+			<div class="col-md-2 col-xs-12">
 				<?php
 				if ( class_exists( 'Polylang' ) ) {
 				?>
@@ -70,10 +70,7 @@ $dataset_count = get_dataset_count();
 				}
 				?>
 			</div>
-			<div class="col-md-4 col-xs-8">
-				<p><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the federal government, cantons and municipalities. It provides the public authorities open data of all federal levels in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
-			</div>
-			<div class="col-md-2 col-xs-4">
+			<div class="col-md-2 col-xs-6">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'about_navigation',
@@ -81,7 +78,7 @@ $dataset_count = get_dataset_count();
 				) );
 				?>
 			</div>
-			<div class="col-md-2 col-xs-4">
+			<div class="col-md-2 col-xs-6">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'data_navigation',
@@ -89,13 +86,19 @@ $dataset_count = get_dataset_count();
 				) );
 				?>
 			</div>
-			<div class="col-md-2 col-xs-4">
+			<div class="col-md-2 col-xs-6">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'developer_navigation',
 					'menu_class'     => 'list-unstyled',
 				) );
 				?>
+			</div>
+		</div>
+		<div class="row top-buffer">
+			<div class="col-xs-12">
+				<h2><?php esc_attr_e( 'A joint project of the federal government and cantons', 'ogdch' ); ?></h2>
+				<p><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the federal government, cantons and municipalities. It provides the public authorities open data of all federal levels in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
 			</div>
 		</div>
 		<div id="logos" class="row top-buffer">
