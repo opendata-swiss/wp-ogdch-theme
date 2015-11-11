@@ -8,6 +8,7 @@ function add_theme_caps() {
 		'groups',
 		'organisations',
 		'apps',
+		'harvesters',
 	);
 	$taxonomies = array(
 		'keywords',
