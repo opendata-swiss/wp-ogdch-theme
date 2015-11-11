@@ -11,6 +11,7 @@ function add_theme_caps() {
 	);
 	$taxonomies = array(
 		'keywords',
+		'mediatypes',
 	);
 	// Add all capabilities of plugin to administrator role (save in database) to make them visible in backend.
 	$admin_role = get_role( 'administrator' );

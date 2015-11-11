@@ -3,7 +3,6 @@
  * =======================================================================
  */
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic);
 @import '../external/font-awesome-4.4.0/scss/font-awesome';
 
 @import 'bootstrap_variables';
@@ -29,6 +28,9 @@
   &.btn.active, &.btn:active {
     @include box-shadow(none);
   }
+}
+.btn {
+  white-space: normal; // allow multi-line button texts
 }
 
 pre {
@@ -124,6 +126,7 @@ a.label-primary-gray:hover {
   $gutter-size: 5px;
   border-bottom: 1px solid $gray-lighter;
   padding-bottom: $gutter-size;
+  overflow: hidden;
 
   dt:first-of-type, dd:first-of-type{
     border-top-width:0;
@@ -147,20 +150,12 @@ a.label-primary-gray:hover {
       padding-top: $gutter-size;
       margin-top: $gutter-size;
     }
-    // FIX somehow the first dd element isn't aligned to the title
-    dd:first-of-type {
-      padding-top: (2 * $gutter-size);
-    }
   }
 }
 
 // Global Helper classes
 .break-word {
   word-wrap: break-word;
-}
-
-.h2-vertical-center {
-  margin-top: 25px;
 }
 
 .top-buffer {
@@ -205,6 +200,7 @@ a.label-primary-gray:hover {
     .navbar-toggle {
       margin-top: 25px;
       margin-bottom: 25px;
+      border-radius: $btn-border-radius-base;
     }
   }
 }
@@ -218,7 +214,7 @@ a.label-primary-gray:hover {
   margin-bottom: $header-footer-buffer;
   padding: $header-padding 0;
   border: 0;
-  overflow: hidden;
+  word-wrap: break-word;
 
   h1 {
     margin-top: 10px;
@@ -254,6 +250,9 @@ a.label-primary-gray:hover {
 
     &:hover {
       color: $inverted-link-hover-color;
+    }
+    &.btn:hover {
+      color: #fff;
     }
   }
   .lead {
@@ -310,16 +309,15 @@ a.label-primary-gray:hover {
     padding-top: 70px;
     padding-bottom: 70px;
 
-    background-image: url('../images/swiss_map.svg');
+    background-image: url('../images/swiss_map.png'); // Fallback for SVG image
+    background-image: linear-gradient(transparent, transparent), url('../images/swiss_map.svg');
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 45% 100%;
 
     @media (max-width: $grid-float-breakpoint) {
       padding-top: 40px;
       padding-bottom: 40px;
-      background-position: center center;
-      background-size: 80% 100%;
+      background-position: center bottom;
     }
   }
 
@@ -413,6 +411,7 @@ a.label-primary-gray:hover {
 .search-result-title {
   h2 {
     float: left;
+    margin-right: 15px;
   }
   .sortby {
     text-align: right;

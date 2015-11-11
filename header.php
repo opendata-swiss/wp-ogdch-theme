@@ -32,8 +32,8 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
-				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo.svg" class="navbar-brand-image hidden-xs hidden-sm " alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
-				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.svg" class="navbar-brand-image hidden-md hidden-lg " alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
+				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo.svg" onerror="this.onerror=null;this.src='<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo.png'" class="navbar-brand-image hidden-xs hidden-sm " alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
+				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.svg" onerror="this.onerror=null;this.src='<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.png'" class="navbar-brand-image hidden-md hidden-lg " alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
 			</a>
 		</div>
 

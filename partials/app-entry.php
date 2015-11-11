@@ -6,7 +6,7 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 ?>
 
 <div class="row">
-	<div class="col-sm-3 h2-vertical-center">
+	<div class="col-sm-3 header-sm-vertical-center">
 		<?php
 		if ( has_post_thumbnail() ) {
 			the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) );
@@ -21,7 +21,7 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 		<p><?php the_content() ?></p>
 		<?php
 		if ( ! empty( $related_datasets ) ) {
-			echo '<h4>' . esc_attr( 'Datasets Used', 'ogdch' ) . '</h4>';
+			echo '<h4>' . esc_attr__( 'Used datasets', 'ogdch' ) . '</h4>';
 			// Check if wp-ckan-backend plugin is active
 			if ( ! method_exists( 'Ckan_Backend_Helper', 'get_dataset_title' ) ) {
 				esc_attr_e( 'Please activate wp-ckan-backend plugin', 'ogdch' );
