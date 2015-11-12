@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
-"POT-Creation-Date: 2015-11-10 13:53+0100\n"
-"PO-Revision-Date: 2015-11-10 13:55+0100\n"
+"POT-Creation-Date: 2015-11-12 15:40+0100\n"
+"PO-Revision-Date: 2015-11-12 15:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
 "Language: de_CH\n"
@@ -34,6 +34,7 @@ msgstr "Neue Anwendung erstellen"
 #: plugins/wp-app-showcase/post-types/app.php:40
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:316
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:52
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:41
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:52
 msgid "Add New"
 msgstr "Erstellen"
@@ -113,28 +114,37 @@ msgstr "Datensatz"
 msgid "Filter"
 msgstr "Filter"
 
-#: plugins/wp-ckan-backend/ckan-backend.php:284
+#: plugins/wp-ckan-backend/ckan-backend.php:286
 msgid "Search dataset..."
 msgstr "Datensatz suchen…"
 
-#: plugins/wp-ckan-backend/ckan-backend.php:287
+#: plugins/wp-ckan-backend/ckan-backend.php:289
 msgid "No media type"
 msgstr "Kein Medientyp"
 
-#: plugins/wp-ckan-backend/ckan-backend.php:311
-#: plugins/wp-ckan-backend/ckan-backend.php:316
-#: plugins/wp-ckan-backend/ckan-backend.php:380
+#: plugins/wp-ckan-backend/ckan-backend.php:313
+#: plugins/wp-ckan-backend/ckan-backend.php:318
+#: plugins/wp-ckan-backend/ckan-backend.php:382
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:198
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:136
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:47
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:113
 msgid "Organization"
 msgstr "Organisation"
 
-#: plugins/wp-ckan-backend/ckan-backend.php:354
+#: plugins/wp-ckan-backend/ckan-backend.php:356
 msgid "Please choose an organization for this user."
 msgstr "Bitte eine Organisation für diesen Benutzer auswählen."
 
-#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:400
+#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:54
+msgid "There was a problem sending the request."
+msgstr "Beim Senden ist ein Fehler aufgetreten."
+
+#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:75
+msgid "API responded with unknown error."
+msgstr "Das API hat mit einem unbekannten Fehler geantwortet."
+
+#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:404
 msgid "All organizations"
 msgstr "Alle Organisationen"
 
@@ -156,6 +166,7 @@ msgid "Import"
 msgstr "Importieren"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:50
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:73
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Du hast nicht genügend Rechte um diese Seite anzuzeigen."
 
@@ -272,6 +283,7 @@ msgid "Category %1$s does not exist. Dataset %2$s not imported."
 msgstr "Kategorie %1$s existiert nicht. Datensatz %2$s nicht importiert."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:181
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:140
 msgid "- Please choose -"
 msgstr "- Bitte wählen -"
 
@@ -355,6 +367,7 @@ msgstr "Titel"
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:420
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:649
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:135
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:122
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:135
 msgid "Description"
 msgstr "Beschreibung"
@@ -550,6 +563,7 @@ msgstr ""
 "Grundlagen dieses Datensatzes zu definieren."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:593
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:116
 msgid "URL"
 msgstr "URL"
 
@@ -687,18 +701,21 @@ msgstr "Datensatz deaktivieren"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:748
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:157
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:166
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:174
 msgid "CKAN Data"
 msgstr "CKAN Daten"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:757
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:166
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:175
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:183
 msgid "CKAN ID"
 msgstr "CKAN ID"
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:767
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:176
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:185
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:193
 msgid "CKAN Name (Slug)"
 msgstr "CKAN Name (Slug)"
@@ -769,6 +786,204 @@ msgstr "RDF Referenz"
 msgid "RDF URI"
 msgstr "RDF URI"
 
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:51
+msgid "Harvester Dashboard"
+msgstr "Harvester Dashboard"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:52
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:90
+msgid "Successfully created new harvester job."
+msgstr "Neuer Harvester Job wurde erfolgreich erstellt."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:104
+msgid "Current harvester job successfully aborted."
+msgstr "Aktueller Harvester Job wurde erfolgreich abgebrochen."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:118
+msgid "Successfully cleared all harvester datasets."
+msgstr "Die Daten des Harvesters wurden erfolgreich gelöscht."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:136
+msgid "Choose Harvester:"
+msgstr "Wähle Harvester:"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:147
+msgid "Show"
+msgstr "Anzeigen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:158
+msgid "Please select a harvester first."
+msgstr "Bitte wähle zuerst einen Harvester aus."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:202
+msgid "Reharvest"
+msgstr "Erneut harvesten"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:205
+msgid "Are you sure you want to clear all data of this harvester?"
+msgstr "Bist du sicher, dass du alle Daten dieses Harvesters löschen willst?"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:207
+msgid "Clear"
+msgstr "Zurücksetzen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:214
+msgid "All Harvest Jobs"
+msgstr "Alle Harvester Jobs"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:216
+msgid "Latest Harvest Job"
+msgstr "Neuster Harvester Job"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:228
+msgid "No Jobs found for this harvester."
+msgstr "Keine Jobs für diesen Harvester gefunden."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:234
+msgid "Show all jobs"
+msgstr "Alle Jobs anzeigen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:236
+msgid "Show less jobs"
+msgstr "Zeige weniger Jobs"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:252
+#, php-format
+msgid "Job created at %s"
+msgstr "Job erstellt am %s"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:260
+msgid "Are you sure you want to abort the current job of this harvester?"
+msgstr ""
+"Bist du sicher, dass du den aktuellen Job dieses Harvester abbrechen willst?"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:262
+msgid "Abort unfinished job"
+msgstr "Breche aktuellen Job ab"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:270
+msgid "ID"
+msgstr "ID"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:274
+msgid "Created"
+msgstr "Erstellt"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:278
+msgid "Started"
+msgstr "Gestartet"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:282
+msgid "Finished"
+msgstr "Beendet"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:286
+msgid "Status"
+msgstr "Status"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:35
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:37
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:38
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:52
+msgid "Harvesters"
+msgstr "Harvester"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:36
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:101
+msgid "Harvester"
+msgstr "Harvester"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:39
+msgid "All Harvesters"
+msgstr "Alle Harvester"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:40
+msgid "Add New Harvester"
+msgstr "Neuen Harvester erstellen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:42
+msgid "New Harvester"
+msgstr "Harvester erstellen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:43
+msgid "Edit Harvester"
+msgstr "Harvester bearbeiten"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:44
+msgid "Update Harvester"
+msgstr "Harvester aktualisieren"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:45
+msgid "View Harvester"
+msgstr "Harvester anzeigen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:46
+msgid "Search Harvesters"
+msgstr "Harvester durchsuchen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:47
+msgid "No Harvesters found"
+msgstr "Keinen Harvester gefunden"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:48
+msgid "No Harvesters found in Trash"
+msgstr "Keine Harvester im Papierkorb gefunden"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:53
+msgid "Harvesters which get synced with CKAN"
+msgstr "Harvester welche mit CKAN synchronisiert werden"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:110
+msgid "Harvester Information"
+msgstr "Harvester Informationen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:129
+msgid "Source type"
+msgstr "Quell-Typ"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:143
+msgid "Update frequency"
+msgstr "Aktualisierungsfrequenz"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:147
+msgid "Manual"
+msgstr "Manuell"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:148
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:34
+msgid "Monthly"
+msgstr "Monatlich"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:149
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:30
+msgid "Weekly"
+msgstr "Wöchentlich"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:150
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:32
+msgid "Biweekly"
+msgstr "Alle zwei Wochen"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:151
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:27
+msgid "Daily"
+msgstr "Täglich"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:152
+msgid "Always"
+msgstr "Immer"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:157
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:159
+msgid "Only a valid JSON object is allowed. Eg. { \"option\": \"value\" }"
+msgstr "Nur valides JSON-Objekt erlaubt. Bsp. { \"option\": \"value\" }"
+
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:46
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:48
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:49
@@ -837,7 +1052,7 @@ msgstr "Keine übergeordnete Organisation"
 msgid "Organization Image"
 msgstr "Organisations-Bild"
 
-#: plugins/wp-ckan-backend/sync/ckan-backend-sync-abstract.php:85
+#: plugins/wp-ckan-backend/sync/ckan-backend-sync-abstract.php:86
 msgid "CKAN Sync aborted! Please provide a title."
 msgstr "CKAN Synchronisation abgebrochen! Bitte einen Titel angeben."
 
@@ -849,10 +1064,6 @@ msgstr "Unregelmässig"
 msgid "Continuous"
 msgstr "Kontinuierlich"
 
-#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:27
-msgid "Daily"
-msgstr "Täglich"
-
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:28
 msgid "Three times a week"
 msgstr "Drei Mal pro Woche"
@@ -861,25 +1072,13 @@ msgstr "Drei Mal pro Woche"
 msgid "Semi weekly"
 msgstr "Halb wöchentlich"
 
-#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:30
-msgid "Weekly"
-msgstr "Wöchentlich"
-
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:31
 msgid "Three times a month"
 msgstr "Drei Mal pro Monat"
 
-#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:32
-msgid "Biweekly"
-msgstr "Alle zwei Wochen"
-
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:33
 msgid "Semimonthly"
 msgstr "Halb monatlich"
-
-#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:34
-msgid "Monthly"
-msgstr "Monatlich"
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:35
 msgid "Bimonthly"
@@ -1250,7 +1449,11 @@ msgstr "Wie kann ich Daten publizieren?"
 msgid "How do I use open data?"
 msgstr "Wie verwende ich Open Data?"
 
-#: themes/wp-ogdch-theme/footer.php:74 themes/wp-ogdch-theme/front-page.php:8
+#: themes/wp-ogdch-theme/footer.php:100
+msgid "A joint project of the federal government and cantons"
+msgstr "Ein Gemeinschaftsprojekt von Bund und Kantonen"
+
+#: themes/wp-ogdch-theme/footer.php:101 themes/wp-ogdch-theme/front-page.php:8
 msgid ""
 "The portal opendata.swiss is a joint project of the federal government, "
 "cantons and municipalities. It provides the public authorities open data of "
