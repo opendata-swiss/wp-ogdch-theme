@@ -11,24 +11,25 @@ function odg_scripts() {
 		return;
 	}
 
+	// We need to add x.y.z as version number otherwise WordPress adds wp version behind automatically
 	// Header
-	wp_register_style( 'font_source_sans_pro', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic' );
+	wp_register_style( 'font_source_sans_pro', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic', array(), 'x.y.z' );
 	wp_enqueue_style( 'font_source_sans_pro' );
 
 	// IE8 - IE7 can't understand multiple Google Web Font styles through the same file request
-	wp_register_style( 'font_source_sans_pro_400', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' );
+	wp_register_style( 'font_source_sans_pro_400', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro', array(), 'x.y.z' );
 	wp_style_add_data( 'font_source_sans_pro_400', 'conditional', 'lt IE 9' );
 	wp_enqueue_style( 'font_source_sans_pro_400' );
 
-	wp_register_style( 'font_source_sans_pro_400italic', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic' );
+	wp_register_style( 'font_source_sans_pro_400italic', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic', array(), 'x.y.z' );
 	wp_style_add_data( 'font_source_sans_pro_400italic', 'conditional', 'lt IE 9' );
 	wp_enqueue_style( 'font_source_sans_pro_400italic' );
 
-	wp_register_style( 'font_source_sans_pro_600', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' );
+	wp_register_style( 'font_source_sans_pro_600', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:600', array(), 'x.y.z' );
 	wp_style_add_data( 'font_source_sans_pro_600', 'conditional', 'lt IE 9' );
 	wp_enqueue_style( 'font_source_sans_pro_600' );
 
-	wp_register_style( 'font_source_sans_pro_600italic', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:600italic' );
+	wp_register_style( 'font_source_sans_pro_600italic', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:600italic', array(), 'x.y.z' );
 	wp_style_add_data( 'font_source_sans_pro_600italic', 'conditional', 'lt IE 9' );
 	wp_enqueue_style( 'font_source_sans_pro_600italic' );
 
@@ -39,7 +40,7 @@ function odg_scripts() {
 		'font_source_sans_pro_600',
 		'font_source_sans_pro_600italic',
 	);
-	wp_register_style( 'app', get_template_directory_uri() . '/assets/css/app.css', $app_style_dependencies );
+	wp_register_style( 'app', get_template_directory_uri() . '/assets/css/app.css', $app_style_dependencies, 'x.y.z' );
 	wp_enqueue_style( 'app' );
 
 	wp_register_script( 'html5shiv', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js', array(), '3.7.2', false );
@@ -55,15 +56,8 @@ function odg_scripts() {
 	wp_register_script( 'jquery', 'https://code.jquery.com/jquery-1.11.1.min.js', array(), '1.11.1', true );
 	wp_enqueue_script( 'jquery' );
 
-	wp_register_script( 'app', get_template_directory_uri() . '/assets/js/app.min.js', array( 'jquery' ), false, true );
+	wp_register_script( 'app', get_template_directory_uri() . '/assets/js/app.min.js', array( 'jquery' ), 'x.y.z', true );
 	wp_enqueue_script( 'app' );
-
-	wp_localize_script( 'app', 'ogdAjax',
-		array(
-			'ajaxurl'         => admin_url( 'admin-ajax.php' ),
-			'submissionNonce' => wp_create_nonce( 'submissionNonce' ),
-		)
-	);
 }
 
 add_action( 'wp_enqueue_scripts', 'odg_scripts' );
