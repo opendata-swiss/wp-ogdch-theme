@@ -57,7 +57,8 @@ function translate_ninja_forms( $data, $field_id ) {
 	}
 	return $data;
 }
-add_filter( 'ninja_forms_field', 'translate_ninja_forms', 10, 2 );
+// We create one form for every language so this filter isn't needed
+//add_filter( 'ninja_forms_field', 'translate_ninja_forms', 10, 2 );
 
 
 /**
@@ -71,4 +72,5 @@ add_filter( 'ninja_forms_field', 'translate_ninja_forms', 10, 2 );
 function translate_ninja_success_message( $message, $form_id ) {
 	return __( $message, 'ogdch' );
 }
-add_filter( 'nf_success_msg', 'translate_ninja_success_message', 10, 2 );
+// We create one form for every language so this filter isn't needed
+//add_filter( 'nf_success_msg', 'translate_ninja_success_message', 10, 2 );
