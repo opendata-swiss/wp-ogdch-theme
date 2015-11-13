@@ -1,6 +1,16 @@
 <?php
 
 /**
+ * Returns version number of ogd-ch theme
+ *
+ * @return string
+ */
+function get_theme_version() {
+	$theme = wp_get_theme();
+	return $theme->get( 'Version' );
+}
+
+/**
  * Returns the current language slug (2-letters)
  *
  * @return bool|string
