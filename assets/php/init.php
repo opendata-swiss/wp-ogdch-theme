@@ -26,9 +26,6 @@ function theme_setup() {
 
 	register_nav_menus( array(
 		'main_navigation'      => __( 'Main-Navigation', 'ogdch' ),
-		'about_navigation'     => __( 'About-Navigation', 'ogdch' ),
-		'data_navigation'      => __( 'Data-Navigation', 'ogdch' ),
-		'developer_navigation' => __( 'Developer-Navigation', 'ogdch' ),
 	) );
 
 	// =======================================================================//
