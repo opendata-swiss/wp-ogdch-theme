@@ -25,18 +25,3 @@ __( 'You cannot submit the form without Javascript enabled.', 'ogdch' );
 __( 'Please enter a valid email address.', 'ogdch' );
 __( 'Processing', 'ogdch' );
 __( 'The passwords provided do not match.', 'ogdch' );
-
-// Contact form
-// Field labels
-__( 'First Name', 'ogdch' );
-__( 'Name', 'ogdch' );
-__( 'Organisation', 'ogdch' );
-__( 'Email', 'ogdch' );
-__( 'Subject', 'ogdch' );
-__( 'I have a general question', 'ogdch' );
-__( 'I have developed an application', 'ogdch' );
-__( 'I want to publish data', 'ogdch' );
-__( 'Message', 'ogdch' );
-__( 'Send', 'ogdch' );
-// Success message
-__( 'Your form has been successfully submitted.', 'ogdch' );
