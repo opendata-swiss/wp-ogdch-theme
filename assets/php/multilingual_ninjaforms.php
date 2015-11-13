@@ -24,9 +24,6 @@ function multilingual_ninja_forms_polylang( $settings ) {
 		'password_mismatch',
 	);
 	foreach ( $label_settings as $label_setting ) {
-		if ( function_exists( 'pll_register_string' ) ) {
-			pll_register_string( $label_setting, $settings[ $label_setting ], 'Ninja Forms' );
-		}
 		add_filter( 'ninja_forms_labels/' . $label_setting, 'multilingual_ninja_forms_translate' );
 	}
 	return $settings;
@@ -37,13 +34,10 @@ function multilingual_ninja_forms_polylang( $settings ) {
  *
  * @param string $label Message which should be translated.
  *
- * @return bool|string|void
+ * @return string
  */
 function multilingual_ninja_forms_translate( $label ) {
-	if ( function_exists( 'pll__' ) ) {
-		$label = pll__( $label );
-	}
-	return $label;
+	return __( $label, 'ogdch' );
 }
 add_filter( 'ninja_forms_settings', 'multilingual_ninja_forms_polylang' );
 
