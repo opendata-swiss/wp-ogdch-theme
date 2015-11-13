@@ -25,3 +25,4 @@ __( 'You cannot submit the form without Javascript enabled.', 'ogdch' );
 __( 'Please enter a valid email address.', 'ogdch' );
 __( 'Processing', 'ogdch' );
 __( 'The passwords provided do not match.', 'ogdch' );
+
