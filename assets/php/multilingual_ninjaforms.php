@@ -52,7 +52,9 @@ add_filter( 'ninja_forms_settings', 'multilingual_ninja_forms_polylang' );
  */
 function translate_ninja_forms( $data, $field_id ) {
 	$data['label']         = __( $data['label'], 'ogdch' );
-	$data['default_value'] = __( $data['default_value'], 'ogdch' );
+	if ( array_key_exists( 'default_value', $data ) ) {
+		$data['default_value'] = __( $data['default_value'], 'ogdch' );
+	}
 	return $data;
 }
 add_filter( 'ninja_forms_field', 'translate_ninja_forms', 10, 2 );
