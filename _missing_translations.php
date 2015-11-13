@@ -28,8 +28,14 @@ __( 'The passwords provided do not match.', 'ogdch' );
 
 // Contact form
 // Field labels
+__( 'First Name', 'ogdch' );
 __( 'Name', 'ogdch' );
+__( 'Organisation', 'ogdch' );
 __( 'Email', 'ogdch' );
+__( 'Subject', 'ogdch' );
+__( 'I have a general question', 'ogdch' );
+__( 'I have developed an application', 'ogdch' );
+__( 'I want to publish data', 'ogdch' );
 __( 'Message', 'ogdch' );
 __( 'Send', 'ogdch' );
 // Success message
