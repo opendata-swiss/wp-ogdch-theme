@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     minifycss = require('gulp-minify-css'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    uglify = require('gulp-uglify');
 
 
 gulp.task('default', function(){});
@@ -35,6 +36,7 @@ gulp.task('scripts', function() {
         './assets/js/app.js'
     ])
         .pipe(concat('app.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('./assets/js'))
         .pipe(notify({ message: 'Scripts task complete' }));
 });
