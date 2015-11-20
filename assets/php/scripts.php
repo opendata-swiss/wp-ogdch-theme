@@ -33,14 +33,7 @@ function odg_scripts() {
 	wp_style_add_data( 'font_source_sans_pro_600italic', 'conditional', 'lt IE 9' );
 	wp_enqueue_style( 'font_source_sans_pro_600italic' );
 
-	$app_style_dependencies = array(
-		'font_source_sans_pro',
-		'font_source_sans_pro_400',
-		'font_source_sans_pro_400italic',
-		'font_source_sans_pro_600',
-		'font_source_sans_pro_600italic',
-	);
-	wp_register_style( 'app', get_template_directory_uri() . '/assets/css/app.css', $app_style_dependencies, get_theme_version() );
+	wp_register_style( 'app', get_template_directory_uri() . '/assets/css/app.css', array(), get_theme_version() );
 	wp_enqueue_style( 'app' );
 
 	wp_register_script( 'html5shiv', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js', array(), '3.7.2', false );
