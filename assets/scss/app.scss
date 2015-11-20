@@ -24,7 +24,7 @@
   }
 }
 .btn-default-inverted {
-  @include ogdch-button-variant(#fff, $brand-primary, #fff);
+  @include ogdch-button-variant(#fff, $brand-primary, #fff, #fff, darken($brand-primary, 10%), #fff);
   &.btn.active, &.btn:active {
     @include box-shadow(none);
   }
