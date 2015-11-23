@@ -107,6 +107,22 @@ $dataset_count = get_dataset_count();
 	</div>
 </footer>
 
+<!-- Piwik -->
+<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//<?php echo PIWIK_URL; ?>/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', <?php echo PIWIK_SITEID; ?>]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+<noscript><p><img src="//<?php echo PIWIK_URL; ?>/piwik.php?idsite=<?php echo PIWIK_SITEID; ?>" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
 <?php wp_footer(); ?>
 
 </body>
