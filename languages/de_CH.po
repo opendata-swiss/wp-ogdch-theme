@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
 "POT-Creation-Date: 2015-11-23 11:27+0100\n"
-"PO-Revision-Date: 2015-11-23 11:38+0100\n"
+"PO-Revision-Date: 2015-11-23 11:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
 "Language: de_CH\n"
@@ -1704,24 +1704,3 @@ msgstr "Suchen"
 #: themes/wp-ogdch-theme/partials/app-entry.php:24
 msgid "Used datasets"
 msgstr "Verwendete Datensätze"
-
-#~ msgid "CKAN ID"
-#~ msgstr "CKAN ID"
-
-#~ msgid "CKAN Name (Slug)"
-#~ msgstr "CKAN Name (Slug)"
-
-#~ msgid "Send"
-#~ msgstr "Senden"
-
-#~ msgid "Your form has been successfully submitted."
-#~ msgstr "Das Formular wurde erfolgreich versendet."
-
-#~ msgid "About-Navigation"
-#~ msgstr "Über-Navigation"
-
-#~ msgid "Data-Navigation"
-#~ msgstr "Daten-Navigation"
-
-#~ msgid "Developer-Navigation"
-#~ msgstr "Entwickler-Navigation"
