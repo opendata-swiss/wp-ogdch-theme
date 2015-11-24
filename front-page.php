@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<p class="lead"><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the federal government, cantons and municipalities. It provides the public authorities open data of all federal levels in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
+					<p class="lead"><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the confederation, cantons, municipalities and further organizations with a public mandate. It provides open government data for the public in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
 					<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-md-offset-1 col-md-5 text-md-right text-xs-center">
@@ -18,7 +18,7 @@
 					</div>
 					<form action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
 						<div class="form-group has-feedback">
-							<input type="search" class="form-control input-lg" id="q" name="q" placeholder="<?php esc_attr_e( 'Search opendata.swiss', 'ogdch' ); ?>">
+							<input type="search" class="form-control input-lg" id="q" name="q" placeholder="<?php esc_attr_e( 'Search datasets...', 'ogdch' ); ?>">
 							<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
 						</div>
 					</form>
@@ -32,10 +32,10 @@
 		<section id="explore" class="container">
 			<div class="row">
 				<div class="col-sm-8">
-					<h2><?php esc_attr_e( 'Categories', 'ogdch' ); ?></h2>
+					<h2><?php esc_attr_e( 'What you can find', 'ogdch' ); ?></h2>
 				</div>
 				<div class="col-sm-4 text-sm-right">
-					<a class="btn btn-primary header-sm-vertical-center" href="<?php echo esc_url( get_page_link_by_slug( 'group' ) ); ?>" role="button"><?php esc_attr_e( 'Explore our Categories', 'ogdch' ); ?></a>
+					<a class="btn btn-primary header-sm-vertical-center" href="<?php echo esc_url( get_page_link_by_slug( 'group' ) ); ?>" role="button"><?php esc_attr_e( 'Explore categories', 'ogdch' ); ?></a>
 				</div>
 			</div>
 
@@ -101,14 +101,14 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6">
-					<h3><i class="fa fa-files-o"></i> <?php esc_attr_e( 'Data Publisher?', 'ogdch' ); ?></h3>
-					<p><?php esc_attr_e( 'Are you an Organisation interested in sharing your open data in this portal?', 'ogdch' ); ?></p>
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>" role="button"><?php esc_attr_e( 'Learn how to participate', 'ogdch' ); ?></a>
+					<h3><i class="fa fa-files-o"></i> <?php esc_attr_e( 'Data publisher', 'ogdch' ); ?></h3>
+					<p><?php esc_attr_e( 'Are you an organization interested in publishing your open data on this portal?', 'ogdch' ); ?></p>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>" role="button"><?php esc_attr_e( 'How to publish data', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-sm-6">
-					<h3><i class="fa fa-cogs"></i> <?php esc_attr_e( 'Data User or Application Builder?', 'ogdch' ); ?></h3>
-					<p><?php esc_attr_e( 'Are you interested in using this portals open data and build your own applications?', 'ogdch' ); ?></p>
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Read our FAQ', 'ogdch' ); ?></a>
+					<h3><i class="fa fa-cogs"></i> <?php esc_attr_e( 'Data user', 'ogdch' ); ?></h3>
+					<p><?php esc_attr_e( 'Are you interested in using open data listed on this portal to build your own applications?', 'ogdch' ); ?></p>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How to use data', 'ogdch' ); ?></a>
 				</div>
 			</div>
 		</section>

@@ -16,9 +16,9 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<h2><?php esc_attr_e( 'Are you an interested open data user?' ,'ogdch' ); ?></h2>
-			<p><?php esc_attr_e( 'We present a selection of applications and visual representations created using datasets from the opendata.swiss portal. If you have developed an application, please contact us.' ,'ogdch' ); ?></p>
-			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'Know more about building applications', 'ogdch' ); ?></a>
+			<h2><?php esc_attr_e( 'Have you built an open data application?' ,'ogdch' ); ?></h2>
+			<p><?php esc_attr_e( 'Here you can find a selection of applications created using datasets listed on opendata.swiss. They make information useful for direct citizen and public-at-large benefit. Have you built your own application? Please let us know.' ,'ogdch' ); ?></p>
+			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'Contact us', 'ogdch' ); ?></a>
 		</div>
 	</div>
 
@@ -31,7 +31,7 @@
 				$dataset_count = get_localized_post_count( 'app' );
 				printf(
 					// @codingStandardsIgnoreStart
-					_n( '%s Built Application', '%s Built Applications', $dataset_count, 'ogdch' ),
+					_n( '%s built application', '%s built applications', $dataset_count, 'ogdch' ),
 					$dataset_count
 					// @codingStandardsIgnoreEnd
 				);

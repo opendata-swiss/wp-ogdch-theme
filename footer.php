@@ -43,8 +43,8 @@ $dataset_count = get_dataset_count();
 				<p class="lead"><?php esc_attr_e( 'What about you?', 'ogdch' ); ?></p>
 			</div>
 			<div class="col-md-8 col-xs-12">
-				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How do I publish open data?', 'ogdch' ); ?></a>
-				<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How do I use open data?', 'ogdch' ); ?></a>
+				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'I want to publish data', 'ogdch' ); ?></a>
+				<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'I want to use data', 'ogdch' ); ?></a>
 			</div>
 		</div>
 		<div class="row top-buffer">
@@ -94,8 +94,8 @@ $dataset_count = get_dataset_count();
 		</div>
 		<div class="row top-buffer">
 			<div class="col-xs-12">
-				<h2><?php esc_attr_e( 'A joint project of the federal government and cantons', 'ogdch' ); ?></h2>
-				<p><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the federal government, cantons and municipalities. It provides the public authorities open data of all federal levels in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
+				<h2><?php esc_attr_e( 'A joint project of the confederation and cantons', 'ogdch' ); ?></h2>
+				<p><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the confederation, cantons, municipalities and further organizations with a public mandate. It provides open government data for the public in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
 			</div>
 		</div>
 		<div id="logos" class="row top-buffer">
