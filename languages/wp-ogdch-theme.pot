@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme\n"
-"POT-Creation-Date: 2015-11-23 11:26+0100\n"
+"POT-Creation-Date: 2015-11-24 13:16+0100\n"
 "PO-Revision-Date: 2015-11-02 16:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Team Jazz, Liip AG <jazz@liip.ch>\n"
@@ -144,7 +144,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/ckan-backend.php:324
 #: plugins/wp-ckan-backend/ckan-backend.php:388
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:199
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:136
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:140
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:47
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:113
 msgid "Organization"
@@ -388,7 +388,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:420
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:649
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:135
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:122
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:123
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:135
 msgid "Description"
 msgstr ""
@@ -428,31 +428,31 @@ msgid ""
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:454
-msgid "Accrual Periodicity"
+msgid "Update interval"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:456
-msgid "The frequency in which this dataset is updated."
+msgid "The interval in which this dataset is updated."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:465
-msgid "Temporals"
+msgid "Temporal coverage"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:466
-msgid "One or more time period that this dataset covers."
+msgid "One or more time period(s) that this dataset covers."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:468
-msgid "Temporal {#}"
+msgid "Temporal coverage {#}"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:469
-msgid "Add another Temporal"
+msgid "Add another Temporal coverage"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:470
-msgid "Remove Temporal"
+msgid "Remove Temporal coverage"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:475
@@ -474,7 +474,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:497
 msgid ""
 "The actual publisher(s) of this dataset. This can be the same as the "
-"organisation which publishes this dataset. At least one publisher is "
+"organization which publishes this dataset. At least one publisher is "
 "required."
 msgstr ""
 
@@ -533,7 +533,6 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:63
 #: themes/wp-ogdch-theme/footer.php:29
 #: themes/wp-ogdch-theme/footer.php:84
-#: themes/wp-ogdch-theme/front-page.php:35
 msgid "Categories"
 msgstr ""
 
@@ -572,7 +571,7 @@ msgid ""
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:593
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:116
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:114
 msgid "URL"
 msgstr ""
 
@@ -605,7 +604,8 @@ msgid "Identifier"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:635
-msgid "Identifier of the distribution in the source system."
+msgid ""
+"Identifier of the distribution in the source system of the publisher."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:645
@@ -660,7 +660,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:693
 msgid ""
 "All terms of use which are not marked with an asterisk (*) are "
-"declared as close data."
+"declared as closed data."
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:700
@@ -670,9 +670,9 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:702
 msgid ""
 "URL where the distribution can be found. This could be either a "
-"download url, an API url or a landing page url. If the distribution is "
-"only available through a landing page, this field must contain the url "
-"of the landing page. If a download url was given for this "
+"download URL, an API url or a landing page URL. If the distribution is "
+"only available through a landing page, this field must contain the URL "
+"of the landing page. If a download URL was given for this "
 "distribution, this field has to contain the same value."
 msgstr ""
 
@@ -689,7 +689,8 @@ msgid "Size (in Bytes)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:723
-msgid "Mediatype"
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:31
+msgid "Format"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:731
@@ -699,28 +700,28 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:748
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:157
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:166
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:176
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:174
 msgid "CKAN Data"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:757
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:166
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:175
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:185
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:183
 msgid "ID"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:767
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:176
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:185
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:195
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:193
 msgid "Name (Slug)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:776
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:185
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:194
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:204
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:202
 msgid "Sync Status"
 msgstr ""
@@ -976,7 +977,7 @@ msgid "Harvesters"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:36
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:101
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:99
 msgid "Harvester"
 msgstr ""
 
@@ -1020,51 +1021,51 @@ msgstr ""
 msgid "Harvesters which get synced with CKAN"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:110
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:108
 msgid "Harvester Information"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:129
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:130
 msgid "Source type"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:143
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:150
 msgid "Update frequency"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:147
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:154
 msgid "Manual"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:148
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:155
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:34
 msgid "Monthly"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:149
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:156
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:30
 msgid "Weekly"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:150
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:157
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:32
 msgid "Biweekly"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:151
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:158
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:27
 msgid "Daily"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:152
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:159
 msgid "Always"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:157
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:167
 msgid "Configuration"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:159
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:169
 msgid ""
 "Only a valid JSON object is allowed. Eg. { \"option\": \"value\" }"
 msgstr ""
@@ -1242,39 +1243,35 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:30
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:48
-msgid "Media types"
-msgstr ""
-
-#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:31
-msgid "Media type"
+msgid "Formats"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:32
-msgid "All Media types"
+msgid "All Formats"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:33
-msgid "Edit Media types"
+msgid "Edit Formats"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:34
-msgid "View Media type"
+msgid "View Format"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:35
-msgid "Update Media type"
+msgid "Update Format"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:36
-msgid "Add New Media type"
+msgid "Add New Format"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:37
-msgid "New Media type Name"
+msgid "New Format Name"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:50
-msgid "Media types for CKAN datasets"
+msgid "Formats for CKAN datasets"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:25
@@ -1412,24 +1409,25 @@ msgid "The passwords provided do not match."
 msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:19
-msgid "Are you an interested open data user?"
+msgid "Have you built an open data application?"
 msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:20
 msgid ""
-"We present a selection of applications and visual representations "
-"created using datasets from the opendata.swiss portal. If you have "
-"developed an application, please contact us."
+"Here you can find a selection of applications created using datasets "
+"listed on opendata.swiss. They make information useful for direct "
+"citizen and public-at-large benefit. Have you built your own "
+"application? Please let us know."
 msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:21
-msgid "Know more about building applications"
+msgid "Contact us"
 msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:34
 #, php-format
-msgid "%s Built Application"
-msgid_plural "%s Built Applications"
+msgid "%s built application"
+msgid_plural "%s built applications"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -1539,11 +1537,11 @@ msgid "What about you?"
 msgstr ""
 
 #: themes/wp-ogdch-theme/footer.php:46
-msgid "How do I publish open data?"
+msgid "I want to publish data"
 msgstr ""
 
 #: themes/wp-ogdch-theme/footer.php:47
-msgid "How do I use open data?"
+msgid "I want to use data"
 msgstr ""
 
 #: themes/wp-ogdch-theme/footer.php:75
@@ -1571,16 +1569,16 @@ msgid "Sourcecode"
 msgstr ""
 
 #: themes/wp-ogdch-theme/footer.php:97
-msgid "A joint project of the federal government and cantons"
+msgid "A joint project of the confederation and cantons"
 msgstr ""
 
 #: themes/wp-ogdch-theme/footer.php:98
 #: themes/wp-ogdch-theme/front-page.php:8
 msgid ""
-"The portal opendata.swiss is a joint project of the federal "
-"government, cantons and municipalities. It provides the public "
-"authorities open data of all federal levels in a central catalog. The "
-"Swiss Federal Archives operates opendata.swiss."
+"The portal opendata.swiss is a joint project of the confederation, "
+"cantons, municipalities and further organizations with a public "
+"mandate. It provides open government data for the public in a central "
+"catalog. The Swiss Federal Archives operates opendata.swiss."
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:9
@@ -1588,11 +1586,15 @@ msgid "Learn more about opendata.swiss"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:21
-msgid "Search opendata.swiss"
+msgid "Search datasets..."
+msgstr ""
+
+#: themes/wp-ogdch-theme/front-page.php:35
+msgid "What you can find"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:38
-msgid "Explore our Categories"
+msgid "Explore categories"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:99
@@ -1600,31 +1602,31 @@ msgid "How it works"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:104
-msgid "Data Publisher?"
+msgid "Data publisher"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:105
 msgid ""
-"Are you an Organisation interested in sharing your open data in this "
-"portal?"
+"Are you an organization interested in publishing your open data on "
+"this portal?"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:106
-msgid "Learn how to participate"
+msgid "How to publish data"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:109
-msgid "Data User or Application Builder?"
+msgid "Data user"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:110
 msgid ""
-"Are you interested in using this portals open data and build your own "
-"applications?"
+"Are you interested in using open data listed on this portal to build "
+"your own applications?"
 msgstr ""
 
 #: themes/wp-ogdch-theme/front-page.php:111
-msgid "Read our FAQ"
+msgid "How to use data"
 msgstr ""
 
 #: themes/wp-ogdch-theme/functions.php:18
