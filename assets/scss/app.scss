@@ -498,8 +498,19 @@ li.dataset-item {
 }
 
 // Organization Detail
-.description img {
+.description img.logo {
+  display: block;
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  max-width: 30%;
   margin-bottom: 20px;
+  margin-left: 20px;
+  @media (max-width: $screen-sm-max) {
+    max-height: none;
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
 
 // Group list

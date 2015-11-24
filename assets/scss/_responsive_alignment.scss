@@ -4,6 +4,8 @@
 .text-xs-justify { text-align: justify; }
 .header-xs-vertical-center { margin-top: 25px; }
 .header-vertical-center { margin-top: 25px; }
+.pull-left-xs { float: left !important; }
+.pull-right-xs { float: right !important; }
 
 @media (min-width: $screen-sm-min) {
   .text-sm-left { text-align: left; }
@@ -11,6 +13,8 @@
   .text-sm-center { text-align: center; }
   .text-sm-justify { text-align: justify; }
   .header-sm-vertical-center { margin-top: 25px; }
+  .pull-left-sm { float: left !important; }
+  .pull-right-sm { float: right !important; }
 }
 
 @media (min-width: $screen-md-min) {
@@ -19,6 +23,8 @@
   .text-md-center { text-align: center; }
   .text-md-justify { text-align: justify; }
   .header-md-vertical-center { margin-top: 25px; }
+  .pull-left-md { float: left !important; }
+  .pull-right-md { float: right !important; }
 }
 
 @media (min-width: $screen-lg-min) {
@@ -27,4 +33,6 @@
   .text-lg-center { text-align: center; }
   .text-lg-justify { text-align: justify; }
   .header-lg-vertical-center { margin-top: 25px; }
+  .pull-left-lg { float: left !important; }
+  .pull-right-lg { float: right !important; }
 }
