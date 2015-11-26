@@ -117,7 +117,7 @@ function get_dataset_count() {
 
 				// save result in transient
 				if ( $dataset_count['total_count'] > 0 ) {
-					set_transient( $transient_name, $dataset_count, 1 * HOUR_IN_SECONDS );
+					set_transient( $transient_name, $dataset_count, 5 * MINUTE_IN_SECONDS );
 				}
 			} else {
 				$dataset_count = array(
