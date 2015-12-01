@@ -28,9 +28,13 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 			} else {
 				echo '<ul>';
 				foreach ( $related_datasets as $related_dataset ) {
-					$dataset = Ckan_Backend_Helper::get_dataset( $related_dataset['dataset_id'] );
-					$dataset_title = Ckan_Backend_Helper::get_dataset_title( $related_dataset['dataset_id'] );
-					echo '<li><a href="' . esc_attr( get_page_link_by_slug( 'dataset/' . $dataset['name'] ) ) . '">' . esc_attr( $dataset_title ) . '</a></li>';
+					$dataset = Ckan_Backend_Helper::get_dataset( $related_dataset['dataset_id'], false );
+					if ( $dataset ) {
+						$dataset_title = Ckan_Backend_Helper::get_localized_text( $dataset['title'] );
+						echo '<li><a href="' . esc_attr( get_page_link_by_slug( 'dataset/' . $dataset['name'] ) ) . '">' . esc_html( $dataset_title ) . '</a></li>';
+					} else {
+						echo '<li>' . esc_html( $related_dataset['dataset_id'] ) . '</li>';
+					}
 				}
 				echo '</ul>';
 			}
