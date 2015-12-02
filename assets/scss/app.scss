@@ -334,9 +334,10 @@ a.label-primary-gray:hover {
     font-weight: 600;
     margin-bottom: 20px;
     #opendata-count {
-      margin-top: -30px;
-      font-size: 130px;
-      line-height: 130px;
+      width: 100%;
+      margin-top: -10px;
+      font-size: 120px;
+      line-height: 100%;
 
       @media (max-width: $grid-float-breakpoint) {
         margin-top: 20px;

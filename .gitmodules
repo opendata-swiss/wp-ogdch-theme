@@ -4,3 +4,6 @@
 [submodule "assets/external/bootstrap-sass"]
 	path = assets/external/bootstrap-sass
 	url = https://github.com/twbs/bootstrap-sass.git
+[submodule "assets/external/FitText.js"]
+	path = assets/external/FitText.js
+	url = https://github.com/davatron5000/FitText.js.git

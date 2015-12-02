@@ -32,7 +32,8 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        './assets/external/bootstrap-sass-3.3.5/assets/javascripts/bootstrap.js',
+        './assets/external/bootstrap-sass/assets/javascripts/bootstrap.js',
+        './assets/external/FitText.js/jquery.fittext.js',
         './assets/js/app.js'
     ])
         .pipe(concat('app.min.js'))
