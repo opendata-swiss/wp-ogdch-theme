@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<p class="lead"><?php esc_attr_e( 'The portal opendata.swiss is a joint project of the confederation, cantons, municipalities and further organizations with a public mandate. It provides open government data for the public in a central catalog. The Swiss Federal Archives operates opendata.swiss.', 'ogdch' ); ?></p>
-					<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
+					<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-md-offset-1 col-md-5 text-md-right text-xs-center">
 					<div class="headline">
