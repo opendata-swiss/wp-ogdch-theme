@@ -61,7 +61,7 @@ $dataset_count = get_dataset_count();
 							$languages = pll_the_languages( array( 'raw' => true ) );
 							foreach ( $languages as $language ) {
 								$active_class = ($language['current_lang']) ? 'active' : '';
-								echo '<li class="' . esc_attr( $active_class ) . '"><a href="' . esc_url( $language['url'] ) . '">' . esc_attr( $language['name'] ) . '</a></li>';
+								echo '<li class="' . esc_attr( $active_class ) . '"><a href="' . esc_url( $language['url'] ) . '">' . esc_html( $language['name'] ) . '</a></li>';
 							}
 							?>
 						</ul>
@@ -72,23 +72,23 @@ $dataset_count = get_dataset_count();
 			</div>
 			<div class="col-md-2 col-xs-6">
 				<ul class="list-unstyled">
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>"><?php esc_attr_e( 'About', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_attr_e( 'FAQ', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>"><?php esc_attr_e( 'Contact', 'ogdch' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>"><?php esc_html_e( 'About', 'ogdch' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'FAQ', 'ogdch' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>"><?php esc_html_e( 'Contact', 'ogdch' ); ?></a></li>
 				</ul>
 			</div>
 			<div class="col-md-2 col-xs-6">
 				<ul class="list-unstyled">
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>"><?php esc_attr_e( 'Data', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>"><?php esc_attr_e( 'Organizations', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'group' ) ); ?>"><?php esc_attr_e( 'Categories', 'ogdch' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>"><?php esc_html_e( 'Data', 'ogdch' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>"><?php esc_html_e( 'Organizations', 'ogdch' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>"><?php esc_html_e( 'Applications', 'ogdch' ); ?></a></li>
 				</ul>
 			</div>
 			<div class="col-md-2 col-xs-6">
 				<ul class="list-unstyled">
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>"><?php esc_attr_e( 'Applications', 'ogdch' ); ?></a></li>
-					<li><a href="http://docs.ckan.org/en/latest/api/index.html" target="_blank"><?php esc_attr_e( 'API', 'ogdch' ); ?></a></li>
-					<li><a href="https://github.com/ogdch/ckanext-switzerland"><?php esc_attr_e( 'Sourcecode', 'ogdch' ); ?></a></li>
+					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'legal-framework' ) ); ?>"><?php esc_html_e( 'Legal framework', 'ogdch' ); ?></a></li>
+					<li><a href="http://docs.ckan.org/en/latest/api/index.html" target="_blank"><?php esc_html_e( 'API', 'ogdch' ); ?></a></li>
+					<li><a href="https://github.com/ogdch/ckanext-switzerland"><?php esc_html_e( 'Sourcecode', 'ogdch' ); ?></a></li>
 				</ul>
 			</div>
 		</div>
