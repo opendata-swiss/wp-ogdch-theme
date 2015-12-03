@@ -129,7 +129,7 @@ a.label-primary-gray:hover {
   overflow: hidden;
 
   dt:first-of-type, dd:first-of-type{
-    border-top-width:0;
+    border-top-width: 0;
   }
   dt {
     border-top: 1px solid $gray-lighter;
@@ -139,7 +139,7 @@ a.label-primary-gray:hover {
   dd ul {
     margin-bottom: 0;
   }
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $dl-horizontal-breakpoint) {
     dt {
       width: $dl-horizontal-offset;
       text-align: left;
