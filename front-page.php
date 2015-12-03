@@ -100,12 +100,12 @@
 				<div class="col-sm-6">
 					<h3><i class="fa fa-files-o"></i> <?php esc_attr_e( 'Data publisher', 'ogdch' ); ?></h3>
 					<p><?php esc_attr_e( 'Are you an organization interested in publishing your open data on this portal?', 'ogdch' ); ?></p>
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>" role="button"><?php esc_attr_e( 'How to publish data', 'ogdch' ); ?></a>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How to publish data', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-sm-6">
 					<h3><i class="fa fa-cogs"></i> <?php esc_attr_e( 'Data user', 'ogdch' ); ?></h3>
 					<p><?php esc_attr_e( 'Are you interested in using open data listed on this portal to build your own applications?', 'ogdch' ); ?></p>
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'How to use data', 'ogdch' ); ?></a>
+					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'How to use data', 'ogdch' ); ?></a>
 				</div>
 			</div>
 		</section>
