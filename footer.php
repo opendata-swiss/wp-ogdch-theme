@@ -1,5 +1,8 @@
 <?php
 $dataset_count = get_dataset_count();
+$org_count = wp_count_posts( 'ckan-local-org' )->publish;
+$group_count = wp_count_posts( 'ckan-local-group' )->publish;
+$app_count = get_localized_post_count( 'app' );
 ?>
 
 <footer class="page-footer">
@@ -8,33 +11,33 @@ $dataset_count = get_dataset_count();
 			<div class="col-sm-3 col-xs-6">
 				<a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>">
 					<div class="statsnumber">
-						<?php esc_html_e( $dataset_count['total_count'] ); ?> <i class="fa fa-files-o"></i>
+						<?php echo esc_html( $dataset_count['total_count'] ); ?> <i class="fa fa-files-o"></i>
 					</div>
-					<p><?php esc_attr_e( 'Datasets' ,'ogdch' ); ?></p>
+					<p><?php echo esc_html( _n( 'Dataset', 'Datasets', $dataset_count['total_count'], 'ogdch' ) ); ?></p>
 				</a>
 			</div>
 			<div class="col-sm-3 col-xs-6">
 				<a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>">
 					<div class="statsnumber">
-						<?php esc_html_e( wp_count_posts( 'ckan-local-org' )->publish ); ?> <i class="fa fa-users"></i>
+						<?php echo esc_html( $org_count ); ?> <i class="fa fa-users"></i>
 					</div>
-					<p><?php esc_attr_e( 'Organizations', 'ogdch' ); ?></p>
+					<p><?php echo esc_html( _n( 'Organization', 'Organizations', $org_count, 'ogdch' ) ); ?></p>
 				</a>
 			</div>
 			<div class="col-sm-3 col-xs-6">
 				<a href="<?php echo esc_url( get_page_link_by_slug( 'group' ) ); ?>">
 					<div class="statsnumber">
-						<?php esc_html_e( wp_count_posts( 'ckan-local-group' )->publish ); ?> <i class="fa fa-tags"></i>
+						<?php echo esc_html( $group_count ); ?> <i class="fa fa-tags"></i>
 					</div>
-					<p><?php esc_attr_e( 'Categories', 'ogdch' ); ?></p>
+					<p><?php echo esc_html( _n( 'Category', 'Categories', $group_count, 'ogdch' ) ); ?></p>
 				</a>
 			</div>
 			<div class="col-sm-3 col-xs-6">
 				<a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>">
 					<div class="statsnumber">
-						<?php esc_html_e( get_localized_post_count( 'app' ) ); ?> <i class="fa fa-puzzle-piece"></i>
+						<?php echo esc_html( $app_count ); ?> <i class="fa fa-puzzle-piece"></i>
 					</div>
-					<p><?php esc_attr_e( 'Applications', 'ogdch' ); ?></p>
+					<p><?php echo esc_html( _n( 'Application', 'Applications', $app_count, 'ogdch' ) ); ?></p>
 				</a>
 			</div>
 		</div>
