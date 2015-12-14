@@ -15,7 +15,7 @@ $frontend_includes = array(
 foreach ( $frontend_includes as $file ) {
 	if ( ! $filepath = locate_template( $file ) ) {
 		// @codingStandardsIgnoreStart
-		trigger_error( sprintf( __( 'Error locating %s for inclusion', 'ogdch' ), $file ), E_USER_ERROR );
+		trigger_error( sprintf( _x( 'Error locating %s for inclusion', '%s contains path to file.', 'ogdch' ), $file ), E_USER_ERROR );
 		// @codingStandardsIgnoreEnd
 	}
 	require_once $filepath;

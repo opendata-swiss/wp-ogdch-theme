@@ -31,7 +31,7 @@
 				$dataset_count = get_localized_post_count( 'app' );
 				printf(
 					// @codingStandardsIgnoreStart
-					_n( '%s application', '%s applications', $dataset_count, 'ogdch' ),
+					_nx( '%s application', '%s applications', $dataset_count, '%s contains the number of applications.', 'ogdch' ),
 					$dataset_count
 					// @codingStandardsIgnoreEnd
 				);
