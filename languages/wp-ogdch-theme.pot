@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme 1.0.0\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
-"POT-Creation-Date: 2015-12-14 10:54+0100\n"
+"POT-Creation-Date: 2015-12-14 10:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,7 +212,7 @@ msgstr ""
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:621
 #: plugins/wp-app-showcase/post-types/app.php:152
 #: plugins/wp-app-showcase/post-types/app.php:158
-#: themes/wp-ogdch-theme/footer.php:7 themes/wp-ogdch-theme/footer.php:16
+#: themes/wp-ogdch-theme/footer.php:16
 msgid "Dataset"
 msgid_plural "Datasets"
 msgstr[0] ""
