@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme 1.0.0\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
-"POT-Creation-Date: 2015-12-14 15:21+0100\n"
+"POT-Creation-Date: 2015-12-14 15:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1462,7 +1462,7 @@ msgstr ""
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:41
 #, php-format
 msgctxt "%1$s contains url to preview this post. %2$s contains singular name of the post type."
-msgid " <a target=\"_blank\" href=\"%1$s\">Preview %1$s</a>"
+msgid " <a target=\"_blank\" href=\"%1$s\">Preview %2$s</a>"
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/init.php:28
