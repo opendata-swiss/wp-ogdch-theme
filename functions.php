@@ -14,7 +14,7 @@ $frontend_includes = array(
 
 foreach ( $frontend_includes as $file ) {
 	if ( ! $filepath = locate_template( $file ) ) {
-		trigger_error( sprintf( esc_html_x( 'Error locating %s for inclusion', '%s contains path to file.', 'ogdch' ), $file ), E_USER_ERROR );
+		trigger_error( sprintf( esc_html_x( 'Error locating %s for inclusion', '%s contains path to file.', 'ogdch' ), esc_html( $file ) ), E_USER_ERROR );
 	}
 	require_once $filepath;
 }
@@ -38,7 +38,7 @@ if ( is_admin() ) {
 
 	foreach ( $backend_includes as $file ) {
 		if ( ! $filepath = locate_template( $file ) ) {
-			trigger_error( sprintf( esc_html_x( 'Error locating %s for inclusion', '%s contains path to file.', 'ogdch' ), $file ), E_USER_ERROR );
+			trigger_error( sprintf( esc_html_x( 'Error locating %s for inclusion', '%s contains path to file.', 'ogdch' ), esc_html( $file ) ), E_USER_ERROR );
 		}
 		require_once $filepath;
 	}
