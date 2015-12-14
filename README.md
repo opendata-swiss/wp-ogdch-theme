@@ -19,6 +19,14 @@ WordPress theme for OGD-CH
    $ npm install
    ```
 
+## Extract messages
+
+Run the following script to extract messages from php-files and generate a new wp-ogdch-theme.pot file:
+
+```
+$ ./extract_messages.sh
+```
+
 ## Run tests
 
 To check the code style, run the build script:
