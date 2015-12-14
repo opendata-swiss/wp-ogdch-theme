@@ -38,7 +38,7 @@ function ogd_cpt_updated_messages( $messages ) {
 		$messages[ $post_type ][9] .= $view_link;
 
 		$preview_permalink = add_query_arg( 'preview', 'true', $permalink );
-		$preview_link = sprintf( __( ' <a target="_blank" href="%1$s">Preview %1$s</a>', '%1$s contains url to preview this post. %2$s contains singular name of the post type.', 'ogdch' ), esc_url( $preview_permalink ), esc_html( $singular ) );
+		$preview_link = sprintf( _x( ' <a target="_blank" href="%1$s">Preview %1$s</a>', '%1$s contains url to preview this post. %2$s contains singular name of the post type.', 'ogdch' ), esc_url( $preview_permalink ), esc_html( $singular ) );
 		$messages[ $post_type ][8]  .= $preview_link;
 		$messages[ $post_type ][10] .= $preview_link;
 	}
