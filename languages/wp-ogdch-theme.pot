@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme 1.0.0\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
-"POT-Creation-Date: 2015-12-14 10:59+0100\n"
+"POT-Creation-Date: 2015-12-14 15:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgid "Import Catalog"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:35
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:161
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:157
 msgid "Import"
 msgstr ""
 
@@ -92,101 +92,114 @@ msgstr ""
 msgid "No datasets found in given import file"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:83
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:82
 #, php-format
+msgctxt "%s contains the id of the dataset."
 msgid "Successfully inserted new dataset %s"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:90
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:87
 #, php-format
+msgctxt "%s contains the title of the dataset."
 msgid "Successfully updated dataset %s"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:100
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:96
 #, php-format
-msgid "The dataset is already published. You can edit it here: <a href=\"%s\">%s</a>."
+msgctxt "%1$s contains the url to edit the dataset. %2$s contains the title of the dataset."
+msgid "The dataset is already published. You can edit it here: <a href=\"%1$s\">%2$s</a>."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:108
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:104
 #, php-format
-msgid "The dataset is not yet published. You can edit and publish it here: <a href=\"%s\">%s</a>."
+msgctxt "%1$s contains the url to edit the dataset. %2$s contains the title of the dataset."
+msgid "The dataset is not yet published. You can edit and publish it here: <a href=\"%1$s\">%2$s</a>."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:146
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:142
 msgid "DCAT-AP Catalog File:"
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:152
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:148
 msgid "File has to be a DCAT-AP Switzerland catalog."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:185
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:181
 msgid "Invalid parameters."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:193
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:189
 msgid "Missing import file."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:196
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:192
 msgid "Exceeded filesize limit."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:198
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:194
 msgid "Unknown errors."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:203
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:199
 msgid "Uploaded file is not a vaild XML file."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:405
-msgid "Please provide an identifier for the dataset (eg. &lt;dct:title xml:lang=\"en\"&gt;My Dataset&lt;/dct:title&gt;).  Dataset [no identifier] not imported."
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:401
+msgid "Please provide an identifier for the dataset (eg. <dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>).  Dataset [no identifier] not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:410
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:406
 #, php-format
-msgid "The original identifier of your dataset is missing. Please provide the dataset identifier in the following form &lt;dct:identifier&gt;[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Dataset %s not imported."
+msgctxt "%s contains the identifier of the dataset."
+msgid "The original identifier of your dataset is missing. Please provide the dataset identifier in the following form <dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>. Dataset %s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:423
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:419
 #, php-format
-msgid "Please provide a title in at least one language for the dataset (eg. &lt;dct:title xml:lang=\"en\"&gt;My Dataset&lt;/dct:title&gt;). Dataset %s not imported."
+msgctxt "%s contains the identifier of the dataset."
+msgid "Please provide a title in at least one language for the dataset (eg. <dct:title xml:lang=\"en\">My Dataset</dct:title>). Dataset %s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:434
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:430
 #, php-format
-msgid "Please provide at least one publisher for the dataset (eg. &lt;dct:publisher&gt;&lt;rdf:Description&gt;&lt;rdfs:label&gt;Publisher&lt;/rdfs:label&gt;&lt;/rdf:Description&gt;&lt;/dct:publisher&gt;). Dataset %s not imported."
+msgctxt "%s contains the identifier of the dataset."
+msgid "Please provide at least one publisher for the dataset (eg. <dct:publisher><rdf:Description><rdfs:label>Publisher</rdfs:label></rdf:Description></dct:publisher>). Dataset %s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:444
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:440
 #, php-format
-msgid "Please provide at least one contact point for the dataset (eg. &lt;dcat:contactPoint&gt;&lt;vcard:Organization&gt;&lt;vcard:fn&gt;Contact Point&lt;/vcard:fn&gt;&lt;vcard:hasEmail rdf:resource=\"mailto:contact.point@swiss.ch\"/&gt;&lt;/vcard:Organization&gt;&lt;/dcat:contactPoint&gt;). Dataset %s not imported."
+msgctxt "%s contains the identifier of the dataset."
+msgid "Please provide at least one contact point for the dataset (eg. <dcat:contactPoint><vcard:Organization><vcard:fn>Contact Point</vcard:fn><vcard:hasEmail rdf:resource=\"mailto:contact.point@swiss.ch\"/></vcard:Organization></dcat:contactPoint>). Dataset %s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:507
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:503
 #, php-format
-msgid "The organization id is missing in the identifier. Please provide the dataset identifier in the following form &lt;dct:identifier&gt;[original_dataset_id]@[organization_id]&lt;/dct:identifier&gt;. Dataset %s not imported."
+msgctxt "%s contains the identifier of the dataset."
+msgid "The organization id is missing in the identifier. Please provide the dataset identifier in the following form <dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>. Dataset %s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:516
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:512
 #, php-format
-msgid "You are not allowed to add a dataset for another organistaion. Please provide the dataset identifier in the following form &lt;dct:identifier&gt;[original_dataset_id]@[your_organization_id]&lt;/dct:identifier&gt;. Dataset %s not imported."
+msgctxt "%s contains the identifier of the dataset."
+msgid "You are not allowed to add a dataset for another organistaion. Please provide the dataset identifier in the following form <dct:identifier>[original_dataset_id]@[your_organization_id]</dct:identifier>. Dataset %s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:524
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:520
 #, php-format
+msgctxt "%1$s contains the organisation id of the dataset. %2$s contains the identifier of the dataset."
 msgid "Organization %1$s does not exist. Dataset %2$s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:638
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:634
 #, php-format
+msgctxt "%1$s contains the rights of the dataset. %2$s contains the identifier of the dataset."
 msgid "Term of use %1$s does not exist. Dataset %2$s not imported."
 msgstr ""
 
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:695
-#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:705
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:691
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:701
 #, php-format
+msgctxt "%1$s contains the theme uri. %2$s contains the identifier of the dataset."
 msgid "Category %1$s does not exist. Dataset %2$s not imported."
 msgstr ""
 
@@ -724,6 +737,7 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:193
 #, php-format
+msgctxt "%s contains the id of the harvester"
 msgid "Harvester ID: %s"
 msgstr ""
 
@@ -773,26 +787,31 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:302
 #, php-format
+msgctxt "%s contains the date and time when the jobs was created."
 msgid "Job created at %s"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:308
 #, php-format
+msgctxt "%s contains the number of errors."
 msgid "%s errors"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:309
 #, php-format
+msgctxt "%s contains the number of added datasets."
 msgid "%s added"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:310
 #, php-format
+msgctxt "%s contains the number of updated datasets."
 msgid "%s updated"
 msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:311
 #, php-format
+msgctxt "%s contains the number of deleted datasets."
 msgid "%s deleted"
 msgstr ""
 
@@ -852,6 +871,7 @@ msgstr ""
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:439
 #, php-format
+msgctxt "%s contains the line number of the error."
 msgid "(Line: %s)"
 msgstr ""
 
@@ -1090,46 +1110,55 @@ msgstr ""
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:27
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:45
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "Keywords (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:28
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:29
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "All Keywords (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:30
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "Edit Keywords (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:31
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "View Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:32
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "Update Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:33
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "Add New Keyword (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:34
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "New Keyword Name (%s)"
 msgstr ""
 
 #: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:47
 #, php-format
+msgctxt "%s contains the language of this keyword."
 msgid "Keywords (%s) for CKAN datasets"
 msgstr ""
 
@@ -1363,6 +1392,7 @@ msgstr ""
 
 #: themes/wp-ogdch-theme/archive-app.php:34
 #, php-format
+msgctxt "%s contains the number of applications."
 msgid "%s application"
 msgid_plural "%s applications"
 msgstr[0] ""
@@ -1371,6 +1401,7 @@ msgstr[1] ""
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:19
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:22
 #, php-format
+msgctxt "%s contains singular name of the post type."
 msgid "%s updated."
 msgstr ""
 
@@ -1384,26 +1415,31 @@ msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:24
 #, php-format
+msgctxt "%1$s contains singular name of the post type. %2$s contains revision title."
 msgid "%1$s restored to revision from %2$s"
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:25
 #, php-format
+msgctxt "%s contains singular name of the post type."
 msgid "%s published."
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:26
 #, php-format
+msgctxt "%s contains singular name of the post type."
 msgid "%s saved."
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:27
 #, php-format
+msgctxt "%s contains singular name of the post type."
 msgid "%s submitted."
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:28
 #, php-format
+msgctxt "%1$s contains singular name of the post type. %2$s contains planed publishing date and time."
 msgid "%1$s scheduled for: <strong>%2$s</strong>."
 msgstr ""
 
@@ -1413,17 +1449,20 @@ msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:29
 #, php-format
+msgctxt "%s contains singular name of the post type."
 msgid "%s draft updated."
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:35
 #, php-format
-msgid " <a href=\"%s\">View %s</a>"
+msgctxt "%1$s contains url to view this post. %2$s contains singular name of the post type."
+msgid " <a href=\"%1$s\">View %2$s</a>"
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:41
 #, php-format
-msgid " <a target=\"_blank\" href=\"%s\">Preview %s</a>"
+msgctxt "%1$s contains url to preview this post. %2$s contains singular name of the post type."
+msgid " <a target=\"_blank\" href=\"%1$s\">Preview %2$s</a>"
 msgstr ""
 
 #: themes/wp-ogdch-theme/assets/php/init.php:28
@@ -1537,9 +1576,10 @@ msgstr ""
 msgid "Have you developed an application using data from opendata.swiss? Please contact us."
 msgstr ""
 
-#: themes/wp-ogdch-theme/functions.php:18
-#: themes/wp-ogdch-theme/functions.php:44
+#: themes/wp-ogdch-theme/functions.php:17
+#: themes/wp-ogdch-theme/functions.php:41
 #, php-format
+msgctxt "%s contains path to file."
 msgid "Error locating %s for inclusion"
 msgstr ""
 
