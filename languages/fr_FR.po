@@ -1,0 +1,1698 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# 
+# Translators:
+# Andreas Amsler <andreas.amsler@liip.ch>, 2015-2016
+# Katherine Patula <katharine.patula@gs-edi.admin.ch>, 2016
+# Simon Meyer <simon.meyer@bar.admin.ch>, 2015-2016
+msgid ""
+msgstr ""
+"Project-Id-Version: opendata.swiss\n"
+"Report-Msgid-Bugs-To: jazz@liip.ch\n"
+"POT-Creation-Date: 2015-12-14 15:38+0100\n"
+"PO-Revision-Date: 2016-01-13 12:11+0000\n"
+"Last-Translator: Andreas Amsler <andreas.amsler@liip.ch>\n"
+"Language-Team: French (http://www.transifex.com/opendataswiss/opendata-swiss/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: plugins/wp-ckan-backend/ckan-backend.php:221
+msgid "Filter"
+msgstr "Filtre"
+
+#: plugins/wp-ckan-backend/ckan-backend.php:301
+msgid "Search dataset..."
+msgstr "Rechercher les jeux de données..."
+
+#: plugins/wp-ckan-backend/ckan-backend.php:304
+msgid "No media type"
+msgstr "Pas de format"
+
+#: plugins/wp-ckan-backend/ckan-backend.php:328
+#: plugins/wp-ckan-backend/ckan-backend.php:333
+#: plugins/wp-ckan-backend/ckan-backend.php:397
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:205
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:140
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:47
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:113
+#: themes/wp-ogdch-theme/footer.php:24
+msgid "Organization"
+msgid_plural "Organizations"
+msgstr[0] "Organisation"
+msgstr[1] "Organisations"
+
+#: plugins/wp-ckan-backend/ckan-backend.php:371
+msgid "Please choose an organization for this user."
+msgstr "Veuillez choisir une organisation pour cet utilisateur."
+
+#: plugins/wp-ckan-backend/ckan-backend.php:472
+msgid "All good!"
+msgstr "Tout est en ordre!"
+
+#: plugins/wp-ckan-backend/ckan-backend.php:474
+msgid "Not synchronized! Please fix data and save the element again."
+msgstr "Pas de synchronisation! Veuillez corriger les données et sauvegarder à nouveau l'élément."
+
+#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:54
+msgid "There was a problem sending the request."
+msgstr "La requête n'a pas pu être envoyée."
+
+#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:75
+msgid "API responded with unknown error."
+msgstr "L'API a renvoyé une erreur inconnue."
+
+#: plugins/wp-ckan-backend/helper/ckan-backend-helper.php:410
+msgid "All organizations"
+msgstr "Toutes les organisations"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-export.php:39
+msgid "Export"
+msgstr "Exporter"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-export.php:40
+msgid "Datasets exported"
+msgstr "Jeux de données exportés"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:34
+msgid "Import Catalog"
+msgstr "Importer le catalogue"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:35
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:157
+msgid "Import"
+msgstr "Importer"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:50
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:84
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Vous ne disposez pas des droits suffisants pour accéder à cette page."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:69
+msgid "No datasets found in given import file"
+msgstr "Aucun jeu de données trouvé dans le fichier d'importation en question"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:82
+#, php-format
+msgctxt "%s contains the id of the dataset."
+msgid "Successfully inserted new dataset %s"
+msgstr "Nouveau jeu de données inséré avec succès %s"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:87
+#, php-format
+msgctxt "%s contains the title of the dataset."
+msgid "Successfully updated dataset %s"
+msgstr "Jeu de données mis à jour avec succès %s"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:96
+#, php-format
+msgctxt ""
+"%1$s contains the url to edit the dataset. %2$s contains the title of the "
+"dataset."
+msgid ""
+"The dataset is already published. You can edit it here: <a "
+"href=\"%1$s\">%2$s</a>."
+msgstr "Ce jeu de données est déjà publié. Vous pouvez le modifier ici: <a href=\"%1$s\">%2$s</a>."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:104
+#, php-format
+msgctxt ""
+"%1$s contains the url to edit the dataset. %2$s contains the title of the "
+"dataset."
+msgid ""
+"The dataset is not yet published. You can edit and publish it here: <a "
+"href=\"%1$s\">%2$s</a>."
+msgstr "Ce jeu de données n'est pas encore publié. Vous pouvez le modifier et le publier ici: <a href=\"%1$s\">%2$s</a>."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:142
+msgid "DCAT-AP Catalog File:"
+msgstr "DCAT-AP Catalog File:"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:148
+msgid "File has to be a DCAT-AP Switzerland catalog."
+msgstr "Le fichier doit être un catalogue DCAT-AP Switzerland."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:181
+msgid "Invalid parameters."
+msgstr "Paramètres non valides."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:189
+msgid "Missing import file."
+msgstr "Fichier d'importation manquant."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:192
+msgid "Exceeded filesize limit."
+msgstr "Le fichier dépasse la taille limite."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:194
+msgid "Unknown errors."
+msgstr "Erreurs inconnues"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:199
+msgid "Uploaded file is not a vaild XML file."
+msgstr "Le fichier téléversé n'est pas un fichier XML valide."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:401
+msgid ""
+"Please provide an identifier for the dataset (eg. "
+"<dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>).  "
+"Dataset [no identifier] not imported."
+msgstr "Veuillez fournir un identifiant pour le jeu de données (p. ex.. <dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>).  Le jeu de données [no identifier] n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:406
+#, php-format
+msgctxt "%s contains the identifier of the dataset."
+msgid ""
+"The original identifier of your dataset is missing. Please provide the "
+"dataset identifier in the following form "
+"<dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>. "
+"Dataset %s not imported."
+msgstr "L'identifiant original de votre jeu de données est manquant. Veuillez indiquer l'identifiant du jeu de données dans le champ <dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>. Le jeu de données %s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:419
+#, php-format
+msgctxt "%s contains the identifier of the dataset."
+msgid ""
+"Please provide a title in at least one language for the dataset (eg. "
+"<dct:title xml:lang=\"en\">My Dataset</dct:title>). Dataset %s not imported."
+msgstr "Veuillez fournir un titre pour le jeu de données dans au moins une langue (p. ex. <dct:title xml:lang=\"en\">Mon jeu de données</dct:title>). Le jeu de données %s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:430
+#, php-format
+msgctxt "%s contains the identifier of the dataset."
+msgid ""
+"Please provide at least one publisher for the dataset (eg. "
+"<dct:publisher><rdf:Description><rdfs:label>Publisher</rdfs:label></rdf:Description></dct:publisher>)."
+" Dataset %s not imported."
+msgstr "Veuillez indiquer au moins un éditeur pour le jeu d données (p. ex. <dct:publisher><rdf:Description><rdfs:label>éditeur</rdfs:label></rdf:Description></dct:publisher>). Le jeu de données %s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:440
+#, php-format
+msgctxt "%s contains the identifier of the dataset."
+msgid ""
+"Please provide at least one contact point for the dataset (eg. "
+"<dcat:contactPoint><vcard:Organization><vcard:fn>Contact "
+"Point</vcard:fn><vcard:hasEmail "
+"rdf:resource=\"mailto:contact.point@swiss.ch\"/></vcard:Organization></dcat:contactPoint>)."
+" Dataset %s not imported."
+msgstr "Veuillez fournir au moins un contact pour le jeu de données (p. ex. <dcat:contactPoint><vcard:Organization><vcard:fn>Contact</vcard:fn><vcard:hasEmail rdf:resource=\"mailto:contact.point@swiss.ch\"/></vcard:Organization></dcat:contactPoint>). Le jeu de données %s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:503
+#, php-format
+msgctxt "%s contains the identifier of the dataset."
+msgid ""
+"The organization id is missing in the identifier. Please provide the dataset"
+" identifier in the following form "
+"<dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>. "
+"Dataset %s not imported."
+msgstr "L'identification de l'organisation manque dans l'identifiant. Veuillez inscrire l'identifiant du jeu de données dans le formulaire suivant<dct:identifier>[original_dataset_id]@[organization_id]</dct:identifier>. Le jeu de données %s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:512
+#, php-format
+msgctxt "%s contains the identifier of the dataset."
+msgid ""
+"You are not allowed to add a dataset for another organistaion. Please "
+"provide the dataset identifier in the following form "
+"<dct:identifier>[original_dataset_id]@[your_organization_id]</dct:identifier>."
+" Dataset %s not imported."
+msgstr "Vous ne pouvez pas ajouter un jeu de données pour une autre organisation. Veuillez indiquer l'identifiant du jeu de données dans le champ suivant<dct:identifier>[original_dataset_id]@[your_organization_id]</dct:identifier>. Le jeu de données %s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:520
+#, php-format
+msgctxt ""
+"%1$s contains the organisation id of the dataset. %2$s contains the "
+"identifier of the dataset."
+msgid "Organization %1$s does not exist. Dataset %2$s not imported."
+msgstr "L'organisation %1$s n'existe pas. Le jeu de données %2$s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:634
+#, php-format
+msgctxt ""
+"%1$s contains the rights of the dataset. %2$s contains the identifier of the"
+" dataset."
+msgid "Term of use %1$s does not exist. Dataset %2$s not imported."
+msgstr "La condition d'utilisation %1$s n'existe pas. Le jeu de données %2$s n'a pas été importé."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:691
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset-import.php:701
+#, php-format
+msgctxt ""
+"%1$s contains the theme uri. %2$s contains the identifier of the dataset."
+msgid "Category %1$s does not exist. Dataset %2$s not imported."
+msgstr "La catégorie %1$s n'existe pas. Le jeu de données %2$s n'a pas été importé.."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:188
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:158
+msgid "- Please choose -"
+msgstr "- Veuillez choisir -"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:308
+msgid "This dataset is disabled and will not be published on the website."
+msgstr "Ce jeu de données est désactivé et ne sera pas publié sur le site."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:320
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:322
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:323
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:343
+#: themes/wp-ogdch-theme/front-page.php:17
+msgid "Datasets"
+msgstr "Jeux de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:321
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:395
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:621
+#: plugins/wp-app-showcase/post-types/app.php:152
+#: plugins/wp-app-showcase/post-types/app.php:158
+#: themes/wp-ogdch-theme/footer.php:16
+msgid "Dataset"
+msgid_plural "Datasets"
+msgstr[0] "Jeu de données"
+msgstr[1] "Jeux de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:324
+msgid "All Datasets"
+msgstr "Tous les jeux de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:325
+msgid "Add New Dataset"
+msgstr "Ajouter un jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:326
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:52
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:41
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:52
+#: plugins/wp-app-showcase/post-types/app.php:40
+msgid "Add New"
+msgstr "Ajouter nouveau"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:327
+msgid "New Dataset"
+msgstr "Nouveau jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:328
+msgid "Edit Dataset"
+msgstr "Modifer le jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:329
+msgid "Update Dataset"
+msgstr "Mettre à jour le jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:330
+msgid "View Dataset"
+msgstr "Voir le jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:331
+msgid "Search Datasets"
+msgstr "Rechercher les jeux de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:332
+msgid "No Datasets found"
+msgstr "Aucun jeu de données trouvé"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:333
+msgid "No Datasets found in Trash"
+msgstr "Aucun jeu de données trouvé dans la corbeille"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:344
+msgid "Datasets which get synced with CKAN"
+msgstr "Jeux de données synchronisés avec CKAN"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:404
+msgid "Dataset Identifier"
+msgstr "Identifiant du jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:406
+msgid ""
+"Unique identifier of the dataset linked with the publisher. A good way to "
+"make sure this identifier is unique is to use the source system ID."
+msgstr "Identifiant unique du jeu de données lié à l'éditeur. Utiliser l'identification du système source est un bon moyen de s'assurer que cet identifiant est unique."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:415
+msgid "Dataset Information"
+msgstr "Informations relatives au jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:423
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:596
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:652
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:129
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:129
+msgid "Title"
+msgstr "Titre"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:430
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:659
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:135
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:123
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:135
+msgid "Description"
+msgstr "Description"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:439
+msgid "Dates"
+msgstr "Dates"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:445
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:682
+msgid "Issued"
+msgstr "Publié"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:447
+msgid ""
+"Date of the first publication of this dataset. If this date is unknown, the "
+"date of the first publication on this portal can be used."
+msgstr "Date de la première publication de ce jeu de données. Si la date est inconnue, elle peut être remplacée par la date de la première publication sur le présent portail."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:452
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:460
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:689
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:697
+msgctxt "Valid date format string for date field"
+msgid "m/d/Y"
+msgstr "d.m.Y"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:456
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:693
+msgid "Modified"
+msgstr "Modifié"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:458
+msgid ""
+"Date when dataset was last modified (since the first publication on the "
+"portal)."
+msgstr "Date de la dernière modification du jeu de données (depuis la première publication sur le portail)"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:464
+msgid "Update interval"
+msgstr "Rythme de mise à jour"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:466
+msgid "The interval in which this dataset is updated."
+msgstr "Le rythme auquel le jeu de données est mis à jour."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:475
+msgid "Temporal coverage"
+msgstr "Période"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:476
+msgid "One or more time period(s) that this dataset covers."
+msgstr "Période ou périodes couverte(s) par ce jeu données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:478
+msgid "Temporal coverage {#}"
+msgstr "Période {#}"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:479
+msgid "Add another Temporal coverage"
+msgstr "Ajouter une autre période"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:480
+msgid "Remove Temporal coverage"
+msgstr "Supprimer la période"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:485
+msgid "Start Date"
+msgstr "Date de début"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:491
+msgid "End Date"
+msgstr "Date de fin"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:498
+msgid "Publisher Information"
+msgstr "Informations relatives à l'éditeur"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:506
+msgid "Publishers"
+msgstr "Editeurs"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:507
+msgid ""
+"The actual publisher(s) of this dataset. This can be the same as the "
+"organization which publishes this dataset. At least one publisher is "
+"required."
+msgstr "L'/Les éditeur(s) du jeu de données. Il peut s'agir de l'organisation publiant le jeu de données. Vous devez indiquer au moins un éditeur."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:509
+msgid "Publisher {#}"
+msgstr "Editeur{#}"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:510
+msgid "Add another Publisher"
+msgstr "Ajouter un éditeur"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:511
+msgid "Remove Publisher"
+msgstr "Supprimer l'éditeur"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:516
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:537
+msgid "Name"
+msgstr "Nom"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:527
+msgid "Contact points"
+msgstr "Contact"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:528
+msgid ""
+"The contact point if there are questions about this dataset. At least one "
+"contact point is required."
+msgstr "L'interlocuteur en cas de questions au sujet du jeu de données. Vous devez indiquer au minimum un contact."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:530
+msgid "Contact Point {#}"
+msgstr "Contact {#}"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:531
+msgid "Add another Contact Point"
+msgstr "Ajouter un contact"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:532
+msgid "Remove Contact Point"
+msgstr "Supprimer le contact"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:546
+msgid "Email"
+msgstr "Courriel"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:555
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:571
+msgid "Further Information"
+msgstr "Informations complémentaires"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:562
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:46
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:48
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:49
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:63
+#: themes/wp-ogdch-theme/front-page.php:35
+msgid "Categories"
+msgstr "Catégories"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:577
+msgid "Landing Page"
+msgstr "Landing Page"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:579
+msgid "Website with further information about the dataset."
+msgstr "Site internet donnant les informations complémentaires sur le jeu de données."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:586
+msgid "Relations"
+msgstr "Relations"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:587
+msgid "Further information related to this dataset."
+msgstr "Informations complémentaires sur le jeu de données."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:589
+msgid "Relation {#}"
+msgstr "Relation {#}"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:590
+msgid "Add another Relation"
+msgstr "Ajouter une relation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:591
+msgid "Remove Relation"
+msgstr "Supprimer la relation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:597
+msgid ""
+"Use the title 'legal_basis' to provide a link to the legal basis of this "
+"dataset."
+msgstr "Use the title 'base_légale' pour fournir un lien vers la base légale du jeu de données."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:603
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:114
+msgid "URL"
+msgstr "URL"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:611
+msgid "Dataset Relations"
+msgstr "Relations du jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:612
+msgid "Relations to other datasets."
+msgstr "Relations avec d'autres jeux de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:614
+#: plugins/wp-app-showcase/post-types/app.php:144
+msgid "Dataset Relation {#}"
+msgstr "Relation du jeu de données {#}"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:615
+#: plugins/wp-app-showcase/post-types/app.php:145
+msgid "Add another Dataset Relation"
+msgstr "Ajouter une relation du jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:616
+#: plugins/wp-app-showcase/post-types/app.php:146
+msgid "Remove Dataset Relation"
+msgstr "Supprimer la relation du jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:628
+msgid "Distributions"
+msgstr "Ressources"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:637
+msgid "Distribution {#}"
+msgstr "Ressource {#}"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:638
+msgid "Add another Distribution"
+msgstr "Ajouter une ressource"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:639
+msgid "Remove Distribution"
+msgstr "Supprimer la ressource"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:644
+msgid "Identifier"
+msgstr "Identifiant"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:645
+msgid "Identifier of the distribution in the source system of the publisher."
+msgstr "Identifiant de la ressource dans le système d'origine de l'éditeur"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:655
+msgid "If the title is left empty, the title of the dataset is used instead."
+msgstr "Si le titre n'est pas saisi, le titre du jeu de données sera utilisé à la place."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:662
+msgid ""
+"If the description is left empty, the description of the dataset is used "
+"instead."
+msgstr "Si la description n'est pas saisie, la description du jeu de données sera utilisée à la place."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:668
+msgid "Language"
+msgstr "Langue"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:670
+msgid ""
+"Languages in which this distribution is available. If the distribution is "
+"language-independent do not check anything."
+msgstr "Langues disponibles pour la ressource. Si la ressource est indépendante de la langue, ne cochez rien."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:674
+msgid "English"
+msgstr "Anglais"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:675
+msgid "German"
+msgstr "Allemand"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:676
+msgid "French"
+msgstr "Français"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:677
+msgid "Italian"
+msgstr "Italien"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:684
+msgid "Date of the publication of this distribution."
+msgstr "Date de publication de la ressource"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:695
+msgid "Date of the last change of the distribution."
+msgstr "Date de la dernière modification de la ressource"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:701
+msgid "Terms of use"
+msgstr "Conditions d'utilisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:703
+msgid ""
+"All terms of use which are not marked with an asterisk (*) are declared as "
+"closed data."
+msgstr "Toutes les conditions d'utilisation qui ne sont pas assorties d'un astérisque (*) sont déclarées 'closed data'."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:710
+msgid "Access URL"
+msgstr "URL d'accès"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:712
+msgid ""
+"URL where the distribution can be found. This could be either a download "
+"URL, an API url or a landing page URL. If the distribution is only available"
+" through a landing page, this field must contain the URL of the landing "
+"page. If a download URL was given for this distribution, this field has to "
+"contain the same value."
+msgstr "URL permettant d'accéder à la ressource. Il peut s'agir d'une URL de téléchargement, de l'URL d'une API ou de l'URL d'une 'landing page'. Si la ressource est uniquement accessible via une 'landing page', le champ doit contenir l'URL de la 'landing page'. Si une URL de téléchargement a été indiquée pour cette resource, le champ doit contenir la même valeur."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:720
+msgid "Download URL"
+msgstr "URL de téléchargement"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:722
+msgid "URL of a file, if the distribution can be downloaded."
+msgstr "URL d'un fichier, si la ressource peut être téléchargée."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:727
+msgid "Size (in Bytes)"
+msgstr "Taille (en bytes)"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:733
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:31
+msgid "Format"
+msgstr "Format"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:741
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:749
+msgid "Disable Dataset"
+msgstr "Désactiver le jeu de données"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:758
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:157
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:176
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:174
+msgid "CKAN Data"
+msgstr "Données CKAN"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:767
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:166
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:185
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:183
+msgid "ID"
+msgstr "Identification"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:777
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:176
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:195
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:193
+msgid "Name (Slug)"
+msgstr "Nom (Slug)"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:786
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:185
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:204
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:202
+msgid "Sync Status"
+msgstr "Etat de la synchronisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:47
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:113
+#: themes/wp-ogdch-theme/footer.php:32
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "Catégorie"
+msgstr[1] "Catégories"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:50
+msgid "All Categories"
+msgstr "Toutes les catégories"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:51
+msgid "Add New Category"
+msgstr "Ajouter une catégorie"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:53
+msgid "New Category"
+msgstr "Nouvelle catégorie"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:54
+msgid "Edit Category"
+msgstr "Modifier la catégorie"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:55
+msgid "Update Category"
+msgstr "Mettre à jour la catégorie"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:56
+msgid "View Category"
+msgstr "Voir la catégorie"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:57
+msgid "Search Categories"
+msgstr "Rechercher les catégories"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:58
+msgid "No Categories found"
+msgstr "Aucune catégorie trouvée"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:59
+msgid "No Categories found in Trash"
+msgstr "Aucune catégorie trouvée dans la corbeille"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:64
+msgid "Categories which get synced with CKAN"
+msgstr "Catégories synchronisées avec CKAN"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:122
+msgid "Category Information"
+msgstr "Informations relatives à la catégorie"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:144
+msgid "Category Image"
+msgstr "Image de la catégorie"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:150
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:167
+msgid "Image"
+msgstr "Image"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:193
+msgid "RDF Reference"
+msgstr "Référence RDF "
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-group.php:202
+msgid "RDF URI"
+msgstr "RDF URI"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:57
+msgid "Harvester Dashboard"
+msgstr "Harvester dashboard"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:58
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:106
+msgid "Successfully created new harvester job."
+msgstr "Nouvelle tâche 'harvester' créée avec succès"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:120
+msgid "Current harvester job successfully aborted."
+msgstr "Tâche 'harvester' en cours interrompu avec succès"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:134
+msgid "Successfully cleared all harvester datasets."
+msgstr "Tous les jeux de données 'harvester' ont été effacés avec succès."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:154
+msgid "Choose Harvester:"
+msgstr "Choisir un 'harvester':"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:165
+msgid "Show"
+msgstr "Afficher"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:176
+msgid "Please select a harvester first."
+msgstr "Veuillez d'abord sélectionner un 'harvester'."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:192
+msgid "Refresh page"
+msgstr "Rafraîchir la page"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:193
+#, php-format
+msgctxt "%s contains the id of the harvester"
+msgid "Harvester ID: %s"
+msgstr "Harvester ID: %s"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:206
+msgid "(edit)"
+msgstr "(modifier)"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:228
+msgid "Show all jobs"
+msgstr "Afficher toutes commandes "
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:230
+msgid "Show less jobs"
+msgstr "Afficher moins de tâches"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:253
+msgid "Are you sure you want to abort the current job of this harvester?"
+msgstr "Êtes-vous sûr(e) de vouloir interrompre la tâche en cours de ce 'harvester'?"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:254
+msgid "Abort unfinished job"
+msgstr "Interrompre la tâche en cours"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:256
+msgid "Reharvest"
+msgstr "Reharvest"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:260
+msgid "Are you sure you want to clear all data of this harvester?"
+msgstr "Êtes-vous sûr(e) de vouloir supprimer toutes les données de ce 'harvester'?"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:261
+msgid "Clear"
+msgstr "Réinitialiser"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:268
+msgid "All Harvest Jobs"
+msgstr "Toutes les tâches de \"harvest\""
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:270
+msgid "Latest Harvest Job"
+msgstr "Dernière tâche de \"harvest\""
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:276
+msgid "No Jobs found for this harvester."
+msgstr "Aucune tâche trouvée pour ce 'harvester'."
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:302
+#, php-format
+msgctxt "%s contains the date and time when the jobs was created."
+msgid "Job created at %s"
+msgstr "Tâche créée à %s"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:308
+#, php-format
+msgctxt "%s contains the number of errors."
+msgid "%s errors"
+msgstr "%s erreurs"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:309
+#, php-format
+msgctxt "%s contains the number of added datasets."
+msgid "%s added"
+msgstr "%s ajoutés"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:310
+#, php-format
+msgctxt "%s contains the number of updated datasets."
+msgid "%s updated"
+msgstr "%s mis à jour"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:311
+#, php-format
+msgctxt "%s contains the number of deleted datasets."
+msgid "%s deleted"
+msgstr "%s supprimés"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:318
+msgid "Job ID"
+msgstr "Identifcation de la tâche"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:322
+msgid "Created"
+msgstr "Créé"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:326
+msgid "Started"
+msgstr "Débuté"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:330
+msgid "Finished"
+msgstr "Terminé"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:334
+msgid "Status"
+msgstr "État"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:340
+msgid "Show Job details"
+msgstr "Afficher les détails de la tâche"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:357
+msgid "Job detail"
+msgstr "Détails de la tâche"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:358
+msgid "Back to Job list"
+msgstr "Retour à la liste des tâches"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:375
+msgid "Error summary"
+msgstr "Résumé des erreurs"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:385
+msgid "No errors for this job"
+msgstr "Aucune erreur pour cette tâche"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:389
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:420
+msgid "Job Errors"
+msgstr "Erreurs de la tâche"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:395
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:430
+msgid "Document Errors"
+msgstr "Erreurs du document"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:414
+msgid "Error Report"
+msgstr "Rapport d'erreurs"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:439
+#, php-format
+msgctxt "%s contains the line number of the error."
+msgid "(Line: %s)"
+msgstr "(Ligne: %s)"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:466
+msgid "Count"
+msgstr "Nombre"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester-dashboard.php:467
+msgid "Message"
+msgstr "Message"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:35
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:37
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:38
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:52
+msgid "Harvesters"
+msgstr "Harvesters"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:36
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:99
+msgid "Harvester"
+msgstr "Harvester"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:39
+msgid "All Harvesters"
+msgstr "Tous les 'harvesters'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:40
+msgid "Add New Harvester"
+msgstr "Ajouter un 'harvester'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:42
+msgid "New Harvester"
+msgstr "Nouveau 'harvester'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:43
+msgid "Edit Harvester"
+msgstr "Modifier le 'harvester'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:44
+msgid "Update Harvester"
+msgstr "Mettre à jour le 'harvester'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:45
+msgid "View Harvester"
+msgstr "Afficher le 'harvester'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:46
+msgid "Search Harvesters"
+msgstr "Rechercher les 'harvesters'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:47
+msgid "No Harvesters found"
+msgstr "Aucun 'harvester' trouvé"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:48
+msgid "No Harvesters found in Trash"
+msgstr "Aucun 'harvester' trouvé dans la corbeille"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:53
+msgid "Harvesters which get synced with CKAN"
+msgstr "Harvesters synchronisés avec CKAN"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:108
+msgid "Harvester Information"
+msgstr "Informations relatives au 'harvester'"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:130
+msgid "Source type"
+msgstr "Type de source"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:150
+msgid "Update frequency"
+msgstr "Rythme de mise à jour"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:154
+msgid "Manual"
+msgstr "Manuelle"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:155
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:34
+msgid "Monthly"
+msgstr "1 fois par mois"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:156
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:30
+msgid "Weekly"
+msgstr "1 fois par semaine"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:157
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:32
+msgid "Biweekly"
+msgstr "Toutes les 2 semaines"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:158
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:27
+msgid "Daily"
+msgstr "1 fois par jour"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:159
+msgid "Always"
+msgstr "Toujours"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:167
+msgid "Configuration"
+msgstr "Configuration"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:169
+msgid "Only a valid JSON object is allowed. Eg. { \"option\": \"value\" }"
+msgstr "Seul un objet JSON valide est autorisé. P. ex. { \"option\": \"value\" }"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:46
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:48
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:49
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:63
+#: themes/wp-ogdch-theme/footer.php:86
+msgid "Organizations"
+msgstr "Organisations"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:50
+msgid "All Organizations"
+msgstr "Toutes les organisations"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:51
+msgid "Add New Organization"
+msgstr "Ajouter une organisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:53
+msgid "New Organization"
+msgstr "Nouvelle organisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:54
+msgid "Edit Organization"
+msgstr "Modifier l'organisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:55
+msgid "Update Organization"
+msgstr "Mettre à jour l'organisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:56
+msgid "View Organization"
+msgstr "Afficher l'organisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:57
+msgid "Search Organizations"
+msgstr "Rechercher les organisations"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:58
+msgid "No Organizations found"
+msgstr "Aucune organisation trouvée"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:59
+msgid "No Organizations found in Trash"
+msgstr "Aucune organisation trouvée dans la corbeille"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:64
+msgid "Organizations which get synced with CKAN"
+msgstr "Organisation synchronisées avec CKAN"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:122
+msgid "Organization Information"
+msgstr "Informations relatives à l'organisation"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:145
+msgid "Parent Organization"
+msgstr "Organisation parent"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:151
+msgid "Parent"
+msgstr "Parent"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:154
+msgid "None - top level"
+msgstr "Aucune - niveau le plus élevé"
+
+#: plugins/wp-ckan-backend/post-types/ckan-backend-local-organisation.php:161
+msgid "Organization Image"
+msgstr "Image de l'organisation"
+
+#: plugins/wp-ckan-backend/sync/ckan-backend-sync-abstract.php:86
+msgid "CKAN Sync aborted! Please provide a title."
+msgstr "Synchronisation CKAN interrompue! Veuillez fournir un titre."
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:25
+msgid "Irregular"
+msgstr "Irrégulier"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:26
+msgid "Continuous"
+msgstr "Continu"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:28
+msgid "Three times a week"
+msgstr "3 fois par semaine"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:29
+msgid "Semi weekly"
+msgstr "2 fois par semaine"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:31
+msgid "Three times a month"
+msgstr "3 fois par mois"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:33
+msgid "Semimonthly"
+msgstr "2 fois par mois"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:35
+msgid "Bimonthly"
+msgstr "Tous les 2 mois"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:36
+msgid "Quarterly"
+msgstr "1 fois par trimestre"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:37
+msgid "Three times a year"
+msgstr "3 fois par an"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:38
+msgid "Semi Annual"
+msgstr "2 fois par an"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:39
+msgid "Annual"
+msgstr "1 fois par an"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:40
+msgid "Biennial"
+msgstr "Tous les 2 ans"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-frequency.php:41
+msgid "Triennial"
+msgstr "Tous les 3 ans"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:27
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:45
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "Keywords (%s)"
+msgstr "Mots-clés (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:28
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "Keyword (%s)"
+msgstr "Mots-clés (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:29
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "All Keywords (%s)"
+msgstr "Tous les mots-clés (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:30
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "Edit Keywords (%s)"
+msgstr "Modifier les mots-clés (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:31
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "View Keyword (%s)"
+msgstr "Afficher les mots-clés (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:32
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "Update Keyword (%s)"
+msgstr "Mettre à jour les mots-clés (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:33
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "Add New Keyword (%s)"
+msgstr "Ajouter un mot-clé (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:34
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "New Keyword Name (%s)"
+msgstr "Nom du nouveau mot-clé (%s)"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-keyword.php:47
+#, php-format
+msgctxt "%s contains the language of this keyword."
+msgid "Keywords (%s) for CKAN datasets"
+msgstr "Mots-clés (%s) pour les jeux de données CKAN"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:30
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:48
+msgid "Formats"
+msgstr "Formats"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:32
+msgid "All Formats"
+msgstr "Tous les formats"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:33
+msgid "Edit Formats"
+msgstr "Modifier les formats"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:34
+msgid "View Format"
+msgstr "Afficher le format"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:35
+msgid "Update Format"
+msgstr "Mettre à jour le format"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:36
+msgid "Add New Format"
+msgstr "Ajouter un format"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:37
+msgid "New Format Name"
+msgstr "Nom du nouveau format"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-mediatype.php:50
+msgid "Formats for CKAN datasets"
+msgstr "Formats des jeux de données CKAN"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:25
+msgid "* Non-commercial Allowed / Commercial Allowed / Reference Not Required"
+msgstr "*non commercial autorisé / commercial autorisé / référence non requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:26
+msgid "* Non-commercial Allowed / Commercial Allowed / Reference Required"
+msgstr "* non commercial autorisé / commercial autorisé / référence requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:27
+msgid ""
+"* Non-commercial Allowed / Commercial With Permission Allowed / Reference "
+"Not Required"
+msgstr "* non commercial autorisé / commercial avec autorisation autorisé / référence non requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:28
+msgid ""
+"* Non-commercial Allowed / Commercial With Permission Allowed / Reference "
+"Required"
+msgstr "* non commercial autorisé / commercial avec autorisation autorisé / référence requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:29
+msgid ""
+"Non-commercial Allowed / Commercial Not Allowed / Reference Not Required"
+msgstr "Non commercial autorisé / commercial interdit / référence non requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:30
+msgid "Non-commercial Allowed / Commercial Not Allowed / Reference Required"
+msgstr "Non commercial autorisé / commercial interdit / référence requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:31
+msgid ""
+"Non-commercial Not Allowed / Commercial Not Allowed / Reference Not Required"
+msgstr "Non commercial interdit / commercial interdit / référence non requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:32
+msgid ""
+"Non-commercial Not Allowed / Commercial Not Allowed / Reference Required"
+msgstr "Non commercial interdit / commercial interdit / référence requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:33
+msgid ""
+"Non-commercial Not Allowed / Commercial Allowed / Reference Not Required"
+msgstr "Non commercial interdit / commercial autorisé / référence non requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:34
+msgid "Non-commercial Not Allowed / Commercial Allowed / Reference Required"
+msgstr "Non commercial interdit / commercial autorisé / référence requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:35
+msgid ""
+"Non-commercial Not Allowed / Commercial With Permission Allowed / Reference "
+"Not Required"
+msgstr "Non commercial interdit / commercial avec autorisation autorisé / référence non requise"
+
+#: plugins/wp-ckan-backend/taxonomies/ckan-backend-rights.php:36
+msgid ""
+"Non-commercial Not Allowed / Commercial With Permission Allowed / Reference "
+"Required"
+msgstr "Non commercial interdit / commercial avec autorisation autorisé / référence non requise"
+
+#: plugins/wp-app-showcase/post-types/app.php:34
+#: plugins/wp-app-showcase/post-types/app.php:36
+#: plugins/wp-app-showcase/post-types/app.php:37
+#: plugins/wp-app-showcase/post-types/app.php:50
+#: themes/wp-ogdch-theme/footer.php:87
+msgid "Applications"
+msgstr "Applications"
+
+#: plugins/wp-app-showcase/post-types/app.php:35
+#: themes/wp-ogdch-theme/footer.php:40
+msgid "Application"
+msgid_plural "Applications"
+msgstr[0] "Application"
+msgstr[1] "Applications"
+
+#: plugins/wp-app-showcase/post-types/app.php:38
+msgid "All Applications"
+msgstr "Toutes les applications"
+
+#: plugins/wp-app-showcase/post-types/app.php:39
+msgid "Add New Application"
+msgstr "Ajouter une application"
+
+#: plugins/wp-app-showcase/post-types/app.php:41
+msgid "New Application"
+msgstr "Nouvelle application"
+
+#: plugins/wp-app-showcase/post-types/app.php:42
+msgid "Edit Application"
+msgstr "Modifier l'application"
+
+#: plugins/wp-app-showcase/post-types/app.php:43
+msgid "Update Application"
+msgstr "Mettre à jour l'application"
+
+#: plugins/wp-app-showcase/post-types/app.php:44
+msgid "View Application"
+msgstr "Afficher l'application"
+
+#: plugins/wp-app-showcase/post-types/app.php:45
+msgid "Search Applications"
+msgstr "Rechercher les applications"
+
+#: plugins/wp-app-showcase/post-types/app.php:46
+msgid "No Applications found"
+msgstr "Aucune application trouvée"
+
+#: plugins/wp-app-showcase/post-types/app.php:47
+msgid "No Applications found in Trash"
+msgstr "Aucune application trouvée dans la corbeille"
+
+#: plugins/wp-app-showcase/post-types/app.php:51
+msgid "The Application directory"
+msgstr "Répertoire de applications"
+
+#: plugins/wp-app-showcase/post-types/app.php:98
+msgid "Application Information"
+msgstr "Informations relatives à l'application"
+
+#: plugins/wp-app-showcase/post-types/app.php:107
+msgid "Landing page"
+msgstr "Landing Page"
+
+#: plugins/wp-app-showcase/post-types/app.php:120
+msgid "Author Name"
+msgstr "Nom de l'auteur"
+
+#: plugins/wp-app-showcase/post-types/app.php:130
+msgid "Author Email"
+msgstr "Courriel de l'auteur"
+
+#: themes/wp-ogdch-theme/404.php:8
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:314
+msgid "Page not found"
+msgstr "La page est introuvable."
+
+#: themes/wp-ogdch-theme/404.php:17
+msgid ""
+"Ooops... The page you're looking for isn't available. Here is a cool space "
+"shuttle to make you feel better!"
+msgstr "Ooops... La page que vous recherchez n'est pas disponible. Voici une navette spatiale pour vous remonter le moral! "
+
+#: themes/wp-ogdch-theme/_missing_translations.php:15
+msgctxt "Valid date format applied in Ninja forms"
+msgid "d.m.Y"
+msgstr "d.m.Y"
+
+#: themes/wp-ogdch-theme/_missing_translations.php:16
+msgid "CHF"
+msgstr "CHF"
+
+#: themes/wp-ogdch-theme/_missing_translations.php:17
+msgid ""
+"Fields marked with an <span class=\"ninja-forms-req-symbol\">*</span> are "
+"required"
+msgstr "Les champs assortis du symbole <span class=\"ninja-forms-req-symbol\">*</span> doivent être complétés."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:18
+msgid "<strong>*</strong>"
+msgstr "<strong>*</strong>"
+
+#: themes/wp-ogdch-theme/_missing_translations.php:19
+msgid "Please ensure all required fields are completed."
+msgstr "Veuillez contrôler que tous les champs obligatoires ont été complétés."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:20
+msgid "This is a required field"
+msgstr "Ce champ doit être complété."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:21
+msgid "Please answer the anti-spam question correctly."
+msgstr "Veuillez répondre correctement à la question antispam."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:22
+msgid "Please leave the spam field blank."
+msgstr "Veuillez ne rien inscrire dans le champ spam."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:23
+msgid "Please wait to submit the form."
+msgstr "Veuillez attendre pour soumettre le formulaire."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:24
+msgid "You cannot submit the form without Javascript enabled."
+msgstr "Vous devez activer Javascript pour soumettre le formulaire."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:25
+msgid "Please enter a valid email address."
+msgstr "Veuillez saisir une adresse mail valide."
+
+#: themes/wp-ogdch-theme/_missing_translations.php:26
+msgid "Processing"
+msgstr "Traitement en cours"
+
+#: themes/wp-ogdch-theme/_missing_translations.php:27
+msgid "The passwords provided do not match."
+msgstr "Les mots de passe saisis ne sont pas identiques."
+
+#: themes/wp-ogdch-theme/archive-app.php:19
+msgid "What applications are there?"
+msgstr "Quelles applications ont vu le jour ?"
+
+#: themes/wp-ogdch-theme/archive-app.php:20
+msgid ""
+"Here you will find a list of applications created using data from "
+"opendata.swiss. They simplify the task of viewing information and so make it"
+" accessible to a wide audience. Have you developed an application? Please "
+"contact us."
+msgstr "Vous trouverez sur cette page une liste d’applications créées à partir des données du portail opendata.swiss. Elles permettent d’appréhender l’information plus facilement et contribuent donc à la démocratiser. Vous avez développé une application ? N’hésitez pas à nous contacter ! "
+
+#: themes/wp-ogdch-theme/archive-app.php:21
+#: themes/wp-ogdch-theme/footer.php:50
+#: themes/wp-ogdch-theme/front-page.php:108
+msgid "I have developed an application"
+msgstr "J’ai développé une application"
+
+#: themes/wp-ogdch-theme/archive-app.php:34
+#, php-format
+msgctxt "%s contains the number of applications."
+msgid "%s application"
+msgid_plural "%s applications"
+msgstr[0] "%s application"
+msgstr[1] "%s applications"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:19
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:22
+#, php-format
+msgctxt "%s contains singular name of the post type."
+msgid "%s updated."
+msgstr "%s mis à jour"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:20
+msgid "Custom field updated."
+msgstr "Champ personnalisé est mis à jour."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:21
+msgid "Custom field deleted."
+msgstr "Champ personnalisé est supprimé."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:24
+#, php-format
+msgctxt ""
+"%1$s contains singular name of the post type. %2$s contains revision title."
+msgid "%1$s restored to revision from %2$s"
+msgstr "%1$s restoré à la révision du %2$s"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:25
+#, php-format
+msgctxt "%s contains singular name of the post type."
+msgid "%s published."
+msgstr "%s publiés"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:26
+#, php-format
+msgctxt "%s contains singular name of the post type."
+msgid "%s saved."
+msgstr "%s sauvegardés"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:27
+#, php-format
+msgctxt "%s contains singular name of the post type."
+msgid "%s submitted."
+msgstr "%s soumis"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:28
+#, php-format
+msgctxt ""
+"%1$s contains singular name of the post type. %2$s contains planed "
+"publishing date and time."
+msgid "%1$s scheduled for: <strong>%2$s</strong>."
+msgstr "%1$s agendé pour: <strong>%2$s</strong>."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:28
+msgid "M j, Y @ G:i"
+msgstr "d.m.Y @ H:s"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:29
+#, php-format
+msgctxt "%s contains singular name of the post type."
+msgid "%s draft updated."
+msgstr "%s brouillon mis à jour."
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:35
+#, php-format
+msgctxt ""
+"%1$s contains url to view this post. %2$s contains singular name of the post"
+" type."
+msgid " <a href=\"%1$s\">View %2$s</a>"
+msgstr " <a href=\"%1$s\">afficher %2$s</a>"
+
+#: themes/wp-ogdch-theme/assets/php/backend/cpt_messages.php:41
+#, php-format
+msgctxt ""
+"%1$s contains url to preview this post. %2$s contains singular name of the "
+"post type."
+msgid " <a target=\"_blank\" href=\"%1$s\">Preview %2$s</a>"
+msgstr "<a target=\"_blank\" href=\"%1$s\">Aperçu %2$s</a>"
+
+#: themes/wp-ogdch-theme/assets/php/init.php:28
+msgid "Main-Navigation"
+msgstr "Menu principal"
+
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:130
+#: themes/wp-ogdch-theme/partials/app-entry.php:27
+msgid "Please activate wp-ckan-backend plugin"
+msgstr "Veuillez activer wp-ckan-backend plugin"
+
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:179
+msgid "Home"
+msgstr "Accueil"
+
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:285
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:287
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:289
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:293
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:295
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:298
+msgid "Archives"
+msgstr "Archives"
+
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:305
+msgid "Author"
+msgstr "Auteur"
+
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:308
+msgid "Page"
+msgstr "Page"
+
+#: themes/wp-ogdch-theme/assets/php/theme_functions.php:311
+msgid "Search results for:"
+msgstr "Résultats de la recherche pour:"
+
+#: themes/wp-ogdch-theme/footer.php:46
+msgid "How can you get involved?"
+msgstr "Comment participer ? "
+
+#: themes/wp-ogdch-theme/footer.php:49
+#: themes/wp-ogdch-theme/front-page.php:103
+msgid "I want to publish data"
+msgstr "Je souhaite publier des données"
+
+#: themes/wp-ogdch-theme/footer.php:78
+msgid "About"
+msgstr "A propos du portail"
+
+#: themes/wp-ogdch-theme/footer.php:79
+msgid "FAQ"
+msgstr "FAQ"
+
+#: themes/wp-ogdch-theme/footer.php:80
+msgid "Contact"
+msgstr "Contact"
+
+#: themes/wp-ogdch-theme/footer.php:85
+msgid "Data"
+msgstr "Données"
+
+#: themes/wp-ogdch-theme/footer.php:92
+msgid "Legal framework"
+msgstr "Mentions légales"
+
+#: themes/wp-ogdch-theme/footer.php:93
+msgid "API"
+msgstr "API"
+
+#: themes/wp-ogdch-theme/footer.php:94
+msgid "Sourcecode"
+msgstr "Code Source"
+
+#: themes/wp-ogdch-theme/footer.php:100
+msgid "A joint project of the Confederation and the cantons"
+msgstr "Un projet commun de la Confédération et des cantons"
+
+#: themes/wp-ogdch-theme/footer.php:101
+msgid ""
+"The opendata.swiss portal is a joint project of the Confederation, cantons, "
+"communes and other organizations with a mandate from the state. It makes "
+"open government data available to the general public in a central catalogue."
+" opendata.swiss is operated by the Swiss Federal Archives."
+msgstr "Le projet opendata.swiss est mené conjointement par la Confédération, les cantons, les communes et plusieurs organisations investies d’un mandat étatique. Administré par les Archives fédérales suisses, il met à la disposition du grand public un ensemble de données ouvertes de l’administration publique dans un catalogue central."
+
+#: themes/wp-ogdch-theme/front-page.php:8
+msgid ""
+"opendata.swiss is the portal for Swiss open government data (OGD). Here you "
+"can download Swiss government data free of charge. Enter a term of your "
+"choice in the search field or click on a category you are interested in."
+msgstr "opendata.swiss est le portail des données ouvertes de l’administration publique suisse (OGD). Celles-ci y sont accessibles gratuitement : il suffit d’entrer le terme de votre choix dans le champ de recherche ou de cliquer sur la catégorie voulue."
+
+#: themes/wp-ogdch-theme/front-page.php:9
+msgid "Learn more about opendata.swiss"
+msgstr "En savoir plus sur opendata.swiss "
+
+#: themes/wp-ogdch-theme/front-page.php:21
+msgid "Search datasets..."
+msgstr "Rechercher les jeux de données..."
+
+#: themes/wp-ogdch-theme/front-page.php:96
+msgid "Get involved"
+msgstr "Participer"
+
+#: themes/wp-ogdch-theme/front-page.php:101
+msgid "Data publisher"
+msgstr "Editeur des données"
+
+#: themes/wp-ogdch-theme/front-page.php:102
+msgid ""
+"Would you like to publish freely available data from your organization on "
+"opendata.swiss?"
+msgstr "Vous aimeriez publier des données en libre accès sur opendata.swiss ? "
+
+#: themes/wp-ogdch-theme/front-page.php:106
+msgid "Data user"
+msgstr "Utilisateur des données"
+
+#: themes/wp-ogdch-theme/front-page.php:107
+msgid ""
+"Have you developed an application using data from opendata.swiss? Please "
+"contact us."
+msgstr "Vous avez développé une application à partir de données d’opendata.swiss ? N’hésitez pas à nous contacter !"
+
+#: themes/wp-ogdch-theme/functions.php:17
+#: themes/wp-ogdch-theme/functions.php:41
+#, php-format
+msgctxt "%s contains path to file."
+msgid "Error locating %s for inclusion"
+msgstr "Erreur pendant l'importation de %s"
+
+#: themes/wp-ogdch-theme/header.php:29
+msgid "Toggle navigation"
+msgstr "Montrer/cacher le menu"
+
+#: themes/wp-ogdch-theme/header.php:46
+msgid "Search"
+msgstr "Rechercher"
+
+#: themes/wp-ogdch-theme/partials/app-entry.php:24
+msgid "Used datasets"
+msgstr "Jeux de données utilisés"
