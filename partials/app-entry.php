@@ -17,7 +17,7 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 	</div>
 	<div class="col-sm-9">
 		<?php the_title( '<h3>', '</h3>' ); ?>
-		<p class="small"><?php echo the_date(); ?> | <a href="mailto:<?php echo esc_attr( $author_email ); ?>"><?php echo esc_attr( $author_name ); ?></a> | <a href="<?php echo esc_url( $url ); ?>"><?php echo esc_url( $url ); ?></a></p>
+		<p class="small"><?php the_time( get_option( 'date_format' ) ); ?> | <a href="mailto:<?php echo esc_attr( $author_email ); ?>"><?php echo esc_attr( $author_name ); ?></a> | <a href="<?php echo esc_url( $url ); ?>" class="break-word"><?php echo esc_url( $url ); ?></a></p>
 		<p><?php the_content() ?></p>
 		<?php
 		if ( ! empty( $related_datasets ) ) {

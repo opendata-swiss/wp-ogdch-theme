@@ -91,7 +91,7 @@ $app_count = get_localized_post_count( 'app' );
 				<ul class="list-unstyled">
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'legal-framework' ) ); ?>"><?php esc_html_e( 'Legal framework', 'ogdch' ); ?></a></li>
 					<li><a href="http://docs.ckan.org/en/latest/api/index.html" target="_blank"><?php esc_html_e( 'API', 'ogdch' ); ?></a></li>
-					<li><a href="https://github.com/ogdch/ckanext-switzerland"><?php esc_html_e( 'Sourcecode', 'ogdch' ); ?></a></li>
+					<li><a href="https://github.com/opendata-swiss"><?php esc_html_e( 'Sourcecode', 'ogdch' ); ?></a></li>
 				</ul>
 			</div>
 		</div>
