@@ -6,14 +6,15 @@
 # Jürg Hunziker <juerg.hunziker@gmail.com>, 2016
 # Katherine Patula <katharine.patula@gs-edi.admin.ch>, 2016
 # Simon Meyer <simon.meyer@bar.admin.ch>, 2015-2016
+# Stefanie Taepke <s_t@me.com>, 2016
 # Stefan Oderbolz <oderbolz@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: opendata.swiss\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
 "POT-Creation-Date: 2015-12-14 15:38+0100\n"
-"PO-Revision-Date: 2016-01-18 08:54+0000\n"
-"Last-Translator: Jürg Hunziker <juerg.hunziker@gmail.com>\n"
+"PO-Revision-Date: 2016-05-03 14:21+0000\n"
+"Last-Translator: Stefanie Taepke <s_t@me.com>\n"
 "Language-Team: French (http://www.transifex.com/opendataswiss/opendata-swiss/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -525,7 +526,7 @@ msgstr "Supprimer la relation"
 msgid ""
 "Use the title 'legal_basis' to provide a link to the legal basis of this "
 "dataset."
-msgstr "Use the title 'base_légale' pour fournir un lien vers la base légale du jeu de données."
+msgstr "Use the title 'legal_basis' pour fournir un lien vers la base légale du jeu de données."
 
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-dataset.php:603
 #: plugins/wp-ckan-backend/post-types/ckan-backend-local-harvester.php:114
