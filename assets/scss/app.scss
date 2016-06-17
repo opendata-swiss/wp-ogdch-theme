@@ -60,6 +60,7 @@ p.small {
 }
 
 .dropdown-menu {
+  border: none;
   border-radius: $btn-border-radius-base;
 }
 
@@ -177,27 +178,28 @@ a.label-primary-gray:hover {
     margin: 0;
   }
   .navbar-brand img {
-    height: 100px;
+    height: 30px;
   }
   .navbar-toggle {
     margin-top: 30px;
   }
 
   @media (max-width: $grid-float-breakpoint) {
-    &.navbar {
-      min-height: 90px;
-    }
-    .navbar-brand {
-      height: auto;
-    }
-    .navbar-brand img {
-      height: 30px;
-    }
     .navbar-toggle {
       margin-top: 25px;
       margin-bottom: 25px;
       border-radius: $btn-border-radius-base;
     }
+  }
+  @media (max-width: $screen-md-max) and (min-width: $screen-md-min) {
+    .nav > li > a {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .dropdown-menu > li > a {
+    line-height: 2;
   }
 }
 
