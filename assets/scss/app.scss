@@ -480,6 +480,10 @@ li.dataset-item {
   }
 }
 
+#discourse-embed-frame {
+  min-height: 50px;
+}
+
 // Organization list
 #organizations-list {
   li {
