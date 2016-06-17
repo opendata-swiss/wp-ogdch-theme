@@ -7,3 +7,6 @@
 [submodule "assets/external/FitText.js"]
 	path = assets/external/FitText.js
 	url = https://github.com/davatron5000/FitText.js.git
+[submodule "assets/external/wp-bootstrap-navwalker"]
+	path = assets/external/wp-bootstrap-navwalker
+	url = https://github.com/twittem/wp-bootstrap-navwalker.git
