@@ -32,8 +32,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
-				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo.svg" onerror="this.onerror=null;this.src='<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo.png'" class="navbar-brand-image hidden-xs hidden-sm " alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
-				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.svg" onerror="this.onerror=null;this.src='<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.png'" class="navbar-brand-image hidden-md hidden-lg " alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
+				<img src="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.svg" onerror="this.onerror=null;this.src='<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/assets/images/logo_horizontal.png'" class="navbar-brand-image" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" />
 			</a>
 		</div>
 
@@ -42,8 +41,11 @@
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'main_navigation',
-				'menu_class'     => 'nav navbar-nav navbar-right',
-				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s<li class="search"><a href="' . esc_url( get_page_link_by_slug( 'dataset' ) ) . '" title="' . __( 'Search', 'ogdch' ) . '"><i class="fa fa-search" aria-hidden="true"></i></a></li></ul>',
+				'depth' => 2,
+				'menu_class' => 'nav navbar-nav navbar-right',
+				'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li class="search"><a href="' . esc_url( get_page_link_by_slug( 'dataset' ) ) . '" title="' . __( 'Search', 'ogdch' ) . '"><i class="fa fa-search" aria-hidden="true"></i></a></li></ul>',
+				'walker' => new wp_bootstrap_navwalker(),
+				'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
 			) );
 			?>
 		</div><!-- /.navbar-collapse -->
