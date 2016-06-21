@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
-    minifycss = require('gulp-minify-css'),
+    sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify');
 
@@ -20,12 +20,12 @@ gulp.task('sass', function() {
     return sass('./assets/scss/app.scss', {
         noCache: true,
         style: "compressed",
+        sourcemap: true,
         lineNumbers: false,
         loadPath: './assets/scss/*'
     })
-        .pipe(minifycss())
         .pipe(autoprefixer('last 2 version'))
-        .pipe(concat('app.css'))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./assets/css'))
         .pipe(notify({ message: 'Styles task complete' }));
 });

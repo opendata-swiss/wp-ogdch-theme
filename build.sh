@@ -13,4 +13,4 @@ php composer.phar install
 $DIR/bin/phpcs --config-set installed_paths $DIR/vendor/wp-coding-standards/wpcs
 
 # Check code style
-$DIR/bin/phpcs -p --ignore=css,js,*/vendor/*,*/tests/* --report-width=100 --standard=$DIR/code_standard.xml $DIR
+$DIR/bin/phpcs -p --ignore=css,js,*/vendor/*,*/tests/*,*/assets/external/* --report-width=100 --standard=$DIR/code_standard.xml $DIR

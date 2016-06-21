@@ -10,6 +10,7 @@ $frontend_includes = array(
 	'assets/php/scripts.php',
 	'assets/php/theme_functions.php',
 	'assets/php/multilingual_ninjaforms.php',
+	'assets/external/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php',
 );
 
 foreach ( $frontend_includes as $file ) {

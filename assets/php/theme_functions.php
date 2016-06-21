@@ -159,15 +159,20 @@ function get_tweet_count() {
 }
 
 /**
- * This function is just a workaround as long as the wrong translated thousand separator in WordPress is wrong.
+ * This function is just a workaround as long as the translated thousand separator (for de_CH) in WordPress is wrong.
  *
  * @param int $number   The number to convert based on locale.
  * @param int $decimals Optional. Precision of the number of decimal places. Default 0.
  *
  * @return string Converted number in string format.
  */
-function number_format_de( $number, $decimals = 0 ) {
-	return number_format( $number, absint( $decimals ), ',', "'" );
+function ogdch_number_format_i18n( $number, $decimals = 0 ) {
+	if ( 'de' === get_current_language() ) {
+		global $wp_locale;
+		return number_format( $number, absint( $decimals ), $wp_locale->number_format['decimal_point'], "'" );
+	} else {
+		return number_format_i18n( $number, absint( $decimals ) );
+	}
 }
 
 /**
