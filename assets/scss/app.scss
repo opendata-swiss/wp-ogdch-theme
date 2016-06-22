@@ -192,6 +192,8 @@ a.label-primary-gray:hover {
     }
   }
   @media (max-width: $screen-md-max) and (min-width: $screen-md-min) {
+    font-size: 18px;
+
     .nav > li > a {
       padding-left: 10px;
       padding-right: 10px;
