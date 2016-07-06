@@ -104,7 +104,7 @@ $app_count = get_localized_post_count( 'app' );
 		<div id="logos" class="row top-buffer">
 			<div class="col-xs-12">
 				<img class="logo-confederation" src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />
-				<img class="logo-egovernment" src="/content/themes/wp-ogdch-theme/assets/images/logo-egovernment.png" />
+				<img class="logo-egovernment" src="/content/themes/wp-ogdch-theme/assets/images/logo-tf-egovernment-<?php echo esc_attr( get_current_language() ); ?>.png" />
 			</div>
 		</div>
 	</div>
