@@ -378,12 +378,31 @@ a.label-primary-gray:hover {
   span {
     margin-left: 3px;
   }
+  .nav>li>a {
+    border-left: 2px solid transparent;
+    padding: 5px 10px;
+  }
   .nav>li>a:focus, .nav>li>a:hover, .nav>li.active>a {
     color: $link-color;
+    border-left-color: $brand-primary;
     background-color: $gray-lighter;
   }
-  .nav>li>a {
-    padding: 5px 10px;
+  .nav>li>a:focus, .nav>li>a:hover, .nav>li.active>a {
+    &::after {
+      content: '+';
+      float: right;
+      color: #fff;
+      background-color: $brand-primary;
+      border-radius: 18px;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+  .nav>li.active>a::after {
+    content: '\d7';
   }
   .res_rights {
     img {
