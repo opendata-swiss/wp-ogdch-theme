@@ -410,6 +410,10 @@ a.label-primary-gray:hover {
     }
   }
 }
+.reset-search {
+  display: block;
+  text-align: right;
+}
 
 .facet-collapse {
   @media (min-width: $grid-float-breakpoint) {
