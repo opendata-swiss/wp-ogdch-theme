@@ -408,6 +408,9 @@ a.label-primary-gray:hover {
     img {
       height: 50px;
     }
+    &.nav>li>a:focus::after, &.nav>li>a:hover::after, &.nav>li.active>a::after {
+      margin-top: 16px;
+    }
   }
 }
 .reset-search {
