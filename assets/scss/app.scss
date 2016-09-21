@@ -76,6 +76,9 @@ p.small {
     box-shadow: none;
   }
 }
+.form-control-feedback {
+  color: $text-color;
+}
 .has-error .form-control:focus {
   box-shadow: none;
 }
