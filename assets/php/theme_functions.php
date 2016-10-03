@@ -92,6 +92,7 @@ function get_localized_post_count( $post_type ) {
 	$args  = array(
 		'post_type'      => $post_type,
 		'posts_per_page' => - 1,
+		'post_status' => 'publish',
 	);
 	$posts = new WP_Query( $args );
 
