@@ -1,11 +1,5 @@
-/*
- to install dependencies:
- > cd ogdch.dev/content/themes/ogdch/
- > sudo npm install
- */
-
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     watch = require('gulp-watch'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
@@ -17,17 +11,15 @@ var gulp = require('gulp'),
 gulp.task('default', function(){});
 
 gulp.task('sass', function() {
-    return sass('./assets/scss/app.scss', {
-        noCache: true,
-        style: "compressed",
-        sourcemap: true,
-        lineNumbers: false,
-        loadPath: './assets/scss/*'
-    })
+    return gulp.src('./assets/scss/app.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./assets/css'))
-        .pipe(notify({ message: 'Styles task complete' }));
+        .pipe(notify({message: 'Styles task complete', onLast: true}));
 });
 
 gulp.task('app-scripts', function() {
@@ -39,7 +31,7 @@ gulp.task('app-scripts', function() {
         .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/js'))
-        .pipe(notify({ message: 'App scripts task complete' }));
+        .pipe(notify({ message: 'App scripts task complete', onLast: true }));
 });
 
 gulp.task('organization-filter-scripts', function() {
@@ -49,7 +41,7 @@ gulp.task('organization-filter-scripts', function() {
         .pipe(concat('organization-filter.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/js'))
-        .pipe(notify({ message: 'Organization filter scripts task complete' }));
+        .pipe(notify({ message: 'Organization filter scripts task complete', onLast: true }));
 });
 
 gulp.task('scripts', [ 'app-scripts', 'organization-filter-scripts' ]);
