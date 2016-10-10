@@ -30,7 +30,7 @@ gulp.task('sass', function() {
         .pipe(notify({ message: 'Styles task complete' }));
 });
 
-gulp.task('scripts', function() {
+gulp.task('app-scripts', function() {
     return gulp.src([
         './assets/external/bootstrap-sass/assets/javascripts/bootstrap.js',
         './assets/external/FitText.js/jquery.fittext.js',
@@ -39,9 +39,20 @@ gulp.task('scripts', function() {
         .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./assets/js'))
-        .pipe(notify({ message: 'Scripts task complete' }));
+        .pipe(notify({ message: 'App scripts task complete' }));
 });
 
+gulp.task('organization-filter-scripts', function() {
+    return gulp.src([
+        './assets/js/organization-filter.js'
+    ])
+        .pipe(concat('organization-filter.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./assets/js'))
+        .pipe(notify({ message: 'Organization filter scripts task complete' }));
+});
+
+gulp.task('scripts', [ 'app-scripts', 'organization-filter-scripts' ]);
 
 gulp.task('watch', function() {
     gulp.watch('./assets/scss/**/*.scss', ['sass'] );
