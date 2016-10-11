@@ -19,7 +19,7 @@ gulp.task('sass', function() {
         .pipe(autoprefixer('last 2 version'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./assets/css'))
-        .pipe(notify({message: 'Styles task complete', onLast: true}));
+        .pipe(notify({ message: 'Styles task complete', onLast: true }));
 });
 
 gulp.task('app-scripts', function() {
