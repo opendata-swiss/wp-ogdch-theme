@@ -124,4 +124,10 @@ $(function() {
     searchBox.on('keypress', onChange);
     searchBox.change(onChange);
     updateSearch(searchBox.val());
+
+    // prevent the submission of the search-query as it filters the original result
+    $('#organization-search-form').submit(function(e){
+        e.preventDefault();
+    });
+
 });
