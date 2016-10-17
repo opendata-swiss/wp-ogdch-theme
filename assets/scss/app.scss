@@ -527,6 +527,36 @@ li.dataset-item {
   }
 }
 
+// Organization list filter styles
+.organization-hierarchy {
+  li.organization {
+    display: none;
+    &.childmatch {
+      display: list-item;
+    }
+    &.match {
+      display: list-item;
+      .organization-row {
+        .highlight {
+          background-color: $brand-highlight;
+        }
+      }
+    }
+  }
+  &.empty-search {
+    li.organization {
+      display: list-item;
+      .organization-row {
+        a {
+          .highlight {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Organization Detail
 .description img.logo {
   display: block;
