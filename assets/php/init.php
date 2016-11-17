@@ -37,8 +37,8 @@ function theme_setup() {
 	add_theme_support( 'title-tag' );
 
 	//check if constants are defined in wp config
-	if ( ! defined( "CKAN_API_ENDPOINT" ) ) {
-		wp_die( "Please define CKAN_API_ENDPOINT in your WP config." );
+	if ( ! defined( 'CKAN_API_ENDPOINT' ) ) {
+		wp_die( 'Please define CKAN_API_ENDPOINT in your WP config.' );
 		return;
 	}
 
