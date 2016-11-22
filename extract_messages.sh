@@ -1,18 +1,11 @@
 #!/bin/bash
 
 HERE=`dirname $0`
-(cd "$HERE/../../" && \
-find "plugins/wp-ckan-backend" \
-     "plugins/wp-app-showcase" \
-     "themes/wp-ogdch-theme" \
-     -not -path "themes/wp-ogdch-theme/vendor/*" \
-     -not -path "themes/wp-ogdch-theme/bin/*" \
-     -not -path "themes/wp-ogdch-theme/node_modules/*" \
-     -not -path "themes/wp-ogdch-theme/assets/external/*" \
-     -not -path "plugins/wp-ckan-backend/vendor/*" \
-     -not -path "plugins/wp-ckan-backend/bin/*" \
-     -not -path "plugins/wp-app-showcase/vendor/*" \
-     -not -path "plugins/wp-app-showcase/bin/*" \
+( find $HERE \
+     -not -path "vendor/*" \
+     -not -path "bin/*" \
+     -not -path "node_modules/*" \
+     -not -path "assets/external/*" \
      -type f -iregex .*php$ \
      | xargs xgettext --language=PHP --from-code=UTF-8 --no-wrap --foreign-user --package-name="wp-ogdch-theme" --package-version=1.0.0 --msgid-bugs-address=jazz@liip.ch \
      --keyword=__ \
@@ -33,5 +26,5 @@ find "plugins/wp-ckan-backend" \
      --keyword=esc_html__ \
      --keyword=esc_html_e \
      --keyword=esc_html_x:1,2c \
-     -o "themes/wp-ogdch-theme/languages/wp-ogdch-theme.pot" -
+     -o "languages/wp-ogdch-theme.pot" -
 )

@@ -5,7 +5,7 @@
  *
  * 1. Load Textdomain
  * 2. Register Menus
- * 3. Add Support for WP-Features
+ * 3. Add Support for WP-Features & check config
  * 4. Register Image sizes
  * 5. Increase Image quality
  * 6. Disable Emoji
@@ -35,6 +35,12 @@ function theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	// generate title tag in <head>
 	add_theme_support( 'title-tag' );
+
+	//check if constants are defined in wp config
+	if ( ! defined( 'CKAN_API_ENDPOINT' ) ) {
+		wp_die( 'Please define CKAN_API_ENDPOINT in your WP config.' );
+		return;
+	}
 
 	// =======================================================================//
 	// Custom Image Sizes
