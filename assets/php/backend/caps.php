@@ -1,46 +1,8 @@
 <?php
 /**
- * Add capabilities and roles used in this theme
+ * Initialize roles used in this theme
  */
-function add_theme_caps() {
-	$post_types = array(
-		'datasets',
-		'groups',
-		'organisations',
-		'apps',
-		'harvesters',
-	);
-	$taxonomies = array(
-		'keywords',
-		'mediatypes',
-	);
-	// Add all capabilities of plugin to administrator role (save in database) to make them visible in backend.
-	$admin_role = get_role( 'administrator' );
-	if ( is_object( $admin_role ) ) {
-		foreach ( $post_types as $post_type ) {
-			$admin_role->add_cap( 'edit_' . $post_type );
-			$admin_role->add_cap( 'edit_others_' . $post_type );
-			$admin_role->add_cap( 'publish_' . $post_type );
-			$admin_role->add_cap( 'read_private_' . $post_type );
-			$admin_role->add_cap( 'delete_' . $post_type );
-			$admin_role->add_cap( 'delete_private_' . $post_type );
-			$admin_role->add_cap( 'delete_published_' . $post_type );
-			$admin_role->add_cap( 'delete_others_' . $post_type );
-			$admin_role->add_cap( 'edit_private_' . $post_type );
-			$admin_role->add_cap( 'edit_published_' . $post_type );
-			$admin_role->add_cap( 'create_' . $post_type );
-		}
-		foreach ( $taxonomies as $taxonomy ) {
-			$admin_role->add_cap( 'manage_' . $taxonomy );
-			$admin_role->add_cap( 'edit_' . $taxonomy );
-			$admin_role->add_cap( 'delete_' . $taxonomy );
-			$admin_role->add_cap( 'assign_' . $taxonomy );
-		}
-
-		$admin_role->add_cap( 'edit_data_of_all_organisations' );
-		$admin_role->add_cap( 'edit_user_organisation' );
-	}
-
+function init_theme_roles() {
 	$datenlieferant_caps = array(
 		'read'                    => true,
 		'upload_files'            => true,
@@ -185,7 +147,7 @@ function disable_default_roles_members_plugin( $roles ) {
 }
 
 // Create OGD-CH roles on theme change
-add_action( 'after_switch_theme', 'add_theme_caps' );
+add_action( 'after_switch_theme', 'init_theme_roles' );
 
 // Disable default WordPress roles
 add_filter( 'editable_roles', 'disable_default_roles' );
