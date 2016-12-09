@@ -19,6 +19,14 @@ WordPress theme for OGD-CH
    $ npm install
    ```
 
+To check the code style, run the build script:
+
+```
+$ ./build.sh
+```
+
+This script runs on Travis CI as well for every push.
+
 ## Extract messages / Compile translation files
 
 Run the following script to extract messages from php-files and generate a new wp-ogdch-theme.pot file:
