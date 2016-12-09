@@ -1,5 +1,7 @@
 # wp-ogdch-theme
 
+[![Build Status](https://travis-ci.org/opendata-swiss/wp-ogdch-theme.svg?branch=master)](https://travis-ci.org/opendata-swiss/wp-ogdch-theme)
+
 WordPress theme for OGD-CH
 
 ## Development
