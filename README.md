@@ -1,5 +1,7 @@
 # wp-ogdch-theme
 
+[![Build Status](https://travis-ci.org/opendata-swiss/wp-ogdch-theme.svg?branch=master)](https://travis-ci.org/opendata-swiss/wp-ogdch-theme)
+
 WordPress theme for OGD-CH
 
 ## Development
@@ -18,6 +20,14 @@ WordPress theme for OGD-CH
    $ cd content/themes/ogdch/
    $ npm install
    ```
+
+To check the code style, run the build script:
+
+```
+$ ./build.sh
+```
+
+This script runs on Travis CI as well for every push.
 
 ## Extract messages / Compile translation files
 
