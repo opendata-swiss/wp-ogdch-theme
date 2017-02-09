@@ -3,6 +3,7 @@ $author_name      = get_post_meta( get_the_ID(), '_app-showcase-app_author_name'
 $author_email     = get_post_meta( get_the_ID(), '_app-showcase-app_author_email', true );
 $url              = get_post_meta( get_the_ID(), '_app-showcase-app_url', true );
 $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', true );
+global $post;
 ?>
 
 <div class="row">
@@ -17,7 +18,7 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 	</div>
 	<div class="col-sm-9">
 		<?php the_title( '<h3>', '</h3>' ); ?>
-		<p class="small"><?php the_time( get_option( 'date_format' ) ); ?> | <a href="mailto:<?php echo esc_attr( $author_email ); ?>"><?php echo esc_attr( $author_name ); ?></a> | <a href="<?php echo esc_url( $url ); ?>" class="break-word"><?php echo esc_url( $url ); ?></a></p>
+		<p class="small"><?php the_time( get_option( 'date_format' ) ); ?> | <a href="mailto:<?php echo esc_attr( $author_email ); ?>" data-tracked-origin="<?php echo esc_attr( $post->post_name ); ?>"><?php echo esc_attr( $author_name ); ?></a> | <a href="<?php echo esc_url( $url ); ?>" class="break-word piwik-tracked-app-url" data-tracked-origin="<?php echo esc_attr( $post->post_name ); ?>"><?php echo esc_url( $url ); ?></a></p>
 		<p><?php the_content() ?></p>
 		<?php
 		if ( ! empty( $related_datasets ) ) {
@@ -31,7 +32,7 @@ $related_datasets = get_post_meta( get_the_ID(), '_app-showcase-app_relations', 
 					$dataset = Ckan_Backend_Helper::get_dataset( $related_dataset['dataset_id'], false );
 					if ( $dataset ) {
 						$dataset_title = Ckan_Backend_Helper::get_localized_text( $dataset['title'] );
-						echo '<li><a href="' . esc_attr( get_page_link_by_slug( 'dataset/' . $dataset['name'] ) ) . '">' . esc_html( $dataset_title ) . '</a></li>';
+						echo '<li><a href="' . esc_attr( get_page_link_by_slug( 'dataset/' . $dataset['name'] ) ) . '" class="piwik-tracked-app-related-dataset" data-tracked-origin="' . esc_attr( $post->post_name ) . '">' . esc_html( $dataset_title ) . '</a></li>';
 					} else {
 						echo '<li>' . esc_html( $related_dataset['dataset_id'] ) . '</li>';
 					}
