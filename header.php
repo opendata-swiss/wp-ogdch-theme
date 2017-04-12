@@ -21,6 +21,25 @@
 
 <body <?php body_class(); ?>>
 
+<?php
+$banner_active = ( 'on' === ogdch_get_option( 'banner_active' ) );
+$banner_title = ogdch_get_localized_option( 'banner_title' );
+$banner_text = ogdch_get_localized_option( 'banner_text' );
+?>
+
+<?php if ( $banner_active ) : ?>
+<div class="alert alert-info" role="alert">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 class="h4"><?php echo esc_html( $banner_title ); ?></h2>
+				<p><?php echo esc_html( $banner_text ); ?></p>
+			</div>
+		</div>
+	</div>
+</div>
+<?php endif ?>
+
 <nav class="navbar navbar-default" id="main-navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->

@@ -51,6 +51,11 @@ function theme_setup() {
 	add_filter( 'jpeg_quality', 'image_full_quality' );
 	add_filter( 'wp_editor_set_quality', 'image_full_quality' );
 	add_action( 'init', 'disable_emojis' );
+
+	// =======================================================================//
+	// Theme options
+	// =======================================================================//
+	ogdch_theme_options();
 }
 
 // =======================================================================//
