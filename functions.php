@@ -9,6 +9,7 @@ $frontend_includes = array(
 	'assets/php/cleanup.php',
 	'assets/php/scripts.php',
 	'assets/php/theme_functions.php',
+	'assets/php/theme_options.php',
 	'assets/php/multilingual_ninjaforms.php',
 	'assets/php/bootstrap_embed_responsive.php',
 	'assets/external/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php',
