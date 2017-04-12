@@ -322,3 +322,56 @@ function bootstrap_breadcrumb() {
 		echo '</ol>';
 	}
 }
+
+/**
+ * Wrapper function around cmb2_get_option
+ *
+ * @param  string $key     Options array key.
+ * @param  mixed  $default Optional default value.
+ * @return mixed           Option value
+ */
+function ogdch_get_option( $key = '', $default = null ) {
+	if ( function_exists( 'cmb2_get_option' ) ) {
+		// Use cmb2_get_option as it passes through some key filters.
+		return cmb2_get_option( ogdch_theme_options()->key, $key, $default );
+	}
+
+	// Fallback to get_option if CMB2 is not loaded yet.
+	$opts = get_option( ogdch_theme_options()->key, $key, $default );
+
+	$val = $default;
+
+	if ( 'all' === $key ) {
+		$val = $opts;
+	} elseif ( array_key_exists( $key, $opts ) && false !== $opts[ $key ] ) {
+		$val = $opts[ $key ];
+	}
+
+	return $val;
+}
+
+/**
+ * Get the localized value of an option key
+ *
+ * @param string $key Options array key.
+ * @return bool|mixed
+ */
+function ogdch_get_localized_option( $key ) {
+	global $language_priority;
+
+	// try to get the option in current language
+	$localized_option = ogdch_get_option( $key . '_' . get_current_language() );
+	if ( ! empty( $localized_option ) ) {
+		return $localized_option;
+	}
+
+	// use other languages as fallback
+	foreach ( $language_priority as $lang ) {
+		$localized_option = ogdch_get_option( $key . '_' . $lang );
+		if ( ! empty( $localized_option ) ) {
+			return $localized_option;
+		}
+	}
+
+	return false;
+}
