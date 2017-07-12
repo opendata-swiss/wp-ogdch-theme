@@ -38,5 +38,15 @@
         function trackEvent(action, origin, target) {
             _paq.push(['trackEvent', action, origin, target]);
         }
+
+        // only applies if we are looking at recline-view
+        if(!window.parent.ckan && $('#recline-viewer')) {
+            setTimeout(function () {
+                $('#recline-viewer .loading-spinner').hide();
+                var noResponseText = ($('#recline-viewer .left').data('noResponseText'));
+                $('#recline-viewer .left').text(noResponseText);
+                $('#recline-viewer .left').css('width', '1000px');
+            }, 30000);
+        }
     });
 })(jQuery);
