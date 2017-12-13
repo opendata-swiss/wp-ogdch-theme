@@ -14,6 +14,7 @@ function init_theme_roles() {
 		'read_private_datasets'   => true,
 		'assign_keywords'         => true,
 		'edit_posts'              => true, // this cap is used to edit attachment details
+		'harvester_dashboard'     => true,
 	);
 	init_role( 'datenlieferant', 'Datenlieferant', $datenlieferant_caps );
 
@@ -38,6 +39,7 @@ function init_theme_roles() {
 		'list_users'                   => true,
 		'edit_users'                   => true,
 		'promote_users'                => true,
+		'edit_user_organisation'       => true,
 	);
 	init_role( 'data_owner', 'Data Owner', $data_owner_caps );
 
