@@ -38,6 +38,7 @@ function init_theme_roles() {
 		'list_users'                   => true,
 		'edit_users'                   => true,
 		'promote_users'                => true,
+		'edit_user_organisation'       => true,
 	);
 	init_role( 'data_owner', 'Data Owner', $data_owner_caps );
 
