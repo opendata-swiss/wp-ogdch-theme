@@ -83,14 +83,14 @@ class OgdchThemeOptions {
 
 		foreach ( $language_priority as $lang ) {
 			$cmb->add_field(array(
-				'name' => __( 'Banner Title', 'ogdch' ) . ' ' . strtoupper( $lang ),
+				'name' => __( 'Banner Title', 'ogdch' ) . ' (' . strtoupper( $lang ) . ')',
 				'desc' => '',
 				'id' => 'banner_title_' . $lang,
 				'type' => 'text',
 				'default' => '',
 			));
 			$cmb->add_field(array(
-				'name' => __( 'Banner Text', 'ogdch' ) . ' ' . strtoupper( $lang ),
+				'name' => __( 'Banner Text', 'ogdch' ) . ' (' . strtoupper( $lang ) . ')',
 				'desc' => '',
 				'id' => 'banner_text_' . $lang,
 				'type' => 'textarea_small',
