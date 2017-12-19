@@ -33,7 +33,13 @@ $banner_text = ogdch_get_localized_option( 'banner_text' );
 		<div class="row">
 			<div class="col-xs-12">
 				<h2 class="h4"><?php echo esc_html( $banner_title ); ?></h2>
-				<p><?php echo esc_html( $banner_text ); ?></p>
+				<p>
+					<?php
+					// @codingStandardsIgnoreStart
+					echo nl2br( esc_html( $banner_text ) );
+					// @codingStandardsIgnoreEnd
+					?>
+				</p>
 			</div>
 		</div>
 	</div>

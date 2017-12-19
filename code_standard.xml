@@ -17,7 +17,6 @@
     </rule>
     <rule ref="Generic.WhiteSpace.DisallowSpaceIndent">
         <exclude-pattern>*/404.php</exclude-pattern>
-        <exclude-pattern>*/_missing_translations.php</exclude-pattern>
         <exclude-pattern>*/archive*.php</exclude-pattern>
         <exclude-pattern>*/index.php</exclude-pattern>
         <exclude-pattern>*/front-page.php</exclude-pattern>
@@ -31,7 +30,6 @@
     </rule>
     <rule ref="Squiz.Commenting.FileComment">
         <exclude-pattern>*/404.php</exclude-pattern>
-        <exclude-pattern>*/_missing_translations.php</exclude-pattern>
         <exclude-pattern>*/functions.php</exclude-pattern>
         <exclude-pattern>*/archive*.php</exclude-pattern>
         <exclude-pattern>*/index.php</exclude-pattern>
@@ -47,7 +45,6 @@
     </rule>
     <rule ref="Generic.WhiteSpace.ScopeIndent">
         <exclude-pattern>*/404.php</exclude-pattern>
-        <exclude-pattern>*/_missing_translations.php</exclude-pattern>
         <exclude-pattern>*/archive*.php</exclude-pattern>
         <exclude-pattern>*/index.php</exclude-pattern>
         <exclude-pattern>*/front-page.php</exclude-pattern>

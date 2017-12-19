@@ -333,11 +333,11 @@ function bootstrap_breadcrumb() {
 function ogdch_get_option( $key = '', $default = null ) {
 	if ( function_exists( 'cmb2_get_option' ) ) {
 		// Use cmb2_get_option as it passes through some key filters.
-		return cmb2_get_option( ogdch_theme_options()->key, $key, $default );
+		return cmb2_get_option( OgdchThemeOptions::KEY, $key, $default );
 	}
 
 	// Fallback to get_option if CMB2 is not loaded yet.
-	$opts = get_option( ogdch_theme_options()->key, $key, $default );
+	$opts = get_option( OgdchThemeOptions::KEY, $default );
 
 	$val = $default;
 
