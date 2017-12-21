@@ -23,6 +23,10 @@
             var origin = $(this).data().trackedOrigin || window.location.href;
             var target = $(this).attr('href');
             trackEvent('Download', origin, target);
+            var organization = $(this).data().organization || '';
+            var format = $(this).data().format || '';
+            var dataset = $(this).data().dataset || '';
+            trackOrganization(organization, 'Download', dataset, format)
         });
         $('a.piwik-tracked-app-url').on('click', function(e) {
             var origin = $(this).data().trackedOrigin || window.location.href;
@@ -39,6 +43,13 @@
             _paq.push(['trackEvent', action, origin, target]);
         }
 
+        function trackOrganization(category, action, name, value) {
+            //todo The ID of the dimension must exist as custom dimension in piwik (dimension2)
+            _paq.push(['trackEvent', category, action, name, {dimension2: category}]);
+        }
+
+
+
         // only applies if we are looking at recline-view
         if(!window.parent.ckan && $('#recline-viewer')) {
             setTimeout(function () {
@@ -50,3 +61,7 @@
         }
     });
 })(jQuery);
+
+
+
+
