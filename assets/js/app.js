@@ -43,9 +43,14 @@
             _paq.push(['trackEvent', action, origin, target]);
         }
 
-        function trackOrganization(category, action, name, value) {
-            //todo The ID of the dimension must exist as custom dimension in piwik (dimension2)
-            _paq.push(['trackEvent', category, action, name, {dimension2: category}]);
+        function trackOrganization(organization, action, dataset, format) {
+            //todo track view when dataset page is rendered
+            customDimensionDataset = {};
+            customDimensionDataset['dimension'+customDimensionActionDatasetId] = organization;
+            customDimensionFormat = {};
+            customDimensionFormat['dimension'+customDimensionActionFormatId] = organization;
+            _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
+            _paq.push(['trackEvent', 'click', action, format, '', customDimensionFormat]);
         }
 
 
@@ -61,7 +66,3 @@
         }
     });
 })(jQuery);
-
-
-
-
