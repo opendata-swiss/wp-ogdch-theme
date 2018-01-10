@@ -23,6 +23,10 @@
             var origin = $(this).data().trackedOrigin || window.location.href;
             var target = $(this).attr('href');
             trackEvent('Download', origin, target);
+            var organization = $(this).data().organization || '';
+            var format = $(this).data().format || '';
+            var dataset = $(this).data().dataset || '';
+            trackOrganization(organization, 'Download', dataset, format);
         });
         $('a.piwik-tracked-app-url').on('click', function(e) {
             var origin = $(this).data().trackedOrigin || window.location.href;
@@ -37,6 +41,19 @@
 
         function trackEvent(action, origin, target) {
             _paq.push(['trackEvent', action, origin, target]);
+        }
+
+        function trackOrganization(organization, action, dataset, format) {
+            if(customDimensionActionDatasetId) {
+                customDimensionDataset = {};
+                customDimensionDataset['dimension'+customDimensionActionDatasetId] = organization;
+                _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
+            }
+            if(customDimensionActionFormatId) {
+                customDimensionFormat = {};
+                customDimensionFormat['dimension'+customDimensionActionFormatId] = organization;
+                _paq.push(['trackEvent', 'download', action, format, '', customDimensionFormat]);
+            }
         }
 
         // only applies if we are looking at recline-view
