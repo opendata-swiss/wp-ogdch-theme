@@ -44,13 +44,14 @@
         }
 
         function trackOrganization(organization, action, dataset, format) {
-            //todo track view when dataset page is rendered
-            customDimensionDataset = {};
-            customDimensionDataset['dimension'+customDimensionActionDatasetId] = organization;
-            customDimensionFormat = {};
-            customDimensionFormat['dimension'+customDimensionActionFormatId] = organization;
-            _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
-            _paq.push(['trackEvent', 'click', action, format, '', customDimensionFormat]);
+            if(customDimensionActionDatasetId && customDimensionActionFormatId){
+                customDimensionDataset = {};
+                customDimensionDataset['dimension'+customDimensionActionDatasetId] = organization;
+                customDimensionFormat = {};
+                customDimensionFormat['dimension'+customDimensionActionFormatId] = organization;
+                _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
+                _paq.push(['trackEvent', 'click', action, format, '', customDimensionFormat]);
+            }
         }
 
         // only applies if we are looking at recline-view
