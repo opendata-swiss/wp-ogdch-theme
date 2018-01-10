@@ -26,7 +26,7 @@
             var organization = $(this).data().organization || '';
             var format = $(this).data().format || '';
             var dataset = $(this).data().dataset || '';
-            trackOrganization(organization, 'Download', dataset, format)
+            trackOrganization(organization, 'Download', dataset, format);
         });
         $('a.piwik-tracked-app-url').on('click', function(e) {
             var origin = $(this).data().trackedOrigin || window.location.href;
@@ -44,12 +44,12 @@
         }
 
         function trackOrganization(organization, action, dataset, format) {
-            if(customDimensionActionDatasetId){
+            if(customDimensionActionDatasetId) {
                 customDimensionDataset = {};
                 customDimensionDataset['dimension'+customDimensionActionDatasetId] = organization;
                 _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
             }
-            if(customDimensionActionFormatId){
+            if(customDimensionActionFormatId) {
                 customDimensionFormat = {};
                 customDimensionFormat['dimension'+customDimensionActionFormatId] = organization;
                 _paq.push(['trackEvent', 'download', action, format, '', customDimensionFormat]);
