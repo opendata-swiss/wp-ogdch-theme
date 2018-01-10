@@ -53,8 +53,6 @@
             _paq.push(['trackEvent', 'click', action, format, '', customDimensionFormat]);
         }
 
-
-
         // only applies if we are looking at recline-view
         if(!window.parent.ckan && $('#recline-viewer')) {
             setTimeout(function () {
