@@ -4,17 +4,24 @@
  */
 function init_theme_roles() {
 	$datenlieferant_caps = array(
-		'read'                    => true,
-		'upload_files'            => true,
-		'create_datasets'         => true,
-		'edit_datasets'           => true,
-		'edit_private_datasets'   => true,
-		'edit_published_datasets' => true,
-		'publish_datasets'        => true,
-		'read_private_datasets'   => true,
-		'assign_keywords'         => true,
-		'edit_posts'              => true, // this cap is used to edit attachment details
-		'harvester_dashboard'     => true,
+		'read'                         => true,
+		'upload_files'                 => true,
+		'create_datasets'              => true,
+		'edit_datasets'                => true,
+		'edit_private_datasets'        => true,
+		'edit_published_datasets'      => true,
+		'publish_datasets'             => true,
+		'read_private_datasets'        => true,
+		'edit_organisations'           => true,
+		'edit_private_organisations'   => true,
+		'edit_published_organisations' => true,
+		'read_private_organisations'   => true,
+		'assign_keywords'              => true,
+		'edit_posts'                   => true, // this cap is used to edit attachment details
+		'edit_others_posts'            => true, // this cap is used to edit attachment details
+		'delete_posts'                 => true, // this cap is used to delete attachments
+		'delete_others_posts'          => true, // this cap is used to delete attachments
+		'harvester_dashboard'          => true,
 	);
 	init_role( 'datenlieferant', 'Datenlieferant', $datenlieferant_caps );
 
@@ -40,29 +47,23 @@ function init_theme_roles() {
 		'edit_users'                   => true,
 		'promote_users'                => true,
 		'edit_organisation_users'      => true,
+		'harvester_dashboard'          => true,
 	);
 	init_role( 'data_owner', 'Data Owner', $data_owner_caps );
 
-	$organisationsverwaltung_caps = array(
-		'read'                         => true,
-		'upload_files'                 => true,
-		'create_datasets'              => true,
-		'edit_datasets'                => true,
-		'edit_private_datasets'        => true,
-		'edit_published_datasets'      => true,
-		'publish_datasets'             => true,
-		'read_private_datasets'        => true,
-		'edit_organisations'           => true,
-		'edit_private_organisations'   => true,
-		'edit_published_organisations' => true,
-		'read_private_organisations'   => true,
-		'assign_keywords'              => true,
-		'edit_posts'                   => true, // this cap is used to edit attachment details, (Without it we also can't access the list view)
-		'edit_others_posts'            => true, // this cap is used to edit attachment details
-		'delete_posts'                 => true, // this cap is used to delete attachments
-		'delete_others_posts'          => true, // this cap is used to delete attachments
+	$datenerfasser_caps = array(
+		'read'                    => true,
+		'upload_files'            => true,
+		'create_datasets'         => true,
+		'edit_datasets'           => true,
+		'edit_private_datasets'   => true,
+		'edit_published_datasets' => true,
+		'publish_datasets'        => true,
+		'read_private_datasets'   => true,
+		'assign_keywords'         => true,
+		'edit_posts'              => true, // this cap is used to edit attachment details, (Without it we also can't access the list view)
 	);
-	init_role( 'organisationsverwaltung', 'Organisationsverwaltung', $organisationsverwaltung_caps );
+	init_role( 'datenerfasser', 'Datenerfasser', $datenerfasser_caps );
 
 	$content_manager_caps = array(
 		'read'                   => true,
