@@ -58,7 +58,7 @@ class OgdchThemeOptions {
 		$cmb = new_cmb2_box( array(
 			'id'           => self::METABOX_ID,
 			'title'        => __( 'Theme Options', 'ogdch' ),
-			'capability'   => 'manage_options',
+			'capability'   => 'edit_theme_options',
 			'object_types' => array( 'options-page' ),
 			'parent_slug'  => 'themes.php',
 			'option_key'   => self::KEY,
