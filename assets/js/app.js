@@ -44,13 +44,15 @@
         }
 
         function trackOrganization(organization, action, dataset, format) {
-            if(customDimensionActionDatasetId && customDimensionActionFormatId){
+            if(customDimensionActionDatasetId){
                 customDimensionDataset = {};
                 customDimensionDataset['dimension'+customDimensionActionDatasetId] = organization;
+                _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
+            }
+            if(customDimensionActionFormatId){
                 customDimensionFormat = {};
                 customDimensionFormat['dimension'+customDimensionActionFormatId] = organization;
-                _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
-                _paq.push(['trackEvent', 'click', action, format, '', customDimensionFormat]);
+                _paq.push(['trackEvent', 'download', action, format, '', customDimensionFormat]);
             }
         }
 
