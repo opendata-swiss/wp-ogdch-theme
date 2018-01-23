@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h1><?php esc_attr_e( 'Find Swiss government data, free of charge.', 'ogdch' ); ?></h1>
+					<h1><?php esc_html_e( 'Find Swiss government data, free of charge.', 'ogdch' ); ?></h1>
 					<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-md-offset-1 col-md-5 text-md-right text-xs-center">
@@ -22,6 +22,7 @@
 							<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
 						</div>
 					</form>
+					<p><a href="https://handbook.opendata.swiss/support/api.html"><?php esc_html_e( 'Learn how to use this portal automatically via API', 'ogdch' ); ?></a></p>
 				</div>
 			</div>
 		</div>

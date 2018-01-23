@@ -225,10 +225,6 @@ a.label-primary-gray:hover {
     margin-bottom: 5px;
   }
 
-  &.front-header h1 {
-    margin-bottom: $buffer-height / 2;
-  }
-
   .breadcrumb {
     margin-bottom: 0;
     a {
@@ -320,6 +316,17 @@ a.label-primary-gray:hover {
 // Front-Page
 .front-header {
   padding: 0px;
+
+  h1 {
+    margin-bottom: $buffer-height / 2;
+  }
+  a {
+    color: $inverted-link-color;
+
+    &:hover {
+      color: $inverted-link-hover-color;
+    }
+  }
 
   .container {
     padding-top: 70px;
