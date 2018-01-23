@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h1><?php esc_html_e( 'Find Swiss government data, free of charge.', 'ogdch' ); ?></h1>
-					<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
+					<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>" role="button"><?php esc_html_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-md-offset-1 col-md-5 text-md-right text-xs-center">
 					<div class="headline">
@@ -14,7 +14,7 @@
 						$dataset_count = get_dataset_count();
 						?>
 						<div id="opendata-count"><?php esc_html_e( ogdch_number_format_i18n( $dataset_count['total_count'] ) ); ?></div>
-						<div class="title"><?php esc_attr_e( 'Datasets', 'ogdch' ); ?></div>
+						<div class="title"><?php esc_html_e( 'Datasets', 'ogdch' ); ?></div>
 					</div>
 					<form action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
 						<div class="form-group has-feedback">
@@ -33,7 +33,7 @@
 		<section id="explore" class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2><?php esc_attr_e( 'Categories', 'ogdch' ); ?></h2>
+					<h2><?php esc_html_e( 'Categories', 'ogdch' ); ?></h2>
 				</div>
 			</div>
 
