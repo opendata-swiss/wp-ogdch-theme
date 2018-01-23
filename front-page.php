@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<p class="lead"><?php esc_attr_e( 'opendata.swiss is the portal for Swiss open government data (OGD). Here you can download Swiss government data free of charge. Enter a term of your choice in the search field or click on a category you are interested in.', 'ogdch' ); ?></p>
+					<h1><?php esc_attr_e( 'Find Swiss government data, free of charge.', 'ogdch' ); ?></h1>
 					<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>" role="button"><?php esc_attr_e( 'Learn more about opendata.swiss', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-md-offset-1 col-md-5 text-md-right text-xs-center">

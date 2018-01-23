@@ -225,6 +225,10 @@ a.label-primary-gray:hover {
     margin-bottom: 5px;
   }
 
+  &.front-header h1 {
+    margin-bottom: $buffer-height / 2;
+  }
+
   .breadcrumb {
     margin-bottom: 0;
     a {
