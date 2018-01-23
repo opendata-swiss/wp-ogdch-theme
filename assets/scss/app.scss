@@ -485,6 +485,10 @@ li.dataset-item {
   h3 {
     margin-top: 10px;
     margin-bottom: 5px;
+
+    a:visited {
+      color: $link-visited-color;
+    }
   }
 }
 
@@ -498,6 +502,9 @@ li.dataset-item {
     overflow: hidden;
     border-bottom: solid $gray-lighter 1px;
     padding: 10px 0;
+  }
+  a:visited:not(.btn) {
+    color: $link-visited-color;
   }
   .actions a {
     margin-left: 10px;
