@@ -5,6 +5,21 @@ $group_count = wp_count_posts( 'ckan-local-group' )->publish;
 $app_count = get_localized_post_count( 'app' );
 ?>
 
+<!-- Contribute -->
+<section class="contribute inverted-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-xs-12">
+				<p class="lead"><?php esc_html_e( 'How can you get involved?', 'ogdch' ); ?></p>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<a class="btn btn-default-inverted" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_html_e( 'I want to publish data', 'ogdch' ); ?></a>
+				<a class="btn btn-default-inverted last" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_html_e( 'I have a question', 'ogdch' ); ?></a>
+			</div>
+		</div>
+	</div>
+</section>
+
 <footer class="page-footer">
 	<div class="container">
 		<div class="row">
@@ -39,15 +54,6 @@ $app_count = get_localized_post_count( 'app' );
 					</div>
 					<p><?php echo esc_html( _n( 'Application', 'Applications', $app_count, 'ogdch' ) ); ?></p>
 				</a>
-			</div>
-		</div>
-		<div class="row top-buffer">
-			<div class="col-md-4 col-xs-12">
-				<p class="lead"><?php esc_attr_e( 'How can you get involved?', 'ogdch' ); ?></p>
-			</div>
-			<div class="col-md-8 col-xs-12">
-				<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'I want to publish data', 'ogdch' ); ?></a>
-				<a class="btn btn-primary last" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'I have developed an application', 'ogdch' ); ?></a>
 			</div>
 		</div>
 		<div class="row top-buffer">
@@ -97,8 +103,8 @@ $app_count = get_localized_post_count( 'app' );
 		</div>
 		<div class="row top-buffer">
 			<div class="col-xs-12">
-				<h2><?php esc_attr_e( 'A joint project of the Confederation and the cantons', 'ogdch' ); ?></h2>
-				<p><?php esc_attr_e( 'The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Swiss Federal Archives.', 'ogdch' ); ?></p>
+				<h2><?php esc_html_e( 'A joint project of the Confederation and the cantons', 'ogdch' ); ?></h2>
+				<p><?php esc_html_e( 'The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Swiss Federal Archives.', 'ogdch' ); ?></p>
 			</div>
 		</div>
 		<div id="logos" class="row top-buffer">
