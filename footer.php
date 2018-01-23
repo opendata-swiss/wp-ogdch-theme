@@ -57,11 +57,25 @@ $app_count = get_localized_post_count( 'app' );
 			</div>
 		</div>
 		<div class="row top-buffer">
-			<div class="col-md-2 col-xs-12">
+			<div class="col-xs-12 col-md-6 bottom-buffer">
+				<h2><?php esc_html_e( 'A joint project of the Confederation and the cantons', 'ogdch' ); ?></h2>
+				<p><?php esc_html_e( 'The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Swiss Federal Archives.', 'ogdch' ); ?></p>
+			</div>
+			<div id="logos" class="col-xs-12 col-md-6">
+				<img class="logo-confederation" src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />
+				<img class="logo-egovernment" src="/content/themes/wp-ogdch-theme/assets/images/logo-tf-egovernment-<?php echo esc_attr( get_current_language() ); ?>.png" />
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="page-footer-navigation">
+	<div class="container">
+		<div class="language-switcher">
 				<?php
 				if ( class_exists( 'Polylang' ) ) {
 				?>
-					<div class="btn-group">
+					<div class="btn-group dropup">
 						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<?php esc_html_e( pll_current_language( 'name' ) ); ?> <span class="caret"></span>
 						</button>
@@ -79,42 +93,21 @@ $app_count = get_localized_post_count( 'app' );
 				}
 				?>
 			</div>
-			<div class="col-md-2 col-xs-6">
-				<ul class="list-unstyled">
+			<div class="footer-navigation">
+				<ul class="list-inline">
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>"><?php esc_html_e( 'About', 'ogdch' ); ?></a></li>
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'FAQ', 'ogdch' ); ?></a></li>
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>"><?php esc_html_e( 'Contact', 'ogdch' ); ?></a></li>
-				</ul>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<ul class="list-unstyled">
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>"><?php esc_html_e( 'Data', 'ogdch' ); ?></a></li>
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>"><?php esc_html_e( 'Organizations', 'ogdch' ); ?></a></li>
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>"><?php esc_html_e( 'Applications', 'ogdch' ); ?></a></li>
-				</ul>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<ul class="list-unstyled">
 					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'legal-framework' ) ); ?>"><?php esc_html_e( 'Legal framework', 'ogdch' ); ?></a></li>
-					<li><a href="http://docs.ckan.org/en/latest/api/index.html" target="_blank"><?php esc_html_e( 'API', 'ogdch' ); ?></a></li>
 					<li><a href="https://github.com/opendata-swiss"><?php esc_html_e( 'Sourcecode', 'ogdch' ); ?></a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="row top-buffer">
-			<div class="col-xs-12">
-				<h2><?php esc_html_e( 'A joint project of the Confederation and the cantons', 'ogdch' ); ?></h2>
-				<p><?php esc_html_e( 'The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Swiss Federal Archives.', 'ogdch' ); ?></p>
-			</div>
-		</div>
-		<div id="logos" class="row top-buffer">
-			<div class="col-xs-12">
-				<img class="logo-confederation" src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />
-				<img class="logo-egovernment" src="/content/themes/wp-ogdch-theme/assets/images/logo-tf-egovernment-<?php echo esc_attr( get_current_language() ); ?>.png" />
-			</div>
-		</div>
 	</div>
-</footer>
+</div>
 
 <?php
 $piwik_siteid = 0;

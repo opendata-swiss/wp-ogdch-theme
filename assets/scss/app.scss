@@ -65,6 +65,15 @@ p.small {
   border-radius: $btn-border-radius-base;
 }
 
+// reset dropup caret
+.dropup {
+  .caret {
+    border-bottom: 0;
+    border-top:   $caret-width-base dashed;
+    border-top:   $caret-width-base solid \9; // IE8
+  }
+}
+
 .nav>li {
   >a:focus, >a:hover {
     color: $nav-pills-active-link-hover-color;
@@ -267,10 +276,9 @@ a.label-primary-gray:hover {
 }
 .page-footer {
   color: $footer-text-color;
-  background: $text-color;
+  background: $footer-bg-color;
   box-shadow: 0px 1000px 0px 1000px $text-color;
   padding-top: 40px;
-  padding-bottom: 40px;
 
   a {
     color: $footer-link-color;
@@ -286,14 +294,6 @@ a.label-primary-gray:hover {
     font-size: 24px;
     margin-top: 0;
   }
-  .btn-group {
-    margin-bottom: 30px;
-  }
-  .btn-default {
-    color: $inverted-text-color;
-    background-color: $text-color;
-    border-color: $inverted-btn-default-color;
-  }
 
   .statsnumber {
     font-size: 40px;
@@ -302,10 +302,6 @@ a.label-primary-gray:hover {
 
   li {
     margin-bottom: 12px;
-  }
-
-  .dropdown-menu li {
-    margin-bottom: 0;
   }
 
   #logos img {
@@ -318,6 +314,62 @@ a.label-primary-gray:hover {
     &.logo-egovernment {
       width: 184px;
     }
+  }
+}
+.page-footer-navigation {
+  color: $inverted-text-color;
+  background: $footer-navigation-bg-color;
+  box-shadow: 0px 1000px 0px 1000px $footer-navigation-bg-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .footer-navigation {
+    padding-left: 40px;
+    flex: 1;
+
+    ul {
+      margin-bottom: 0;
+    }
+    .list-inline>li {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .container {
+      align-items: start;
+    }
+    .list-inline>li {
+      display: list-item;
+    }
+  }
+
+  a {
+    color: $inverted-link-color;
+
+    &:hover {
+      color: $inverted-link-hover-color;
+    }
+    &.btn:hover {
+      color: #fff;
+    }
+  }
+
+  .btn-default {
+    color: $inverted-text-color;
+    background-color: $footer-navigation-bg-color;
+    border-color: $inverted-btn-default-color;
+  }
+
+  ul.list-inline {
+    margin-bottom: 0;
+  }
+  .dropdown-menu li {
+    margin-bottom: 0;
   }
 }
 
