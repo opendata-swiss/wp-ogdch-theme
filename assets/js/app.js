@@ -20,13 +20,8 @@
             trackEvent('Mail', origin, target);
         });
         $('a.piwik-tracked-download').on('click', function(e) {
-            var origin = $(this).data().trackedOrigin || window.location.href;
-            var target = $(this).attr('href');
-            trackEvent('Download', origin, target);
-            var organization = $(this).data().organization || '';
-            var format = $(this).data().format || '';
-            var dataset = $(this).data().dataset || '';
-            trackOrganization(organization, 'Download', dataset, format);
+            var format = $(this).data().format.toLowerCase() || '';
+            trackDownloadEvent(format);
         });
         $('a.piwik-tracked-app-url').on('click', function(e) {
             var origin = $(this).data().trackedOrigin || window.location.href;
@@ -43,16 +38,11 @@
             _paq.push(['trackEvent', action, origin, target]);
         }
 
-        function trackOrganization(organization, action, dataset, format) {
-            if(customDimensionActionDatasetId) {
-                customDimensionDataset = {};
-                customDimensionDataset['dimension'+customDimensionActionDatasetId] = organization;
-                _paq.push(['trackEvent', 'click', action, dataset, '', customDimensionDataset]);
-            }
+        function trackDownloadEvent(format) {
             if(customDimensionActionFormatId) {
                 customDimensionFormat = {};
-                customDimensionFormat['dimension'+customDimensionActionFormatId] = organization;
-                _paq.push(['trackEvent', 'download', action, format, '', customDimensionFormat]);
+                customDimensionFormat['dimension' + customDimensionActionFormatId] = format;
+                _paq.push(['trackEvent', 'dataset', 'download', format, "", customDimensionFormat]);
             }
         }
 
