@@ -59,7 +59,7 @@ $app_count = get_localized_post_count( 'app' );
 		<div class="row top-buffer">
 			<div class="col-xs-12 col-md-6 bottom-buffer">
 				<h2><?php esc_html_e( 'A joint project of the Confederation and the cantons', 'ogdch' ); ?></h2>
-				<p><?php esc_html_e( 'The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Swiss Federal Archives.', 'ogdch' ); ?></p>
+				<p class="small"><?php esc_html_e( 'The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Swiss Federal Archives.', 'ogdch' ); ?></p>
 			</div>
 			<div id="logos" class="col-xs-12 col-md-6">
 				<img class="logo-confederation" src="/content/themes/wp-ogdch-theme/assets/images/logo-confederation.png" />

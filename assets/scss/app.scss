@@ -280,6 +280,10 @@ a.label-primary-gray:hover {
   box-shadow: 0px 1000px 0px 1000px $text-color;
   padding-top: 40px;
 
+  small, .small {
+    color: $inverted-text-color;
+  }
+
   a {
     color: $footer-link-color;
 
