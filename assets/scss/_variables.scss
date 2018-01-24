@@ -1,6 +1,10 @@
 $inverted-text-color: #fff;
 $inverted-link-color: #fff;
-$inverted-link-hover-color: darken($inverted-link-color, 15%) !default;
+$inverted-link-hover-color: #dfeceb;
+
+$footer-text-color: #fff;
+$footer-link-color: #fff;
+$footer-link-hover-color: darken($inverted-link-color, 15%);
 
 $inverted-btn-default-color: $inverted-text-color;
 $inverted-btn-default-bg: $text-color;
