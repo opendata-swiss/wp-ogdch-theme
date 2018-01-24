@@ -21,7 +21,7 @@
         });
         $('a.piwik-tracked-download').on('click', function(e) {
             var format = $(this).data().format.toLowerCase() || '';
-            trackDownloadEvent(origin, target, format);
+            trackDownloadEvent(format);
         });
         $('a.piwik-tracked-app-url').on('click', function(e) {
             var origin = $(this).data().trackedOrigin || window.location.href;
