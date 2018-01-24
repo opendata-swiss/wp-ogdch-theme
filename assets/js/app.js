@@ -20,8 +20,6 @@
             trackEvent('Mail', origin, target);
         });
         $('a.piwik-tracked-download').on('click', function(e) {
-            var origin = $(this).data().trackedOrigin || window.location.href;
-            var target = $(this).attr('href');
             var format = $(this).data().format.toLowerCase() || '';
             trackDownloadEvent(origin, target, format);
         });
@@ -40,7 +38,7 @@
             _paq.push(['trackEvent', action, origin, target]);
         }
 
-        function trackDownloadEvent(origin, target, format) {
+        function trackDownloadEvent(format) {
             if(customDimensionActionFormatId) {
                 customDimensionFormat = {};
                 customDimensionFormat['dimension' + customDimensionActionFormatId] = format;
