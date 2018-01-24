@@ -82,35 +82,6 @@
 
 		</section>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<hr/>
-				</div>
-			</div>
-		</div>
-
-		<!-- How -->
-		<section id="how" class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h2><?php esc_attr_e( 'Get involved', 'ogdch' ); ?></h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<h3><i class="fa fa-files-o"></i> <?php esc_attr_e( 'Data publisher', 'ogdch' ); ?></h3>
-					<p><?php esc_attr_e( 'Would you like to publish freely available data from your organization on opendata.swiss?', 'ogdch' ); ?></p>
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>" role="button"><?php esc_attr_e( 'I want to publish data', 'ogdch' ); ?></a>
-				</div>
-				<div class="col-sm-6">
-					<h3><i class="fa fa-cogs"></i> <?php esc_attr_e( 'Data user', 'ogdch' ); ?></h3>
-					<p><?php esc_attr_e( 'Have you developed an application using data from opendata.swiss? Please contact us.', 'ogdch' ); ?></p>
-					<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'I have developed an application', 'ogdch' ); ?></a>
-				</div>
-			</div>
-		</section>
-
 	</div>
 
 <?php get_footer(); ?>
