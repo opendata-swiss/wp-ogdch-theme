@@ -321,7 +321,7 @@ a.label-primary-gray:hover {
   }
 }
 .page-footer-navigation {
-  color: $inverted-text-color;
+  color: $footer-text-color;
   background: $footer-navigation-bg-color;
   box-shadow: 0px 1000px 0px 1000px $footer-navigation-bg-color;
   padding-top: 40px;
@@ -353,10 +353,10 @@ a.label-primary-gray:hover {
   }
 
   a {
-    color: $inverted-link-color;
+    color: $footer-link-color;
 
     &:hover {
-      color: $inverted-link-hover-color;
+      color: $footer-link-hover-color;
     }
     &.btn:hover {
       color: #fff;
@@ -364,7 +364,7 @@ a.label-primary-gray:hover {
   }
 
   .btn-default {
-    color: $inverted-text-color;
+    color: $footer-text-color;
     background-color: $footer-navigation-bg-color;
     border-color: $inverted-btn-default-color;
   }
