@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme 1.0.0\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
-"POT-Creation-Date: 2018-02-20 11:33+0100\n"
+"POT-Creation-Date: 2018-02-20 15:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,10 +231,14 @@ msgid "Applications"
 msgstr ""
 
 #: footer.php:101
-msgid "Legal framework"
+msgid "Terms of use"
 msgstr ""
 
 #: footer.php:102
+msgid "Legal framework"
+msgstr ""
+
+#: footer.php:103
 msgid "Sourcecode"
 msgstr ""
 
