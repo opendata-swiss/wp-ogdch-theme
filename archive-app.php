@@ -16,9 +16,9 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<h2><?php esc_attr_e( 'What applications are there?' ,'ogdch' ); ?></h2>
-			<p><?php esc_attr_e( 'Here you will find a list of applications created using data from opendata.swiss. They simplify the task of viewing information and so make it accessible to a wide audience. Have you developed an application? Please contact us.' ,'ogdch' ); ?></p>
-			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_attr_e( 'I have developed an application', 'ogdch' ); ?></a>
+			<h2><?php esc_html_e( 'What applications are there?' ,'ogdch' ); ?></h2>
+			<p><?php esc_html_e( 'Here you will find a list of applications created using data from opendata.swiss. They simplify the task of viewing information and so make it accessible to a wide audience. Have you developed an application? Please contact us.' ,'ogdch' ); ?></p>
+			<a class="btn btn-primary" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_html_e( 'I have developed an application', 'ogdch' ); ?></a>
 		</div>
 	</div>
 

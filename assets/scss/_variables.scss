@@ -1,6 +1,10 @@
 $inverted-text-color: #fff;
 $inverted-link-color: #fff;
-$inverted-link-hover-color: darken($inverted-link-color, 15%) !default;
+$inverted-link-hover-color: #dfeceb;
+
+$footer-text-color: #fff;
+$footer-link-color: #fff;
+$footer-link-hover-color: darken($inverted-link-color, 15%);
 
 $inverted-btn-default-color: $inverted-text-color;
 $inverted-btn-default-bg: $text-color;
@@ -10,3 +14,7 @@ $brand-highlight: #e4eeed;
 
 $buffer-height: 40px;
 $header-footer-buffer: 50px;
+$footer-navigation-bg-color: #242424;
+$footer-bg-color: #2d2d2d;
+
+$link-visited-color: #880096;

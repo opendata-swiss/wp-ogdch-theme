@@ -3,7 +3,7 @@
 # 
 # Translators:
 # Andreas Amsler <andreas.amsler@liip.ch>, 2015-2016
-# Jürg Hunziker <juerg.hunziker@gmail.com>, 2016
+# Jürg Hunziker <juerg.hunziker@gmail.com>, 2016,2018
 # Katherine Patula <katharine.patula@gs-edi.admin.ch>, 2016
 # Simon Meyer <simon.meyer@bar.admin.ch>, 2015-2016
 # Stefanie Taepke <s_t@me.com>, 2016
@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opendata.swiss\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
-"POT-Creation-Date: 2016-11-17 10:38+0100\n"
-"PO-Revision-Date: 2016-11-17 12:38+0000\n"
-"Last-Translator: Stefan Oderbolz <oderbolz@gmail.com>\n"
+"POT-Creation-Date: 2018-02-20 11:33+0100\n"
+"PO-Revision-Date: 2018-02-20 10:39+0000\n"
+"Last-Translator: Jürg Hunziker <juerg.hunziker@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/opendataswiss/opendata-swiss/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: 404.php:8 assets/php/theme_functions.php:320
+#: 404.php:8 assets/php/theme_functions.php:326
 msgid "Page not found"
 msgstr "La page est introuvable."
 
@@ -32,125 +32,29 @@ msgid ""
 "shuttle to make you feel better!"
 msgstr "Ooops... La page que vous recherchez n'est pas disponible. Voici une navette spatiale pour vous remonter le moral! "
 
-#: functions.php:18 functions.php:42
-#, php-format
-msgctxt "%s contains path to file."
-msgid "Error locating %s for inclusion"
-msgstr "Erreur pendant l'importation de %s"
+#: archive-app.php:19
+msgid "What applications are there?"
+msgstr "Quelles applications ont vu le jour ?"
 
-#: footer.php:16
-msgid "Dataset"
-msgid_plural "Datasets"
-msgstr[0] "Jeu de données"
-msgstr[1] "Jeux de données"
+#: archive-app.php:20
+msgid ""
+"Here you will find a list of applications created using data from "
+"opendata.swiss. They simplify the task of viewing information and so make it"
+" accessible to a wide audience. Have you developed an application? Please "
+"contact us."
+msgstr "Vous trouverez sur cette page une liste d’applications créées à partir des données du portail opendata.swiss. Elles permettent d’appréhender l’information plus facilement et contribuent donc à la démocratiser. Vous avez développé une application ? N’hésitez pas à nous contacter ! "
 
-#: footer.php:24
-msgid "Organization"
-msgid_plural "Organizations"
-msgstr[0] "Organisation"
-msgstr[1] "Organisations"
-
-#: footer.php:32
-msgid "Category"
-msgid_plural "Categories"
-msgstr[0] "Catégorie"
-msgstr[1] "Catégories"
-
-#: footer.php:40
-msgid "Application"
-msgid_plural "Applications"
-msgstr[0] "Application"
-msgstr[1] "Applications"
-
-#: footer.php:46
-msgid "How can you get involved?"
-msgstr "Comment participer ? "
-
-#: footer.php:49 front-page.php:103
-msgid "I want to publish data"
-msgstr "Je souhaite publier des données"
-
-#: footer.php:50 archive-app.php:21 front-page.php:108
+#: archive-app.php:21
 msgid "I have developed an application"
 msgstr "J’ai développé une application"
 
-#: footer.php:78
-msgid "About"
-msgstr "A propos du portail"
-
-#: footer.php:79
-msgid "FAQ"
-msgstr "FAQ"
-
-#: footer.php:80
-msgid "Contact"
-msgstr "Contact"
-
-#: footer.php:85
-msgid "Data"
-msgstr "Données"
-
-#: footer.php:86
-msgid "Organizations"
-msgstr "Organisations"
-
-#: footer.php:87
-msgid "Applications"
-msgstr "Applications"
-
-#: footer.php:92
-msgid "Legal framework"
-msgstr "Cadre juridique"
-
-#: footer.php:93
-msgid "API"
-msgstr "API"
-
-#: footer.php:94
-msgid "Sourcecode"
-msgstr "Code source"
-
-#: footer.php:100
-msgid "A joint project of the Confederation and the cantons"
-msgstr "Un projet commun de la Confédération et des cantons"
-
-#: footer.php:101
-msgid ""
-"The opendata.swiss portal is a joint project of the Confederation, cantons, "
-"communes and other organizations with a mandate from the state. It makes "
-"open government data available to the general public in a central catalogue."
-" opendata.swiss is operated by the Swiss Federal Archives."
-msgstr "Le projet opendata.swiss est mené conjointement par la Confédération, les cantons, les communes et plusieurs organisations investies d’un mandat étatique. Administré par les Archives fédérales suisses, il met à la disposition du grand public un ensemble de données ouvertes de l’administration publique dans un catalogue central."
-
-#: assets/php/init.php:34
-msgid "Main-Navigation"
-msgstr "Menu principal"
-
-#: assets/php/theme_functions.php:131 partials/app-entry.php:27
-msgid "Please activate wp-ckan-backend plugin"
-msgstr "Veuillez activer wp-ckan-backend plugin"
-
-#: assets/php/theme_functions.php:185
-msgid "Home"
-msgstr "Accueil"
-
-#: assets/php/theme_functions.php:291 assets/php/theme_functions.php:293
-#: assets/php/theme_functions.php:295 assets/php/theme_functions.php:299
-#: assets/php/theme_functions.php:301 assets/php/theme_functions.php:304
-msgid "Archives"
-msgstr "Archives"
-
-#: assets/php/theme_functions.php:311
-msgid "Author"
-msgstr "Auteur"
-
-#: assets/php/theme_functions.php:314
-msgid "Page"
-msgstr "Page"
-
-#: assets/php/theme_functions.php:317
-msgid "Search results for:"
-msgstr "Résultats de la recherche pour:"
+#: archive-app.php:34
+#, php-format
+msgctxt "%s contains the number of applications."
+msgid "%s application"
+msgid_plural "%s applications"
+msgstr[0] "%s application"
+msgstr[1] "%s applications"
 
 #: assets/php/backend/cpt_messages.php:19
 #: assets/php/backend/cpt_messages.php:22
@@ -226,32 +130,139 @@ msgctxt ""
 msgid " <a target=\"_blank\" href=\"%1$s\">Preview %2$s</a>"
 msgstr "<a target=\"_blank\" href=\"%1$s\">Aperçu %2$s</a>"
 
-#: archive-app.php:19
-msgid "What applications are there?"
-msgstr "Quelles applications ont vu le jour ?"
+#: assets/php/init.php:28
+msgid "Main-Navigation"
+msgstr "Menu principal"
 
-#: archive-app.php:20
+#: assets/php/theme_functions.php:131 partials/app-entry.php:28
+msgid "Please activate wp-ckan-backend plugin"
+msgstr "Veuillez activer wp-ckan-backend plugin"
+
+#: assets/php/theme_functions.php:185
+msgid "Home"
+msgstr "Accueil"
+
+#: assets/php/theme_functions.php:297 assets/php/theme_functions.php:299
+#: assets/php/theme_functions.php:301 assets/php/theme_functions.php:305
+#: assets/php/theme_functions.php:307 assets/php/theme_functions.php:310
+msgid "Archives"
+msgstr "Archives"
+
+#: assets/php/theme_functions.php:317
+msgid "Author"
+msgstr "Auteur"
+
+#: assets/php/theme_functions.php:320
+msgid "Page"
+msgstr "Page"
+
+#: assets/php/theme_functions.php:323
+msgid "Search results for:"
+msgstr "Résultats de la recherche pour:"
+
+#: assets/php/theme_options.php:60
+msgid "Theme Options"
+msgstr "Theme Options"
+
+#: assets/php/theme_options.php:78
+msgid "Banner active?"
+msgstr "Bannière active?"
+
+#: assets/php/theme_options.php:86
+msgid "Banner Title"
+msgstr "Titre de la bannière"
+
+#: assets/php/theme_options.php:93
+msgid "Banner Text"
+msgstr "Texte de bannière"
+
+#: footer.php:13
+msgid "Get involved"
+msgstr "Participer"
+
+#: footer.php:14
+msgid "Frequently Asked Questions"
+msgstr "Questions fréquemment posées"
+
+#: footer.php:17
+msgid "Learn to publish data"
+msgstr "Publier des données"
+
+#: footer.php:18
+msgid "Share your application"
+msgstr "Partagez votre application"
+
+#: footer.php:32
+msgid "Dataset"
+msgid_plural "Datasets"
+msgstr[0] "Jeu de données"
+msgstr[1] "Jeux de données"
+
+#: footer.php:40
+msgid "Organization"
+msgid_plural "Organizations"
+msgstr[0] "Organisation"
+msgstr[1] "Organisations"
+
+#: footer.php:48
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "Catégorie"
+msgstr[1] "Catégories"
+
+#: footer.php:56
+msgid "Application"
+msgid_plural "Applications"
+msgstr[0] "Application"
+msgstr[1] "Applications"
+
+#: footer.php:62
+msgid "A joint project of the Confederation and the cantons"
+msgstr "Un projet commun de la Confédération et des cantons"
+
+#: footer.php:63
 msgid ""
-"Here you will find a list of applications created using data from "
-"opendata.swiss. They simplify the task of viewing information and so make it"
-" accessible to a wide audience. Have you developed an application? Please "
-"contact us."
-msgstr "Vous trouverez sur cette page une liste d’applications créées à partir des données du portail opendata.swiss. Elles permettent d’appréhender l’information plus facilement et contribuent donc à la démocratiser. Vous avez développé une application ? N’hésitez pas à nous contacter ! "
+"The opendata.swiss portal is a joint project of the Confederation, cantons, "
+"communes and other organizations with a mandate from the state. It makes "
+"open government data available to the general public in a central catalogue."
+" opendata.swiss is operated by the Swiss Federal Archives."
+msgstr "Le projet opendata.swiss est mené conjointement par la Confédération, les cantons, les communes et plusieurs organisations investies d’un mandat étatique. Administré par les Archives fédérales suisses, il met à la disposition du grand public un ensemble de données ouvertes de l’administration publique dans un catalogue central."
 
-#: archive-app.php:34
-#, php-format
-msgctxt "%s contains the number of applications."
-msgid "%s application"
-msgid_plural "%s applications"
-msgstr[0] "%s application"
-msgstr[1] "%s applications"
+#: footer.php:95
+msgid "About"
+msgstr "A propos du portail"
+
+#: footer.php:96
+msgid "FAQ"
+msgstr "FAQ"
+
+#: footer.php:97
+msgid "Contact"
+msgstr "Contact"
+
+#: footer.php:98
+msgid "Data"
+msgstr "Données"
+
+#: footer.php:99
+msgid "Organizations"
+msgstr "Organisations"
+
+#: footer.php:100
+msgid "Applications"
+msgstr "Applications"
+
+#: footer.php:101
+msgid "Legal framework"
+msgstr "Cadre juridique"
+
+#: footer.php:102
+msgid "Sourcecode"
+msgstr "Code source"
 
 #: front-page.php:8
-msgid ""
-"opendata.swiss is the portal for Swiss open government data (OGD). Here you "
-"can download Swiss government data free of charge. Enter a term of your "
-"choice in the search field or click on a category you are interested in."
-msgstr "opendata.swiss est le portail des données ouvertes de l’administration publique suisse (OGD). Celles-ci y sont accessibles gratuitement : il suffit d’entrer le terme de votre choix dans le champ de recherche ou de cliquer sur la catégorie voulue."
+msgid "Find Swiss Open Government data"
+msgstr "Recherchez les données ouvertes de l’administration publique suisse"
 
 #: front-page.php:9
 msgid "Learn more about opendata.swiss"
@@ -265,97 +276,28 @@ msgstr "Jeux de données"
 msgid "Search datasets..."
 msgstr "Rechercher les jeux de données..."
 
-#: front-page.php:35
+#: front-page.php:25
+msgid "Access the data catalogue using the API"
+msgstr "Accédez au catalogue de données en utilisant l'API"
+
+#: front-page.php:36
 msgid "Categories"
 msgstr "Catégories"
 
-#: front-page.php:96
-msgid "Get involved"
-msgstr "Participer"
+#: functions.php:19 functions.php:43
+#, php-format
+msgctxt "%s contains path to file."
+msgid "Error locating %s for inclusion"
+msgstr "Erreur pendant l'importation de %s"
 
-#: front-page.php:101
-msgid "Data publisher"
-msgstr "Editeur des données"
-
-#: front-page.php:102
-msgid ""
-"Would you like to publish freely available data from your organization on "
-"opendata.swiss?"
-msgstr "Vous aimeriez publier des données en libre accès sur opendata.swiss ? "
-
-#: front-page.php:106
-msgid "Data user"
-msgstr "Utilisateur des données"
-
-#: front-page.php:107
-msgid ""
-"Have you developed an application using data from opendata.swiss? Please "
-"contact us."
-msgstr "Vous avez développé une application à partir de données d’opendata.swiss ? N’hésitez pas à nous contacter !"
-
-#: _missing_translations.php:15
-msgctxt "Valid date format applied in Ninja forms"
-msgid "d.m.Y"
-msgstr "d.m.Y"
-
-#: _missing_translations.php:16
-msgid "CHF"
-msgstr "CHF"
-
-#: _missing_translations.php:17
-msgid ""
-"Fields marked with an <span class=\"ninja-forms-req-symbol\">*</span> are "
-"required"
-msgstr "Les champs assortis du symbole <span class=\"ninja-forms-req-symbol\">*</span> doivent être complétés."
-
-#: _missing_translations.php:18
-msgid "<strong>*</strong>"
-msgstr "<strong>*</strong>"
-
-#: _missing_translations.php:19
-msgid "Please ensure all required fields are completed."
-msgstr "Veuillez contrôler que tous les champs obligatoires ont été complétés."
-
-#: _missing_translations.php:20
-msgid "This is a required field"
-msgstr "Ce champ doit être complété."
-
-#: _missing_translations.php:21
-msgid "Please answer the anti-spam question correctly."
-msgstr "Veuillez répondre correctement à la question antispam."
-
-#: _missing_translations.php:22
-msgid "Please leave the spam field blank."
-msgstr "Veuillez ne rien inscrire dans le champ spam."
-
-#: _missing_translations.php:23
-msgid "Please wait to submit the form."
-msgstr "Veuillez attendre pour soumettre le formulaire."
-
-#: _missing_translations.php:24
-msgid "You cannot submit the form without Javascript enabled."
-msgstr "Vous devez activer Javascript pour soumettre le formulaire."
-
-#: _missing_translations.php:25
-msgid "Please enter a valid email address."
-msgstr "Veuillez saisir une adresse mail valide."
-
-#: _missing_translations.php:26
-msgid "Processing"
-msgstr "Traitement en cours"
-
-#: _missing_translations.php:27
-msgid "The passwords provided do not match."
-msgstr "Les mots de passe saisis ne sont pas identiques."
-
-#: partials/app-entry.php:24
-msgid "Used datasets"
-msgstr "Jeux de données utilisés"
-
-#: header.php:29
+#: header.php:54
 msgid "Toggle navigation"
 msgstr "Montrer/cacher le menu"
 
-#: header.php:46
+#: header.php:71
 msgid "Search"
 msgstr "Rechercher"
+
+#: partials/app-entry.php:25
+msgid "Used datasets"
+msgstr "Jeux de données utilisés"

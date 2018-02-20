@@ -51,7 +51,7 @@ $banner_text = ogdch_get_localized_option( 'banner_text' );
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation-collapse">
-				<span class="sr-only"><?php esc_attr_e( 'Toggle navigation', 'ogdch' ); ?></span>
+				<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'ogdch' ); ?></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>

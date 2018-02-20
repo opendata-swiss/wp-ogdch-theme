@@ -223,16 +223,22 @@ function bootstrap_breadcrumb() {
 			}
 
 			// Get post category info
+			$cat_display = '';
 			$category = get_the_category();
 			// Get last category post is in
-			$last_category = end( array_values( $category ) );
-			// Get parent any categories and create array
-			$get_cat_parents = rtrim( get_category_parents( $last_category->term_id, true, ',' ), ',' );
-			$cat_parents     = explode( ',', $get_cat_parents );
-			// Loop through parent categories and store in variable $cat_display
-			$cat_display = '';
-			foreach ( $cat_parents as $parents ) {
-				$cat_display .= '<li class="item-cat">' . $parents . '</li>';
+			$categories = array_values( $category );
+			$last_category = end( $categories );
+			if ( is_object( $last_category ) ) {
+				// Get parent any categories and create array
+				$category_parents = get_category_parents( $last_category->term_id, true, ',' );
+				if ( ! is_wp_error( $category_parents ) ) {
+					$get_cat_parents = rtrim( $category_parents, ',' );
+					$cat_parents     = explode( ',', $get_cat_parents );
+					// Loop through parent categories and store in variable $cat_display
+					foreach ( $cat_parents as $parents ) {
+						$cat_display .= '<li class="item-cat">' . $parents . '</li>';
+					}
+				}
 			}
 
 			// If it's a custom post type within a custom taxonomy

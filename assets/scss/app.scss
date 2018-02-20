@@ -65,6 +65,15 @@ p.small {
   border-radius: $btn-border-radius-base;
 }
 
+// reset dropup caret
+.dropup {
+  .caret {
+    border-bottom: 0;
+    border-top:   $caret-width-base dashed;
+    border-top:   $caret-width-base solid \9; // IE8
+  }
+}
+
 .nav>li {
   >a:focus, >a:hover {
     color: $nav-pills-active-link-hover-color;
@@ -167,6 +176,25 @@ a.label-primary-gray:hover {
   margin-bottom: $buffer-height;
 }
 
+.inverted-container {
+  $inverted-container-padding: 70px;
+  color: $inverted-text-color;
+  background-color: $brand-primary;
+  padding: $inverted-container-padding 0;
+  border: 0;
+
+  a {
+    color: $inverted-link-color;
+
+    &:hover {
+      color: $inverted-link-hover-color;
+    }
+  }
+  a.btn {
+    color: $inverted-link-color;
+  }
+}
+
 // Main navigation
 #main-navigation {
   font-size: 20px;
@@ -241,50 +269,52 @@ a.label-primary-gray:hover {
 }
 
 // Page footer
-.page-footer {
-  color: $inverted-text-color;
-  background: $text-color;
-  box-shadow: 0px 1000px 0px 1000px $text-color;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.contribute {
   margin-top: $header-footer-buffer + $line-height-computed; // add line-height-computed because first section after header starts with h2 (which also has a margin)
 
+  .lead {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .btn {
+    margin: 5px 10px 5px 0;
+    &.last {
+      margin-right: 0;
+    }
+  }
+  .buttons {
+    margin-top: $buffer-height / 2;
+
+    @media (max-width: $grid-float-breakpoint) {
+      margin-top: 0;
+    }
+  }
+}
+.page-footer {
+  color: $footer-text-color;
+  background: $footer-bg-color;
+  box-shadow: 0px 1000px 0px 1000px $text-color;
+  padding-top: 40px;
+
+  small, .small {
+    color: $inverted-text-color;
+  }
+
   a {
-    color: $inverted-link-color;
+    color: $footer-link-color;
 
     &:hover {
-      color: $inverted-link-hover-color;
+      color: $footer-link-hover-color;
     }
     &.btn:hover {
       color: #fff;
     }
   }
-  .lead {
-    font-size: 32px;
-    font-weight: 600;
-  }
   h2 {
     font-size: 24px;
     margin-top: 0;
-  }
-  .btn {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    &.last {
-      margin-right: 0;
-    }
-    &.dropdown-toggle {
-      margin-right: 0;
-      margin-bottom: 0;
-    }
-  }
-  .btn-group {
-    margin-bottom: 30px;
-  }
-  .btn-default {
-    color: $inverted-text-color;
-    background-color: $text-color;
-    border-color: $inverted-btn-default-color;
   }
 
   .statsnumber {
@@ -294,10 +324,6 @@ a.label-primary-gray:hover {
 
   li {
     margin-bottom: 12px;
-  }
-
-  .dropdown-menu li {
-    margin-bottom: 0;
   }
 
   #logos img {
@@ -312,10 +338,80 @@ a.label-primary-gray:hover {
     }
   }
 }
+.page-footer-navigation {
+  color: $footer-text-color;
+  background: $footer-navigation-bg-color;
+  box-shadow: 0px 1000px 0px 1000px $footer-navigation-bg-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .footer-navigation {
+    padding-left: 40px;
+    flex: 1;
+
+    ul {
+      margin-bottom: 0;
+    }
+    .list-inline>li {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .container {
+      align-items: start;
+    }
+    .list-inline>li {
+      display: list-item;
+    }
+  }
+
+  a {
+    color: $footer-link-color;
+
+    &:hover {
+      color: $footer-link-hover-color;
+    }
+    &.btn:hover {
+      color: #fff;
+    }
+  }
+
+  .btn-default {
+    color: $footer-text-color;
+    background-color: $footer-navigation-bg-color;
+    border-color: $inverted-btn-default-color;
+  }
+
+  ul.list-inline {
+    margin-bottom: 0;
+  }
+  .dropdown-menu li {
+    margin-bottom: 0;
+  }
+}
 
 // Front-Page
 .front-header {
   padding: 0px;
+
+  h1 {
+    margin-bottom: $buffer-height / 2;
+  }
+  a {
+    color: $inverted-link-color;
+
+    &:hover {
+      color: $inverted-link-hover-color;
+    }
+  }
+  a.btn {
+    color: $inverted-link-color;
+  }
 
   .container {
     padding-top: 70px;
@@ -485,6 +581,10 @@ li.dataset-item {
   h3 {
     margin-top: 10px;
     margin-bottom: 5px;
+
+    a:visited {
+      color: $link-visited-color;
+    }
   }
 }
 
@@ -498,6 +598,9 @@ li.dataset-item {
     overflow: hidden;
     border-bottom: solid $gray-lighter 1px;
     padding: 10px 0;
+  }
+  a:visited:not(.btn) {
+    color: $link-visited-color;
   }
   .actions a {
     margin-left: 10px;
