@@ -11,7 +11,7 @@ $app_count = get_localized_post_count( 'app' );
 		<div class="row">
 			<div class="col-md-6 col-xs-12">
 				<p class="lead"><?php esc_html_e( 'Get involved', 'ogdch' ); ?></p>
-				<p><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'Check Frequently Asked Questions', 'ogdch' ); ?></a></p>
+				<p><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'Frequently Asked Questions', 'ogdch' ); ?></a></p>
 			</div>
 			<div class="col-md-6 col-xs-12 buttons">
 				<a class="btn btn-default-inverted" href="https://handbook.opendata.swiss/" role="button"><?php esc_html_e( 'Learn to publish data', 'ogdch' ); ?></a>
