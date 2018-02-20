@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opendata.swiss\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
-"POT-Creation-Date: 2018-02-20 11:33+0100\n"
-"PO-Revision-Date: 2018-02-20 10:40+0000\n"
+"POT-Creation-Date: 2018-02-20 15:42+0100\n"
+"PO-Revision-Date: 2018-02-20 14:45+0000\n"
 "Last-Translator: Jürg Hunziker <juerg.hunziker@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/opendataswiss/opendata-swiss/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -249,10 +249,14 @@ msgid "Applications"
 msgstr "Anwendungen"
 
 #: footer.php:101
+msgid "Terms of use"
+msgstr "Nutzungsbedingungen"
+
+#: footer.php:102
 msgid "Legal framework"
 msgstr "Rechtliche Hinweise"
 
-#: footer.php:102
+#: footer.php:103
 msgid "Sourcecode"
 msgstr "Quellcode"
 

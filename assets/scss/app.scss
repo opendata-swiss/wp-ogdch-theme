@@ -9,6 +9,10 @@
 @import 'responsive_alignment';
 @import 'ninjaforms_3_bootstrap';
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 // Bootstrap overrides
 .btn-default {
   @include ogdch-button-hover($brand-primary, #fff, $brand-primary);
@@ -357,8 +361,7 @@ a.label-primary-gray:hover {
       margin-bottom: 0;
     }
     .list-inline>li {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding: 5px 10px;
     }
   }
   @media (max-width: $screen-xs-max) {
