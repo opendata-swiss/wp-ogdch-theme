@@ -182,6 +182,17 @@ a.label-primary-gray:hover {
   background-color: $brand-primary;
   padding: $inverted-container-padding 0;
   border: 0;
+
+  a {
+    color: $inverted-link-color;
+
+    &:hover {
+      color: $inverted-link-hover-color;
+    }
+  }
+  a.btn {
+    color: $inverted-link-color;
+  }
 }
 
 // Main navigation
@@ -271,6 +282,13 @@ a.label-primary-gray:hover {
     margin: 5px 10px 5px 0;
     &.last {
       margin-right: 0;
+    }
+  }
+  .buttons {
+    margin-top: $buffer-height / 2;
+
+    @media (max-width: $grid-float-breakpoint) {
+      margin-top: 0;
     }
   }
 }
