@@ -9,6 +9,10 @@
 @import 'responsive_alignment';
 @import 'ninjaforms_3_bootstrap';
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 // Bootstrap overrides
 .btn-default {
   @include ogdch-button-hover($brand-primary, #fff, $brand-primary);
