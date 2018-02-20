@@ -72,39 +72,34 @@ $app_count = get_localized_post_count( 'app' );
 <div class="page-footer-navigation">
 	<div class="container">
 		<div class="language-switcher">
-				<?php
-				if ( class_exists( 'Polylang' ) ) {
-				?>
-					<div class="btn-group dropup">
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<?php esc_html_e( pll_current_language( 'name' ) ); ?> <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu">
-							<?php
-							$languages = pll_the_languages( array( 'raw' => true ) );
-							foreach ( $languages as $language ) {
-								$active_class = ($language['current_lang']) ? 'active' : '';
-								echo '<li class="' . esc_attr( $active_class ) . '"><a href="' . esc_url( $language['url'] ) . '">' . esc_html( $language['name'] ) . '</a></li>';
-							}
-							?>
-						</ul>
-					</div>
-				<?php
-				}
-				?>
-			</div>
-			<div class="footer-navigation">
-				<ul class="list-inline">
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>"><?php esc_html_e( 'About', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'FAQ', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>"><?php esc_html_e( 'Contact', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>"><?php esc_html_e( 'Data', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>"><?php esc_html_e( 'Organizations', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>"><?php esc_html_e( 'Applications', 'ogdch' ); ?></a></li>
-					<li><a href="<?php echo esc_url( get_page_link_by_slug( 'legal-framework' ) ); ?>"><?php esc_html_e( 'Legal framework', 'ogdch' ); ?></a></li>
-					<li><a href="https://github.com/opendata-swiss"><?php esc_html_e( 'Sourcecode', 'ogdch' ); ?></a></li>
-				</ul>
-			</div>
+			<?php if ( class_exists( 'Polylang' ) ) : ?>
+				<div class="btn-group dropup">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<?php esc_html_e( pll_current_language( 'name' ) ); ?> <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<?php
+						$languages = pll_the_languages( array( 'raw' => true ) );
+						foreach ( $languages as $language ) {
+							$active_class = ($language['current_lang']) ? 'active' : '';
+							echo '<li class="' . esc_attr( $active_class ) . '"><a href="' . esc_url( $language['url'] ) . '">' . esc_html( $language['name'] ) . '</a></li>';
+						}
+						?>
+					</ul>
+				</div>
+			<?php endif; ?>
+		</div>
+		<div class="footer-navigation">
+			<ul class="list-inline">
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>"><?php esc_html_e( 'About', 'ogdch' ); ?></a></li>
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'FAQ', 'ogdch' ); ?></a></li>
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>"><?php esc_html_e( 'Contact', 'ogdch' ); ?></a></li>
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>"><?php esc_html_e( 'Data', 'ogdch' ); ?></a></li>
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>"><?php esc_html_e( 'Organizations', 'ogdch' ); ?></a></li>
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'app' ) ); ?>"><?php esc_html_e( 'Applications', 'ogdch' ); ?></a></li>
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'legal-framework' ) ); ?>"><?php esc_html_e( 'Legal framework', 'ogdch' ); ?></a></li>
+				<li><a href="https://github.com/opendata-swiss"><?php esc_html_e( 'Sourcecode', 'ogdch' ); ?></a></li>
+			</ul>
 		</div>
 	</div>
 </div>
