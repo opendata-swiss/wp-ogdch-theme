@@ -10,7 +10,7 @@ $app_count = get_localized_post_count( 'app' );
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-xs-12">
-				<p class="lead"><?php esc_html_e( 'Get involved', 'ogdch' ); ?></p>
+				<h2><?php esc_html_e( 'Get involved', 'ogdch' ); ?></h2>
 				<p><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'Frequently Asked Questions', 'ogdch' ); ?></a></p>
 			</div>
 			<div class="col-md-6 col-xs-12 buttons">

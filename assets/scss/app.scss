@@ -276,9 +276,7 @@ a.label-primary-gray:hover {
 .contribute {
   margin-top: $header-footer-buffer + $line-height-computed; // add line-height-computed because first section after header starts with h2 (which also has a margin)
 
-  .lead {
-    font-size: 32px;
-    font-weight: 600;
+  h2 {
     margin-top: 5px;
     margin-bottom: 5px;
   }
