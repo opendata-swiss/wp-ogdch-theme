@@ -1,4 +1,7 @@
 @import '../external/Font-Awesome/scss/font-awesome';
+@import '../external/jquery-ui-autocomplete/jquery-ui';
+@import '../external/jquery-ui-autocomplete/jquery-ui.structure';
+@import '../external/jquery-ui-autocomplete/jquery-ui.theme';
 
 @import 'bootstrap_variables';
 @import 'variables';
@@ -697,4 +700,21 @@ li.dataset-item {
 // Ressource-Preview
 .js-hide {
   display: none;
+}
+
+
+// Search Suggestions
+.ui-autocomplete .ui-menu-item a,
+.ui-autocomplete .ui-menu-item a:active,
+.ui-autocomplete .ui-menu-item a:focus,
+.ui-autocomplete .ui-menu-item a:hover,
+.ui-autocomplete .ui-menu-item a:visited {
+    display: block;
+    text-decoration: none;
+    padding: 6px 1em 6px .4em;
+}
+
+.ui-autocomplete .ui-state-active {
+    background-color: $brand-primary;
+    border-color: $gray-lighter;
 }

@@ -26,6 +26,8 @@ gulp.task('app-scripts', function() {
     return gulp.src([
         './assets/external/bootstrap-sass/assets/javascripts/bootstrap.js',
         './assets/external/FitText.js/jquery.fittext.js',
+        './assets/external/jquery-ui-autocomplete/jquery-ui.js',
+        './assets/external/jquery-ui-autocomplete/jquery.ui.autocomplete.html.js',
         './assets/js/app.js'
     ])
         .pipe(concat('app.min.js'))
