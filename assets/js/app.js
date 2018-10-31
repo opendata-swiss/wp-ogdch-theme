@@ -55,5 +55,26 @@
                 $('#recline-viewer .left').css('width', '1000px');
             }, 30000);
         }
+
+        // Activate search suggestions for the search bar
+        $('#ogdch_search').autocomplete({
+          delay: 250,
+          html: true,
+          minLength: 2,
+          response: function( event, ui ) {
+              //remove highlighting HTML (<b>) from value
+              ui.content.map(function(item) {
+                  item.value = item.value.replace('<b>', '');
+                  item.value = item.value.replace('</b>', '');
+              });
+          },
+          source: function (request, response) {
+            var url = '/api/3/action/ogdch_autosuggest';
+            $.getJSON(url, {q: request.term, lang: $('html').attr('lang')})
+              .done(function (data) {
+                response(data['result']);
+              });
+            }
+        });
     });
 })(jQuery);

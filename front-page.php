@@ -18,7 +18,7 @@
 					</div>
 					<form action="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>" role="search">
 						<div class="form-group has-feedback">
-							<input type="search" class="form-control input-lg" id="q" name="q" placeholder="<?php esc_attr_e( 'Search datasets...', 'ogdch' ); ?>">
+							<input id="ogdch_search" type="search" class="form-control input-lg" id="q" name="q" placeholder="<?php esc_attr_e( 'Search datasets...', 'ogdch' ); ?>">
 							<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
 						</div>
 					</form>
