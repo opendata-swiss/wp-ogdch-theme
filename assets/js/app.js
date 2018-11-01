@@ -66,6 +66,11 @@
               ui.content.map(function(item) {
                   item.value = item.value.replace('<b>', '');
                   item.value = item.value.replace('</b>', '');
+
+                  //add quotes around single-term values for Solr
+                  if (!item.value.match(/\s/g)) {
+                      item.value = '"' + item.value + '"';
+                  }
               });
           },
           source: function (request, response) {
