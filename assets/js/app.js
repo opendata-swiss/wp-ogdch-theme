@@ -53,7 +53,7 @@
                 var noResponseText = ($('#recline-viewer .left').data('noResponseText'));
                 $('#recline-viewer .left').text(noResponseText);
                 $('#recline-viewer .left').css('width', '1000px');
-            }, 30000);
+            }, 5000);
         }
 
         // Activate search suggestions for the search bar
