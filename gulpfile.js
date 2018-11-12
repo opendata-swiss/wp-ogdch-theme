@@ -36,6 +36,16 @@ gulp.task('app-scripts', function() {
         .pipe(notify({ message: 'App scripts task complete', onLast: true }));
 });
 
+gulp.task('app-admin', function() {
+    return gulp.src([
+        './assets/js/app-admin.js'
+    ])
+        .pipe(concat('app-admin.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./assets/js'))
+        .pipe(notify({ message: 'App admin task complete', onLast: true }));
+});
+
 gulp.task('organization-filter-scripts', function() {
     return gulp.src([
         './assets/js/organization-filter.js'
@@ -46,7 +56,7 @@ gulp.task('organization-filter-scripts', function() {
         .pipe(notify({ message: 'Organization filter scripts task complete', onLast: true }));
 });
 
-gulp.task('scripts', [ 'app-scripts', 'organization-filter-scripts' ]);
+gulp.task('scripts', [ 'app-scripts', 'app-admin', 'organization-filter-scripts' ]);
 
 gulp.task('watch', function() {
     gulp.watch('./assets/scss/**/*.scss', ['sass'] );

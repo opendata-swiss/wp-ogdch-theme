@@ -56,6 +56,26 @@ function odg_scripts() {
 add_action( 'wp_enqueue_scripts', 'odg_scripts' );
 
 /**
+ * Add / Remove Scripts and CSS only in Admin
+ *
+ * @return void
+ */
+function odg_admin_scripts() {
+
+    if ( ! is_admin() ) {
+        wp_register_script( 'app-admin', get_template_directory_uri() . '/assets/js/app-admin.min.js', array( 'jquery' ), get_theme_version(), true );
+        wp_enqueue_script( 'app-admin' );
+
+        return;
+    }
+
+    wp_register_script( 'app-admin', get_template_directory_uri() . '/assets/js/app-admin.min.js', array( 'jquery' ), get_theme_version(), true );
+    wp_enqueue_script( 'app-admin' );
+}
+
+add_action( 'admin_enqueue_scripts', 'odg_admin_scripts' );
+
+/**
  * Adds favicon to header
  */
 function add_favicon() {
