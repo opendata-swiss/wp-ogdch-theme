@@ -75,7 +75,18 @@
           },
           source: function (request, response) {
             var url = '/api/3/action/ogdch_autosuggest';
-            $.getJSON(url, {q: request.term, lang: $('html').attr('lang')})
+
+            params = {q: request.term, lang: $('html').attr('lang')}
+            // check if any filters are set and send them along
+            var values = [];
+            $('#dataset-search-form input:hidden').each(function(elem) { values.push($(this).val()) });
+            if (values) {
+                fq = values.join(' AND ');
+                params['fq'] = fq;
+            }
+
+
+            $.getJSON(url, params)
               .done(function (data) {
                 response(data['result']);
               });
