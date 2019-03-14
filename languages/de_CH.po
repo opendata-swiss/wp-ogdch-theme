@@ -221,8 +221,8 @@ msgid ""
 "The opendata.swiss portal is a joint project of the Confederation, cantons, "
 "communes and other organizations with a mandate from the state. It makes "
 "open government data available to the general public in a central catalogue."
-" opendata.swiss is operated by the Swiss Federal Archives."
-msgstr "Das Portal opendata.swiss ist ein gemeinsames Projekt von Bund, Kantonen, Gemeinden und weiteren Organisationen mit einem staatlichen Auftrag. Es stellt der Allgemeinheit offene Behördendaten in einem zentralen Katalog zur Verfügung. Das Schweizerische Bundesarchiv betreibt opendata.swiss."
+" opendata.swiss is operated by the Federal Statistical Office."
+msgstr "Das Portal opendata.swiss ist ein gemeinsames Projekt von Bund, Kantonen, Gemeinden und weiteren Organisationen mit einem staatlichen Auftrag. Es stellt der Allgemeinheit offene Behördendaten in einem zentralen Katalog zur Verfügung. Das Bundesamt für Statistik betreibt opendata.swiss."
 
 #: footer.php:95
 msgid "About"
