@@ -226,7 +226,7 @@ msgid ""
 "communes and other organizations with a mandate from the state. It makes "
 "open government data available to the general public in a central catalogue."
 " opendata.swiss is operated by the Federal Statistical Office."
-msgstr "Le projet opendata.swiss est mené conjointement par la Confédération, les cantons, les communes et plusieurs organisations investies d’un mandat étatique. Administré par Office fédéral de la statistique, il met à la disposition du public un ensemble de données ouvertes de l’administration publique dans un catalogue central."
+msgstr "Le projet opendata.swiss est mené conjointement par la Confédération, les cantons, les communes et plusieurs organisations investies d’un mandat étatique. Administré par l'Office fédéral de la statistique, il met à la disposition du public un ensemble de données ouvertes de l’administration publique dans un catalogue central."
 
 #: footer.php:95
 msgid "About"
