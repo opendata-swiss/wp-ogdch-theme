@@ -279,7 +279,9 @@ function bootstrap_breadcrumb() {
 					$parents .= '<li class="item-parent item-parent-' . esc_attr( $ancestor ) . '"><a class="bread-parent bread-parent-' . esc_attr( $ancestor ) . '" href="' . esc_url( get_permalink( $ancestor ) ) . '" title="' . esc_attr( get_the_title( $ancestor ) ) . '">' . esc_attr( get_the_title( $ancestor ) ) . '</a></li>';
 				}
 				// Display parent pages
-				echo esc_attr( $parents );
+                // @codingStandardsIgnoreStart
+				echo $parents;
+                // @codingStandardsIgnoreEnd
 			}
 			echo '<li class="item-' . esc_attr( $post->ID ) . ' active"><a href="" title="' . esc_attr( get_the_title() ) . '">' . esc_attr( get_the_title() ) . '</a></li>';
 		} else if ( is_tag() ) {
