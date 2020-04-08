@@ -16,6 +16,9 @@ $app_count = get_localized_post_count( 'app' );
 			<div class="col-md-6 col-xs-12 buttons">
 				<a class="btn btn-default-inverted" href="https://handbook.opendata.swiss/" role="button"><?php esc_html_e( 'Learn to publish data', 'ogdch' ); ?></a>
 				<a class="btn btn-default-inverted last" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_html_e( 'Share your application', 'ogdch' ); ?></a>
+				<a href="https://twitter.com/opendataswiss"
+				role="button"
+				><img style="margin-left:10px" src="/content/themes/wp-ogdch-theme/assets/images/twitter.svg"/></a>
 			</div>
 		</div>
 	</div>
