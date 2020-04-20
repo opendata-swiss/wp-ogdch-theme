@@ -1,7 +1,8 @@
 @import '../external/Font-Awesome/scss/font-awesome';
-@import '../external/jquery-ui-autocomplete/jquery-ui';
-@import '../external/jquery-ui-autocomplete/jquery-ui.structure';
-@import '../external/jquery-ui-autocomplete/jquery-ui.theme';
+@import '../external/jquery-ui-autocomplete/jquery-ui.css';
+@import '../external/jquery-ui-autocomplete/jquery-ui.structure.css';
+@import '../external/jquery-ui-autocomplete/jquery-ui.theme.css';
+
 
 @import 'bootstrap_variables';
 @import 'variables';
@@ -17,6 +18,9 @@ html {
 }
 
 // Bootstrap overrides
+.btn-twitter img:hover {
+  background-color: darken($brand-primary, 10%);
+}
 .btn-default {
   @include ogdch-button-hover($brand-primary, #fff, $brand-primary);
 }
