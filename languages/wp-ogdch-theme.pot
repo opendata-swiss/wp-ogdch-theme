@@ -75,6 +75,10 @@ msgstr ""
 msgid "Share your application"
 msgstr ""
 
+#: footer.php:25
+msgid "NewsMail Open Government Data"
+msgstr ""
+
 #: footer.php:32
 msgid "Dataset"
 msgid_plural "Datasets"

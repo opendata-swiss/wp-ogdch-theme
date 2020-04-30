@@ -7037,6 +7037,12 @@ img.alignleft {
 html {
   -webkit-font-smoothing: antialiased; }
 
+.btn-twitter img {
+  margin-right: 10px; }
+  @media (max-width: 767px) {
+    .btn-twitter img {
+      margin-top: 5px;
+      margin-bottom: 5px; } }
 .btn-twitter img:hover {
   background-color: #00635a; }
 
@@ -7308,11 +7314,9 @@ a.label-primary-gray:hover {
     margin: 5px 10px 5px 0; }
     .contribute .btn.last {
       margin-right: 0; }
-  .contribute .buttons {
-    margin-top: 20px; }
-    @media (max-width: 992px) {
-      .contribute .buttons {
-        margin-top: 0; } }
+  @media (max-width: 992px) {
+    .contribute .buttons {
+      margin-top: 0; } }
 
 .page-footer {
   color: #fff;

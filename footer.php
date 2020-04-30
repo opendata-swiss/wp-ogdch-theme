@@ -3,22 +3,30 @@ $dataset_count = get_dataset_count();
 $org_count = wp_count_posts( 'ckan-local-org' )->publish;
 $group_count = wp_count_posts( 'ckan-local-group' )->publish;
 $app_count = get_localized_post_count( 'app' );
+$newsletter_url = ogdch_get_localized_newsletter_url();
 ?>
 
 <!-- Contribute -->
 <section class="contribute inverted-container">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-xs-12">
+			<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 ">
 				<h2><?php esc_html_e( 'Get involved', 'ogdch' ); ?></h2>
 				<p><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'Frequently Asked Questions', 'ogdch' ); ?></a></p>
 			</div>
-			<div class="col-md-6 col-xs-12 buttons">
-				<a class="btn btn-default-inverted" href="https://handbook.opendata.swiss/" role="button"><?php esc_html_e( 'Learn to publish data', 'ogdch' ); ?></a>
-				<a class="btn btn-default-inverted last" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_html_e( 'Share your application', 'ogdch' ); ?></a>
-				<a class="btn-twitter" href="https://twitter.com/opendataswiss"
-				role="button"
-				><img style="margin-left:10px" src="/content/themes/wp-ogdch-theme/assets/images/twitter.svg"/></a>
+			<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 ">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 buttons">
+                    <a class="btn btn-default-inverted" href="https://handbook.opendata.swiss/" role="button"><?php esc_html_e( 'Learn to publish data', 'ogdch' ); ?></a>
+                    <a class="btn btn-default-inverted last" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_html_e( 'Share your application', 'ogdch' ); ?></a>
+                </div>
+                <div class="col-lg-12 col-md-12 cl-sm-12 col-xs-12 buttons">
+                    <a class="btn-twitter" href="https://twitter.com/opendataswiss"
+                    role="button"
+                    ><img src="/content/themes/wp-ogdch-theme/assets/images/twitter.svg"/></a>
+                    <?php if (  !empty($newsletter_url) ) : ?>
+                        <a class="btn btn-default-inverted last" href="<?php echo $newsletter_url ?>" role="button"><?php esc_html_e( 'NewsMail Open Government Data', 'ogdch' ); ?></a>
+                    <?php endif; ?>
+                </div>
 			</div>
 		</div>
 	</div>
