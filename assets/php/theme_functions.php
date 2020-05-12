@@ -396,5 +396,5 @@ function ogdch_get_localized_newsletter_url() {
 		'fr' => 'https://www.bfs.admin.ch/bfs/fr/home/services/ogd/newsmail.html',
 		'it' => 'https://www.bfs.admin.ch/bfs/it/home/servizi/ogd/newsmail.html',
 	);
-	return $newsletter_url[get_current_language()];
+	return $newsletter_url[ get_current_language() ];
 }
