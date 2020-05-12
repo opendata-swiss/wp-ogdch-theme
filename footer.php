@@ -23,7 +23,7 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
                     <a class="btn-twitter" href="https://twitter.com/opendataswiss"
                     role="button"
                     ><img src="/content/themes/wp-ogdch-theme/assets/images/twitter.svg"/></a>
-                    <?php if (  !empty($newsletter_url) ) : ?>
+                    <?php if ( ! empty( $newsletter_url ) ) : ?>
                         <a class="btn btn-default-inverted last" href="<?php echo $newsletter_url ?>" role="button"><?php esc_html_e( 'NewsMail Open Government Data', 'ogdch' ); ?></a>
                     <?php endif; ?>
                 </div>
