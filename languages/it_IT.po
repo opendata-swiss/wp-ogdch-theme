@@ -191,6 +191,10 @@ msgstr "Pubblica dei dati"
 msgid "Share your application"
 msgstr "Condividi un’applicazione"
 
+#: footer.php:25
+msgid "NewsMail Open Government Data"
+msgstr "Abbonarsi alla NewsMail"
+
 #: footer.php:32
 msgid "Dataset"
 msgid_plural "Datasets"
