@@ -383,3 +383,18 @@ function ogdch_get_localized_option( $key ) {
 
 	return false;
 }
+
+/**
+ * Get the localized value the newsletter subscription url
+ *
+ * @return string
+ */
+function ogdch_get_localized_newsletter_url() {
+	$newsletter_url  = array(
+		'en' => '',
+		'de' => 'https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/newsmail.html',
+		'fr' => 'https://www.bfs.admin.ch/bfs/fr/home/services/ogd/newsmail.html',
+		'it' => 'https://www.bfs.admin.ch/bfs/it/home/servizi/ogd/newsmail.html',
+	);
+	return $newsletter_url[ get_current_language() ];
+}

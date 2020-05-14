@@ -18,8 +18,17 @@ html {
 }
 
 // Bootstrap overrides
-.btn-twitter img:hover {
-  background-color: darken($brand-primary, 10%);
+.btn-twitter {
+  img {
+    margin-right: 10px;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  img:hover {
+    background-color: darken($brand-primary, 10%);
+  }
 }
 .btn-default {
   @include ogdch-button-hover($brand-primary, #fff, $brand-primary);
@@ -312,8 +321,6 @@ a.label-primary-gray:hover {
     }
   }
   .buttons {
-    margin-top: $buffer-height / 2;
-
     @media (max-width: $grid-float-breakpoint) {
       margin-top: 0;
     }
