@@ -62,9 +62,9 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 			<div class="col-sm-3 col-xs-6">
 				<a href="<?php echo esc_url( get_page_link_by_slug( 'showcase' ) ); ?>">
 					<div class="statsnumber">
-						<?php echo esc_html( $app_count ); ?> <i class="fa fa-puzzle-piece"></i>
+						<?php echo esc_html( $dataset_count['showcase_count'] ); ?> <i class="fa fa-puzzle-piece"></i>
 					</div>
-					<p><?php echo esc_html( _n( 'Application', 'Applications', $app_count, 'ogdch' ) ); ?></p>
+					<p><?php echo esc_html( _n( 'Application', 'Applications', $dataset_count['showcase_count'], 'ogdch' ) ); ?></p>
 				</a>
 			</div>
 		</div>
