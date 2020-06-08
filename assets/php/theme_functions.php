@@ -123,6 +123,7 @@ function get_dataset_count() {
 			} else {
 				$dataset_count = array(
 					'total_count' => 'N/A',
+					'showcase_count' => 'N/A',
 					'groups'      => array(),
 				);
 			}
