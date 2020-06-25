@@ -24,7 +24,7 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 					role="button"
 					><img src="/content/themes/wp-ogdch-theme/assets/images/twitter.svg"/></a>
 					<?php if ( ! empty( $newsletter_url ) ) : ?>
-						<a class="btn btn-default-inverted last" href="<?php esc_html( $newsletter_url ) ?>" role="button"><?php esc_html_e( 'NewsMail Open Government Data', 'ogdch' ); ?></a>
+						<a class="btn btn-default-inverted last" href="<?php echo esc_html( $newsletter_url ) ?>" role="button"><?php esc_html_e( 'NewsMail Open Government Data', 'ogdch' ); ?></a>
 					<?php endif; ?>
 				</div>
 			</div>
