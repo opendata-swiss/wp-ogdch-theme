@@ -186,7 +186,7 @@ msgstr "Publizieren Sie Daten"
 
 #: footer.php:18
 msgid "Share your application"
-msgstr "Teilen Sie Ihre Anwendung"
+msgstr "Teilen Sie Ihre Applikation"
 
 #: footer.php:25
 msgid "NewsMail Open Government Data"
@@ -213,8 +213,8 @@ msgstr[1] "Kategorien"
 #: footer.php:56
 msgid "Application"
 msgid_plural "Applications"
-msgstr[0] "Anwendung"
-msgstr[1] "Anwendungen"
+msgstr[0] "Applikation"
+msgstr[1] "Applikationen"
 
 #: footer.php:62
 msgid "A joint project of the Confederation and the cantons"
@@ -250,7 +250,7 @@ msgstr "Organisationen"
 
 #: footer.php:100
 msgid "Applications"
-msgstr "Anwendungen"
+msgstr "Applikationen"
 
 #: footer.php:101
 msgid "Terms of use"
