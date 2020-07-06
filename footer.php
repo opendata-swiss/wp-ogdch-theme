@@ -38,9 +38,9 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 			<div class="col-sm-3 col-xs-6">
 				<a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>">
 					<div class="statsnumber">
-						<?php echo esc_html( $dataset_count['total_count'] ); ?> <i class="fa fa-files-o"></i>
+						<?php echo esc_html( $dataset_count['total_dataset_count'] ); ?> <i class="fa fa-files-o"></i>
 					</div>
-					<p><?php echo esc_html( _n( 'Dataset', 'Datasets', $dataset_count['total_count'], 'ogdch' ) ); ?></p>
+					<p><?php echo esc_html( _n( 'Dataset', 'Datasets', $dataset_count['total_dataset_count'], 'ogdch' ) ); ?></p>
 				</a>
 			</div>
 			<div class="col-sm-3 col-xs-6">
