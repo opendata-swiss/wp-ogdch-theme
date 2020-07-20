@@ -107,9 +107,9 @@ function get_localized_post_count( $post_type ) {
  */
 function get_dataset_count() {
 	if ( class_exists( 'Ckan_Backend_Helper' ) ) {
-		$transient_name = 'ogdch_dataset_count';
+		$transient_name = 'ogdch_counts';
 		if ( false === ( $dataset_count = get_transient( $transient_name ) ) ) {
-			$endpoint = CKAN_API_ENDPOINT . 'ogdch_dataset_count';
+			$endpoint = CKAN_API_ENDPOINT . 'ogdch_counts';
 			$response = Ckan_Backend_Helper::do_api_request( $endpoint );
 			$errors   = Ckan_Backend_Helper::check_response_for_errors( $response );
 
@@ -117,14 +117,15 @@ function get_dataset_count() {
 				$dataset_count = $response['result'];
 
 				// save result in transient
-				if ( $dataset_count['total_count'] > 0 ) {
+				if ( $dataset_count['total_dataset_count'] > 0 ) {
 					set_transient( $transient_name, $dataset_count, 5 * MINUTE_IN_SECONDS );
 				}
 			} else {
 				$dataset_count = array(
-					'total_count' => 'N/A',
+					'total_dataset_count' => 'N/A',
 					'showcase_count' => 'N/A',
 					'groups'      => array(),
+					'organization_count' => 'N/A',
 				);
 			}
 		}
