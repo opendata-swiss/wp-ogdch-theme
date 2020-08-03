@@ -17,7 +17,7 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 			<div class="col-lg-9 col-md-8 col-xs-12 ">
 				<div class="col-xs-12 buttons">
 					<a class="btn btn-default-inverted" href="https://handbook.opendata.swiss/" role="button"><?php esc_html_e( 'Learn to publish data', 'ogdch' ); ?></a>
-					<a class="btn btn-default-inverted last" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_html_e( 'Share your application', 'ogdch' ); ?></a>
+					<a class="btn btn-default-inverted last" href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>" role="button"><?php esc_html_e( 'Share your showcase', 'ogdch' ); ?></a>
 				</div>
 				<div class="col-xs-12 buttons">
 					<a class="btn-twitter" href="https://twitter.com/opendataswiss"
@@ -64,7 +64,7 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 					<div class="statsnumber">
 						<?php echo esc_html( $dataset_count['showcase_count'] ); ?> <i class="fa fa-puzzle-piece"></i>
 					</div>
-					<p><?php echo esc_html( _n( 'Application', 'Applications', $dataset_count['showcase_count'], 'ogdch' ) ); ?></p>
+					<p><?php echo esc_html( _n( 'Showcase', 'Showcases', $dataset_count['showcase_count'], 'ogdch' ) ); ?></p>
 				</a>
 			</div>
 		</div>
@@ -108,7 +108,7 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>"><?php esc_html_e( 'Contact', 'ogdch' ); ?></a></li>
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>"><?php esc_html_e( 'Data', 'ogdch' ); ?></a></li>
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>"><?php esc_html_e( 'Organizations', 'ogdch' ); ?></a></li>
-				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'showcase' ) ); ?>"><?php esc_html_e( 'Applications', 'ogdch' ); ?></a></li>
+				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'showcase' ) ); ?>"><?php esc_html_e( 'Showcases', 'ogdch' ); ?></a></li>
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'terms-of-use' ) ); ?>"><?php esc_html_e( 'Terms of use', 'ogdch' ); ?></a></li>
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'legal-framework' ) ); ?>"><?php esc_html_e( 'Legal framework', 'ogdch' ); ?></a></li>
 				<li><a href="https://github.com/opendata-swiss"><?php esc_html_e( 'Sourcecode', 'ogdch' ); ?></a></li>

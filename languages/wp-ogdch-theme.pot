@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-ogdch-theme 1.0.0\n"
 "Report-Msgid-Bugs-To: jazz@liip.ch\n"
-"POT-Creation-Date: 2019-03-14 09:27+0000\n"
+"POT-Creation-Date: 2020-08-03 14:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,12 +23,132 @@ msgctxt "%s contains path to file."
 msgid "Error locating %s for inclusion"
 msgstr ""
 
-#: 404.php:8 assets/php/theme_functions.php:326
+#: footer.php:14
+msgid "Get involved"
+msgstr ""
+
+#: footer.php:15
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: footer.php:19
+msgid "Learn to publish data"
+msgstr ""
+
+#: footer.php:20
+msgid "Share your showcase"
+msgstr ""
+
+#: footer.php:27
+msgid "NewsMail Open Government Data"
+msgstr ""
+
+#: footer.php:43
+msgid "Dataset"
+msgid_plural "Datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: footer.php:51
+msgid "Organization"
+msgid_plural "Organizations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: footer.php:59
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] ""
+msgstr[1] ""
+
+#: footer.php:67
+msgid "Showcase"
+msgid_plural "Showcases"
+msgstr[0] ""
+msgstr[1] ""
+
+#: footer.php:73
+msgid "A joint project of the Confederation and the cantons"
+msgstr ""
+
+#: footer.php:74
+msgid "The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Federal Statistical Office."
+msgstr ""
+
+#: footer.php:106
+msgid "About"
+msgstr ""
+
+#: footer.php:107
+msgid "FAQ"
+msgstr ""
+
+#: footer.php:108
+msgid "Contact"
+msgstr ""
+
+#: footer.php:109
+msgid "Data"
+msgstr ""
+
+#: footer.php:110
+msgid "Organizations"
+msgstr ""
+
+#: footer.php:111
+msgid "Showcases"
+msgstr ""
+
+#: footer.php:112
+msgid "Terms of use"
+msgstr ""
+
+#: footer.php:113
+msgid "Legal framework"
+msgstr ""
+
+#: footer.php:114
+msgid "Sourcecode"
+msgstr ""
+
+#: 404.php:8 assets/php/theme_functions.php:330
 msgid "Page not found"
 msgstr ""
 
 #: 404.php:17
 msgid "Ooops... The page you're looking for isn't available. Here is a cool space shuttle to make you feel better!"
+msgstr ""
+
+#: header.php:54
+msgid "Toggle navigation"
+msgstr ""
+
+#: header.php:71
+msgid "Search"
+msgstr ""
+
+#: front-page.php:8
+msgid "Find Swiss Open Government data"
+msgstr ""
+
+#: front-page.php:9
+msgid "Learn more about opendata.swiss"
+msgstr ""
+
+#: front-page.php:17
+msgid "Datasets"
+msgstr ""
+
+#: front-page.php:21
+msgid "Search datasets..."
+msgstr ""
+
+#: front-page.php:25
+msgid "Access the data catalogue using the API"
+msgstr ""
+
+#: front-page.php:36
+msgid "Categories"
 msgstr ""
 
 #: archive-app.php:19
@@ -50,106 +170,6 @@ msgid "%s application"
 msgid_plural "%s applications"
 msgstr[0] ""
 msgstr[1] ""
-
-#: header.php:54
-msgid "Toggle navigation"
-msgstr ""
-
-#: header.php:71
-msgid "Search"
-msgstr ""
-
-#: footer.php:13
-msgid "Get involved"
-msgstr ""
-
-#: footer.php:14
-msgid "Frequently Asked Questions"
-msgstr ""
-
-#: footer.php:17
-msgid "Learn to publish data"
-msgstr ""
-
-#: footer.php:18
-msgid "Share your application"
-msgstr ""
-
-#: footer.php:25
-msgid "NewsMail Open Government Data"
-msgstr ""
-
-#: footer.php:32
-msgid "Dataset"
-msgid_plural "Datasets"
-msgstr[0] ""
-msgstr[1] ""
-
-#: footer.php:40
-msgid "Organization"
-msgid_plural "Organizations"
-msgstr[0] ""
-msgstr[1] ""
-
-#: footer.php:48
-msgid "Category"
-msgid_plural "Categories"
-msgstr[0] ""
-msgstr[1] ""
-
-#: footer.php:56
-msgid "Application"
-msgid_plural "Applications"
-msgstr[0] ""
-msgstr[1] ""
-
-#: footer.php:62
-msgid "A joint project of the Confederation and the cantons"
-msgstr ""
-
-#: footer.php:63
-msgid "The opendata.swiss portal is a joint project of the Confederation, cantons, communes and other organizations with a mandate from the state. It makes open government data available to the general public in a central catalogue. opendata.swiss is operated by the Federal Statistical Office."
-msgstr ""
-
-#: footer.php:95
-msgid "About"
-msgstr ""
-
-#: footer.php:96
-msgid "FAQ"
-msgstr ""
-
-#: footer.php:97
-msgid "Contact"
-msgstr ""
-
-#: footer.php:98
-msgid "Data"
-msgstr ""
-
-#: footer.php:99
-msgid "Organizations"
-msgstr ""
-
-#: footer.php:100
-msgid "Applications"
-msgstr ""
-
-#: footer.php:101
-msgid "Terms of use"
-msgstr ""
-
-#: footer.php:102
-msgid "Legal framework"
-msgstr ""
-
-#: footer.php:103
-msgid "Sourcecode"
-msgstr ""
-
-#: assets/php/init.php:28
-msgid "Main-Navigation"
-msgstr ""
 
 #: assets/php/backend/cpt_messages.php:19
 #: assets/php/backend/cpt_messages.php:22
@@ -218,30 +238,34 @@ msgctxt "%1$s contains url to preview this post. %2$s contains singular name of 
 msgid " <a target=\"_blank\" href=\"%1$s\">Preview %2$s</a>"
 msgstr ""
 
-#: assets/php/theme_functions.php:131 partials/app-entry.php:28
+#: assets/php/theme_functions.php:133 partials/app-entry.php:28
 msgid "Please activate wp-ckan-backend plugin"
 msgstr ""
 
-#: assets/php/theme_functions.php:185
+#: assets/php/theme_functions.php:187
 msgid "Home"
 msgstr ""
 
-#: assets/php/theme_functions.php:297 assets/php/theme_functions.php:299
-#: assets/php/theme_functions.php:301 assets/php/theme_functions.php:305
-#: assets/php/theme_functions.php:307 assets/php/theme_functions.php:310
+#: assets/php/theme_functions.php:301 assets/php/theme_functions.php:303
+#: assets/php/theme_functions.php:305 assets/php/theme_functions.php:309
+#: assets/php/theme_functions.php:311 assets/php/theme_functions.php:314
 msgid "Archives"
 msgstr ""
 
-#: assets/php/theme_functions.php:317
+#: assets/php/theme_functions.php:321
 msgid "Author"
 msgstr ""
 
-#: assets/php/theme_functions.php:320
+#: assets/php/theme_functions.php:324
 msgid "Page"
 msgstr ""
 
-#: assets/php/theme_functions.php:323
+#: assets/php/theme_functions.php:327
 msgid "Search results for:"
+msgstr ""
+
+#: assets/php/init.php:28
+msgid "Main-Navigation"
 msgstr ""
 
 #: assets/php/theme_options.php:60
@@ -262,28 +286,4 @@ msgstr ""
 
 #: partials/app-entry.php:25
 msgid "Used datasets"
-msgstr ""
-
-#: front-page.php:8
-msgid "Find Swiss Open Government data"
-msgstr ""
-
-#: front-page.php:9
-msgid "Learn more about opendata.swiss"
-msgstr ""
-
-#: front-page.php:17
-msgid "Datasets"
-msgstr ""
-
-#: front-page.php:21
-msgid "Search datasets..."
-msgstr ""
-
-#: front-page.php:25
-msgid "Access the data catalogue using the API"
-msgstr ""
-
-#: front-page.php:36
-msgid "Categories"
 msgstr ""
