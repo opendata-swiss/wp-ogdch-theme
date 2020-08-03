@@ -189,7 +189,7 @@ msgstr "Pubblica dei dati"
 
 #: footer.php:18
 msgid "Share your application"
-msgstr "Condividi un’applicazione"
+msgstr "Condividi il tuo showcase"
 
 #: footer.php:25
 msgid "NewsMail Open Government Data"
@@ -214,10 +214,10 @@ msgstr[0] "Categoria"
 msgstr[1] "Categorie"
 
 #: footer.php:56
-msgid "Application"
-msgid_plural "Applications"
-msgstr[0] "Applicazione"
-msgstr[1] "Applicazioni"
+msgid "Showcase"
+msgid_plural "Showcases"
+msgstr[0] "Showcase"
+msgstr[1] "Showcases"
 
 #: footer.php:62
 msgid "A joint project of the Confederation and the cantons"
@@ -252,8 +252,8 @@ msgid "Organizations"
 msgstr "Organizzazioni"
 
 #: footer.php:100
-msgid "Applications"
-msgstr "Applicazioni"
+msgid "Showcases"
+msgstr "Showcases"
 
 #: footer.php:101
 msgid "Terms of use"
