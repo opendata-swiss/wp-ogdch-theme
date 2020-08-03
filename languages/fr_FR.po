@@ -189,7 +189,7 @@ msgid "Learn to publish data"
 msgstr "Publier des données"
 
 #: footer.php:18
-msgid "Share your application"
+msgid "Share your showcase"
 msgstr "Partagez votre showcase"
 
 #: footer.php:25
