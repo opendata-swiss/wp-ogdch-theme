@@ -12,7 +12,6 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 		<div class="row">
 			<div class="col-lg-3 col-md-4 col-xs-12 ">
 				<h2><?php esc_html_e( 'Get involved', 'ogdch' ); ?></h2>
-				<p><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'Frequently Asked Questions', 'ogdch' ); ?></a></p>
 			</div>
 			<div class="col-lg-9 col-md-8 col-xs-12 ">
 				<div class="col-xs-12 buttons">
@@ -104,7 +103,6 @@ $newsletter_url = ogdch_get_localized_newsletter_url();
 		<div class="footer-navigation">
 			<ul class="list-inline small">
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'about' ) ); ?>"><?php esc_html_e( 'About', 'ogdch' ); ?></a></li>
-				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'faq' ) ); ?>"><?php esc_html_e( 'FAQ', 'ogdch' ); ?></a></li>
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'contact' ) ); ?>"><?php esc_html_e( 'Contact', 'ogdch' ); ?></a></li>
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'dataset' ) ); ?>"><?php esc_html_e( 'Data', 'ogdch' ); ?></a></li>
 				<li><a href="<?php echo esc_url( get_page_link_by_slug( 'organization' ) ); ?>"><?php esc_html_e( 'Organizations', 'ogdch' ); ?></a></li>
