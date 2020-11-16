@@ -22,7 +22,7 @@
 							<i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
 						</div>
 					</form>
-					<p><a href="https://handbook.opendata.swiss/support/api.html"><?php esc_html_e( 'Access the data catalogue using the API', 'ogdch' ); ?></a></p>
+					<p><a href="https://handbook.opendata.swiss/de/content/nutzen/api-nutzen.html"><?php esc_html_e( 'Access the data catalogue using the API', 'ogdch' ); ?></a></p>
 				</div>
 			</div>
 		</div>
